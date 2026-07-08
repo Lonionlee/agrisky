@@ -695,6 +695,31 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   </div>
   </div>
 <div id="page-ocean" class="page-section">
+
+<!-- 快捷导航条 -->
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;padding:12px 0">
+  <div onclick="document.getElementById('section-enso').scrollIntoView({behavior:'smooth',block:'start'})" style="flex:1;min-width:140px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--accent-blue)';this.style.boxShadow='0 2px 8px rgba(37,99,235,0.15)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.boxShadow='none'">
+    <span style="width:10px;height:10px;border-radius:50%;background:#ef4444;flex-shrink:0"></span>
+    <span style="font-size:13px;font-weight:600;color:var(--text-primary)">ENSO 深度分析</span>
+  </div>
+  <div onclick="document.getElementById('section-pdo').scrollIntoView({behavior:'smooth',block:'start'})" style="flex:1;min-width:140px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--accent-blue)';this.style.boxShadow='0 2px 8px rgba(37,99,235,0.15)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.boxShadow='none'">
+    <span style="width:10px;height:10px;border-radius:50%;background:#3b82f6;flex-shrink:0"></span>
+    <span style="font-size:13px;font-weight:600;color:var(--text-primary)">PDO 太平洋年代际振荡</span>
+  </div>
+  <div onclick="document.getElementById('section-nao').scrollIntoView({behavior:'smooth',block:'start'})" style="flex:1;min-width:140px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--accent-blue)';this.style.boxShadow='0 2px 8px rgba(37,99,235,0.15)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.boxShadow='none'">
+    <span style="width:10px;height:10px;border-radius:50%;background:#94a3b8;flex-shrink:0"></span>
+    <span style="font-size:13px;font-weight:600;color:var(--text-primary)">NAO 北大西洋涛动</span>
+  </div>
+  <div onclick="document.getElementById('section-iod').scrollIntoView({behavior:'smooth',block:'start'})" style="flex:1;min-width:140px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--accent-blue)';this.style.boxShadow='0 2px 8px rgba(37,99,235,0.15)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.boxShadow='none'">
+    <span style="width:10px;height:10px;border-radius:50%;background:#f97316;flex-shrink:0"></span>
+    <span style="font-size:13px;font-weight:600;color:var(--text-primary)">IOD 印度洋偶极子</span>
+  </div>
+  <div onclick="document.getElementById('section-monsoon').scrollIntoView({behavior:'smooth',block:'start'})" style="flex:1;min-width:140px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--accent-blue)';this.style.boxShadow='0 2px 8px rgba(37,99,235,0.15)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.boxShadow='none'">
+    <span style="width:10px;height:10px;border-radius:50%;background:#22c55e;flex-shrink:0"></span>
+    <span style="font-size:13px;font-weight:600;color:var(--text-primary)">季风与环流</span>
+  </div>
+</div>
+
 <div class="ocean-section">
   <div class="section-title">海温异常</div>
   <div class="ocean-card">
@@ -800,7 +825,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 </div>
 
 <div class="ocean-section">
-  <div class="section-title">PDO 太平洋年代际振荡</div>
+  <div class="section-title" id="section-pdo">PDO 太平洋年代际振荡</div>
   <div class="ocean-card">
     <div class="ocean-card-title">📊 PDO 时间序列（2009-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -1.34</span></div>
     <div class="ocean-card-subtitle">NOAA CPC GODAS ERSSTv5 · 月度PDO指数 · 2009-01至2026-06</div>
@@ -810,7 +835,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 </div>
 
 <div class="ocean-section">
-  <div class="section-title">NAO 北大西洋涛动</div>
+  <div class="section-title" id="section-nao">NAO 北大西洋涛动</div>
   <div class="ocean-card">
     <div class="ocean-card-title">📊 NAO 时间序列（2009-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--accent-blue);margin-left:auto">当前: +0.41</span></div>
     <div class="ocean-card-subtitle">NOAA CPC/AOML数据 · 2009-01至2026-06 · 月均NAO指数</div>
@@ -820,7 +845,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 </div>
 
 <div class="ocean-section">
-  <div class="section-title">IOD 印度洋偶极子</div>
+  <div class="section-title" id="section-iod">IOD 印度洋偶极子</div>
   <div class="ocean-card">
     <div class="ocean-card-title">📊 IOD DMI 时间序列（2009-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:#a16207;margin-left:auto">当前: -0.16°C</span></div>
     <div class="ocean-card-subtitle">周度DMI · BOM数据 · 2016-2026 · 负值对应负IOD事件</div>
@@ -830,7 +855,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 </div>
 
 <div class="ocean-section">
-  <div class="section-title">季风与环流</div>
+  <div class="section-title" id="section-monsoon">季风与环流</div>
   <div class="ocean-card">
     <div class="ocean-card-title">🌀 印度季风进度</div>
     <div class="ocean-card-subtitle">IMD数据 · 截至2026年7月1日</div>
