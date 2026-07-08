@@ -1752,8 +1752,28 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div style="font-family:'Outfit',sans-serif;font-size:20px;font-weight:700;color:var(--text-primary);">🌐 全球产区天气展望</div>
 </div>
 
+<!-- 快捷导航条 -->
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px;padding:0 0 4px">
+  <div onclick="document.getElementById('fc-global').scrollIntoView({behavior:'smooth',block:'start'})" style="flex:1;min-width:160px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--accent-blue)';this.style.boxShadow='0 2px 8px rgba(37,99,235,0.15)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.boxShadow='none'">
+    <span style="font-size:16px">🌍</span>
+    <span style="font-size:13px;font-weight:600;color:var(--text-primary)">全球其他产区天气展望</span>
+  </div>
+  <div onclick="document.getElementById('fc-us').scrollIntoView({behavior:'smooth',block:'start'})" style="flex:1;min-width:160px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--accent-blue)';this.style.boxShadow='0 2px 8px rgba(37,99,235,0.15)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.boxShadow='none'">
+    <span style="font-size:16px">🇺🇸</span>
+    <span style="font-size:13px;font-weight:600;color:var(--text-primary)">美国产区天气展望</span>
+  </div>
+  <div onclick="document.getElementById('fc-sa').scrollIntoView({behavior:'smooth',block:'start'})" style="flex:1;min-width:160px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--accent-blue)';this.style.boxShadow='0 2px 8px rgba(37,99,235,0.15)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.boxShadow='none'">
+    <span style="font-size:16px">🌎</span>
+    <span style="font-size:13px;font-weight:600;color:var(--text-primary)">南美产区天气展望</span>
+  </div>
+  <div onclick="document.getElementById('fc-cn').scrollIntoView({behavior:'smooth',block:'start'})" style="flex:1;min-width:160px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--accent-blue)';this.style.boxShadow='0 2px 8px rgba(37,99,235,0.15)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.boxShadow='none'">
+    <span style="font-size:16px">🇨🇳</span>
+    <span style="font-size:13px;font-weight:600;color:var(--text-primary)">中国产区天气展望</span>
+  </div>
+</div>
+
 <!-- ============ 第一行：全球产区（除中美巴阿） ============ -->
-<div style="margin-bottom:28px;">
+<div id="fc-global" style="margin-bottom:28px;">
 <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
   <span style="font-size:16px;font-weight:600;color:var(--accent-blue);">🌍 全球其他产区天气展望</span>
   <span style="font-size:11px;color:var(--text-muted);">（ECMWF IFS 7月预报 · 除中美巴阿）</span>
@@ -1852,7 +1872,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 </div>
 
 <!-- ============ 第二行：美国产区天气展望 ============ -->
-<div style="margin-bottom:28px;">
+<div id="fc-us" style="margin-bottom:28px;">
 <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
   <span style="font-size:16px;font-weight:600;color:var(--accent-blue);">🇺🇸 美国产区天气展望</span>
   <span style="font-size:11px;color:var(--text-muted);">（CPC 6-14天展望 · 6-10天：7月13-17日 / 8-14天：7月15-21日）</span>
@@ -1972,7 +1992,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 </div>
 
 <!-- ============ 第三行：巴西/阿根廷产区 ============ -->
-<div style="margin-bottom:28px;">
+<div id="fc-sa" style="margin-bottom:28px;">
 <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
   <span style="font-size:16px;font-weight:600;color:var(--accent-blue);">🌎 南美产区 · 大豆15天天气展望</span>
   <span style="font-size:11px;color:var(--text-muted);">（WorldAgWeather · 2026-07-07）</span>
@@ -2012,7 +2032,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 </div>
 
 <!-- ============ 第四行：中国产区天气展望 ============ -->
-<div style="margin-bottom:28px;">
+<div id="fc-cn" style="margin-bottom:28px;">
 <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
   <span style="font-size:16px;font-weight:600;color:var(--accent-blue);">🇨🇳 中国产区天气展望</span>
   <span style="font-size:11px;color:var(--text-muted);">（中央气象台 · NMC降水/气温预报）</span>
