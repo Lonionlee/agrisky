@@ -760,7 +760,6 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📈 Niño 3.4 时间序列（2009-2026）</div>
     <div class="ocean-card-subtitle">NOAA CPC ERSSTv5 · 周度Niño 3.4距平 · 2009-01至2026-07 · ±0.5°C阈值</div>
     <div class="chart-container tall"><canvas id="ensoHistoryChart"></canvas></div>
-    <div style="font-size:10px;color:#94a3b8;margin-top:4px;text-align:right;font-family:'JetBrains Mono',monospace">数据来源：NOAA CPC ERSSTv5</div>
     <div class="analysis-text">Niño 3.4自2025年末负值迅速转正，2026年5月已达+0.94°C，6月跳升至+1.75°C，月际增量为有记录以来最快之一。当前已越过强厄尔尼诺门槛(+1.5°C)，正朝超强级别(+2.0°C)快速逼近。</div>
   </div>
   <div class="ocean-card">
@@ -796,7 +795,6 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📉 SOI 时间序列（2009-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--risk-red);margin-left:auto">当前: -24.4</span></div>
     <div class="ocean-card-subtitle">NOAA CPC · 月度SLP Anomaly (Stand Tahiti - Stand Darwin) · 2009-01至2026-06</div>
     <div class="chart-container"><canvas id="soiChart"></canvas></div>
-    <div style="font-size:10px;color:#94a3b8;margin-top:4px;text-align:right;font-family:'JetBrains Mono',monospace">数据来源：NOAA CPC（Stand Tahiti - Stand Darwin SLP Anomaly）</div>
     <div class="analysis-text">🔴 SOI持续极端负值(-24.4)表明Walker环流显著减弱，与Niño 3.4快速上升一致。值得注意的是，当前仍处于厄尔尼诺发展初期，SOI已达历史成熟期水平，正反馈机制正在加速厄尔尼诺发展。</div>
   </div>
 </div>
@@ -807,7 +805,6 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📊 PDO 时间序列（2009-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -1.34</span></div>
     <div class="ocean-card-subtitle">NOAA CPC GODAS ERSSTv5 · 月度PDO指数 · 2009-01至2026-06</div>
     <div class="chart-container"><canvas id="pdoChart"></canvas></div>
-    <div style="font-size:10px;color:#94a3b8;margin-top:4px;text-align:right;font-family:'JetBrains Mono',monospace">数据来源：NOAA CPC GODAS ERSSTv5</div>
     <div class="analysis-text">🔵 PDO负相位通常抑制太平洋中部/东部SST异常增暖的幅度，但当前超级海洋热浪面积占地球13.5%，表明此次厄尔尼诺可能在PDO负背景下仍达超强。PDO负相位+ENSO正相位组合意味着太平洋西岸（东南亚/澳大利亚）干旱更为显著。</div>
   </div>
 </div>
@@ -818,7 +815,6 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📊 NAO 时间序列（2009-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--accent-blue);margin-left:auto">当前: +0.41</span></div>
     <div class="ocean-card-subtitle">NOAA CPC/AOML数据 · 2009-01至2026-06 · 月均NAO指数</div>
     <div class="chart-container"><canvas id="naoChart"></canvas></div>
-    <div style="font-size:10px;color:#94a3b8;margin-top:4px;text-align:right;font-family:'JetBrains Mono',monospace">数据来源：NOAA CPC/AOML（2009-01 ~ 2012-06）</div>
     <div class="analysis-text">🔵 NAO数据覆盖2009-2026年（NOAA CPC/AOML来源）。当前NAO=+0.10（2026年6月），接近中性。2023年3月NAO=+2.69为近年最强正相位，欧洲冬季偏暖多雨。北大西洋气压梯度变化直接影响欧洲冬季气候和澳洲降水格局。</div>
   </div>
 </div>
@@ -829,7 +825,6 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📊 IOD DMI 时间序列（2009-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:#a16207;margin-left:auto">当前: -0.16°C</span></div>
     <div class="ocean-card-subtitle">周度DMI · BOM数据 · 2016-2026 · 负值对应负IOD事件</div>
     <div class="chart-container"><canvas id="iodChart"></canvas></div>
-    <div style="font-size:10px;color:#94a3b8;margin-top:4px;text-align:right;font-family:'JetBrains Mono',monospace">数据来源：BOM（澳大利亚气象局）</div>
     <div class="analysis-text">🟠 负IOD意味着印度洋西部偏暖、东部偏冷→加剧印尼/澳大利亚干旱→棕榈油风险上升。当前IOD处于弱负相位(-0.16°C)，接近负IOD阈值(-0.4°C)，随着厄尔尼诺发展，负IOD大概率加深。</div>
   </div>
 </div>
@@ -854,6 +849,181 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="info-box"><p>因厄尔尼诺显著减弱，传统Walker上升支东移至中太平洋（160°W附近），太平洋西岸（印尼/菲律宾/中国南部）下沉气流增强。这直接导致：①东南亚降水偏少 ②菲律宾台风生成位置偏东 ③中国南部对流活动受抑制。</p></div>
     </div>
   </div>
+  <!-- IMD 西南季风推进图 -->
+  <div class="ocean-card">
+    <div class="ocean-card-title">🗺️ IMD西南季风推进实况图</div>
+    <div class="ocean-card-subtitle">印度气象局(IMD) · 2026年7月7日 · <a href="https://mausam.imd.gov.in/responsive/monsooninformation.php" target="_blank" style="color:var(--accent-blue)">原始数据</a></div>
+    <div style="text-align:center;margin:12px 0">
+      <img src="https://mausam.imd.gov.in/ClimateInformation/imdweb/DAY_WEEK/onset_SW.gif" alt="IMD西南季风推进图2026" style="max-width:100%;border-radius:8px;border:1px solid var(--border-color)" onerror="this.style.display='none'">
+    </div>
+    <div class="info-box">
+      <p><strong>季风推进状态（截至2026-07-07）：</strong>西南季风已覆盖印度大部分地区，北部边界推进至~30°N（旁遮普/拉贾斯坦）。与常年（红线）相比，今年季风（蓝线）整体推进节奏基本正常，但西北部推进略偏慢5-10天。阿拉伯海和孟加拉湾两支气流均已深入内陆，但季风间歇期（monsoon break）可能导致中部地区阶段性干旱。</p>
+    </div>
+  </div>
+
+  <!-- 全印季风降雨距平 -->
+  <div class="ocean-card">
+    <div class="ocean-card-title">📊 全印夏季季风降雨距平（ISMR）</div>
+    <div class="ocean-card-subtitle">数据来源：<a href="https://mausam.imd.gov.in/responsive/ismr_departure.php" target="_blank">IMD ISMR</a> · 距平基准1971-2020（正常值：JJAS 868.5mm）</div>
+    <div class="three-col" style="margin-bottom:16px">
+      <div class="stat-box">
+        <div class="stat-box-value green">+7.8%</div>
+        <div class="stat-box-label">2025年JJAS全印季风降雨</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-box-value blue">+10.5%</div>
+        <div class="stat-box-label">2020年JJAS（近年来最强）</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-box-value red">-20.9%</div>
+        <div class="stat-box-label">2002年JJAS（近年来最弱）</div>
+      </div>
+    </div>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:11px;text-align:center">
+        <thead>
+          <tr style="background:var(--bg-section)">
+            <th style="padding:6px 4px;border:1px solid var(--border-light)">Year</th>
+            <th style="padding:6px 4px;border:1px solid var(--border-light)">JUN</th>
+            <th style="padding:6px 4px;border:1px solid var(--border-light)">JUL</th>
+            <th style="padding:6px 4px;border:1px solid var(--border-light)">AUG</th>
+            <th style="padding:6px 4px;border:1px solid var(--border-light)">SEP</th>
+            <th style="padding:6px 4px;border:1px solid var(--border-light)">JJAS</th>
+            <th style="padding:6px 4px;border:1px solid var(--border-light)">状态</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background:#eff6ff">
+            <td style="padding:5px 4px;border:1px solid var(--border-light);font-weight:600">2025</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+9.0</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+4.8</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+5.1</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+15.3</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green);font-weight:600">+7.8</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light)">正常偏丰</td>
+          </tr>
+          <tr>
+            <td style="padding:5px 4px;border:1px solid var(--border-light)">2024</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--risk-red)">-10.9</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+8.6</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+15.1</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+11.8</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+7.7</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light)">正常</td>
+          </tr>
+          <tr>
+            <td style="padding:5px 4px;border:1px solid var(--border-light)">2023</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-blue)">-7.5</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+12.8</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--risk-red)">-36.1</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+13.1</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-blue)">-5.3</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light)">略欠</td>
+          </tr>
+          <tr>
+            <td style="padding:5px 4px;border:1px solid var(--border-light)">2022</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-blue)">-7.9</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+16.7</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+3.6</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+8.0</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+6.5</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light)">正常</td>
+          </tr>
+          <tr>
+            <td style="padding:5px 4px;border:1px solid var(--border-light)">2021</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+10.3</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-blue)">-5.0</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--risk-red)">-23.8</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+36.6</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light)">+0.4</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light)">正常</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 厄尔尼诺对印度季风影响 -->
+  <div class="ocean-card">
+    <div class="ocean-card-title">⚠️ 厄尔尼诺对印度季风的历史影响</div>
+    <div class="ocean-card-subtitle">数据来源：<a href="https://mausam.imd.gov.in/responsive/el_nino_ismr.php" target="_blank">IMD El Niño-ISMR</a> · JJAS降雨距平%</div>
+    <div class="info-box" style="margin-bottom:12px">
+      <p>IMD将厄尔尼诺分为三档：<span style="color:var(--accent-blue)">弱（WE, SST异常0.5-1.0°C）</span>、<span style="color:var(--risk-orange)">中等（ME, 1.0-1.5°C）</span>、<span style="color:var(--risk-red)">强（SE, >1.5°C）</span>。历史规律显示厄尔尼诺越强，印度季风偏弱概率越大。</p>
+    </div>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:11px;text-align:center">
+        <thead>
+          <tr style="background:var(--bg-section)">
+            <th style="padding:6px 4px;border:1px solid var(--border-light)">年份</th>
+            <th style="padding:6px 4px;border:1px solid var(--border-light)">JUN</th>
+            <th style="padding:6px 4px;border:1px solid var(--border-light)">JUL</th>
+            <th style="padding:6px 4px;border:1px solid var(--border-light)">AUG</th>
+            <th style="padding:6px 4px;border:1px solid var(--border-light)">SEP</th>
+            <th style="padding:6px 4px;border:1px solid var(--border-light)">JJAS</th>
+            <th style="padding:6px 4px;border:1px solid var(--border-light)">强度</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:5px 4px;border:1px solid var(--border-light)">2023</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-blue)">-7.5</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+12.8</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--risk-red)">-36.1</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+13.1</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-blue)">-5.3</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-blue)">Weak</td>
+          </tr>
+          <tr>
+            <td style="padding:5px 4px;border:1px solid var(--border-light)">2015</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+14.0</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-blue)">-14.4</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--risk-red)">-21.6</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--risk-red)">-22.6</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--risk-red);font-weight:600">-12.7</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--risk-orange)">Moderate</td>
+          </tr>
+          <tr>
+            <td style="padding:5px 4px;border:1px solid var(--border-light)">2009</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--risk-red)">-47.1</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+1.9</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--risk-red)">-24.1</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-blue)">-15.2</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--risk-red);font-weight:600">-18.3</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-blue)">Weak</td>
+          </tr>
+          <tr>
+            <td style="padding:5px 4px;border:1px solid var(--border-light)">2004</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+0.6</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-blue)">-13.4</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-blue)">-0.8</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--risk-red)">-26.6</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--risk-red)">-9.6</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-blue)">Weak</td>
+          </tr>
+          <tr>
+            <td style="padding:5px 4px;border:1px solid var(--border-light)">1997</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+3.8</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+1.5</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+3.2</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-blue)">-10.2</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light)">+0.2</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--risk-red)">Strong</td>
+          </tr>
+          <tr>
+            <td style="padding:5px 4px;border:1px solid var(--border-light)">2002</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-green)">+2.3</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--risk-red)">-50.6</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-blue)">-4.4</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-blue)">-19.0</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--risk-red);font-weight:600">-20.9</td>
+            <td style="padding:5px 4px;border:1px solid var(--border-light);color:var(--accent-blue)">Weak</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="font-size:11px;color:var(--text-muted);margin-top:8px">* 注：1997年强厄尔尼诺未导致严重季风减弱，说明IOD正位相等因子可部分抵消厄尔尼诺影响</div>
+  </div>
+
   <div class="ocean-card">
     <div class="ocean-card-title">🍬 印度季风对白糖的影响</div>
     <div class="ocean-card-subtitle">印度是全球第二大产糖国（占全球约18%），季风直接决定其甘蔗产量与出口能力</div>
@@ -954,7 +1124,6 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div style="font-size:11px;font-weight:600;color:#a16207;margin-bottom:4px">⚠️ 渍涝风险提示</div>
         <div style="font-size:12px;color:#475569">IL表层土壤过剩39%，IN 34%，MO 37%。持续过量降水→局部渍涝+根腐病风险。优良率66%持平去年。</div>
       </div>
-      <div style="font-size:10px;color:#94a3b8;margin-top:8px;text-align:right;font-family:'JetBrains Mono',monospace">数据来源：USDA/UNL Drought Monitor · 更新于 2026-06-30</div>
     </div>
   </div>
 <div class="crop-section" id="crop-小麦">
@@ -1065,7 +1234,6 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           <strong>展望：</strong>7月降水是关键变量，若德州持续少雨，干旱可能反弹。8月后单产和弃收率才能明朗。
         </div>
       </div>
-      <div style="font-size:10px;color:#94a3b8;margin-top:8px;text-align:right;font-family:'JetBrains Mono',monospace">数据来源：USDA/UNL Drought Monitor · 更新于 2026-06-30</div>
     </div>
   </div>
 <div class="crop-section" id="crop-咖啡">
