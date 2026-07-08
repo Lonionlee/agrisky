@@ -1111,7 +1111,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <br><br><strong>1. 加速发展机制：</strong>SOI极端负值与Niño 3.4快速上升构成正反馈，Walker环流减弱→东太平洋SST进一步增暖→对流进一步东移→SOI更负。这一正反馈在当前发展速率上已超越2015年同期。
       <br><br><strong>2. PDO的调制作用：</strong>虽然PDO负相位理论上应抑制ENSO振幅，但当前海洋热含量异常高（次表层暖核+8~+9°C），海洋动力学因素压倒了年代际背景的抑制作用。类似情况出现在1997年和2015年。
       <br><br><strong>3. IOD的放大效应：</strong>负IOD与厄尔尼诺通常同步发展，负IOD→印度洋东冷西暖→东南亚下沉增强→降水减少→土壤干燥→进一步增温。预计8-10月IOD将发展至-0.5~-1.0°C。
-      <br><br><strong>4. 对7大作物的影响链：</strong><br>🌽 玉米：东北渍涝+华北高温+巴威北上威胁<br>🫘 大豆：东北偏湿+美国正常+巴西南部偏冷<br>🌾 小麦：华北已收获+澳洲旱播ENSO偏干<br>🌴 棕榈油：ENSO干旱升级+负IOD放大<br>🍬 白糖：广西灾害+印度季风偏慢<br>🧶 棉花：印度干旱80%+新疆高温+美国零降水<br>☕ 咖啡：巴西历史级干旱+阿拉比卡减产10.5%
+      <br><br><strong>4. 对7大作物的影响链：</strong><br>🌽 玉米：东北渍涝+华北高温<br>🫘 大豆：东北偏湿+美国正常+巴西南部偏冷<br>🌾 小麦：华北已收获+澳洲旱播ENSO偏干<br>🌴 棕榈油：ENSO干旱升级+负IOD放大<br>🍬 白糖：广西灾害+印度季风偏慢<br>🧶 棉花：印度干旱80%+新疆高温+美国零降水<br>☕ 咖啡：巴西历史级干旱+阿拉比卡减产10.5%
       <br><br><strong>5. 未来3个月关键转折点：</strong><br>• 7-8月：Niño 3.4是否突破+2.0°C超强门槛<br>• 8-9月：IOD是否发展至中等负事件(-0.5°C)<br>• 9-10月：ENSO峰值窗口，决定后续农作物产量影响程度
     </div>
   </div>
@@ -1120,7 +1120,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div id="page-weather" class="page-section">
 <div class="section">
   <div class="section-title">七大作物概览</div>
-  <div class="crop-overview-grid"><div class="crop-overview-card" onclick="document.getElementById('crop-玉米').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🌽</div><div class="crop-name">玉米</div><div class="crop-risk" style="background:rgba(249,115,22,0.08);color:var(--risk-orange)">中高风险</div><div class="crop-regions">11个产区</div><div class="crop-summary">东北渍涝+华北高温，巴威北上威胁</div></div>
+  <div class="crop-overview-grid"><div class="crop-overview-card" onclick="document.getElementById('crop-玉米').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🌽</div><div class="crop-name">玉米</div><div class="crop-risk" style="background:rgba(249,115,22,0.08);color:var(--risk-orange)">中高风险</div><div class="crop-regions">11个产区</div><div class="crop-summary">东北渍涝+华北高温</div></div>
 <div class="crop-overview-card" onclick="document.getElementById('crop-大豆').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🫘</div><div class="crop-name">大豆</div><div class="crop-risk" style="background:rgba(234,179,8,0.08);color:#a16207">中风险</div><div class="crop-regions">14个产区</div><div class="crop-summary">东北偏湿，美国正常，巴西南部偏冷</div></div>
 <div class="crop-overview-card" onclick="document.getElementById('crop-小麦').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🌾</div><div class="crop-name">小麦</div><div class="crop-risk" style="background:rgba(34,197,94,0.08);color:#16a34a">低风险</div><div class="crop-regions">15个产区</div><div class="crop-summary">华北已收获，澳洲旱播需关注ENSO</div></div>
 <div class="crop-overview-card" onclick="document.getElementById('crop-棕榈油').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🌴</div><div class="crop-name">棕榈油</div><div class="crop-risk" style="background:rgba(249,115,22,0.08);color:var(--risk-orange)">中高风险</div><div class="crop-regions">3个产区</div><div class="crop-summary">ENSO干旱升级，地下水持续下降</div></div>
@@ -1136,7 +1136,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="crop-chart-card"><div class="chart-title">降水对比 (30天+14天 mm)</div><div class="chart-container short"><canvas id="precip-玉米"></canvas></div></div>
       <div class="crop-chart-card"><div class="chart-title">土壤湿度</div><div class="chart-container short"><canvas id="soil-玉米"></canvas></div></div>
     </div>
-    <div class="analysis-text">东北产区积温正常偏低，但渍涝风险突出（佳木斯30天降水157.6mm，长春14天降水513.8mm极端偏高）。石家庄均高达37.1°C，较常年偏高4-5°C，为极端热事件。华北产区降水偏少，土壤湿度中等偏低。建议关注：①东北渍涝对根系的影响 ②华北高温热害对拔节期的影响 ③巴威北上可能带来的极端降水。</div>
+    <div class="analysis-text">东北产区积温正常偏低，但渍涝风险突出（佳木斯30天降水157.6mm，长春14天降水513.8mm极端偏高）。石家庄均高达37.1°C，较常年偏高4-5°C，为极端热事件。华北产区降水偏少，土壤湿度中等偏低。建议关注：①东北渍涝对根系的影响 ②华北高温热害对拔节期的影响。</div>
   </div>
 <div class="crop-section" id="crop-大豆">
     <div class="crop-section-header"><span class="crop-icon">🫘</span><h3>大豆专区</h3><span class="region-count">14个监测产区</span></div>
@@ -1219,7 +1219,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="crop-chart-card"><div class="chart-title">降水对比 (30天+14天 mm)</div><div class="chart-container short"><canvas id="precip-白糖"></canvas></div></div>
       <div class="crop-chart-card"><div class="chart-title">土壤湿度</div><div class="chart-container short"><canvas id="soil-白糖"></canvas></div></div>
     </div>
-    <div class="analysis-text">广西甘蔗遭受美莎克台风+六蓝溃坝双重打击，南宁30天降水331.8mm，灾害已发生，产量影响待定。印度Lucknow季风严重偏慢（累计降水仅69.3mm），甘蔗苗枯萎风险高。巴西Ribeirão Preto冬季干燥正常。泰国Khon Kaen降水不足。</div>
+    <div class="analysis-text">广西南宁30天降水331.8mm，六蓝溃坝灾害已发生，产量影响待定。印度Lucknow季风严重偏慢（累计降水仅69.3mm），甘蔗苗枯萎风险高。巴西Ribeirão Preto冬季干燥正常。泰国Khon Kaen降水不足。</div>
   </div>
 <div class="crop-section" id="crop-棉花">
     <div class="crop-section-header"><span class="crop-icon">🧶</span><h3>棉花专区</h3><span class="region-count">5个监测产区</span></div>
@@ -1389,7 +1389,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               <td>拔节期</td>
               <td class="mono">490.6</td><td class="mono">36.4</td><td class="mono">37.1</td><td class="mono">26.8</td><td class="mono">0.295</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
-              <td style="max-width:200px;font-size:12px;color:var(--text-muted);">巴威北上暴雨潜在威胁</td>
+              <td style="max-width:200px;font-size:12px;color:var(--text-muted);"></td>
             </tr>
             <tr class="crop-corn" data-crop="玉米">
               <td><span class="crop-badge corn">玉米</span></td>
@@ -1397,7 +1397,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               <td>拔节期</td>
               <td class="mono">463.4</td><td class="mono">81.0</td><td class="mono">33.2</td><td class="mono">25.5</td><td class="mono">0.358</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
-              <td style="max-width:200px;font-size:12px;color:var(--text-muted);">巴威北上暴雨潜在威胁</td>
+              <td style="max-width:200px;font-size:12px;color:var(--text-muted);"></td>
             </tr>
             <tr class="crop-corn" data-crop="玉米">
               <td><span class="crop-badge corn">玉米</span></td>
@@ -1405,7 +1405,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               <td>拔节期</td>
               <td class="mono">513.5</td><td class="mono">55.4</td><td class="mono">34.5</td><td class="mono">25.8</td><td class="mono">0.354</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
-              <td style="max-width:200px;font-size:12px;color:var(--text-muted);">巴威北上暴雨潜在威胁</td>
+              <td style="max-width:200px;font-size:12px;color:var(--text-muted);"></td>
             </tr>
             <tr class="crop-corn" data-crop="玉米">
               <td><span class="crop-badge corn">玉米</span></td>
@@ -1413,7 +1413,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               <td>拔节期</td>
               <td class="mono">522.0</td><td class="mono">93.3</td><td class="mono">36.5</td><td class="mono">26.6</td><td class="mono">0.334</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
-              <td style="max-width:200px;font-size:12px;color:var(--text-muted);">巴威北上暴雨潜在威胁</td>
+              <td style="max-width:200px;font-size:12px;color:var(--text-muted);"></td>
             </tr>
             <tr class="crop-corn" data-crop="玉米">
               <td><span class="crop-badge corn">玉米</span></td>
@@ -1421,7 +1421,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               <td>拔节期</td>
               <td class="mono">508.4</td><td class="mono">62.3</td><td class="mono">33.8</td><td class="mono">26.1</td><td class="mono">0.301</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
-              <td style="max-width:200px;font-size:12px;color:var(--text-muted);">巴威北上暴雨潜在威胁</td>
+              <td style="max-width:200px;font-size:12px;color:var(--text-muted);"></td>
             </tr>
             <tr class="crop-corn" data-crop="玉米">
               <td><span class="crop-badge corn">玉米</span></td>
@@ -1429,7 +1429,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               <td>拔节期</td>
               <td class="mono">478.8</td><td class="mono">49.4</td><td class="mono">32.7</td><td class="mono">25.8</td><td class="mono">0.339</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
-              <td style="max-width:200px;font-size:12px;color:var(--text-muted);">巴威北上暴雨潜在威胁</td>
+              <td style="max-width:200px;font-size:12px;color:var(--text-muted);"></td>
             </tr>
             <!-- 大豆 -->
             <tr class="crop-soy" data-crop="大豆">
@@ -1633,7 +1633,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               <td>拔节伸长期</td>
               <td class="mono">553.5</td><td class="mono">331.8</td><td class="mono">30.6</td><td class="mono">25.2</td><td class="mono">0.483</td>
               <td><span class="risk-badge red"><span class="risk-dot red"></span>高风险</span></td>
-              <td style="max-width:200px;font-size:12px;color:var(--text-muted);">美莎克横穿+六蓝溃坝，灾害已发生产量待定</td>
+              <td style="max-width:200px;font-size:12px;color:var(--text-muted);">六蓝溃坝，灾害已发生产量待定</td>
             </tr>
             <tr class="crop-sugar" data-crop="白糖">
               <td><span class="crop-badge sugar">白糖</span></td>
@@ -1682,7 +1682,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               <td>花铃期</td>
               <td class="mono">463.4</td><td class="mono">81.0</td><td class="mono">33.2</td><td class="mono">25.5</td><td class="mono">0.358</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
-              <td style="max-width:200px;font-size:12px;color:var(--text-muted);">巴威北上潜在威胁</td>
+              <td style="max-width:200px;font-size:12px;color:var(--text-muted);"></td>
             </tr>
             <tr class="crop-cotton" data-crop="棉花">
               <td><span class="crop-badge cotton">棉花</span></td>
@@ -2140,11 +2140,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       </div>
     </div>
     <div>
-      <div style="padding:10px;background:#fff1f0;border-radius:8px;border-left:3px solid var(--risk-red);margin-bottom:8px;">
-        <div style="font-weight:600;color:var(--risk-red);">🔴 台风"巴威" + 东部暴雨（10-15日）</div>
-        <div>台湾/江南/江淮/黄淮/华北/东北自南向北暴雨→大暴雨→局地特大暴雨</div>
-        <div>水稻/玉米/蔬菜受淹+根系早衰+折枝落果</div>
-      </div>
+
       <div style="padding:10px;background:#f0f5ff;border-radius:8px;border-left:3px solid var(--accent-blue);">
         <div style="font-weight:600;color:var(--accent-blue);">🔵 东北降水偏多</div>
         <div>多阵性降雨，低洼农田渍涝风险高</div>
@@ -2230,7 +2226,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <tr><td>强台风</td><td class="mono">41.5-50.9</td><td>毁灭性破坏、基础设施瘫痪</td></tr>
     <tr><td>超强台风</td><td class="mono">≥51.0</td><td>灾难性事件、改变地貌</td></tr>
   </table>
-  <div class="info-box warning"><p>当前巴威（62m/s）属于超强台风级别，已维持超强强度超72小时，这在历史上极为罕见。登陆后虽会减弱，但残余环流深入内陆仍可能造成200-500mm极端降水。</p></div>
+  
   <h4>积温的概念及农业应用</h4>
   <p>积温是指一段时间内日平均气温的累积值，通常以°C·d为单位。不同作物完成一个生育阶段需要一定的有效积温（高于生物学下限温度的部分）。例如：玉米全生育期需≥2500°C·d，小麦需≥1800°C·d。</p>
   <p>积温不足→生育期延迟、灌浆不充分→减产；积温过多→发育过快、籽粒不饱满→品质下降。当前东北玉米30天积温在276-356°C之间，与常年基本持平但偏低。</p>
