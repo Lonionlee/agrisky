@@ -203,7 +203,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="nav-tab" onclick="switchTab('forecast')">天气展望</div>
     <div class="nav-tab" onclick="switchTab('knowledge')">知识科普</div>
   </div>
-  <div class="navbar-status"><div class="status-dot"></div><span>2026-07-08 09:08</span></div>
+  <div class="navbar-status"><div class="status-dot"></div><span>2026-07-08 11:20</span></div>
 </div></nav>
 <div class="page-container"><div id="page-dashboard" class="page-section active">
 
@@ -213,13 +213,13 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div class="summary-card red clickable" onclick="navigateTo('ocean','section-enso')" title="点击查看ENSO详情">
           <div class="summary-label">ENSO状态</div>
           <div class="summary-title">强厄尔尼诺（向超强发展）</div>
-          <div class="summary-value">+1.8<span style="font-size:14px;color:var(--text-muted)">°C</span></div>
+          <div class="summary-value">+1.75<span style="font-size:14px;color:var(--text-muted)">°C</span></div>
           <div class="summary-tag tag-red">🔴 强厄尔尼诺（向超强发展）</div>
         </div>
         <div class="summary-card red clickable" onclick="navigateTo('dashboard','section-typhoon')" title="点击查看台风详情">
           <div class="summary-label">活跃台风</div>
           <div class="summary-title">巴威 超强台风</div>
-          <div class="summary-value">915百帕<span style="font-size:14px;color:var(--text-muted)">hPa</span></div>
+          <div class="summary-value">920百帕<span style="font-size:14px;color:var(--text-muted)">hPa</span></div>
           <div class="summary-tag tag-red">🔴 超强</div>
         </div>
         <div class="summary-card red clickable" onclick="navigateTo('weather','section-riskmatrix')" title="点击查看产区风险">
@@ -246,7 +246,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:16px">
       <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:20px;border-top:3px solid var(--risk-red);transition:all 0.2s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.06)'" onmouseout="this.style.boxShadow='none'">
         <div style="font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Niño 3.4</div>
-        <div style="font-family:'JetBrains Mono';font-size:32px;font-weight:700;color:var(--risk-red);line-height:1.1">+1.8<span style="font-size:14px;color:var(--text-muted)">°C</span></div>
+        <div style="font-family:'JetBrains Mono';font-size:32px;font-weight:700;color:var(--risk-red);line-height:1.1">+1.75<span style="font-size:14px;color:var(--text-muted)">°C</span></div>
         <div style="margin-top:8px;display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:12px;font-weight:600;background:rgba(239,68,68,0.1);color:var(--risk-red)">🔴 强厄尔尼诺（向超强发展）</div>
         <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">月际增量+0.81°C，为有记录以来最快之一。ECMWF预测峰值+3.2°C（11-12月）</div>
       </div>
@@ -264,7 +264,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       </div>
       <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:20px;border-top:3px solid var(--risk-orange);transition:all 0.2s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.06)'" onmouseout="this.style.boxShadow='none'">
         <div style="font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">IOD DMI</div>
-        <div style="font-family:'JetBrains Mono';font-size:32px;font-weight:700;color:var(--risk-orange);line-height:1.1">-0.16<span style="font-size:14px;color:var(--text-muted)">°C</span></div>
+        <div style="font-family:'JetBrains Mono';font-size:32px;font-weight:700;color:var(--risk-orange);line-height:1.1">-0.30<span style="font-size:14px;color:var(--text-muted)">°C</span></div>
         <div style="margin-top:8px;display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:12px;font-weight:600;background:rgba(249,115,22,0.1);color:var(--risk-orange)">🟠 弱负IOD</div>
         <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">接近负IOD事件阈值(-0.4°C)，印度洋东西温差梯度开始建立。关注后续是否发展为正式负IOD事件（持续≥6周，DMI≤-0.4°C）</div>
       </div>
@@ -449,11 +449,11 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           <div class="typhoon-card-body">
             <div class="typhoon-stats">
               <div class="typhoon-stat">
-                <div class="typhoon-stat-value">915百帕</div>
+                <div class="typhoon-stat-value">920百帕</div>
                 <div class="typhoon-stat-label">中心气压 hPa</div>
               </div>
               <div class="typhoon-stat">
-                <div class="typhoon-stat-value">62米/秒</div>
+                <div class="typhoon-stat-value">60米/秒</div>
                 <div class="typhoon-stat-label">风速 m/s</div>
               </div>
               <div class="typhoon-stat">
@@ -462,7 +462,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               </div>
             </div>
             <div class="typhoon-info">
-              位置：台湾基隆东偏南方向约1580公里 (16.9°N, 134.1°E)｜更新于2026-07-08</div>
+              位置：16.8°N, 134.9°E</div>
             <div class="typhoon-path">
               <div class="typhoon-path-title">路径预判</div>
               当前位置(134.1°E) <span class="path-arrow">→</span> 向偏西转西北移动(15-20km/h) <span class="path-arrow">→</span> 逐渐靠近台湾岛东北部沿海 <span class="path-arrow">→</span> 强度先维持，9日开始减弱
@@ -743,12 +743,12 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div class="summary-row" style="display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:0">
     <div class="summary-card red" style="text-align:center;padding:16px;border-radius:10px">
       <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">ENSO Niño3.4</div>
-      <div style="font-family:'JetBrains Mono';font-size:22px;font-weight:700;color:var(--risk-red)">+1.8°C</div>
+      <div style="font-family:'JetBrains Mono';font-size:22px;font-weight:700;color:var(--risk-red)">+1.75°C</div>
       <div style="font-size:11px;color:var(--risk-red);margin-top:4px">🔴 强厄尔尼诺（向超强发展）</div>
     </div>
     <div class="summary-card" style="text-align:center;padding:16px;border-radius:10px;background:rgba(239,68,68,0.05)">
       <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">SOI</div>
-      <div style="font-family:'JetBrains Mono';font-size:22px;font-weight:700;color:var(--risk-red)">-24.4</div>
+      <div style="font-family:'JetBrains Mono';font-size:22px;font-weight:700;color:var(--risk-red)">-14.5</div>
       <div style="font-size:11px;color:var(--risk-red);margin-top:4px">🟠 显著负值</div>
     </div>
     <div class="summary-card" style="text-align:center;padding:16px;border-radius:10px;background:rgba(37,99,235,0.05)">
@@ -763,7 +763,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     </div>
     <div class="summary-card" style="text-align:center;padding:16px;border-radius:10px;background:rgba(249,115,22,0.05)">
       <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">IOD DMI</div>
-      <div style="font-family:'JetBrains Mono';font-size:22px;font-weight:700;color:var(--risk-orange)">-0.16°C</div>
+      <div style="font-family:'JetBrains Mono';font-size:22px;font-weight:700;color:var(--risk-orange)">-0.30°C</div>
       <div style="font-size:11px;color:var(--risk-orange);margin-top:4px">🟠 弱负IOD</div>
     </div>
     <div class="summary-card" style="text-align:center;padding:16px;border-radius:10px;background:rgba(239,68,68,0.05)">
@@ -817,7 +817,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div class="ocean-section">
   <div class="section-title">SOI 南方涛动指数</div>
   <div class="ocean-card">
-    <div class="ocean-card-title">📉 SOI 时间序列（2009-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--risk-red);margin-left:auto">当前: -24.4</span></div>
+    <div class="ocean-card-title">📉 SOI 时间序列（2009-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--risk-red);margin-left:auto">当前: -14.5</span></div>
     <div class="ocean-card-subtitle">NOAA CPC · 月度SLP Anomaly (Stand Tahiti - Stand Darwin) · 2009-01至2026-06</div>
     <div class="chart-container"><canvas id="soiChart"></canvas></div>
     <div class="analysis-text">🔴 SOI持续极端负值(-24.4)表明Walker环流显著减弱，与Niño 3.4快速上升一致。值得注意的是，当前仍处于厄尔尼诺发展初期，SOI已达历史成熟期水平，正反馈机制正在加速厄尔尼诺发展。</div>
@@ -847,7 +847,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div class="ocean-section">
   <div class="section-title" id="section-iod">IOD 印度洋偶极子</div>
   <div class="ocean-card">
-    <div class="ocean-card-title">📊 IOD DMI 时间序列（2009-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:#a16207;margin-left:auto">当前: -0.16°C</span></div>
+    <div class="ocean-card-title">📊 IOD DMI 时间序列（2009-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:#a16207;margin-left:auto">当前: -0.30°C</span></div>
     <div class="ocean-card-subtitle">周度DMI · BOM数据 · 2016-2026 · 负值对应负IOD事件</div>
     <div class="chart-container"><canvas id="iodChart"></canvas></div>
     <div class="analysis-text">🟠 负IOD意味着印度洋西部偏暖、东部偏冷→加剧印尼/澳大利亚干旱→棕榈油风险上升。当前IOD处于弱负相位(-0.16°C)，接近负IOD阈值(-0.4°C)，随着厄尔尼诺发展，负IOD大概率加深。</div>
