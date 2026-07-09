@@ -219,8 +219,8 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div class="summary-card red clickable" onclick="navigateTo('dashboard','section-typhoon')" title="点击查看台风详情">
           <div class="summary-label">活跃台风</div>
           <div class="summary-title">巴威 超强台风级</div>
-          <div class="summary-value">925百帕<span style="font-size:14px;color:var(--text-muted)">hPa</span></div>
-          <div class="summary-tag tag-red">🔴 超强</div>
+          <div class="summary-value">930百帕<span style="font-size:14px;color:var(--text-muted)">hPa</span></div>
+          <div class="summary-tag tag-red">🔴 超强·黄色预警</div>
         </div>
         <div class="summary-card red clickable" onclick="navigateTo('weather','section-riskmatrix')" title="点击查看产区风险">
           <div class="summary-label">高风险产区</div>
@@ -444,16 +444,16 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div class="typhoon-card">
           <div class="typhoon-card-header">
             <h3>巴威 (Bavi)</h3>
-            <span class="category-badge cat-red">超强台风级</span>
+            <span class="category-badge cat-red">超强台风级 · 黄色预警</span>
           </div>
           <div class="typhoon-card-body">
             <div class="typhoon-stats">
               <div class="typhoon-stat">
-                <div class="typhoon-stat-value">925百帕</div>
+                <div class="typhoon-stat-value">930百帕</div>
                 <div class="typhoon-stat-label">中心气压 hPa</div>
               </div>
               <div class="typhoon-stat">
-                <div class="typhoon-stat-value">58米/秒</div>
+                <div class="typhoon-stat-value">55米/秒</div>
                 <div class="typhoon-stat-label">风速 m/s</div>
               </div>
               <div class="typhoon-stat">
@@ -462,10 +462,10 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               </div>
             </div>
             <div class="typhoon-info">
-              位置：17.1°N, 132.5°E（7月8日17时）｜已维持超强台风级超88小时</div>
+              位置：17.9°N, 130.5°E（7月9日05时）｜已维持超强台风级超96小时｜已进入48h警戒线</div>
             <div class="typhoon-path">
               <div class="typhoon-path-title">路径预判</div>
-              当前位置(132.5°E) <span class="path-arrow">→</span> 偏西转西北(15-20km/h) <span class="path-arrow">→</span> 7/10进入24h警戒区 <span class="path-arrow">→</span> 7/11白天登陆或擦过台湾北部(14-16级) <span class="path-arrow">→</span> 7/11晚登陆闽浙沿海(13-14级) <span class="path-arrow">→</span> 深入内陆，残余环流影响华中华北
+              当前位置(130.5°E) <span class="path-arrow">→</span> 西北行(15-20km/h) <span class="path-arrow">→</span> 24h预报(127.4°E/930hPa/55m/s) <span class="path-arrow">→</span> 7/11白天登陆或擦过台湾北部(超强/强台风级，14-16级) <span class="path-arrow">→</span> 7/11晚~7/12登陆闽浙沿海(强台风级) <span class="path-arrow">→</span> 深入内陆影响华中/华北/黄淮
             </div>
             <div class="typhoon-risk">
               ⚠️ 影响预判：巨型台风（云系直径1300km），对标2019利奇马<br>
@@ -490,12 +490,12 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               ⚠️ 双台风接踵：美莎克残余+巴威逼近，南北两线防汛迎大考。巴威7/11登陆闽浙，对标2019利奇马
             </div>
             <div class="alerts-list">
-              <div class="alerts-title">预警信息</div>
-              <div class="alert-item">暴雨橙色预警（7月7日6时）：广西/江苏/山东/辽宁大暴雨</div>
-              <div class="alert-item">强对流蓝色预警（7月7日18时）：华北/黄淮10-11级雷暴大风</div>
-              <div class="alert-item">江苏中北部/安徽北部不排除龙卷可能</div>
-              <div class="alert-item">风暴潮红色预警：巴威7/10-12影响东部海域</div>
-              <div class="alert-item">🟡 地质灾害黄色预警（7月8日8时）：吉林丰满区/蛟河市/龙潭区/永吉县风险较高；昌邑区/船营区/桦甸市/磐石市/舒兰市/延边多县蓝色预警</div>
+              <div class="alerts-title">预警信息（7月9日06时 三预警齐发）</div>
+              <div class="alert-item">🟡 台风黄色预警（7月9日06时）：巴威16级/55m/s/930hPa，11日登陆或擦过台湾北部</div>
+              <div class="alert-item">🔵 暴雨蓝色预警（7月9日06时）：辽宁中部/河北东部/山东中部大暴雨100-150mm</div>
+              <div class="alert-item">🟡 强对流黄色预警（7月9日06时）：河北中南部/山东北部10-11级雷暴大风，局地龙卷</div>
+              <div class="alert-item">大风预报：9日8时-10日8时，巴士海峡/台湾海峡/台湾以东洋面/东海6-9级阵风10-11级</div>
+              <div class="alert-item">江苏：中小学/幼儿园7/9下午-7/10停课；上海客轮9日起停航；浙江启动Ⅲ级防台响应</div>
             </div>
           </div>
         </div>
@@ -503,20 +503,25 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div class="typhoon-card">
           <div class="typhoon-card-header" style="background: linear-gradient(135deg, #8b0000, #c0392b);">
             <h3>️ 强对流天气预警</h3>
-            <span class="category-badge" style="background:#fff;color:#8b0000;font-size:10px;">NMC 07-08 10时</span>
+            <span class="category-badge" style="background:#fff;color:#8b0000;font-size:10px;">NMC 07-09 06时</span>
           </div>
           <div class="typhoon-card-body">
             <div class="typhoon-info" style="margin-bottom:12px;">
-              <strong style="color:#8b0000;">河北北京山东安徽江苏等地将有强对流天气 | 吉林发布地质灾害黄色预警</strong>
+              <strong style="color:#8b0000;">华北黄淮等地强对流黄色预警 | 三预警齐发（台风黄+暴雨蓝+强对流黄）</strong>
             </div>
             <div style="font-size:11px;color:var(--text-secondary);line-height:1.7;margin-bottom:8px;">
-              <div style="padding:8px;background:#fff1f0;border-radius:6px;border-left:3px solid #8b0000;margin-bottom:6px;">
-                <strong style="color:#8b0000;">已发生（05-08时）</strong><br>
-                内蒙古东北部、吉林西部、辽宁东部、江苏中东部、四川南部、云南东南部/北部、广西、广东中东部/南部、海南岛东南部出现短时强降水，小时雨量20-30mm，局地50mm+
-              </div>
               <div style="padding:8px;background:#fff7e6;border-radius:6px;border-left:3px solid #d48806;margin-bottom:6px;">
-                <strong style="color:#d48806;">预报（7/8 14时-7/9 08时）</strong><br>
-                河北中北部/东部、北京、天津、山东、安徽中部/南部、江苏中北部/南部、内蒙古中南部/东部、吉林中部/东部、辽宁中东部、山西东南部、湖北西部、湖南中西部/南部、江西中部、四川南部、贵州西北部、云南中部/西南部、广西东南部/北部、广东中北部/西南部沿海、海南岛将出现短时强降水，小时雨量20-50mm，局地80mm+；内蒙古中东部、吉林东部、辽宁北部/东部、山西南部、河北中北部/东部、北京、天津、山东、河南北部、安徽中部/东南部、江苏中南部、湖北西南部、湖南中西部、浙江北部、云南西部/中北部、广东北部局地将有雷暴大风或冰雹
+                <strong style="color:#d48806;">强对流预报（7/9 08时-10日08时）</strong><br>
+                <b>雷暴大风/冰雹</b>：东北中部/南部、华北北部/中东部、黄淮东部、江淮东部、江南东北部、华南中北部 | <span style="color:#8b0000;font-weight:600">河北中南部/山东北部10级以上雷暴大风，最大11级+，局地不排除龙卷</span><br>
+                <b>短时强降水</b>：辽宁东南部/河北东北/中南部/山东北部小时雨量>50mm，最大80mm+
+              </div>
+              <div style="padding:8px;background:#e6f7ff;border-radius:6px;border-left:3px solid #1890ff;margin-bottom:6px;">
+                <strong style="color:#1890ff;">暴雨蓝色预警（7/9 08时-10日08时）</strong><br>
+                内蒙古中部/东北、黑龙江东南、吉林中部、辽宁中北部/东部、河北东部、天津南部、山东中北部、陕西北部、云南西部/南部、广西东部/南部、广东西南部、海南岛 | <b>辽宁中部/河北东部/山东中部大暴雨100-150mm</b>
+              </div>
+              <div style="padding:8px;background:#fff1f0;border-radius:6px;border-left:3px solid #8b0000;margin-bottom:6px;">
+                <strong style="color:#8b0000;">台风大风预报（9日8时-10日8时）</strong><br>
+                巴士海峡、台湾海峡、台湾以东洋面、东海东部偏南海域风力6-9级，阵风10-11级
               </div>
             </div>
             <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px;">
@@ -1138,7 +1143,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="crop-chart-card"><div class="chart-title">降水对比 (30天+14天 mm)</div><div class="chart-container short"><canvas id="precip-玉米"></canvas></div></div>
       <div class="crop-chart-card"><div class="chart-title">土壤湿度</div><div class="chart-container short"><canvas id="soil-玉米"></canvas></div></div>
     </div>
-    <div class="analysis-text">东北产区积温正常偏低，但渍涝风险突出（佳木斯30天降水133.8mm，长春30天降水255.1mm极端偏高）。石家庄均高达35.4°C，较常年偏高2-3°C，为极端热事件。华北产区降水偏少，土壤湿度中等偏低。建议关注：①东北渍涝对根系的影响 ②华北高温热害对拔节期的影响 ③巴威北上可能带来的极端降水。</div>
+    <div class="analysis-text">东北产区积温正常偏低，但渍涝风险突出（佳木斯30天降水133.8mm，长春30天降水255.1mm极端偏高）。石家庄均高达35.4°C，较常年偏高2-3°C，为极端热事件。华北产区降水偏少，土壤湿度中等偏低。<b style="color:var(--risk-red)">【7/9更新】</b>巴威已进入48h警戒线(16级/55m/s)，7/9-10北方暴雨+强对流三预警齐发，辽宁中部/河北东部/山东中部大暴雨100-150mm，河北中南部/山东北部11级+雷暴大风局地龙卷。建议关注：①东北渍涝+巴威叠加极端降水 ②华北强对流灾害 ③7/11后台风残余环流深入内陆的持续性降水。</div>
   </div>
 <div class="crop-section" id="crop-大豆">
     <div class="crop-section-header"><span class="crop-icon">🫘</span><h3>大豆专区</h3><span class="region-count">14个监测产区</span></div>
