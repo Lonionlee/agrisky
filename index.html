@@ -21,7 +21,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes pulse { 0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); } 50% { opacity: 0.8; box-shadow: 0 0 0 4px rgba(34, 197, 94, 0); } }
 .section { animation: fadeInUp 0.5s ease-out both; }
-.navbar { background: var(--bg-page); border-bottom: 2px solid var(--accent-blue); padding: 0 32px; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+.navbar { background: var(--bg-page); border-bottom: 2px solid var(--accent-blue); padding: 0 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
 .navbar-inner { max-width: 1600px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; height: 60px; }
 .navbar-brand { display: flex; align-items: baseline; gap: 12px; }
 .navbar-brand h1 { font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 700; color: var(--accent-blue); letter-spacing: -0.5px; }
@@ -1448,8 +1448,8 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               <th>当前生育期</th>
               <th>30天积温(°C)</th>
               <th>30天降水(mm)</th>
-              <th>14天最高温(°C)</th>
-              <th>14天最低温(°C)</th>
+              <th>14天均高(°C)</th>
+              <th>14天均低(°C)</th>
               <th>土壤湿度</th>
               <th>风险等级</th>
               <th>风险说明</th>
