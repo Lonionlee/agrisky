@@ -313,7 +313,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="nav-tab" onclick="switchTab('forecast')">天气展望</div>
     <div class="nav-tab" onclick="switchTab('knowledge')">知识科普</div>
   </div>
-  <div class="navbar-status"><div class="status-dot"></div><span>2026-07-08</span></div>
+  <div class="navbar-status"><div class="status-dot"></div><span id="nav-date">2026-07-09</span></div>
 </div></nav>
 <div class="page-container"><div id="page-dashboard" class="page-section active">
 
@@ -641,7 +641,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               <img src="http://image.nmc.cn/product/2026/07/08/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260708220000000_base64_4.jpg?v=1783548552816" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" />
             </div>
             <div style="font-size:10px;color:var(--text-muted);margin-top:6px;">
-              来源：<a href="http://www.nmc.cn/publish/bulletin/swpc.html" target="_blank" style="color:var(--accent-blue);">中央气象台强对流天气预报</a>（2026-07-08）
+              来源：<a href="http://www.nmc.cn/publish/bulletin/swpc.html" target="_blank" style="color:var(--accent-blue);">中央气象台强对流天气预报</a>（2026-07-09）
             </div>
           </div>
         </div>
@@ -766,7 +766,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div class="timeline">
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-07-08</span>
+              <span class="timeline-date">2026-07-09</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
             <div class="timeline-title">超强台风巴威逼近华东<span class="timeline-type">台风</span></div>
@@ -775,7 +775,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           </div>
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-07-08</span>
+              <span class="timeline-date">2026-07-09</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
             <div class="timeline-title">华北/黄淮强对流+暴雨双预警<span class="timeline-type">强对流</span></div>
@@ -784,7 +784,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           </div>
           <div class="timeline-item severity-orange">
             <div class="timeline-header">
-              <span class="timeline-date">2026-07-08</span>
+              <span class="timeline-date">2026-07-09</span>
               <span class="timeline-severity severity-orange-tag">ORANGE</span>
             </div>
             <div class="timeline-title">湖北强对流致8死1失联<span class="timeline-type">龙卷风</span></div>
@@ -793,7 +793,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           </div>
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-07-08</span>
+              <span class="timeline-date">2026-07-09</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
             <div class="timeline-title">巴西咖啡产区历史级干旱<span class="timeline-type">干旱</span></div>
@@ -802,7 +802,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           </div>
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-07-08</span>
+              <span class="timeline-date">2026-07-09</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
             <div class="timeline-title">横州六蓝水库溃坝<span class="timeline-type">溃坝</span></div>
@@ -811,7 +811,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           </div>
           <div class="timeline-item severity-orange">
             <div class="timeline-header">
-              <span class="timeline-date">2026-07-08</span>
+              <span class="timeline-date">2026-07-09</span>
               <span class="timeline-severity severity-orange-tag">ORANGE</span>
             </div>
             <div class="timeline-title">东北玉米三重风险<span class="timeline-type">渍涝</span></div>
@@ -820,7 +820,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           </div>
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-07-08</span>
+              <span class="timeline-date">2026-07-09</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
             <div class="timeline-title">美莎克重创广西蔗区<span class="timeline-type">台风</span></div>
@@ -829,7 +829,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           </div>
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-07-08</span>
+              <span class="timeline-date">2026-07-09</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
             <div class="timeline-title">印度季风严重偏慢<span class="timeline-type">干旱</span></div>
@@ -2694,6 +2694,9 @@ en05:{type:'line',yMin:0.5,yMax:0.5,borderColor:'rgba(220,38,38,0.4)',borderWidt
 la05:{type:'line',yMin:-0.5,yMax:-0.5,borderColor:'rgba(37,99,235,0.4)',borderWidth:1,borderDash:[4,4],label:{content:'La Niña -0.5',display:true,position:'end',font:{size:9},color:'#2563eb'}}
 }}}});
 })();
+
+// 自动设置navbar日期为当前日期
+(function(){var d=new Date();var y=d.getFullYear();var m=String(d.getMonth()+1).padStart(2,"0");var day=String(d.getDate()).padStart(2,"0");var el=document.getElementById("nav-date");if(el)el.textContent=y+"-"+m+"-"+day;})();
 
 </script>
 </body>
