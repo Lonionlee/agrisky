@@ -186,6 +186,18 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 .sst-item .sst-value.warm { color: var(--risk-red); } .sst-item .sst-value.cool { color: var(--accent-blue); }
 .sst-item .sst-desc { font-size: 10px; color: var(--text-muted); margin-top: 4px; }
 
+
+/* Region Detail Nav & Table */
+.region-detail-nav { display:flex; gap:6px; flex-wrap:wrap; margin:12px 0 8px; }
+.region-pill { display:inline-flex; align-items:center; gap:4px; padding:4px 10px; border-radius:16px; font-size:11px; font-weight:600; cursor:pointer; transition:all 0.2s; border:1px solid var(--border-color); background:var(--bg-card); color:var(--text-secondary); }
+.region-pill:hover { border-color:var(--accent-blue); color:var(--accent-blue); box-shadow:0 2px 6px rgba(37,99,235,0.12); transform:translateY(-1px); }
+.region-detail-table { width:100%; border-collapse:collapse; font-size:11px; margin:10px 0; }
+.region-detail-table th { background:var(--bg-section); padding:8px 10px; text-align:left; font-weight:600; color:var(--text-secondary); border-bottom:2px solid var(--border-color); font-size:10px; white-space:nowrap; }
+.region-detail-table td { padding:7px 10px; border-bottom:1px solid var(--border-light); color:var(--text-secondary); font-family:'JetBrains Mono',monospace; font-size:10px; }
+.region-detail-table tr:hover { background:rgba(37,99,235,0.04); }
+.region-detail-table tr.highlight-row { background:rgba(37,99,235,0.1); transition:background 0.5s; }
+.region-detail-table .region-name { font-family:'Outfit',sans-serif; font-weight:600; color:var(--text-primary); font-size:11px; }
+.region-detail-table .risk-badge { display:inline-block; padding:2px 6px; border-radius:3px; font-size:9px; font-weight:700; }
 /* Ocean Index Sticky Nav */
 .ocean-nav {
   position: sticky;
@@ -2540,6 +2552,78 @@ function initWeather(){
       new Chart(e4.getContext('2d'),{type:'bar',data:{labels:d.names,datasets:[{label:'土壤湿度',data:d.soils,backgroundColor:sc,borderRadius:3},{label:'历史均值',data:avgLine2,type:'line',borderColor:'#f59e0b',borderWidth:2,borderDash:[6,4],pointRadius:0,fill:false,order:0}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false}},scales:{x:{grid:{color:'rgba(226,232,240,0.3)'},ticks:{color:'#94a3b8'},min:0,max:0.55},y:{grid:{color:'rgba(226,232,240,0.3)'},ticks:{color:'#94a3b8',font:{size:9}}}}}});
     }
   });
+
+
+  // ===== 产区详细数据导航 + 数据表 =====
+  var cropKeyEn = {'玉米':'corn','大豆':'soy','小麦':'wheat','棕榈油':'palm','白糖':'sugar','棉花':'cotton','咖啡':'coffee'};
+  Object.keys(D.crop_chart_data).forEach(function(crop){
+    var d = D.crop_chart_data[crop];
+    var sec = document.getElementById('crop-' + crop);
+    if(!sec) return;
+    var header = sec.querySelector('.crop-section-header');
+    if(!header) return;
+    var thresholds = D.crop_risk_thresholds[crop] || {};
+    
+    // Region nav pills
+    var navDiv = document.createElement('div');
+    navDiv.className = 'region-detail-nav';
+    d.names.forEach(function(r, i){
+      var pill = document.createElement('span');
+      pill.className = 'region-pill';
+      pill.setAttribute('data-crop', crop);
+      pill.setAttribute('data-region', r);
+      pill.textContent = r;
+      pill.onclick = function(){
+        var el = document.getElementById('region-' + crop + '-' + i);
+        if(el){
+          el.scrollIntoView({behavior:'smooth', block:'center'});
+          el.classList.add('highlight-row');
+          setTimeout(function(){ el.classList.remove('highlight-row'); }, 2500);
+        }
+      };
+      navDiv.appendChild(pill);
+    });
+    header.after(navDiv);
+    
+    // Region detail table
+    var wrap = document.createElement('div');
+    wrap.style.cssText = 'overflow-x:auto; margin:8px 0;';
+    var tbl = document.createElement('table');
+    tbl.className = 'region-detail-table';
+    tbl.innerHTML = '<thead><tr><th>产区</th><th>30天积温(°C)</th><th>14天均高</th><th>14天均低</th><th>30天降水(mm)</th><th>14天降水</th><th>土壤湿度</th><th>风险信号</th></tr></thead>';
+    var tbody = document.createElement('tbody');
+    d.names.forEach(function(r, i){
+      var soil = d.soils[i];
+      var acc = d.acc_temps[i];
+      var soilRisk = soil <= (thresholds.soil_severe_dry||0.15) ? '🔴 干旱' :
+                     soil <= (thresholds.soil_moderate_dry||0.25) ? '🟡 偏干' :
+                     soil >= (thresholds.soil_saturation||0.40) ? '🔵 过湿' : '🟢 正常';
+      var soilBg = soil <= (thresholds.soil_severe_dry||0.15) ? 'rgba(239,68,68,0.08)' :
+                   soil <= (thresholds.soil_moderate_dry||0.25) ? 'rgba(234,179,8,0.08)' :
+                   soil >= (thresholds.soil_saturation||0.40) ? 'rgba(37,99,235,0.08)' : 'rgba(34,197,94,0.08)';
+      var soilColor = soil <= (thresholds.soil_severe_dry||0.15) ? '#ef4444' :
+                      soil <= (thresholds.soil_moderate_dry||0.25) ? '#a16207' :
+                      soil >= (thresholds.soil_saturation||0.40) ? '#2563eb' : '#16a34a';
+      var tr = document.createElement('tr');
+      tr.id = 'region-' + crop + '-' + i;
+      tr.innerHTML = '<td class="region-name">' + r + '</td>' +
+        '<td>' + acc.toFixed(1) + '</td>' +
+        '<td>' + d.max_temps[i].toFixed(1) + '</td>' +
+        '<td>' + d.min_temps[i].toFixed(1) + '</td>' +
+        '<td>' + d.precip_30[i].toFixed(1) + '</td>' +
+        '<td>' + d.precip_14[i].toFixed(1) + '</td>' +
+        '<td>' + soil.toFixed(3) + '</td>' +
+        '<td><span class="risk-badge" style="background:' + soilBg + ';color:' + soilColor + '">' + soilRisk + '</span></td>';
+      tbody.appendChild(tr);
+    });
+    tbl.appendChild(tbody);
+    wrap.appendChild(tbl);
+    // Insert after nav but before charts
+    var chartsGrid = sec.querySelector('.crop-charts-grid');
+    if(chartsGrid){ chartsGrid.after(wrap); }
+    else { navDiv.after(wrap); }
+  });
+
 }
 
 function computeRisks(){
