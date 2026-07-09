@@ -191,6 +191,74 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 .monsoon-bar .bar-fill { height: 100%; border-radius: 10px; transition: width 0.5s; }
 .monsoon-bar .bar-value { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; min-width: 80px; text-align: right; }
 ::-webkit-scrollbar { width: 6px; height: 6px; } ::-webkit-scrollbar-track { background: var(--bg-section); } ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; } ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* Knowledge Category Navigation */
+.knowledge-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(135deg, rgba(255,255,255,0.97), rgba(240,249,255,0.97));
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 16px 20px 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.knowledge-nav-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.knowledge-nav-groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.knowledge-nav-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: rgba(59,130,246,0.06);
+  border-radius: 8px;
+  border: 1px solid rgba(59,130,246,0.12);
+}
+.knowledge-nav-group-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent-blue);
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+.knowledge-nav-link {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 3px 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-block;
+}
+.knowledge-nav-link:hover {
+  background: rgba(59,130,246,0.12);
+  color: var(--accent-blue);
+  transform: translateY(-1px);
+}
+.knowledge-nav-divider {
+  width: 1px;
+  height: 20px;
+  background: var(--border-color);
+  margin: 0 4px;
+}
+
 </style>
 </head>
 <body>
@@ -245,7 +313,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="section-title">A. 当前海洋-大气状态诊断</div>
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:16px">
       <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:20px;border-top:3px solid var(--risk-red);transition:all 0.2s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.06)'" onmouseout="this.style.boxShadow='none'">
-        <div style="font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Niño 3.4</div>
+        <div style="font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Niño 3.4 (周度SST)</div>
         <div style="font-family:'JetBrains Mono';font-size:32px;font-weight:700;color:var(--risk-red);line-height:1.1">+1.80<span style="font-size:14px;color:var(--text-muted)">°C</span></div>
         <div style="margin-top:8px;display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:12px;font-weight:600;background:rgba(239,68,68,0.1);color:var(--risk-red)">🔴 强厄尔尼诺（向超强发展）</div>
         <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">El Niño conditions are present and expected to strengthen into the Northern Hemisphere winter 2026-27.</div>
@@ -254,24 +322,24 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div style="font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">PDO</div>
         <div style="font-family:'JetBrains Mono';font-size:32px;font-weight:700;color:var(--accent-blue);line-height:1.1">-1.34</div>
         <div style="margin-top:8px;display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:12px;font-weight:600;background:rgba(37,99,235,0.08);color:var(--accent-blue)">🔵 强冷相位</div>
-        <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">La Niña-like背景场，理论上应抑制ENSO振幅，但次表层暖核+8~+9°C压倒了年代际抑制</div>
+        <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">PDO冷位相（北太平洋马蹄形SST冷距平格局）→副高偏弱偏北，理论上削弱ENSO-季风遥相关强度（r从-0.63降至-0.24），但次表层暖核+8~+9°C压倒年代际抑制</div>
       </div>
       <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:20px;border-top:3px solid #94a3b8;transition:all 0.2s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.06)'" onmouseout="this.style.boxShadow='none'">
         <div style="font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">NAO</div>
         <div style="font-family:'JetBrains Mono';font-size:32px;font-weight:700;color:#64748b;line-height:1.1">+0.10</div>
         <div style="margin-top:8px;display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:12px;font-weight:600;background:rgba(100,116,139,0.08);color:#64748b">⚪ 接近中性</div>
-        <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">北大西洋气压梯度接近零，对欧洲夏季气候影响有限。夏季通常转为弱负位相</div>
+        <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">冰岛低压-亚速尔高压气压梯度接近零（夏季NAO影响有限，信号主要在冬季12-3月）。CGT遥相关可影响东亚但当前信号弱</div>
       </div>
       <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:20px;border-top:3px solid var(--risk-orange);transition:all 0.2s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.06)'" onmouseout="this.style.boxShadow='none'">
         <div style="font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">IOD DMI</div>
         <div style="font-family:'JetBrains Mono';font-size:32px;font-weight:700;color:var(--risk-orange);line-height:1.1">-0.16<span style="font-size:14px;color:var(--text-muted)">°C</span></div>
         <div style="margin-top:8px;display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:12px;font-weight:600;background:rgba(249,115,22,0.1);color:var(--risk-orange)">🟠 弱负IOD</div>
-        <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">接近负IOD事件阈值(-0.4°C)，印度洋东西温差梯度开始建立。关注后续是否发展为正式负IOD事件（持续≥6周，DMI≤-0.4°C）</div>
+        <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">DMI（印度洋偶极模态指数=西印度洋SST距平-东印度洋SST距平）接近事件阈值。负IOD事件判定标准：DMI连续≥6周≤-0.4°C。当前负IOD发展中，随El Niño加深大概率突破阈值</div>
       </div>
     </div>
     <div class="analysis-text" style="margin-top:0">
-      <strong>🔗 综合诊断：</strong>当前处于El Niño发展期（周度+1.8°C→预测峰值+3.0°C），PDO冷位相（-1.34）形成年代际对冲，IOD负相位（-0.16°C）发展中。NAO接近中性。<br><br>
-      <strong>关键耦合信号：</strong>①ENSO强正+IOD负→经典遥相关组合，东南亚干旱风险极高；②负IOD→印度洋西暖东冷→有利于印度季风低压发展→印度季风降水可能获得部分补偿（较纯El Niño年份平均多5-10%）；③PDO冷位相→西太平洋副高偏弱偏东偏北→东亚夏季风偏强→中国东部雨带偏北。
+      <strong>🔗 综合诊断：</strong>当前处于El Niño发展期（周度Niño 3.4 SST距平+1.80°C→CPC/ECMWF预测峰值+3.0°C，10-12月），ONI尚未正式确认事件。PDO强冷位相（-1.34，ERSSTv5月均）形成年代际对冲。IOD负相位（DMI -0.16°C，BOM周度）发展中，接近事件阈值。NAO接近中性（夏季信号弱）。<br><br>
+      <strong>关键耦合信号：</strong>①El Niño+负IOD协同→Walker环流下沉支覆盖整个印太暖池区，东南亚干旱风险极高（负IOD使东南亚降水偏少额外增加5-10%）；②负IOD→西印度洋偏暖→有利于印度季风低压热力维持→印度季风降水可能获部分补偿；③PDO冷位相→WPSH偏弱/脊线偏北/西伸偏东→东亚夏季风偏强→雨带偏北（Zhang et al. 2025 J. Climate）。
     </div>
   </div>
 
@@ -382,7 +450,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:20px">
         <div style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:14px">🌊 海洋指数趋势预判</div>
         <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 12px;background:rgba(239,68,68,0.04);border-radius:6px;margin-bottom:8px;border-left:3px solid var(--risk-red)">
-          <span style="font-weight:600;font-size:12px;min-width:100px">ENSO</span>
+          <span style="font-weight:600;font-size:12px;min-width:100px">ENSO (Niño 3.4)</span>
           <span style="font-size:12px;color:var(--text-secondary)">持续增强，8-9月预计突破+2.0°C超强门槛。ECMWF预测9月+2.3°C</span>
         </div>
         <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 12px;background:rgba(37,99,235,0.04);border-radius:6px;margin-bottom:8px;border-left:3px solid var(--accent-blue)">
@@ -395,7 +463,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         </div>
         <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 12px;background:rgba(249,115,22,0.04);border-radius:6px;border-left:3px solid var(--risk-orange)">
           <span style="font-weight:600;font-size:12px;min-width:100px">IOD</span>
-          <span style="font-size:12px;color:var(--text-secondary)">负IOD预计加深至-0.8~-1.2°C（8-10月），与El Niño正反馈。有利于印度季风但加剧东南亚干旱</span>
+          <span style="font-size:12px;color:var(--text-secondary)">负IOD预计加深至DMI -0.8~-1.2°C（8-10月），通过Walker环流与El Niño正反馈。有利于印度季风（西印度洋暖极加热）但加剧印尼-澳洲干旱</span>
         </div>
       </div>
       <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:20px">
@@ -769,8 +837,8 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="sst-item"><div class="sst-name">超级海洋热浪</div><div class="sst-value warm">13.5%</div><div class="sst-desc">占地球海洋面积</div></div>
       <div class="sst-item"><div class="sst-name">印度洋整体</div><div class="sst-value warm">+0.3°C</div><div class="sst-desc">整体偏暖但东西梯度异常</div></div>
       <div class="sst-item"><div class="sst-name">西太平洋暖池</div><div class="sst-value warm">+0.5°C</div><div class="sst-desc">略偏暖但低于常年</div></div>
-      <div class="sst-item"><div class="sst-name">北大西洋</div><div class="sst-value cool">-0.2°C</div><div class="sst-desc">NAO负相位导致偏冷</div></div>
-      <div class="sst-item"><div class="sst-name">南极绕极流</div><div class="sst-value cool">-0.5°C</div><div class="sst-desc">PDO负相位信号</div></div>
+      <div class="sst-item"><div class="sst-name">北大西洋</div><div class="sst-value cool">-0.2°C</div><div class="sst-desc">AMV负位相偏冷（NAO夏季信号弱）</div></div>
+      <div class="sst-item"><div class="sst-name">南太平洋</div><div class="sst-value cool">-0.5°C</div><div class="sst-desc">PDO冷位相南太平洋冷舌</div></div>
     </div>
   </div>
 </div>
@@ -780,12 +848,12 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div class="section-title">气候指数面板</div>
   <div class="summary-row" style="display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:0">
     <div class="summary-card red" style="text-align:center;padding:16px;border-radius:10px">
-      <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">ENSO Niño3.4</div>
+      <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">Niño 3.4 周度SST距平</div>
       <div style="font-family:'JetBrains Mono';font-size:22px;font-weight:700;color:var(--risk-red)">+1.80°C</div>
       <div style="font-size:11px;color:var(--risk-red);margin-top:4px">🔴 强厄尔尼诺（向超强发展）</div>
     </div>
     <div class="summary-card" style="text-align:center;padding:16px;border-radius:10px;background:rgba(239,68,68,0.05)">
-      <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">SOI</div>
+      <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">SOI (BOM 30日)</div>
       <div style="font-family:'JetBrains Mono';font-size:22px;font-weight:700;color:var(--risk-red)">-24.9</div>
       <div style="font-size:11px;color:var(--risk-red);margin-top:4px">🔴 极端负值</div>
     </div>
@@ -815,7 +883,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div class="ocean-section">
   <div class="section-title" id="section-enso">ENSO 深度分析</div>
   <div class="stat-row">
-    <div class="stat-box"><div class="stat-box-value red">+1.8°C</div><div class="stat-box-label">当前 Niño 3.4 (2026年7月初)</div></div>
+    <div class="stat-box"><div class="stat-box-value red">+1.8°C</div><div class="stat-box-label">当前 Niño 3.4 周度SST距平（2026年7月初·CPC）</div></div>
     <div class="stat-box"><div class="stat-box-value red">强厄尔尼诺</div><div class="stat-box-label">向超强发展 · 次表层暖核+8~+9°C</div></div>
     <div class="stat-box"><div class="stat-box-value red">63%</div><div class="stat-box-label">NOAA超强事件概率 (峰值&gt;2.0°C)</div></div>
   </div>
@@ -856,9 +924,9 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div class="section-title">SOI 南方涛动指数</div>
   <div class="ocean-card">
     <div class="ocean-card-title">📉 SOI 时间序列（2009-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--risk-red);margin-left:auto">当前: -24.9</span></div>
-    <div class="ocean-card-subtitle">NOAA CPC · 月度SLP Anomaly (Stand Tahiti - Stand Darwin) · 2009-01至2026-06</div>
+    <div class="ocean-card-subtitle">BOM · 30日SOI (基于Tahiti-Darwin标准化气压差) · 2009-01至2026-07</div>
     <div class="chart-container"><canvas id="soiChart"></canvas></div>
-    <div class="analysis-text">🔴 SOI持续极端负值(-24.9)表明Walker环流显著减弱，与Niño 3.4快速上升一致。值得注意的是，当前仍处于厄尔尼诺发展初期，SOI已达历史成熟期水平，正反馈机制正在加速厄尔尼诺发展。</div>
+    <div class="analysis-text">🔴 SOI 30日值达-24.9（BOM），为2015年超强El Niño以来最低。SOI持续极端负值→Tahiti-Darwin气压梯度反转→Walker环流显著减弱，与Niño 3.4周度SST快速上升一致。当前SOI已達历史El Niño成熟期水平，表明海洋-大气正反馈（Bjerknes反馈）正在加速。</div>
   </div>
 </div>
 
@@ -866,9 +934,9 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div class="section-title" id="section-pdo">PDO 太平洋年代际振荡</div>
   <div class="ocean-card">
     <div class="ocean-card-title">📊 PDO 时间序列（2009-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -1.34</span></div>
-    <div class="ocean-card-subtitle">NOAA CPC GODAS ERSSTv5 · 月度PDO指数 · 2009-01至2026-06</div>
+    <div class="ocean-card-subtitle">NOAA ERSSTv5 · 月均PDO指数（EOF1分析）· 2009-01至2026-06</div>
     <div class="chart-container"><canvas id="pdoChart"></canvas></div>
-    <div class="analysis-text">🔵 PDO负相位通常抑制太平洋中部/东部SST异常增暖的幅度，但当前超级海洋热浪面积占地球13.5%，表明此次厄尔尼诺可能在PDO负背景下仍达超强。PDO负相位+ENSO正相位组合意味着太平洋西岸（东南亚/澳大利亚）干旱更为显著。</div>
+    <div class="analysis-text">🔵 PDO冷位相（-1.34）并不直接抑制ENSO振幅，而是通过改变背景场调制ENSO的遥相关效应：①削弱El Niño→东亚夏季风的相关性（r从-0.63降至-0.24，Zhang et al. 2025）；②使WPSH偏弱偏北→东南亚-澳洲干旱更显著。当前超级海洋热浪面积占地球13.5%+次表层暖核+8~9°C，海洋动力学压倒年代际背景抑制→仍可能达超强。</div>
   </div>
 </div>
 
@@ -878,7 +946,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📊 NAO 时间序列（2009-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--accent-blue);margin-left:auto">当前: +0.10</span></div>
     <div class="ocean-card-subtitle">NOAA CPC/AOML数据 · 2009-01至2026-06 · 月均NAO指数</div>
     <div class="chart-container"><canvas id="naoChart"></canvas></div>
-    <div class="analysis-text">🔵 NAO数据覆盖2009-2026年（NOAA CPC/AOML来源）。当前NAO=+0.10（2026年6月），接近中性。2023年3月NAO=+2.69为近年最强正相位，欧洲冬季偏暖多雨。北大西洋气压梯度变化直接影响欧洲冬季气候和澳洲降水格局。</div>
+    <div class="analysis-text">🔵 NAO（NOAA CPC/AOML）基于冰岛低压与亚速尔高压标准化气压差。当前NAO=+0.10（2026年6月），接近中性。NAO信号主要集中在冬季（12-3月），夏季影响有限。遥相关路径：NAO通过CGT（环全球遥相关波列）沿副热带急流传播至东亚，影响冬季风强度（Li et al. 2024）。2025年研究证实：强负PDO+正NAO协同可推动副高异常偏北→华北极端降水。</div>
   </div>
 </div>
 
@@ -886,9 +954,9 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div class="section-title" id="section-iod">IOD 印度洋偶极子</div>
   <div class="ocean-card">
     <div class="ocean-card-title">📊 IOD DMI 时间序列（2009-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:#a16207;margin-left:auto">当前: -0.16°C</span></div>
-    <div class="ocean-card-subtitle">周度DMI · BOM数据 · 2016-2026 · 负值对应负IOD事件</div>
+    <div class="ocean-card-subtitle">周度DMI · BOM数据 · 2016-2026 · DMI = TIO(10°S-10°N,50°-70°E) - TIO(10°S-0°,90°-110°E)</div>
     <div class="chart-container"><canvas id="iodChart"></canvas></div>
-    <div class="analysis-text">🟠 负IOD意味着印度洋西部偏暖、东部偏冷→加剧印尼/澳大利亚干旱→棕榈油风险上升。当前IOD处于弱负相位(-0.16°C)，接近负IOD阈值(-0.4°C)，随着厄尔尼诺发展，负IOD大概率加深。</div>
+    <div class="analysis-text">🟠 负IOD（DMI≤-0.4°C）= 西印度洋（非洲东岸）偏暖+东印度洋（印尼以南）偏冷→印尼对流抑制→东南亚干旱加剧。当前DMI=-0.16°C（BOM周度），距事件阈值差0.24°C。El Niño发展期IOD常同步负发展（二者通过Walker环流耦合），预计8-10月DMI可达-0.8~-1.2°C。</div>
   </div>
 </div>
 
@@ -2167,7 +2235,36 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 
 </div>
 <div id="page-knowledge" class="page-section">
-<div class="knowledge-section"><div class="knowledge-card">
+<div class="knowledge-nav">
+  <div class="knowledge-nav-title">📚 知识科普分类导航</div>
+  <div class="knowledge-nav-groups">
+    <div class="knowledge-nav-group">
+      <span class="knowledge-nav-group-label">🌐 气候动力学</span>
+      <a class="knowledge-nav-link" onclick="document.getElementById('know-enso').scrollIntoView({behavior:'smooth',block:'start'})">ENSO基础</a>
+      <a class="knowledge-nav-link" onclick="document.getElementById('know-indices').scrollIntoView({behavior:'smooth',block:'start'})">气候指数</a>
+      <a class="knowledge-nav-link" onclick="document.getElementById('know-synergy').scrollIntoView({behavior:'smooth',block:'start'})">多指数协同</a>
+    </div>
+    <div class="knowledge-nav-divider"></div>
+    <div class="knowledge-nav-group">
+      <span class="knowledge-nav-group-label">🌊 海洋与季风</span>
+      <a class="knowledge-nav-link" onclick="document.getElementById('know-ocean').scrollIntoView({behavior:'smooth',block:'start'})">海洋环流</a>
+      <a class="knowledge-nav-link" onclick="document.getElementById('know-monsoon').scrollIntoView({behavior:'smooth',block:'start'})">印度季风</a>
+    </div>
+    <div class="knowledge-nav-divider"></div>
+    <div class="knowledge-nav-group">
+      <span class="knowledge-nav-group-label">🌱 农业气象</span>
+      <a class="knowledge-nav-link" onclick="document.getElementById('know-crop').scrollIntoView({behavior:'smooth',block:'start'})">作物敏感期</a>
+      <a class="knowledge-nav-link" onclick="document.getElementById('know-humidity').scrollIntoView({behavior:'smooth',block:'start'})">湿热科普</a>
+    </div>
+    <div class="knowledge-nav-divider"></div>
+    <div class="knowledge-nav-group">
+      <span class="knowledge-nav-group-label">⚡ 极端与灾害</span>
+      <a class="knowledge-nav-link" onclick="document.getElementById('know-extreme').scrollIntoView({behavior:'smooth',block:'start'})">极端事件</a>
+      <a class="knowledge-nav-link" onclick="document.getElementById('know-typhoon').scrollIntoView({behavior:'smooth',block:'start'})">台风科普</a>
+    </div>
+  </div>
+</div>
+<div class="knowledge-section" id="know-enso"><div class="knowledge-card">
   <h3>🌊 什么是ENSO？</h3>
   <h4>厄尔尼诺（El Niño）</h4>
   <p>厄尔尼诺是指赤道中东太平洋海表温度（SST）异常偏暖的现象。当Niño 3.4区域的3个月滑动平均SST距平值（ONI）连续5个重叠3个月时段≥+0.5°C时，即认定为厄尔尼诺事件。</p>
@@ -2192,7 +2289,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <p>在正常年份，Walker环流表现为：太平洋西岸（印尼/菲律宾）暖湿气流上升→高空东流→东太平洋下沉→信风将表层暖水向西输送。厄尔尼诺时，这一环流减弱甚至反转：东太平洋异常增暖→上升支东移→西岸下沉增强→东南亚干旱。</p>
   <div class="info-box warning"><p><strong>当前状态（7月8日更新）：</strong><strong>⚠️ 厄尔尼诺升级为"强至超强"！</strong><br>据2026年7月2日中国气象局发布会：赤道中东太平洋海温持续攀升，夏秋季将形成一次<strong>东部型、强至超强</strong>的厄尔尼诺事件。世界气象组织（WMO）同步确认，预计2026年7-9月发展为强厄尔尼诺事件，部分欧洲机构称此次强度可能达<strong>数十年未见水平</strong>。相关影响请关注农业气象监测面板的后续更新。</p></div>
 </div></div>
-<div class="knowledge-section"><div class="knowledge-card">
+<div class="knowledge-section" id="know-indices"><div class="knowledge-card">
   <h3>📊 主要气候指数与遥相关链</h3>
   <h4>SOI — 南方涛动指数</h4>
   <p>SOI基于塔希提岛和达尔文之间的气压差计算，是ENSO的"大气端"指标。正值表示Walker环流增强（拉尼娜倾向），负值表示减弱（厄尔尼诺倾向）。持续低于-7为厄尔尼诺信号，持续高于+7为拉尼娜信号。</p>
@@ -2214,7 +2311,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div class="info-box"><p><strong>IOD阈值：</strong>≥+0.4°C为正IOD事件，≤-0.4°C为负IOD事件。当前DMI=-0.16°C接近负IOD阈值。<br><strong>IOD-ENSO协同效应：</strong>El Niño + 正IOD → 澳大利亚干旱协同增强；La Niña + 负IOD → 印度季风协同增强。正IOD可部分抵消El Niño对印度季风的抑制。<br><strong>非对称性：</strong>极端正IOD和极端负IOD均可增强西苏门答腊-澳大利亚季风降雨，非线性关系。<br><em>来源：GRL 2025; GRL 2024</em></p></div>
 </div></div>
 <!-- New: Multi-index synergy card -->
-<div class="knowledge-section"><div class="knowledge-card">
+<div class="knowledge-section" id="know-synergy"><div class="knowledge-card">
   <h3>🔗 多指数协同效应</h3>
   <p>全球气候系统各指数并非独立运作，它们之间存在复杂的耦合与调制关系。理解这些协同效应，是准确评估农业气候风险的关键。清华大学2026年发表于<i>Nature Machine Intelligence</i>的研究（UniCM）已证实：将ENSO、IOD、北大西洋模态等作为<strong>耦合系统</strong>统一建模，可释放"涌现可预报性"——即单模态预测无法获取的额外预测信号。</p>
   <img src="images/knowledge/multi_index_synergy.jpg" alt="多气候指数协同效应框架" style="width:100%;max-width:600px;border-radius:8px;margin:10px 0;border:1px solid var(--border-color);" />
@@ -2230,7 +2327,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 </div></div>
 
 <!-- New: Ocean circulation card -->
-<div class="knowledge-section"><div class="knowledge-card">
+<div class="knowledge-section" id="know-ocean"><div class="knowledge-card">
   <h3>🌊 海洋环流与全球季风</h3>
   <p>海洋环流是连接各大洋热量输送和季风系统的"传送带"。以下三个关键系统直接影响全球农业气候。</p>
   
@@ -2248,7 +2345,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 </div></div>
 
 <!-- New: Indian monsoon card -->
-<div class="knowledge-section"><div class="knowledge-card">
+<div class="knowledge-section" id="know-monsoon"><div class="knowledge-card">
   <h3>🌾 印度季风：关键驱动与预测前沿</h3>
   <p>印度夏季季风降雨（ISMR）是全球15亿人生计的基础，也是棉花、白糖、水稻产量的关键决定因子。</p>
   
@@ -2265,7 +2362,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div class="info-box"><p><strong>深度学习24月提前预测：</strong>Goswami et al. (2025, QJRMS) 开发物理引导深度学习模型，利用热带20°C等温线深度与ISMR的关系，将ISMR有效季节预报提前量扩展至24个月，显著优于传统气候模式。<br><strong>AI运营应用：</strong>2025年印度农业部向3800万农民推送AI季风onset预报（提前30天），融合Google NeuralGCM、ECMWF AIFS和IMD百年统计，准确率达89%。<br><em>来源：QJRMS 2025; UChicago/IMD 2025</em></p></div>
 </div></div>
 
-<div class="knowledge-section"><div class="knowledge-card">
+<div class="knowledge-section" id="know-crop"><div class="knowledge-card">
   <h3>🌱 作物-气象敏感期</h3>
   <p>每种作物在特定生育期对气象条件最为敏感。了解这些窗口期对于评估产量风险至关重要。</p>
   <table class="threshold-table">
@@ -2279,7 +2376,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <tr><td>☕ 咖啡</td><td>果实膨大-成熟期</td><td class="mono">18-24°C最佳，&gt;30°C灼果</td><td>成熟期需干燥天气助采收</td><td style="color:var(--risk-red)">巴西历史级干旱</td></tr>
   </table>
 </div></div>
-<div class="knowledge-section"><div class="knowledge-card">
+<div class="knowledge-section" id="know-extreme"><div class="knowledge-card">
   <h3>⚡ 极端事件科普</h3>
   <h4>什么是超级海洋热浪？</h4>
   <p>海洋热浪（Marine Heatwave）是指特定海域SST超过历史90%分位数持续5天以上的极端增暖事件。当前全球超级海洋热浪面积占地球海洋面积的13.5%——这在有记录以来极为罕见。海洋热浪会导致珊瑚白化、鱼类迁徙、海草床退化，间接影响沿海渔业和生态。</p>
@@ -2306,11 +2403,11 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <tr><td class="mono" style="color:var(--accent-blue)">≥ 0.45</td><td>渍涝</td><td>根系缺氧、病害高发、需排水</td></tr>
   </table>
 </div></div>
-<div class="knowledge-section"><div class="knowledge-card">
+<div class="knowledge-section" id="know-humidity"><div class="knowledge-card">
   <h3>🌡️ 夏季湿热：作物生长的「双刃剑」</h3>
   <h4>湿热环境如何影响农作物？</h4><p>夏季的高温往往伴随着高湿度，这种<span style="color:var(--risk-orange)">湿热组合</span>对农业生产具有双重影响。一方面，适度的温湿度有利于作物光合作用和生长发育；另一方面，过度的湿热却会成为作物生长的「隐形杀手」。</p><h4>湿热对作物的主要危害</h4><p>当气温持续超过<span class="mono">35°C</span>且湿度大于<span class="mono">80%</span>时，作物将面临多重胁迫：</p><ul style="margin:12px 0;padding-left:20px;"><li><strong>呼吸作用加剧</strong>：高温下作物呼吸消耗增加，光合产物积累减少</li><li><strong>授粉受精障碍</strong>：玉米、水稻等作物在开花期遇高温会导致花粉活力下降、空粒增加</li><li><strong>病害高发</strong>：高湿环境利于稻瘟病、纹枯病、霜霉病等病害蔓延</li><li><strong>果实品质下降</strong>：蔬菜果实易出现日灼、畸形，口感变差</li></ul><div class="info-box warning"><p>⚠️ <strong>农事提醒</strong>：盛夏时节，农户应加强田间通风透光，及时排水防涝，合理安排灌溉时间（避开高温时段），喷施叶面肥增强作物抗逆性。</p></div><h4>不同作物的湿热敏感期</h4><table class="threshold-table"><tr><th>作物</th><th>湿热敏感期</th><th>临界指标</th></tr><tr><td>玉米</td><td>大喇叭口-抽雄期</td><td class="mono">日均温>30°C + 连续3天</td></tr><tr><td>水稻</td><td>抽穗扬花期</td><td class="mono">日最高温>38°C</td></tr><tr><td>大豆</td><td>开花结荚期</td><td class="mono">气温>35°C + 土壤干旱</td></tr><tr><td>棉花</td><td>花铃期</td><td class="mono">蕾铃脱落率可增30%+</td></tr></table><p style="font-size:12px;color:var(--text-muted);margin-top:12px;">来源：安徽气象局《湿热天气更易“偷袭”健康》（2026-07-02）</p>
 </div></div>
-<div class="knowledge-section"><div class="knowledge-card">
+<div class="knowledge-section" id="know-typhoon"><div class="knowledge-card">
   <h3>🌀 台风命名那些事：农业防台的科学依据</h3>
   <h4>台风名字是怎么来的？</h4><p>2026年6月，台风命名表再次更新，新增了<span style="color:var(--accent-blue)">9个台风新名字</span>。很多人不知道，这些看似随意的名字其实都有严格的命名规则和讲究。</p><p>西北太平洋和南海的台风命名由<span style="color:var(--risk-orange)">14个国家和地区</span>共同参与，每个成员提供10个名字，循环使用。中国的贡献包括「龙王」「玉兔」「海神」等富有中华文化特色的名称。</p><h4>台风命名规则</h4><ul style="margin:12px 0;padding-left:20px;"><li>每个名字不超过<span class="mono">9个字母</span></li><li>容易发音，在各成员国语言中无不良含义</li><li>不是商业机构名称</li><li>对鸟类和动物无害</li></ul><div class="info-box"><p>📌 <strong>趣味知识</strong>：如果某个台风造成特别严重的灾害，受灾国可以申请将这个名字「开除」，永久替换。例如2019年的「利奇马」因破坏力巨大，已被除名。</p></div><h4>台风对农业的影响与防御</h4><p>台风带来的<span style="color:var(--accent-blue)">狂风暴雨</span>是农业生产的主要威胁之一：</p><ul style="margin:12px 0;padding-left:20px;"><li><strong>直接毁损</strong>：大风可造成作物倒伏、果树断枝、大棚损毁</li><li><strong>洪涝灾害</strong>：暴雨引发农田积水、土壤侵蚀</li><li><strong>次生灾害</strong>：风暴潮导致沿海盐碱化</li></ul><p>面对台风威胁，农业生产者应提前加固农业设施、抢收成熟作物、疏通排水渠道、检查养殖场所防风措施，确保人身安全第一。</p><p style="font-size:12px;color:var(--text-muted);margin-top:12px;">来源：安徽气象局《9个台风新名发布 名字来历各有讲究》（2026-06-10）</p>
 </div></div>
