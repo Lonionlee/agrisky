@@ -185,6 +185,33 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 .sst-item .sst-value { font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 600; }
 .sst-item .sst-value.warm { color: var(--risk-red); } .sst-item .sst-value.cool { color: var(--accent-blue); }
 .sst-item .sst-desc { font-size: 10px; color: var(--text-muted); margin-top: 4px; }
+
+/* Ocean Index Sticky Nav */
+.ocean-nav {
+  position: sticky;
+  top: 60px;
+  z-index: 50;
+  background: linear-gradient(135deg, rgba(255,255,255,0.97), rgba(240,249,255,0.97));
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+/* Crop Overview Sticky Nav */
+.crop-nav {
+  position: sticky;
+  top: 60px;
+  z-index: 50;
+  background: linear-gradient(135deg, rgba(255,255,255,0.97), rgba(240,249,255,0.97));
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
 .monsoon-bar { display: flex; align-items: center; gap: 12px; padding: 10px 14px; background: var(--bg-section); border-radius: 8px; margin-bottom: 8px; }
 .monsoon-bar .bar-label { font-size: 12px; color: var(--text-secondary); min-width: 120px; }
 .monsoon-bar .bar-track { flex: 1; height: 20px; background: #e2e8f0; border-radius: 10px; overflow: hidden; position: relative; }
@@ -803,7 +830,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div id="page-ocean" class="page-section">
 
 <!-- 快捷导航条 -->
-<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;padding:12px 0">
+<div class="ocean-nav"><div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:0;padding:0">
   <div onclick="document.getElementById('section-enso').scrollIntoView({behavior:'smooth',block:'start'})" style="flex:1;min-width:140px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--accent-blue)';this.style.boxShadow='0 2px 8px rgba(37,99,235,0.15)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.boxShadow='none'">
     <span style="width:10px;height:10px;border-radius:50%;background:#ef4444;flex-shrink:0"></span>
     <span style="font-size:13px;font-weight:600;color:var(--text-primary)">ENSO 深度分析</span>
@@ -824,7 +851,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <span style="width:10px;height:10px;border-radius:50%;background:#22c55e;flex-shrink:0"></span>
     <span style="font-size:13px;font-weight:600;color:var(--text-primary)">季风与环流</span>
   </div>
-</div>
+</div></div>
 
 <div class="ocean-section">
   <div class="section-title">海温异常</div>
@@ -1194,14 +1221,14 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 </div>
 <div id="page-weather" class="page-section">
 <div class="section">
-  <div class="section-title">七大作物概览</div>
-  <div class="crop-overview-grid"><div class="crop-overview-card" onclick="document.getElementById('crop-玉米').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🌽</div><div class="crop-name">玉米</div><div class="crop-risk" style="background:rgba(249,115,22,0.08);color:var(--risk-orange)">中高风险</div><div class="crop-regions">11个产区</div><div class="crop-summary">东北渍涝+华北高温，巴威北上威胁</div></div>
+  <div class="crop-nav"><div class="section-title" style="margin-bottom:0">七大作物概览</div>
+  <div class="crop-overview-grid" style="margin-top:10px;margin-bottom:0"><div class="crop-overview-card" onclick="document.getElementById('crop-玉米').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🌽</div><div class="crop-name">玉米</div><div class="crop-risk" style="background:rgba(249,115,22,0.08);color:var(--risk-orange)">中高风险</div><div class="crop-regions">11个产区</div><div class="crop-summary">东北渍涝+华北高温，巴威北上威胁</div></div>
 <div class="crop-overview-card" onclick="document.getElementById('crop-大豆').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🫘</div><div class="crop-name">大豆</div><div class="crop-risk" style="background:rgba(234,179,8,0.08);color:#a16207">中风险</div><div class="crop-regions">14个产区</div><div class="crop-summary">东北偏湿，美国正常，巴西南部偏冷</div></div>
 <div class="crop-overview-card" onclick="document.getElementById('crop-小麦').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🌾</div><div class="crop-name">小麦</div><div class="crop-risk" style="background:rgba(34,197,94,0.08);color:#16a34a">低风险</div><div class="crop-regions">15个产区</div><div class="crop-summary">华北已收获，澳洲旱播需关注ENSO</div></div>
 <div class="crop-overview-card" onclick="document.getElementById('crop-棕榈油').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🌴</div><div class="crop-name">棕榈油</div><div class="crop-risk" style="background:rgba(249,115,22,0.08);color:var(--risk-orange)">中高风险</div><div class="crop-regions">3个产区</div><div class="crop-summary">ENSO干旱升级，地下水持续下降</div></div>
 <div class="crop-overview-card" onclick="document.getElementById('crop-白糖').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🍬</div><div class="crop-name">白糖</div><div class="crop-risk" style="background:rgba(239,68,68,0.08);color:var(--risk-red)">高风险</div><div class="crop-regions">5个产区</div><div class="crop-summary">广西灾害已发生，印度季风偏慢</div></div>
 <div class="crop-overview-card" onclick="document.getElementById('crop-棉花').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🧶</div><div class="crop-name">棉花</div><div class="crop-risk" style="background:rgba(239,68,68,0.08);color:var(--risk-red)">高风险</div><div class="crop-regions">5个产区</div><div class="crop-summary">新疆高温，印度干旱，美国零降水</div></div>
-<div class="crop-overview-card" onclick="document.getElementById('crop-咖啡').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">☕</div><div class="crop-name">咖啡</div><div class="crop-risk" style="background:rgba(239,68,68,0.08);color:var(--risk-red)">高风险</div><div class="crop-regions">7个产区</div><div class="crop-summary">巴西历史级干旱，阿拉比卡减产10.5%</div></div></div>
+<div class="crop-overview-card" onclick="document.getElementById('crop-咖啡').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">☕</div><div class="crop-name">咖啡</div><div class="crop-risk" style="background:rgba(239,68,68,0.08);color:var(--risk-red)">高风险</div><div class="crop-regions">7个产区</div><div class="crop-summary">巴西历史级干旱，阿拉比卡减产10.5%</div></div></div></div>
 </div>
 <div class="crop-section" id="crop-玉米">
     <div class="crop-section-header"><span class="crop-icon">🌽</span><h3>玉米专区</h3><span class="region-count">11个监测产区</span></div>
