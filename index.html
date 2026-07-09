@@ -600,8 +600,8 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
             <div class="alerts-list">
               <div class="alerts-title">预警信息（7月9日18时 中央气象台橙色预警）</div>
               <div class="alert-item">🟠 台风橙色预警（7月9日18时）：巴威16级/52m/s/935hPa，七级风圈500km，11日登陆或擦过台湾北部</div>
-              <div class="alert-item">🔵 暴雨蓝色预警（7月9日06时）：辽宁中部/河北东部/山东中部大暴雨100-150mm</div>
-              <div class="alert-item">🟡 强对流黄色预警（7月9日06时）：河北中南部/山东北部10-11级雷暴大风，局地龙卷</div>
+              <div class="alert-item">🔵 暴雨蓝色预警（7月9日18时）：山西西北部/河北中部/天津西部大暴雨100-150mm</div>
+              <div class="alert-item">🟡 强对流黄色预警（7月9日18时）：内蒙古东部/吉林南部/辽宁中东部/河北东部/天津8-10级雷暴大风</div>
               <div class="alert-item">大风预报（9日20时-10日20时）：巴士海峡/台湾海峡/台湾以东洋面/东海大部6-8级，台湾以东洋面/东海东南9-11级，阵风12-13级</div>
               <div class="alert-item">江苏：中小学/幼儿园7/9下午-7/10停课；上海客轮9日起停航；国家防总Ⅲ级响应（7/9 17时升级）；浙江/福建同步升级</div>
             </div>
@@ -611,7 +611,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div class="typhoon-card">
           <div class="typhoon-card-header" style="background: linear-gradient(135deg, #8b0000, #c0392b);">
             <h3>️ 强对流天气预警</h3>
-            <span class="category-badge" style="background:#fff;color:#8b0000;font-size:10px;">NMC 07-09 06时</span>
+            <span class="category-badge" style="background:#fff;color:#8b0000;font-size:10px;">NMC 07-09 18时</span>
           </div>
           <div class="typhoon-card-body">
             <div class="typhoon-info" style="margin-bottom:12px;">
@@ -619,13 +619,13 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
             </div>
             <div style="font-size:11px;color:var(--text-secondary);line-height:1.7;margin-bottom:8px;">
               <div style="padding:8px;background:#fff7e6;border-radius:6px;border-left:3px solid #d48806;margin-bottom:6px;">
-                <strong style="color:#d48806;">强对流预报（7/9 20时-10日20时）</strong><br>
-                <b>雷暴大风/冰雹</b>：东北中部/南部、华北北部/中东部、黄淮东部、江淮东部、江南东北部、华南中北部 | <span style="color:#8b0000;font-weight:600">河北中南部/山东北部10级以上雷暴大风，最大11级+，局地不排除龙卷</span><br>
-                <b>短时强降水</b>：辽宁东南部/河北东北/中南部/山东北部小时雨量>50mm，最大80mm+
+                <strong style="color:#d48806;">强对流预报（7/9 18时更新）</strong><br>
+                <b>雷暴大风/冰雹</b>：内蒙古河套/宁夏北部、陕西北部、河北东部、天津、吉林南部、辽宁中东部 | <span style="color:#8b0000;font-weight:600">上述地区8-10级雷暴大风，局地11级+</span><br>
+                <b>短时强降水</b>：山西西北部/河北中部/天津西部小时雨量>50mm，局地80mm+
               </div>
               <div style="padding:8px;background:#e6f7ff;border-radius:6px;border-left:3px solid #1890ff;margin-bottom:6px;">
-                <strong style="color:#1890ff;">暴雨蓝色预警（7/9 20时-10日20时）</strong><br>
-                内蒙古中部/东北、黑龙江东南、吉林中部、辽宁中北部/东部、河北东部、天津南部、山东中北部、陕西北部、云南西部/南部、广西东部/南部、广东西南部、海南岛 | <b>辽宁中部/河北东部/山东中部大暴雨100-150mm</b>
+                <strong style="color:#1890ff;">暴雨蓝色预警（7/9 18时更新）</strong><br>
+                山西西北部、河北中部、天津西部、内蒙古中部、东北地区中南部、山东中北部、陕西北部、云南西部/南部、广西东部/南部、广东西南部、海南岛 | <b>山西西北部/河北中部/天津西部大暴雨100-150mm</b>
               </div>
               <div style="padding:8px;background:#fff1f0;border-radius:6px;border-left:3px solid #8b0000;margin-bottom:6px;">
                 <strong style="color:#8b0000;">台风大风预报（9日20时-10日20时）</strong><br>
@@ -1248,7 +1248,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="crop-chart-card"><div class="chart-title">降水对比 (30天+14天 mm)</div><div class="chart-container short"><canvas id="precip-玉米"></canvas></div></div>
       <div class="crop-chart-card"><div class="chart-title">土壤湿度</div><div class="chart-container short"><canvas id="soil-玉米"></canvas></div></div>
     </div>
-    <div class="analysis-text">东北产区6月全域偏低1.0-2.2℃（vs气候常年值），7月初短暂回暖后再次转湿，全域降水较常年偏多57%-168%。佳木斯/长春30天降水分别134.6/242.2mm，低洼田渍涝风险持续。齐齐哈尔6月降水偏少(-19%)但以低温寡照为主。石家庄均高达35.4°C，较常年偏高2-3°C，为极端热事件。华北产区降水偏少，土壤湿度中等偏低。<b style="color:var(--risk-red)">【7/9更新】</b>巴威维持超强台风级(16级/52m/s/935hPa)，七级风圈500km，7/9-10北方暴雨+强对流三预警齐发，辽宁中部/河北东部/山东中部大暴雨100-150mm，河北中南部/山东北部11级+雷暴大风局地龙卷。建议关注：①东北渍涝+巴威叠加极端降水 ②华北强对流灾害 ③7/11后台风残余环流深入内陆的持续性降水。</div>
+    <div class="analysis-text">东北产区6月全域偏低1.0-2.2℃（vs气候常年值），7月初短暂回暖后再次转湿，全域降水较常年偏多57%-168%。佳木斯/长春30天降水分别134.6/242.2mm，低洼田渍涝风险持续。齐齐哈尔6月降水偏少(-19%)但以低温寡照为主。石家庄均高达35.4°C，较常年偏高2-3°C，为极端热事件。华北产区降水偏少，土壤湿度中等偏低。<b style="color:var(--risk-red)">【7/9 18时更新】</b>巴威维持超强台风级(16级/52m/s/935hPa)，七级风圈500km，7/9-10北方暴雨+强对流三预警齐发，<b>暴雨大暴雨区域调整为山西西北部/河北中部/天津西部100-150mm</b>，内蒙古河套/宁夏北部/陕西北部/河北东部/天津/吉林南部/辽宁中东部8-10级雷暴大风。建议关注：①东北渍涝+巴威叠加极端降水 ②华北强对流灾害 ③7/11后台风残余环流深入内陆的持续性降水。</div>
   </div>
 <div class="crop-section" id="crop-大豆">
     <div class="crop-section-header"><span class="crop-icon">🫘</span><h3>大豆专区</h3><span class="region-count">14个监测产区</span></div>
