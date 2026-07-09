@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" font-family="Arial, sans-serif">
+  <defs>
+    <linearGradient id="coldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1565C0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#42A5F5;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="warmGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C62828;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#EF5350;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrowCold" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1565C0"/>
+    </marker>
+    <marker id="arrowWarm" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#C62828"/>
+    </marker>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#FAFAFA" rx="8"/>
+
+  <!-- Title -->
+  <text x="600" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#263238">
+    PDO位相 → 副高 → 东亚夏季风 → 中国东部雨带：标准遥相关链
+  </text>
+  <text x="600" y="58" text-anchor="middle" font-size="12" fill="#78909C">
+    冷位相（蓝色）与暖位相（红色）并列对比 | 基于 Zhu&amp;Yang(2003), Feng(2014), Zhang(2025) 等
+  </text>
+
+  <!-- ========== COLD PHASE CHAIN (TOP) ========== -->
+  <text x="60" y="120" font-size="16" font-weight="bold" fill="#1565C0">PDO 冷（负）位相</text>
+  <rect x="60" y="130" width="1080" height="3" fill="url(#coldGrad)" rx="1.5"/>
+
+  <!-- Node 1: PDO Cold -->
+  <rect x="80" y="155" width="160" height="70" rx="10" fill="#E3F2FD" stroke="#1565C0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="160" y="183" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565C0">PDO 负位相</text>
+  <text x="160" y="200" text-anchor="middle" font-size="11" fill="#546E7A">北太平洋SST冷异常</text>
+  <text x="160" y="215" text-anchor="middle" font-size="10" fill="#78909C">阿留申低压偏弱</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="240" y1="190" x2="290" y2="190" stroke="#1565C0" stroke-width="2.5" marker-end="url(#arrowCold)"/>
+
+  <!-- Node 2: Atmospheric response -->
+  <rect x="295" y="155" width="160" height="70" rx="10" fill="#E3F2FD" stroke="#1565C0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="375" y="183" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565C0">大气环流响应</text>
+  <text x="375" y="200" text-anchor="middle" font-size="11" fill="#546E7A">西风急流偏北</text>
+  <text x="375" y="215" text-anchor="middle" font-size="10" fill="#78909C">对流偏弱偏东</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="455" y1="190" x2="505" y2="190" stroke="#1565C0" stroke-width="2.5" marker-end="url(#arrowCold)"/>
+
+  <!-- Node 3: WPSH -->
+  <rect x="510" y="155" width="160" height="70" rx="10" fill="#BBDEFB" stroke="#1565C0" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="590" y="178" text-anchor="middle" font-size="14" font-weight="bold" fill="#0D47A1">WPSH 偏弱偏北偏东</text>
+  <text x="590" y="196" text-anchor="middle" font-size="11" fill="#1565C0">脊线偏北 ↑</text>
+  <text x="590" y="211" text-anchor="middle" font-size="11" fill="#1565C0">西伸脊点偏东 →</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="670" y1="190" x2="720" y2="190" stroke="#1565C0" stroke-width="2.5" marker-end="url(#arrowCold)"/>
+
+  <!-- Node 4: EASM -->
+  <rect x="725" y="155" width="160" height="70" rx="10" fill="#E3F2FD" stroke="#1565C0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="805" y="183" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565C0">EASM 偏强</text>
+  <text x="805" y="200" text-anchor="middle" font-size="11" fill="#546E7A">副高北跳两次</text>
+  <text x="805" y="215" text-anchor="middle" font-size="10" fill="#78909C">水汽输送偏北</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="885" y1="190" x2="935" y2="190" stroke="#1565C0" stroke-width="2.5" marker-end="url(#arrowCold)"/>
+
+  <!-- Node 5: Rainband -->
+  <rect x="940" y="155" width="180" height="70" rx="10" fill="#BBDEFB" stroke="#1565C0" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="1030" y="178" text-anchor="middle" font-size="13" font-weight="bold" fill="#0D47A1">雨带偏北</text>
+  <text x="1030" y="196" text-anchor="middle" font-size="11" fill="#1565C0">华北降水偏多 ↑</text>
+  <text x="1030" y="211" text-anchor="middle" font-size="11" fill="#1565C0">长江中下游偏少 ↓</text>
+
+  <!-- ========== WARM PHASE CHAIN (BOTTOM) ========== -->
+  <text x="60" y="310" font-size="16" font-weight="bold" fill="#C62828">PDO 暖（正）位相</text>
+  <rect x="60" y="320" width="1080" height="3" fill="url(#warmGrad)" rx="1.5"/>
+
+  <!-- Node 1: PDO Warm -->
+  <rect x="80" y="345" width="160" height="70" rx="10" fill="#FFEBEE" stroke="#C62828" stroke-width="2" filter="url(#shadow)"/>
+  <text x="160" y="373" text-anchor="middle" font-size="13" font-weight="bold" fill="#C62828">PDO 正位相</text>
+  <text x="160" y="390" text-anchor="middle" font-size="11" fill="#546E7A">北太平洋SST暖异常</text>
+  <text x="160" y="405" text-anchor="middle" font-size="10" fill="#78909C">阿留申低压偏强</text>
+
+  <!-- Arrow -->
+  <line x1="240" y1="380" x2="290" y2="380" stroke="#C62828" stroke-width="2.5" marker-end="url(#arrowWarm)"/>
+
+  <!-- Node 2 -->
+  <rect x="295" y="345" width="160" height="70" rx="10" fill="#FFEBEE" stroke="#C62828" stroke-width="2" filter="url(#shadow)"/>
+  <text x="375" y="373" text-anchor="middle" font-size="13" font-weight="bold" fill="#C62828">大气环流响应</text>
+  <text x="375" y="390" text-anchor="middle" font-size="11" fill="#546E7A">西风急流偏南</text>
+  <text x="375" y="405" text-anchor="middle" font-size="10" fill="#78909C">对流偏强偏西</text>
+
+  <line x1="455" y1="380" x2="505" y2="380" stroke="#C62828" stroke-width="2.5" marker-end="url(#arrowWarm)"/>
+
+  <!-- Node 3: WPSH -->
+  <rect x="510" y="345" width="160" height="70" rx="10" fill="#FFCDD2" stroke="#C62828" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="590" y="368" text-anchor="middle" font-size="14" font-weight="bold" fill="#B71C1C">WPSH 偏强偏南偏西</text>
+  <text x="590" y="386" text-anchor="middle" font-size="11" fill="#C62828">脊线偏南 ↓</text>
+  <text x="590" y="401" text-anchor="middle" font-size="11" fill="#C62828">西伸脊点偏西 ←</text>
+
+  <line x1="670" y1="380" x2="720" y2="380" stroke="#C62828" stroke-width="2.5" marker-end="url(#arrowWarm)"/>
+
+  <!-- Node 4 -->
+  <rect x="725" y="345" width="160" height="70" rx="10" fill="#FFEBEE" stroke="#C62828" stroke-width="2" filter="url(#shadow)"/>
+  <text x="805" y="373" text-anchor="middle" font-size="13" font-weight="bold" fill="#C62828">EASM 偏弱</text>
+  <text x="805" y="390" text-anchor="middle" font-size="11" fill="#546E7A">副高仅一次微北跳</text>
+  <text x="805" y="405" text-anchor="middle" font-size="10" fill="#78909C">雨带滞留长江流域</text>
+
+  <line x1="885" y1="380" x2="935" y2="380" stroke="#C62828" stroke-width="2.5" marker-end="url(#arrowWarm)"/>
+
+  <!-- Node 5 -->
+  <rect x="940" y="345" width="180" height="70" rx="10" fill="#FFCDD2" stroke="#C62828" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="1030" y="368" text-anchor="middle" font-size="13" font-weight="bold" fill="#B71C1C">"南涝北旱"</text>
+  <text x="1030" y="386" text-anchor="middle" font-size="11" fill="#C62828">长江中下游偏多 ↑</text>
+  <text x="1030" y="401" text-anchor="middle" font-size="11" fill="#C62828">华北降水偏少 ↓</text>
+
+  <!-- ========== PDO+ENSO MODULATION BOX ========== -->
+  <rect x="80" y="455" width="1040" height="100" rx="12" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="600" y="480" text-anchor="middle" font-size="14" font-weight="bold" fill="#E65100">PDO 对 ENSO-EASM 关系的调制 (Zhang et al. 2025, J. Climate)</text>
+  
+  <rect x="120" y="495" width="220" height="45" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="230" y="515" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565C0">PDO正+VM负: r=-0.63**</text>
+  <text x="230" y="530" text-anchor="middle" font-size="10" fill="#546E7A">El Niño→EASM关系最强</text>
+
+  <rect x="370" y="495" width="220" height="45" rx="8" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="480" y="515" text-anchor="middle" font-size="11" font-weight="bold" fill="#E65100">PDO正+VM正: r=-0.50</text>
+  <text x="480" y="530" text-anchor="middle" font-size="10" fill="#546E7A">WNPAAC偏弱(仅低纬)</text>
+
+  <rect x="620" y="495" width="220" height="45" rx="8" fill="#FFEBEE" stroke="#C62828" stroke-width="1.5"/>
+  <text x="730" y="515" text-anchor="middle" font-size="11" font-weight="bold" fill="#C62828">PDO负+VM负: r=-0.24</text>
+  <text x="730" y="530" text-anchor="middle" font-size="10" fill="#546E7A">NIO增暖仅春季持续</text>
+
+  <rect x="870" y="495" width="220" height="45" rx="8" fill="#FFCDD2" stroke="#B71C1C" stroke-width="1.5"/>
+  <text x="980" y="515" text-anchor="middle" font-size="11" font-weight="bold" fill="#B71C1C">PDO负+VM正: r=-0.12</text>
+  <text x="980" y="530" text-anchor="middle" font-size="10" fill="#546E7A">El Niño→EASM关系最弱</text>
+
+  <!-- ========== LEGEND ========== -->
+  <text x="80" y="590" font-size="12" font-weight="bold" fill="#37474F">图例与标注</text>
+  <rect x="80" y="600" width="14" height="14" fill="#BBDEFB" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="100" y="612" font-size="11" fill="#37474F">冷位相关键节点</text>
+  <rect x="220" y="600" width="14" height="14" fill="#FFCDD2" stroke="#C62828" stroke-width="1.5"/>
+  <text x="240" y="612" font-size="11" fill="#37474F">暖位相关键节点</text>
+  <rect x="380" y="600" width="14" height="14" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.5"/>
+  <text x="400" y="612" font-size="11" fill="#37474F">PDO-ENSO调制框</text>
+  
+  <text x="580" y="612" font-size="11" fill="#78909C">** p&lt;0.05 | r: El Niño与EASM指数的相关系数 | 负值表示El Niño伴随弱EASM</text>
+
+  <!-- Source -->
+  <text x="80" y="650" font-size="10" fill="#90A4AE">数据来源：Zhu&amp;Yang(2003) 气象学报; Feng et al.(2014) J.Climate; Zhang et al.(2025) J.Climate DOI:10.1175/JCLI-D-24-0626.1; Huang&amp;Duan(2020) AOSL</text>
+</svg>
