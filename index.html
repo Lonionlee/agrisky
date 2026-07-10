@@ -326,9 +326,9 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         </div>
         <div class="summary-card red clickable" onclick="navigateTo('dashboard','section-typhoon')" title="点击查看台风详情">
           <div class="summary-label">活跃台风</div>
-          <div class="summary-title">巴威 超强台风</div>
-          <div class="summary-value">930百帕<span style="font-size:14px;color:var(--text-muted)">hPa</span></div>
-          <div class="summary-tag tag-red">🔴 超强</div>
+          <div class="summary-title">巴威 强台风</div>
+          <div class="summary-value">945百帕<span style="font-size:14px;color:var(--text-muted)">hPa</span></div>
+          <div class="summary-tag tag-red">🟠 强台风</div>
         </div>
         <div class="summary-card red clickable" onclick="navigateTo('weather','section-riskmatrix')" title="点击查看产区风险">
           <div class="summary-label">高风险产区</div>
@@ -552,16 +552,16 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div class="typhoon-card">
           <div class="typhoon-card-header">
             <h3>巴威 (Bavi)</h3>
-            <span class="category-badge cat-red">超强台风</span>
+            <span class="category-badge cat-orange">强台风</span>
           </div>
           <div class="typhoon-card-body">
             <div class="typhoon-stats">
               <div class="typhoon-stat">
-                <div class="typhoon-stat-value">935百帕</div>
+                <div class="typhoon-stat-value">945百帕</div>
                 <div class="typhoon-stat-label">中心气压 hPa</div>
               </div>
               <div class="typhoon-stat">
-                <div class="typhoon-stat-value">52米/秒</div>
+                <div class="typhoon-stat-value">45米/秒</div>
                 <div class="typhoon-stat-label">风速 m/s</div>
               </div>
               <div class="typhoon-stat">
@@ -570,17 +570,17 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               </div>
             </div>
             <div class="typhoon-info">
-              位置：18.7°N, 128.9°E（17:00，基隆东南1030km）</div>
+              位置：20.4°N, 128.0°E（05:00，基隆东南830km）| 强台风级（已减弱）</div>
             <div class="typhoon-path">
               <div class="typhoon-path-title">路径预判</div>
-              当前位置(18.7°N/128.9°E) <span class="path-arrow">→</span> 西北行(15-20km/h) <span class="path-arrow">→</span> 11日白天登陆或擦过台湾北部(超强/强台风级，14-16级，45-52m/s) <span class="path-arrow">→</span> 11日晚登陆闽福清至浙温岭(强台风级，13-15级，40-48m/s) <span class="path-arrow">→</span> 深入内陆，13日后路径不确定性大（湖北/安徽/河南交界转向东北 或 西行消散）
+              当前位置(20.4°N/128.0°E) <span class="path-arrow">→</span> 西北行(15-20km/h) <span class="path-arrow">→</span> 11日晚登陆闽福清至浙温岭(强台风级或台风级，13-15级，40-48m/s) <span class="path-arrow">→</span> 登陆后向西北深入内陆，强度逐渐减弱。情景A（高压坝阻挡，置信度高）：向西北深入华北
             </div>
             <div class="typhoon-risk">
-              ⚠️ 影响预判：巨型台风（云系直径1300km），对标2019利奇马<br>
-              <b>海上</b>：7/10-11闽外/闽东/钓鱼岛海域11-13级、阵风14-16级<br>
-              <b>陆上</b>：7/11福建中北部沿海阵风11-14级<br>
-              <b>降水</b>：7/10起台→闽→浙→内陆，11日暴雨~大暴雨、局部特大暴雨<br>
-              <b>内陆</b>：残余环流深入华中/华北，9-15日持续强降水
+              ⚠️ 影响预判：大型台风（七级风圈450-500km），对标2019利奇马<br>
+              <b>海上</b>：7/10-11东海大部/台湾以东洋面9-11级，阵风12-13级；中心经过12-14级，阵风15-16级<br>
+              <b>陆上</b>：7/11台湾北部特大暴雨250-700mm；7/11晚闽浙沿海13-15级登陆<br>
+              <b>降水</b>：7/10起台→闽→浙→内陆，暴雨黄色预警覆盖20+省份，河北中部/北京西南/天津北部/山西西部大暴雨<br>
+              <b>内陆</b>：情景A（置信度高）登陆后向西北深入华北，残余环流持续强降水
             </div>
           </div>
         </div>
@@ -598,12 +598,12 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               ⚠️ 双台风接踵：美莎克残余+巴威逼近，南北两线防汛迎大考。巴威7/11登陆闽浙，对标2019利奇马
             </div>
             <div class="alerts-list">
-              <div class="alerts-title">预警信息（7月9日18时 中央气象台橙色预警）</div>
-              <div class="alert-item">🟠 台风橙色预警（7月9日18时）：巴威16级/52m/s/935hPa，七级风圈500km，11日登陆或擦过台湾北部</div>
-              <div class="alert-item">🔵 暴雨蓝色预警（7月9日18时）：山西西北部/河北中部/天津西部大暴雨100-150mm</div>
-              <div class="alert-item">🟡 强对流黄色预警（7月9日18时）：内蒙古东部/吉林南部/辽宁中东部/河北东部/天津8-10级雷暴大风</div>
-              <div class="alert-item">大风预报（9日20时-10日20时）：巴士海峡/台湾海峡/台湾以东洋面/东海大部6-8级，台湾以东洋面/东海东南9-11级，阵风12-13级</div>
-              <div class="alert-item">江苏：中小学/幼儿园7/9下午-7/10停课；上海客轮9日起停航；国家防总Ⅲ级响应（7/9 17时升级）；浙江/福建同步升级</div>
+              <div class="alerts-title">预警信息（7月10日06时 中央气象台三预警齐发）</div>
+              <div class="alert-item">🟠 台风橙色预警（7月10日06时）：巴威减弱为强台风级14级/45m/s/945hPa，七级风圈450-500km，11日晚登陆闽浙沿海(13-15级)</div>
+              <div class="alert-item">🟡 暴雨黄色预警（7月10日06时）：内蒙古/黑龙江/吉林/辽宁/河北/北京/天津/山西/陕西/宁夏/甘肃/青海/四川/浙江/台湾等大到暴雨，河北中部/北京西南/天津北部大暴雨，台湾局地特大暴雨250-700mm</div>
+              <div class="alert-item">🔵 强对流蓝色预警（7月10日06时）：新疆东北/内蒙古河套/陕西北部/辽宁北部/北京东部/天津北部/甘肃南部/四川8级以上雷暴大风；内蒙古东南/吉林北部/河北中北部小时雨量>50mm，最大80mm+</div>
+              <div class="alert-item">大风预报（10日08时-11日08时）：巴士海峡/台湾海峡/东海大部6-8级，台湾以东洋面/东海大部9-11级，阵风12-13级，中心经过海面12-14级，阵风15-16级</div>
+              <div class="alert-item">舟山嵊泗17条水上客运航线全线停航；国家防总Ⅲ级响应；中国气象局二级应急响应（台风+暴雨+强对流）；浙江/福建沿海景区闭园</div>
             </div>
           </div>
         </div>
@@ -611,25 +611,25 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div class="typhoon-card">
           <div class="typhoon-card-header" style="background: linear-gradient(135deg, #8b0000, #c0392b);">
             <h3>️ 强对流天气预警</h3>
-            <span class="category-badge" style="background:#fff;color:#8b0000;font-size:10px;">NMC 07-09 18时</span>
+            <span class="category-badge" style="background:#fff;color:#8b0000;font-size:10px;">NMC 07-10 06时</span>
           </div>
           <div class="typhoon-card-body">
             <div class="typhoon-info" style="margin-bottom:12px;">
-              <strong style="color:#8b0000;">华北黄淮等地强对流黄色预警 | 台风橙色预警升级（7/9 18时）+ 暴雨蓝 + 强对流黄</strong>
+              <strong style="color:#8b0000;">华北东北强对流蓝色预警 | 台风橙色+暴雨黄+强对流蓝（7/10 06时）| 巴威减弱为强台风级</strong>
             </div>
             <div style="font-size:11px;color:var(--text-secondary);line-height:1.7;margin-bottom:8px;">
               <div style="padding:8px;background:#fff7e6;border-radius:6px;border-left:3px solid #d48806;margin-bottom:6px;">
-                <strong style="color:#d48806;">强对流预报（7/9 18时更新）</strong><br>
-                <b>雷暴大风/冰雹</b>：内蒙古河套/宁夏北部、陕西北部、河北东部、天津、吉林南部、辽宁中东部 | <span style="color:#8b0000;font-weight:600">上述地区8-10级雷暴大风，局地11级+</span><br>
-                <b>短时强降水</b>：山西西北部/河北中部/天津西部小时雨量>50mm，局地80mm+
+                <strong style="color:#d48806;">强对流预报（7/10 06时更新）</strong><br>
+                <b>雷暴大风/冰雹</b>：新疆东北部、内蒙古河套、陕西北部、辽宁北部、北京东部、天津北部、甘肃南部、四川北部和中部、台湾 | <span style="color:#8b0000;font-weight:600">上述地区8级以上雷暴大风或冰雹</span><br>
+                <b>短时强降水</b>：内蒙古中南部和东部、西北地区东部、华北中北部、东北中南部、西南北部和西南部、华南中西部 | 内蒙古东南/吉林北部/辽宁北部/河北中北部/北京东南/天津北部小时雨量>50mm，最大80mm+
               </div>
               <div style="padding:8px;background:#e6f7ff;border-radius:6px;border-left:3px solid #1890ff;margin-bottom:6px;">
-                <strong style="color:#1890ff;">暴雨蓝色预警（7/9 18时更新）</strong><br>
-                山西西北部、河北中部、天津西部、内蒙古中部、东北地区中南部、山东中北部、陕西北部、云南西部/南部、广西东部/南部、广东西南部、海南岛 | <b>山西西北部/河北中部/天津西部大暴雨100-150mm</b>
+                <strong style="color:#1890ff;">暴雨黄色预警（7/10 06时更新）</strong><br>
+                内蒙古南部和东北部、黑龙江南部、吉林中部、辽宁中西部、河北中北部、北京、天津、山西北部和西部、陕西北部、宁夏南部、甘肃南部、青海东部、四川盆地西部、西藏东南部、云南西部/南部、广西东部、海南岛西南部、浙江南部、台湾 | <b>河北东北部和中部/北京西南部/天津北部/山西西部大暴雨，台湾北部和中部特大暴雨250-700mm</b>
               </div>
               <div style="padding:8px;background:#fff1f0;border-radius:6px;border-left:3px solid #8b0000;margin-bottom:6px;">
-                <strong style="color:#8b0000;">台风大风预报（9日20时-10日20时）</strong><br>
-                巴士海峡/台湾海峡/台湾以东洋面/东海大部及钓鱼岛附近海域/南海东北部6-8级；台湾以东洋面/东海东南及钓鱼岛附近海域9-11级，阵风12-13级
+                <strong style="color:#8b0000;">台风大风预报（10日08时-11日08时）</strong><br>
+                巴士海峡/台湾海峡/台湾以东洋面/东海大部及钓鱼岛附近海域/黄海南部/南海东北部6-8级；台湾以东洋面/东海大部/台湾岛沿海/浙江沿海9-11级，阵风12-13级；<b>中心经过海面12-14级，阵风15-16级</b>
               </div>
             </div>
             <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px;">
@@ -639,7 +639,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               <img src="http://image.nmc.cn/product/2026/07/09/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260709020000000_base64_4.jpg?v=1783563151381" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" />
             </div>
             <div style="font-size:10px;color:var(--text-muted);margin-top:6px;">
-              来源：<a href="http://www.nmc.cn/publish/bulletin/swpc.html" target="_blank" style="color:var(--accent-blue);">中央气象台强对流天气预报</a>（2026-07-09）
+              来源：<a href="http://www.nmc.cn/publish/bulletin/swpc.html" target="_blank" style="color:var(--accent-blue);">中央气象台强对流天气预报</a>（2026-07-10 06时）
             </div>
           </div>
         </div>
@@ -691,7 +691,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           <div class="risk-item">
             <div class="risk-item-region">中国东北</div>
             <div class="risk-item-crop">玉米/大豆</div>
-            <div class="risk-item-threat">三重风险+巴威北上暴雨叠加（橙色预警/52m/s/11日登陆闽浙）</div>
+            <div class="risk-item-threat">三重风险+巴威北上暴雨叠加（橙色预警/45m/s/11日晚登陆闽浙）</div>
           </div>
           <div class="risk-item">
             <div class="risk-item-region">中国新疆</div>
@@ -721,7 +721,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           <div class="risk-item">
             <div class="risk-item-region">华东</div>
             <div class="risk-item-crop">早稻</div>
-            <div class="risk-item-threat">巴威直接冲击，橙色预警（11日登陆/强台风级13-15级）</div>
+            <div class="risk-item-threat">巴威直接冲击，橙色预警（11日晚登陆/强台风级或台风级13-15级）</div>
           </div>
           <div class="risk-item">
             <div class="risk-item-region">华北</div>
@@ -767,8 +767,8 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               <span class="timeline-date">2026-07-09</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
-            <div class="timeline-title">超强台风巴威逼近华东<span class="timeline-type">台风</span></div>
-            <div class="timeline-summary">16级(55m/s)，直径1300km，维持超强80h+。预计11日登陆浙闽交界，风暴潮红色预警，增水400cm</div>
+            <div class="timeline-title">巴威减弱为强台风级 逼近浙闽沿海<span class="timeline-type">台风</span></div>
+            <div class="timeline-summary">14级(45m/s)/945hPa，七级风圈450-500km。预计11日晚登陆闽福清至浙温岭(13-15级)，登陆后向西北深入内陆。暴雨黄色预警升级，强对流蓝色预警</div>
             <div class="timeline-crops"><span class="timeline-crop-tag">棕榈油</span><span class="timeline-crop-tag">白糖</span><span class="timeline-crop-tag">棉花</span></div>
           </div>
           <div class="timeline-item severity-red">
@@ -776,8 +776,8 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               <span class="timeline-date">2026-07-09</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
-            <div class="timeline-title">华北/黄淮强对流+暴雨双预警<span class="timeline-type">强对流</span></div>
-            <div class="timeline-summary">暴雨橙色+强对流蓝色预警齐发。江苏中北部10-12级雷暴大风，局地龙卷。广西/江苏/山东/辽宁大暴雨</div>
+            <div class="timeline-title">华北东北暴雨黄色预警+强对流蓝色预警齐发<span class="timeline-type">强对流</span></div>
+            <div class="timeline-summary">暴雨黄色预警（7/10 06时）：20+省份大到暴雨，河北中部/北京西南/天津北部/山西西部大暴雨。强对流蓝色预警：新疆/内蒙古/陕西/辽宁/北京/天津/甘肃/四川8级+雷暴大风</div>
             <div class="timeline-crops"><span class="timeline-crop-tag">玉米</span><span class="timeline-crop-tag">小麦</span><span class="timeline-crop-tag">棉花</span></div>
           </div>
           <div class="timeline-item severity-orange">
@@ -1248,7 +1248,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="crop-chart-card"><div class="chart-title">降水对比 (30天+14天 mm)</div><div class="chart-container short"><canvas id="precip-玉米"></canvas></div></div>
       <div class="crop-chart-card"><div class="chart-title">土壤湿度</div><div class="chart-container short"><canvas id="soil-玉米"></canvas></div></div>
     </div>
-    <div class="analysis-text">东北产区6月全域偏低1.0-2.2℃（vs气候常年值），7月初短暂回暖后再次转湿，全域降水较常年偏多57%-168%。佳木斯/长春30天降水分别134.6/242.2mm，低洼田渍涝风险持续。齐齐哈尔6月降水偏少(-19%)但以低温寡照为主。石家庄均高达35.4°C，较常年偏高2-3°C，为极端热事件。华北产区降水偏少，土壤湿度中等偏低。<b style="color:var(--risk-red)">【7/9 18时更新】</b>巴威维持超强台风级(16级/52m/s/935hPa)，七级风圈500km，7/9-10北方暴雨+强对流三预警齐发，<b>暴雨大暴雨区域调整为山西西北部/河北中部/天津西部100-150mm</b>，内蒙古河套/宁夏北部/陕西北部/河北东部/天津/吉林南部/辽宁中东部8-10级雷暴大风。建议关注：①东北渍涝+巴威叠加极端降水 ②华北强对流灾害 ③7/11后台风残余环流深入内陆的持续性降水。</div>
+    <div class="analysis-text">东北产区6月全域偏低1.0-2.2℃（vs气候常年值），7月初短暂回暖后再次转湿，全域降水较常年偏多57%-168%。佳木斯/长春30天降水分别134.6/242.2mm，低洼田渍涝风险持续。齐齐哈尔6月降水偏少(-19%)但以低温寡照为主。石家庄均高达35.4°C，较常年偏高2-3°C，为极端热事件。华北产区降水偏少，土壤湿度中等偏低。<b style="color:var(--risk-red)">【7/10 06时更新】</b>巴威减弱为强台风级(14级/45m/s/945hPa)，七级风圈450-500km，11日晚登陆闽浙沿海(13-15级)。中央气象台三预警齐发：<b>暴雨黄色预警升级</b>——20+省份大范围暴雨，河北中部/北京西南/天津北部/山西西部大暴雨，台湾特大暴雨250-700mm；<b>强对流蓝色预警</b>——新疆/内蒙古/陕西/辽宁/北京/天津/甘肃/四川8级以上雷暴大风，内蒙古东南/河北中北部小时雨量>50mm最大80mm+。情景A置信度高（高压坝阻挡），登陆后向西北深入华北。建议关注：①东北渍涝+巴威叠加极端降水 ②华北强对流灾害（范围较06时扩大） ③7/11后台风残余环流深入华北的持续性降水。</div>
   </div>
 <div class="crop-section" id="crop-大豆">
     <div class="crop-section-header"><span class="crop-icon">🫘</span><h3>大豆专区</h3><span class="region-count">14个监测产区</span></div>
@@ -2140,28 +2140,28 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <!-- 巴西大豆降水 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇧🇷 巴西大豆产区 · 15天降水预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_brazil_5094.png?v=20260709" style="width:100%;border-radius:8px;" alt="巴西大豆15天降水预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_brazil_5094.png?v=20260710" style="width:100%;border-radius:8px;" alt="巴西大豆15天降水预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">当前为冬季，巴西大豆产区（MT/GO/MS/BA）处于旱季，降水偏少属正常</div>
   </div>
 
   <!-- 巴西大豆温度 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇧🇷 巴西大豆产区 · 15天温度预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_brazil_5094.png?v=20260709" style="width:100%;border-radius:8px;" alt="巴西大豆15天温度预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_brazil_5094.png?v=20260710" style="width:100%;border-radius:8px;" alt="巴西大豆15天温度预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">冬季温度偏低属正常，关注9月春播前土壤墒情恢复情况</div>
   </div>
 
   <!-- 阿根廷大豆降水 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇦🇷 阿根廷大豆产区 · 15天降水预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_argentina_5094.png?v=20260709" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天降水预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_argentina_5094.png?v=20260710" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天降水预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">冬季阿根廷核心产区（布宜诺斯艾利斯/科尔多瓦/圣塔菲）降水偏少</div>
   </div>
 
   <!-- 阿根廷大豆温度 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇦🇷 阿根廷大豆产区 · 15天温度预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_argentina_5094.png?v=20260709" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天温度预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_argentina_5094.png?v=20260710" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天温度预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">冬季温度正常偏低，关注拉尼娜/厄尔尼诺转换对春播影响</div>
   </div>
 
@@ -2222,7 +2222,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--accent-blue);margin-bottom:6px;">🌧️ 降水量 48小时</div>
-      <img src="https://image.nmc.cn/product/2026/07/09/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260709000004800.JPG?v=1783552589365" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/07/10/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260710000004800.JPG?v=1783637550449" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--accent-blue);margin-bottom:6px;">🌧️ 降水量 72小时</div>
@@ -2321,7 +2321,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <tr><td style="color:var(--risk-red);font-weight:600">强厄尔尼诺</td><td class="mono">+1.5 ~ +1.9°C</td><td>全球农业显著受影响</td></tr>
     <tr><td style="color:var(--risk-red);font-weight:600">超强厄尔尼诺</td><td class="mono">≥ +2.0°C</td><td>21世纪仅3次：1997/2015/2026</td></tr>
   </table>
-  <div class="info-box warning"><p>当前巴威（52m/s）维持超强台风级超72小时（7/4起），这在历史上极为罕见。登陆后虽会减弱，但残余环流深入内陆仍可能造成200-500mm极端降水。</p></div>
+  <div class="info-box warning"><p>巴威（45m/s）已减弱为强台风级（此前维持超强台风级超72小时，7/4起，历史罕见）。预计11日晚登陆闽浙沿海(13-15级)，登陆后残余环流深入内陆仍可能造成200-500mm极端降水。</p></div>
   <h4>Walker环流的变化</h4>
   <p>在正常年份，Walker环流表现为：太平洋西岸（印尼/菲律宾）暖湿气流上升→高空东流→东太平洋下沉→信风将表层暖水向西输送。厄尔尼诺时，这一环流减弱甚至反转：东太平洋异常增暖→上升支东移→西岸下沉增强→东南亚干旱。</p>
   <div class="info-box warning"><p><strong>当前状态（7月8日更新）：</strong><strong>⚠️ 厄尔尼诺升级为"强至超强"！</strong><br>据2026年7月2日中国气象局发布会：赤道中东太平洋海温持续攀升，夏秋季将形成一次<strong>东部型、强至超强</strong>的厄尔尼诺事件。世界气象组织（WMO）同步确认，预计2026年7-9月发展为强厄尔尼诺事件，部分欧洲机构称此次强度可能达<strong>数十年未见水平</strong>。相关影响请关注农业气象监测面板的后续更新。</p></div>
