@@ -575,18 +575,41 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               <div class="typhoon-path-title">路径预判（7/11 06时更新）</div>
               当前位置(24.2°N/125.0°E) <span class="path-arrow">→</span> 西北快速移动(30-35km/h) <span class="path-arrow">→</span> <b>12日凌晨登陆浙台州至闽福鼎</b>(强台风级或台风级，13-14级，38-45m/s) <span class="path-arrow">→</span> 登陆后向西北转偏北移动，强度逐渐减弱。路径调整：已确认不经过台湾岛，从台湾东北侧远洋绕行，登陆点整体北移近百公里
             </div>
-            <div class="typhoon-risk">
-              ⚠️ 影响预判：巨型台风（七级风圈480-500km），对标2019利奇马<br>
-              <b>海上</b>：7/11-12东海大部/台湾海峡/钓鱼岛海域9-11级，中心经过12-14级，阵风15-16级；黄海南部/长江口区/杭州湾/舟山/浙闽苏沿海6-8级<br>
-              <b>陆上</b>：7/12凌晨浙中南/温台丽最强风雨，山区局部累计降雨突破400mm；沿海风暴潮叠加天文大潮<br>
-              <b>暴雨橙色</b>：北京/天津北部/河北中北部/内蒙古东南/辽宁西部和北部/吉林中东部/陕西南部/四川盆地西部/浙江/福建北部/江西东北/台湾岛暴雨-大暴雨；北京东北/河北东北局地特大暴雨250-280mm，浙东/闽东北/台湾中北部特大暴雨250-800mm<br>
-              <b>强对流黄色</b>：辽宁中西部/河北中部/浙江东部10级以上雷暴大风，<span style="color:#8b0000;font-weight:700">局地不排除龙卷</span>
+
+
+          </div>
+        </div>
+        <!-- 影响预判副表（原在巴威卡片内，移至右侧2fr列） -->
+        <div class="typhoon-card">
+          <div class="typhoon-card-header" style="background: linear-gradient(135deg, #d48806, #fa8c16);">
+            <h3>⚠️ 影响预判</h3>
+            <span class="category-badge" style="background:#fff;color:#d48806;font-size:10px;">7/11 06时</span>
+          </div>
+          <div class="typhoon-card-body">
+            <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
+              <div style="font-weight:600;margin-bottom:6px;">⚠️ 巨型台风（七级风圈480-500km），对标2019利奇马</div>
+              <div style="padding:8px;background:#e6f7ff;border-radius:6px;border-left:3px solid #1890ff;margin-bottom:8px;">
+                <b style="color:#1890ff;">海上</b>：7/11-12东海大部/台湾海峡/钓鱼岛海域9-11级，中心经过12-14级，阵风15-16级；黄海南部/长江口区/杭州湾/舟山/浙闽苏沿海6-8级
+              </div>
+              <div style="padding:8px;background:#fff7e6;border-radius:6px;border-left:3px solid #d48806;margin-bottom:8px;">
+                <b style="color:#d48806;">陆上</b>：7/12凌晨浙中南/温台丽最强风雨，山区局部累计降雨突破400mm；沿海风暴潮叠加天文大潮
+              </div>
+              <div style="padding:8px;background:#fff1f0;border-radius:6px;border-left:3px solid #8b0000;margin-bottom:8px;">
+                <b style="color:#8b0000;">暴雨橙色</b>：北京/天津北部/河北中北部/内蒙古东南/辽宁西部和北部/吉林中东部/陕西南部/四川盆地西部/浙江/福建北部/江西东北/台湾岛暴雨-大暴雨；北京东北/河北东北局地特大暴雨250-280mm，浙东/闽东北/台湾中北部特大暴雨250-800mm
+              </div>
+              <div style="padding:8px;background:#fffbe6;border-radius:6px;border-left:3px solid #faad14;">
+                <b style="color:#faad14;">强对流黄色</b>：辽宁中西部/河北中部/浙江东部10级以上雷暴大风，<span style="color:#8b0000;font-weight:700">局地不排除龙卷</span>
+              </div>
             </div>
           </div>
         </div>
-        </div>
-        </div>
-        <div class="typhoon-card">
+      </div>
+    </div>
+
+    <!-- 强对流天气预警（独立板块） -->
+    <div class="section">
+      <div class="section-title">强对流天气预警</div>
+      <div class="typhoon-card">
           <div class="typhoon-card-header" style="background: linear-gradient(135deg, #8b0000, #c0392b);">
             <h3>️ 强对流天气预警</h3>
             <span class="category-badge" style="background:#fff;color:#8b0000;font-size:10px;">NMC 07-11 06时</span>
@@ -2121,28 +2144,28 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <!-- 巴西大豆降水 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇧🇷 巴西大豆产区 · 15天降水预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_brazil_5096.png?v=20260711" style="width:100%;border-radius:8px;" alt="巴西大豆15天降水预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_brazil_5096.png?v=1783747702" style="width:100%;border-radius:8px;" alt="巴西大豆15天降水预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">当前为冬季，巴西大豆产区（MT/GO/MS/BA）处于旱季，降水偏少属正常</div>
   </div>
 
   <!-- 巴西大豆温度 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇧🇷 巴西大豆产区 · 15天温度预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_brazil_5096.png?v=20260711" style="width:100%;border-radius:8px;" alt="巴西大豆15天温度预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_brazil_5096.png?v=1783747702" style="width:100%;border-radius:8px;" alt="巴西大豆15天温度预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">冬季温度偏低属正常，关注9月春播前土壤墒情恢复情况</div>
   </div>
 
   <!-- 阿根廷大豆降水 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇦🇷 阿根廷大豆产区 · 15天降水预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_argentina_5096.png?v=20260711" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天降水预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_argentina_5096.png?v=1783747702" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天降水预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">冬季阿根廷核心产区（布宜诺斯艾利斯/科尔多瓦/圣塔菲）降水偏少</div>
   </div>
 
   <!-- 阿根廷大豆温度 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇦🇷 阿根廷大豆产区 · 15天温度预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_argentina_5096.png?v=20260711" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天温度预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_argentina_5096.png?v=1783747702" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天温度预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">冬季温度正常偏低，关注拉尼娜/厄尔尼诺转换对春播影响</div>
   </div>
 
@@ -2162,7 +2185,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div style="font-size:13px;font-weight:600;margin-bottom:10px;">📊 近期（7/4-7/11）天气特征</div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:12px;color:var(--text-secondary);line-height:1.7;">
     <div>
-      <div style="font-weight:600;margin-bottom:4px;"><div style="font-weight:600;margin-bottom:4px;"><div style="font-weight:600;margin-bottom:4px;">🌡️ 气温</div>
+      <div style="font-weight:600;margin-bottom:4px;">️ 气温</div>
 <div>7月10日08时-11日06时，甘肃东南部/四川中部/陕西北部/山西北部/河北中部和北部/北京东部/天津北部/辽宁西部/广西东部/台湾岛中北部等地出现大到暴雨，局地大暴雨，四川绵阳局地特大暴雨(255.3mm)</div>
 <div>内蒙古东部/吉林东部/河北中南部/陕西北部/四川中西部等地局地出现雷暴大风</div>
 <div>河北南部/河南北部/内蒙古中西部/甘肃大部/新疆大部偏高2-6℃</div>
