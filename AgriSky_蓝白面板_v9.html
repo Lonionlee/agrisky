@@ -549,56 +549,25 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="section">
       <div class="section-title" id="section-typhoon">台风追踪</div>
       <div class="typhoon-row">
-        <div class="typhoon-card">
-          <div class="typhoon-card-header">
-            <h3>巴威 (Bavi)</h3>
-            <span class="category-badge" style="background:#d48806;color:#fff;">热带风暴</span>
+        <div class="typhoon-card" style="grid-column: 1/-1;">
+          <div class="typhoon-card-header" style="background: linear-gradient(135deg, #52c41a, #73d13d);">
+            <h3>🟢 当前无活跃台风</h3>
+            <span class="category-badge" style="background:#fff;color:#52c41a;font-size:10px;">7/15 已停编</span>
           </div>
           <div class="typhoon-card-body">
-            <div class="typhoon-stats">
-              <div class="typhoon-stat">
-                <div class="typhoon-stat-value">990百帕</div>
-                <div class="typhoon-stat-label">中心气压 hPa</div>
+            <div style="font-size:13px;color:var(--text-secondary);line-height:1.8;">
+              <div style="margin-bottom:6px;">
+                <b>第9号台风 巴威（Bavi）</b>：7/11登陆浙江台州(13级)→北上穿过山东→7/14 20时在朝鲜南部变性为温带气旋，中央气象台已停止编号。
               </div>
-              <div class="typhoon-stat">
-                <div class="typhoon-stat-value">18米/秒</div>
-                <div class="typhoon-stat-label">风速 m/s（8级）</div>
+              <div style="margin-bottom:6px;">
+                <b>第10号台风 美莎克（Maysak）</b>：7/3登陆海南陵水→7/6湖南境内消散。主要影响华南，东北无直接影响。
               </div>
-              <div class="typhoon-stat">
-                <div class="typhoon-stat-value">600</div>
-                <div class="typhoon-stat-label">云系直径 km</div>
+              <div style="margin-bottom:6px;">
+                <b>第11号台风 海神（Haishen）</b>：7/13远洋生成，仅存活约30小时，7/14 14时停编。全程远离我国，无影响。
               </div>
-            </div>
-            <div class="typhoon-info">
-              位置：36.3°N, 120.1°E</div>
-            <div class="typhoon-path">
-              <div class="typhoon-path-title">路径预判（7/14 05时更新）</div>
-              当前位置(36.3°N/120.1°E 青岛胶州) <span class="path-arrow">→</span> 东北方向移动(30km/h) <span class="path-arrow">→</span> <b>14日上午穿过山东半岛入渤海海峡→黄海北部</b>(热带风暴级，18m/s) <span class="path-arrow">→</span> 今夜穿过朝鲜半岛，逐渐变性为温带气旋强度继续减弱，预计14日夜间消散。路径调整：巴威已减弱为热带风暴级，环流大幅收缩，主要影响转为山东半岛及黄海海域
-            </div>
-
-
-          </div>
-        </div>
-        <!-- 影响预判副表（原在巴威卡片内，移至右侧2fr列） -->
-        <div class="typhoon-card">
-          <div class="typhoon-card-header" style="background: linear-gradient(135deg, #d48806, #fa8c16);">
-            <h3>⚠️ 影响预判</h3>
-            <span class="category-badge" style="background:#fff;color:#d48806;font-size:10px;">7/14 06时</span>
-          </div>
-          <div class="typhoon-card-body">
-            <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-              <div style="font-weight:600;margin-bottom:6px;">⚠️ 巴威（热带风暴级，18m/s，990hPa）位于青岛胶州(36.3°N/120.1°E)，上午将穿过山东半岛移入渤海海峡→黄海北部，今夜穿过朝鲜半岛后变性为温带气旋</div>
-              <div style="padding:8px;background:#e6f7ff;border-radius:6px;border-left:3px solid #1890ff;margin-bottom:8px;">
-                <b style="color:#1890ff;">海上</b>：渤海海峡/黄海大部/东海北部和西南部6-8级大风，部分沿海和海区阵风9-10级（台风蓝色预警）
+              <div style="padding:8px;background:#f6ffed;border-radius:6px;border-left:3px solid #52c41a;margin-top:8px;">
+                <b style="color:#52c41a;">关注重点</b>：8月进入台风活跃高峰期，厄尔尼诺+副高偏北格局下北上台风概率高于常年，后续新台风可能对东北灌浆期玉米构成风险。
               </div>
-              <div style="padding:8px;background:#fff7e6;border-radius:6px;border-left:3px solid #d48806;margin-bottom:8px;">
-                <b style="color:#d48806;">暴雨橙色预警</b>：辽宁东部/吉林中东部/黑龙江东部/山东东部/陕西北部/山西中南部/河北南部/河南北部等地大到暴雨，其中<b>辽宁东北部/吉林东部局地大暴雨(100-200mm)</b>
-              </div>
-              <div style="padding:8px;background:#fff1f0;border-radius:6px;border-left:3px solid #8b0000;margin-bottom:8px;">
-                <b style="color:#d48806;">东北产区影响</b>：辽宁中北部/吉林中部遭遇极端暴雨+列车效应，东北春玉米正值开花散粉期，授粉失败风险不可逆；安徽/江苏/山东夏玉米尚处拔节期，恢复弹性较大
-              </div>
-              <div style="padding:8px;background:#fffbe6;border-radius:6px;border-left:3px solid #faad14;">
-                <b style="color:#faad14;">强对流蓝色预警（07/15 06时）</b>：短时强降水20-50mm（局地80mm+）；局地8-10级以上雷暴大风/冰雹</div>
             </div>
           </div>
         </div>
@@ -2344,7 +2313,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div id="fc-sa" style="margin-bottom:28px;">
 <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
   <span style="font-size:16px;font-weight:600;color:var(--accent-blue);">🌎 南美产区 · 大豆15天天气展望</span>
-  <span style="font-size:11px;color:var(--text-muted);">（WorldAgWeather · 2026-07-13）</span>
+  <span style="font-size:11px;color:var(--text-muted);">（WorldAgWeather · 2026-07-15）</span>
 </div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
 
@@ -2423,30 +2392,30 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:10px;">
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--risk-red);margin-bottom:6px;">🌡️ 最高气温 24小时</div>
-      <img src="https://image.nmc.cn/product/2026/07/14/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260714080002412.jpg?v=1783897312464" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/07/15/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260715080002412.jpg?v=1783897312464" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--risk-red);margin-bottom:6px;">🌡️ 最高气温 48小时</div>
-      <img src="https://image.nmc.cn/product/2026/07/14/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260714080004812.jpg?v=1783897312464" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/07/15/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260715080004812.jpg?v=1783897312464" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--risk-red);margin-bottom:6px;">🌡️ 最高气温 72小时</div>
-      <img src="https://image.nmc.cn/product/2026/07/14/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260714080007212.jpg?v=1783897312464" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/07/15/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260715080007212.jpg?v=1783897312464" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
   </div>
   <!-- Row 2: 降水量预报 -->
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--accent-blue);margin-bottom:6px;">🌧️ 降水量 24小时</div>
-      <img src="https://image.nmc.cn/product/2026/07/14/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260714000002400.JPG?v=1783900024089" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/07/15/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260715000002400.JPG?v=1783900024089" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--accent-blue);margin-bottom:6px;">🌧️ 降水量 48小时</div>
-      <img src="https://image.nmc.cn/product/2026/07/14/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260714000004800.JPG?v=1783897350132" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/07/15/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260715000004800.JPG?v=1783897350132" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--accent-blue);margin-bottom:6px;">🌧️ 降水量 72小时</div>
-      <img src="https://image.nmc.cn/product/2026/07/14/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260714000007200.JPG?v=1783893605311" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/07/15/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260715000007200.JPG?v=1783893605311" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
   </div>
   <div style="font-size:10px;color:var(--text-muted);margin-top:8px;">来源：<a href="http://www.nmc.cn/publish/precipitation/1-day.html" target="_blank" style="color:var(--accent-blue);">中央气象台降水量预报</a> · <a href="https://m.nmc.cn/publish/temperature/hight/24hour.html" target="_blank" style="color:var(--accent-blue);">气温预报</a></div>
