@@ -2780,15 +2780,17 @@ function initWeather(){
     if(e2)new Chart(e2.getContext('2d'),{type:'bar',data:{labels:d.names,datasets:[
       {label:'14天均高',data:d.max_temps,backgroundColor:'rgba(239,68,68,0.6)',borderRadius:3},
       {label:'14天均低',data:d.min_temps,backgroundColor:'rgba(37,99,235,0.6)',borderRadius:3},
-      {label:'常年均高',data:d.normals_high,type:'line',borderColor:'rgba(239,68,68,0.4)',borderDash:[4,4],pointRadius:0,borderWidth:1.5,fill:false},
-      {label:'常年均低',data:d.normals_low,type:'line',borderColor:'rgba(37,99,235,0.4)',borderDash:[4,4],pointRadius:0,borderWidth:1.5,fill:false}
-    ]},options:so});
+      {label:'常年均高',data:d.normals_high,type:'line',borderColor:'rgba(239,68,68,0.7)',borderDash:[4,4],pointRadius:0,borderWidth:2,fill:false},
+      {label:'常年均低',data:d.normals_low,type:'line',borderColor:'rgba(37,99,235,0.7)',borderDash:[4,4],pointRadius:0,borderWidth:2,fill:false},
+      {label:'均高距平°C',data:d.names.map(function(_,i){return Math.round((d.max_temps[i]-d.normals_high[i])*10)/10}),type:'line',borderColor:'#16a34a',borderWidth:2,borderDash:[3,3],pointRadius:4,pointBackgroundColor:'#16a34a',yAxisID:'y1',fill:false}
+    ]},options:Object.assign({},so,{scales:{y:Object.assign({},so.scales.y,{position:'left',title:{display:true,text:'温度°C',color:'#64748b'}}),y1:{position:'right',grid:{drawOnChartArea:false},ticks:{color:'#16a34a',callback:function(v){return (v>0?'+':'')+v+'°C';}},title:{display:true,text:'距平',color:'#16a34a'}}}})});
     
     var e3=document.getElementById('precip-'+crop);
     if(e3)new Chart(e3.getContext('2d'),{type:'bar',data:{labels:d.names,datasets:[
       {label:'30天降水',data:d.precip_30,backgroundColor:'rgba(37,99,235,0.7)',borderRadius:3},
       {label:'14天降水',data:d.precip_14,backgroundColor:'rgba(59,130,246,0.5)',borderRadius:3},
-      {label:'常年月降水',data:d.normals_precip,type:'line',borderColor:'rgba(239,68,68,0.5)',borderDash:[5,3],pointRadius:0,borderWidth:1.5,fill:false}
+      {label:'常年月降水',data:d.normals_precip,type:'line',borderColor:'rgba(239,68,68,0.5)',borderDash:[5,3],pointRadius:0,borderWidth:1.5,fill:false},
+      {label:'30天距平%',data:d.names.map(function(_,i){return Math.round((d.precip_30[i]-d.normals_precip[i])/d.normals_precip[i]*100)}),type:'line',borderColor:'#f59e0b',borderWidth:2,borderDash:[2,2],pointRadius:3,pointBackgroundColor:'#f59e0b',yAxisID:'y1',fill:false}
     ]},options:so});
     
     var e4=document.getElementById('soil-'+crop);
