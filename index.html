@@ -2924,53 +2924,65 @@ function initWeather(){
     wrap.style.cssText = 'overflow-x:auto; margin:8px 0;';
     var tbl = document.createElement('table');
     tbl.className = 'region-detail-table';
-    tbl.innerHTML = '<thead><tr><th>产区</th><th>生育期积温/需</th><th>累计降水(mm)</th><th>土壤湿度</th><th>风险信号</th></tr></thead>';
+    tbl.innerHTML = '<thead><tr><th>产区</th><th>14天均高(°C)</th><th>14天均低(°C)</th><th>当前生育期</th><th>生育期积温/需</th><th>入汛以来降水(mm)</th><th>14天降水(mm)</th><th>土壤湿度</th><th>风险信号</th></tr></thead>';
     var tbody = document.createElement('tbody');
     d.names.forEach(function(r, i){
       var soil = d.soils[i];
+      var soilAvg = d.soils_avg && d.soils_avg[i] ? d.soils_avg[i] : null;
+      var maxT = d.max_temps && d.max_temps[i] !== undefined ? d.max_temps[i] : null;
+      var minT = d.min_temps && d.min_temps[i] !== undefined ? d.min_temps[i] : null;
+      var p14 = d.precip_14 && d.precip_14[i] !== undefined ? d.precip_14[i] : null;
       var acc = d.acc_season[i];
       var accReq = d.acc_season_req ? d.acc_season_req[i] : null;
       var hs = d.harvest_status ? d.harvest_status[i] : '';
+      var phen = d.phenology && d.phenology[i] ? d.phenology[i] : '-';
+      // 积温显示
       var accDisplay = hs === '已收获' ? '<span style="color:#64748b">已收获</span>' :
                        (acc !== null && acc !== undefined ?
-                         (accReq ? acc.toFixed(0)+'/'+accReq+' ('+Math.round(acc/accReq*100)+'%)' : acc.toFixed(1)) : '-');
-      var soilRisk = soil <= (thresholds.soil_severe_dry||0.15) ? '🔴 干旱' :
-                     soil <= (thresholds.soil_moderate_dry||0.25) ? '🟡 偏干' :
-                     soil >= (thresholds.soil_saturation||0.40) ? '🔵 过湿' : '🟢 正常';
-      var soilBg = soil <= (thresholds.soil_severe_dry||0.15) ? 'rgba(239,68,68,0.08)' :
-                   soil <= (thresholds.soil_moderate_dry||0.25) ? 'rgba(234,179,8,0.08)' :
-                   soil >= (thresholds.soil_saturation||0.40) ? 'rgba(37,99,235,0.08)' : 'rgba(34,197,94,0.08)';
-      var soilColor = soil <= (thresholds.soil_severe_dry||0.15) ? '#ef4444' :
-                      soil <= (thresholds.soil_moderate_dry||0.25) ? '#a16207' :
-                      soil >= (thresholds.soil_saturation||0.40) ? '#2563eb' : '#16a34a';
-      var tr = document.createElement('tr');
-      tr.id = 'region-' + crop + '-' + i;
-      // 积温同比/平均对比
+                         (accReq ? acc.toFixed(1)+'/'+accReq+' ('+Math.round(acc/accReq*100)+'%)' : acc.toFixed(1)) : '-');
+      // 积温同比/平均
       var accYoy = d.acc_season_yoy !== undefined ? d.acc_season_yoy[i] : null;
       var accAvg = d.acc_season_avg !== undefined ? d.acc_season_avg[i] : null;
       var accExtra = '';
       if(accYoy !== null && accYoy !== undefined) accExtra += '<br><span style="color:#64748b;font-size:11px">去年: '+accYoy.toFixed(0)+'</span>';
       if(accAvg !== null && accAvg !== undefined) accExtra += '<br><span style="color:#94a3b8;font-size:11px">平均: '+accAvg.toFixed(0)+'</span>';
-      // 降水同比/平均对比
+      // 降水同比/平均
+      var pSeason = d.precip_season[i];
       var pYoy = d.precip_season_yoy !== undefined ? d.precip_season_yoy[i] : null;
       var pAvg = d.precip_season_avg !== undefined ? d.precip_season_avg[i] : null;
       var pExtra = '';
       if(pYoy !== null && pYoy !== undefined) pExtra += '<br><span style="color:#64748b;font-size:11px">去年: '+pYoy.toFixed(1)+'</span>';
       if(pAvg !== null && pAvg !== undefined) pExtra += '<br><span style="color:#94a3b8;font-size:11px">平均: '+pAvg.toFixed(1)+'</span>';
+      // 土壤湿度相对偏离率风险判断
+      var riskText, riskBg, riskColor;
+      if (soilAvg !== null && soilAvg > 0) {
+        var deviation = ((soil - soilAvg) / soilAvg * 100);
+        if (deviation <= -35) {
+          riskText = '🔴 严重干旱(偏低'+Math.round(-deviation)+'%)'; riskBg='rgba(239,68,68,0.1)'; riskColor='#ef4444';
+        } else if (deviation <= -20) {
+          riskText = '🟡 偏干(偏低'+Math.round(-deviation)+'%)'; riskBg='rgba(234,179,8,0.1)'; riskColor='#a16207';
+        } else if (deviation >= 30) {
+          riskText = '🔵 渍涝风险(偏高'+Math.round(deviation)+'%)'; riskBg='rgba(37,99,235,0.1)'; riskColor='#2563eb';
+        } else {
+          riskText = ' 正常(较均值'+(deviation>=0?'+':'')+Math.round(deviation)+'%)'; riskBg='rgba(34,197,94,0.1)'; riskColor='#16a34a';
+        }
+      } else {
+        riskText = '⚪ 数据不足'; riskBg='rgba(100,116,139,0.08)'; riskColor='#64748b';
+      }
+      var tr = document.createElement('tr');
+      tr.id = 'region-' + crop + '-' + i;
+      var fmt = function(v) { return (v !== null && v !== undefined) ? v.toFixed(1) : '-'; };
       tr.innerHTML = '<td class="region-name">' + r + '</td>' +
+        '<td class="mono">' + fmt(maxT) + '</td>' +
+        '<td class="mono">' + fmt(minT) + '</td>' +
+        '<td>' + phen + '</td>' +
         '<td>' + accDisplay + accExtra + '</td>' +
-        '<td>' + (d.precip_season[i]!==null&&d.precip_season[i]!==undefined?d.precip_season[i].toFixed(1):'-') + pExtra + '</td>' +
-        '<td>' + soil.toFixed(3) + '</td>' +
-        '<td><span class="risk-badge" style="background:' + soilBg + ';color:' + soilColor + '">' + soilRisk + '</span></td>';
+        '<td>' + (pSeason!==null&&pSeason!==undefined?pSeason.toFixed(1):'-') + pExtra + '</td>' +
+        '<td class="mono">' + fmt(p14) + '</td>' +
+        '<td class="mono">' + soil.toFixed(3) + '</td>' +
+        '<td><span class="risk-badge" style="background:' + riskBg + ';color:' + riskColor + '">' + riskText + '</span></td>';
       tbody.appendChild(tr);
     });
-    tbl.appendChild(tbody);
-    wrap.appendChild(tbl);
-    // Insert after nav but before charts
-    var chartsGrid = sec.querySelector('.crop-charts-grid');
-    if(chartsGrid){ chartsGrid.after(wrap); }
-    else { navDiv.after(wrap); }
-  });
 
 }
 
@@ -3031,7 +3043,7 @@ function populateMainTable() {
       }
       // Build soil display with relative deviation
       var soilVal = cd.soils[ri];
-      var soilAvg = cd.soils_avg && cd.soils_avg[ri] ? cd.soils_avg[ri] : 0.3;
+      var soilAvg = cd.soils_avg && ri < cd.soils_avg.length && cd.soils_avg[ri] ? cd.soils_avg[ri] : 0.3;
       var soilD = ((soilVal - soilAvg) / soilAvg * 100);
       var riskLevel, riskBadge, dotClass, riskNote;
       if (soilD <= -35) {
