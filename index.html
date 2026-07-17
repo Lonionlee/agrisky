@@ -3041,20 +3041,25 @@ function populateMainTable() {
       } else {
         pHtml = '-';
       }
-      // Build soil display with relative deviation
+      // Build soil display with relative deviation + absolute threshold
       var soilVal = cd.soils[ri];
       var soilAvg = cd.soils_avg && ri < cd.soils_avg.length && cd.soils_avg[ri] ? cd.soils_avg[ri] : 0.3;
       var soilD = ((soilVal - soilAvg) / soilAvg * 100);
       var riskLevel, riskBadge, dotClass, riskNote;
+      // 7-28cm根区层：绝对值≥0.32为严重过湿，≥0.30为偏湿；结合相对偏离率综合判断
       if (soilD <= -35) {
         riskLevel = '高风险'; riskBadge = 'red'; dotClass = 'red';
         riskNote = '严重干旱(墒情偏低' + Math.round(-soilD) + '%)';
       } else if (soilD <= -20) {
         riskLevel = '中高风险'; riskBadge = 'orange'; dotClass = 'orange';
         riskNote = '土壤偏干(偏低' + Math.round(-soilD) + '%)';
-      } else if (soilD >= 30) {
+      } else if (soilVal >= 0.32 || soilD >= 30) {
         riskLevel = '中高风险'; riskBadge = 'orange'; dotClass = 'orange';
-        riskNote = '渍涝风险(偏高' + Math.round(soilD) + '%)';
+        var reason = soilVal >= 0.32 ? '渍涝风险(墒情'+soilVal.toFixed(3)+')' : '渍涝风险(偏高' + Math.round(soilD) + '%)';
+        riskNote = reason;
+      } else if (soilVal >= 0.30 || soilD >= 15) {
+        riskLevel = '中风险'; riskBadge = 'orange'; dotClass = 'orange';
+        riskNote = '土壤偏湿(墒情'+soilVal.toFixed(3)+',较均值+' + Math.round(soilD) + '%)';
       } else {
         riskLevel = '低风险'; riskBadge = 'green'; dotClass = 'green';
         riskNote = '墒情正常(较均值' + (soilD>=0?'+':'') + Math.round(soilD) + '%)';
@@ -3091,16 +3096,19 @@ Object.keys(CN).forEach(function(crop){
     var soil=cd.soils[ri],avgS=cd.soils_avg?cd.soils_avg[ri]:0.3;
     var soilD=((soil-avgS)/avgS*100);
     var riskLevel='',riskNote='',badgeClass='green',dotClass='green';
-    // 改用相对历史均值偏离率判断风险（不再用绝对阈值）
+    // 7-28cm根区层：绝对值≥0.32为严重过湿，≥0.30为偏湿；结合相对偏离率综合判断
     if(soilD<=-35){
       riskLevel='高风险';badgeClass='red';dotClass='red';
       riskNote='严重干旱(墒情较历史均值偏低'+Math.round(-soilD)+'%)，需灌溉';
     }else if(soilD<=-20){
       riskLevel='中高风险';badgeClass='orange';dotClass='orange';
       riskNote='土壤偏干(偏低'+Math.round(-soilD)+'%)，关注后续降水';
-    }else if(soilD>=30){
+    }else if(soil>=0.32||soilD>=30){
       riskLevel='中高风险';badgeClass='orange';dotClass='orange';
-      riskNote='渍涝风险(墒情较历史均值偏高'+Math.round(soilD)+'%)，根系缺氧';
+      riskNote=soil>=0.32?'渍涝风险(墒情'+soil.toFixed(3)+')':'渍涝风险(偏高'+Math.round(soilD)+'%)，根系缺氧';
+    }else if(soil>=0.30||soilD>=15){
+      riskLevel='中风险';badgeClass='orange';dotClass='orange';
+      riskNote='土壤偏湿(墒情'+soil.toFixed(3)+',较均值+'+Math.round(soilD)+'%)';
     }else{
       riskLevel='低风险';badgeClass='green';dotClass='green';
       riskNote='墒情正常(较历史均值'+(soilD>=0?'+':'')+Math.round(soilD)+'%)';
