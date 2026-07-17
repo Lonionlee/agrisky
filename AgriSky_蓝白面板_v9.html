@@ -1602,9 +1602,12 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
               <th>作物</th>
               <th>产区</th>
               <th>国家</th>
+              <th>14天均高(°C)</th>
+              <th>14天均低(°C)</th>
               <th>当前生育期</th>
               <th>生育期积温/需</th>
               <th>入汛以来降水(mm)</th>
+              <th>14天降水(mm)</th>
               <th>土壤湿度</th>
               <th>风险等级</th>
               <th>风险说明</th>
@@ -1615,88 +1618,110 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
             <tr class="crop-corn" data-crop="玉米">
               <td><span class="crop-badge corn">玉米</span></td>
               <td>齐齐哈尔</td><td>中国</td>
+              <td class="mono">28.2</td><td class="mono">20.4</td>
               <td>拔节期（偏晚4-7天）</td>
-              <td class="mono">368.4</td><td class="mono">129.3</td><td class="mono">0.343</td>
+              <td class="mono">368.4</td><td class="mono">129.3</td>
+              <td class="mono">43.7</td><td class="mono">0.343</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">降水偏多，土壤湿度偏高</td>
             </tr>
             <tr class="crop-corn" data-crop="玉米">
               <td><span class="crop-badge corn">玉米</span></td>
               <td>佳木斯</td><td>中国</td>
+              <td class="mono">27.4</td><td class="mono">20.0</td>
               <td>拔节期（偏晚4-7天）</td>
-              <td class="mono">338.8</td><td class="mono">133.8</td><td class="mono">0.309</td>
+              <td class="mono">338.8</td><td class="mono">133.8</td>
+              <td class="mono">58.4</td><td class="mono">0.309</td>
               <td><span class="risk-badge orange"><span class="risk-dot orange"></span>中高风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">牡丹江流域暴雨，9条支流超警/4条超保，洪峰7/17达宁安，土壤过饱和渍涝风险极高</td>
             </tr>
             <tr class="crop-corn" data-crop="玉米">
               <td><span class="crop-badge corn">玉米</span></td>
               <td>白城</td><td>中国</td>
+              <td class="mono">28.9</td><td class="mono">20.6</td>
               <td>拔节期（偏晚4-7天）</td>
-              <td class="mono">349.0</td><td class="mono">137.2</td><td class="mono">0.309</td>
+              <td class="mono">349.0</td><td class="mono">137.2</td>
+              <td class="mono">48.2</td><td class="mono">0.309</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">降水偏多，土壤湿度偏高</td>
             </tr>
             <tr class="crop-corn" data-crop="玉米">
               <td><span class="crop-badge corn">玉米</span></td>
               <td>长春</td><td>中国</td>
+              <td class="mono">28.6</td><td class="mono">21.9</td>
               <td>拔节期（偏晚4-7天）</td>
-              <td class="mono">360.4</td><td class="mono">255.1</td><td class="mono">0.354</td>
+              <td class="mono">360.4</td><td class="mono">255.1</td>
+              <td class="mono">46.1</td><td class="mono">0.354</td>
               <td><span class="risk-badge red"><span class="risk-dot red"></span>高风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">渍涝严重，30天降水255mm｜国家四级救灾应急响应，拨款3000万</td>
             </tr>
             <tr class="crop-corn" data-crop="玉米">
               <td><span class="crop-badge corn">玉米</span></td>
               <td>沈阳</td><td>中国</td>
+              <td class="mono">30.6</td><td class="mono">23.0</td>
               <td>拔节期（偏晚4-7天）</td>
-              <td class="mono">404.2</td><td class="mono">208.7</td><td class="mono">0.354</td>
+              <td class="mono">404.2</td><td class="mono">208.7</td>
+              <td class="mono">31.8</td><td class="mono">0.354</td>
               <td><span class="risk-badge orange"><span class="risk-dot orange"></span>中高风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">渍涝风险突出，30天降水209mm</td>
             </tr>
             <tr class="crop-corn" data-crop="玉米">
               <td><span class="crop-badge corn">玉米</span></td>
               <td>石家庄</td><td>中国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>拔节期</td>
-              <td class="mono">557.8</td><td class="mono">20.0</td><td class="mono">0.269</td>
+              <td class="mono">557.8</td><td class="mono">20.0</td>
+              <td class="mono">-</td><td class="mono">0.269</td>
               <td><span class="risk-badge orange"><span class="risk-dot orange"></span>中高风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">极端高温35.4°C，热害风险</td>
             </tr>
             <tr class="crop-corn" data-crop="玉米">
               <td><span class="crop-badge corn">玉米</span></td>
               <td>济南</td><td>中国</td>
+              <td class="mono">33.7</td><td class="mono">25.4</td>
               <td>拔节期</td>
-              <td class="mono">532.8</td><td class="mono">92.4</td><td class="mono">0.301</td>
+              <td class="mono">532.8</td><td class="mono">92.4</td>
+              <td class="mono">46.2</td><td class="mono">0.301</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">正常</td>
             </tr>
             <tr class="crop-corn" data-crop="玉米">
               <td><span class="crop-badge corn">玉米</span></td>
               <td>菏泽</td><td>中国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>拔节期</td>
-              <td class="mono">552.9</td><td class="mono">84.7</td><td class="mono">0.225</td>
+              <td class="mono">552.9</td><td class="mono">84.7</td>
+              <td class="mono">-</td><td class="mono">0.225</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">高温34.6°C，注意防暑</td>
             </tr>
             <tr class="crop-corn" data-crop="玉米">
               <td><span class="crop-badge corn">玉米</span></td>
               <td>郑州</td><td>中国</td>
+              <td class="mono">33.9</td><td class="mono">25.6</td>
               <td>拔节期</td>
-              <td class="mono">565.5</td><td class="mono">90.8</td><td class="mono">0.300</td>
+              <td class="mono">565.5</td><td class="mono">90.8</td>
+              <td class="mono">32.3</td><td class="mono">0.300</td>
               <td><span class="risk-badge orange"><span class="risk-dot orange"></span>中高风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">极端高温35.2°C，热害风险</td>
             </tr>
             <tr class="crop-corn" data-crop="玉米">
               <td><span class="crop-badge corn">玉米</span></td>
               <td>周口</td><td>中国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>拔节期</td>
-              <td class="mono">543.5</td><td class="mono">59.2</td><td class="mono">0.133</td>
+              <td class="mono">543.5</td><td class="mono">59.2</td>
+              <td class="mono">-</td><td class="mono">0.133</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">高温34.3°C，注意防暑</td>
             </tr>
             <tr class="crop-corn" data-crop="玉米">
               <td><span class="crop-badge corn">玉米</span></td>
               <td>驻马店</td><td>中国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>拔节期</td>
-              <td class="mono">498.7</td><td class="mono">55.8</td><td class="mono">0.133</td>
+              <td class="mono">498.7</td><td class="mono">55.8</td>
+              <td class="mono">-</td><td class="mono">0.133</td>
               <td><span class="risk-badge red"><span class="risk-dot red"></span>高风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">土壤严重偏干(0.133)</td>
             </tr>
@@ -1704,112 +1729,140 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
             <tr class="crop-soy" data-crop="大豆">
               <td><span class="crop-badge soy">大豆</span></td>
               <td>齐齐哈尔</td><td>中国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>开花期（偏晚）</td>
-              <td class="mono">368.4</td><td class="mono">129.3</td><td class="mono">0.343</td>
+              <td class="mono">368.4</td><td class="mono">129.3</td>
+              <td class="mono">-</td><td class="mono">0.343</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">降水偏多，土壤湿度偏高</td>
             </tr>
             <tr class="crop-soy" data-crop="大豆">
               <td><span class="crop-badge soy">大豆</span></td>
               <td>黑河</td><td>中国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>开花期（偏晚）</td>
-              <td class="mono">317.2</td><td class="mono">102.4</td><td class="mono">0.251</td>
+              <td class="mono">317.2</td><td class="mono">102.4</td>
+              <td class="mono">-</td><td class="mono">0.251</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">降水偏多，土壤湿度偏高</td>
             </tr>
             <tr class="crop-soy" data-crop="大豆">
               <td><span class="crop-badge soy">大豆</span></td>
               <td>Des Moines, IA</td><td>美国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>开花-结荚期</td>
-              <td class="mono">400.3</td><td class="mono">75.1</td><td class="mono">0.194</td>
+              <td class="mono">400.3</td><td class="mono">75.1</td>
+              <td class="mono">-</td><td class="mono">0.194</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">土壤偏干(0.194)，关注降水</td>
             </tr>
             <tr class="crop-soy" data-crop="大豆">
               <td><span class="crop-badge soy">大豆</span></td>
               <td>Springfield</td><td>美国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>开花-结荚期</td>
-              <td class="mono">431.3</td><td class="mono">352.7</td><td class="mono">0.247</td>
+              <td class="mono">431.3</td><td class="mono">352.7</td>
+              <td class="mono">-</td><td class="mono">0.247</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">墒情适宜</td>
             </tr>
             <tr class="crop-soy" data-crop="大豆">
               <td><span class="crop-badge soy">大豆</span></td>
               <td>Indianapolis</td><td>美国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>开花-结荚期</td>
-              <td class="mono">433.0</td><td class="mono">142.7</td><td class="mono">0.283</td>
+              <td class="mono">433.0</td><td class="mono">142.7</td>
+              <td class="mono">-</td><td class="mono">0.283</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">墒情适宜</td>
             </tr>
             <tr class="crop-soy" data-crop="大豆">
               <td><span class="crop-badge soy">大豆</span></td>
               <td>Columbus</td><td>美国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>开花-结荚期</td>
-              <td class="mono">429.8</td><td class="mono">118.3</td><td class="mono">0.279</td>
+              <td class="mono">429.8</td><td class="mono">118.3</td>
+              <td class="mono">-</td><td class="mono">0.279</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">墒情适宜</td>
             </tr>
             <tr class="crop-soy" data-crop="大豆">
               <td><span class="crop-badge soy">大豆</span></td>
               <td>Minneapolis</td><td>美国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>开花-结荚期</td>
-              <td class="mono">346.9</td><td class="mono">132.6</td><td class="mono">0.271</td>
+              <td class="mono">346.9</td><td class="mono">132.6</td>
+              <td class="mono">-</td><td class="mono">0.271</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">墒情适宜</td>
             </tr>
             <tr class="crop-soy" data-crop="大豆">
               <td><span class="crop-badge soy">大豆</span></td>
               <td>Omaha</td><td>美国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>开花-结荚期</td>
-              <td class="mono">432.1</td><td class="mono">64.9</td><td class="mono">0.194</td>
+              <td class="mono">432.1</td><td class="mono">64.9</td>
+              <td class="mono">-</td><td class="mono">0.194</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">土壤偏干(0.194)，关注降水</td>
             </tr>
             <tr class="crop-soy" data-crop="大豆">
               <td><span class="crop-badge soy">大豆</span></td>
               <td>Columbia</td><td>美国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>开花-结荚期</td>
-              <td class="mono">430.9</td><td class="mono">129.7</td><td class="mono">0.228</td>
+              <td class="mono">430.9</td><td class="mono">129.7</td>
+              <td class="mono">-</td><td class="mono">0.228</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">墒情适宜</td>
             </tr>
             <tr class="crop-soy" data-crop="大豆">
               <td><span class="crop-badge soy">大豆</span></td>
               <td>Sioux Falls, SD</td><td>美国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>开花-结荚期</td>
-              <td class="mono">382.0</td><td class="mono">31.4</td><td class="mono">0.169</td>
+              <td class="mono">382.0</td><td class="mono">31.4</td>
+              <td class="mono">-</td><td class="mono">0.169</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">土壤偏干(0.169)，关注降水</td>
             </tr>
             <tr class="crop-soy" data-crop="大豆">
               <td><span class="crop-badge soy">大豆</span></td>
               <td>Campo Grande</td><td>巴西</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>越冬期</td>
-              <td class="mono">309.7</td><td class="mono">137.8</td><td class="mono">0.264</td>
+              <td class="mono">309.7</td><td class="mono">137.8</td>
+              <td class="mono">-</td><td class="mono">0.264</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">越冬期，条件正常</td>
             </tr>
             <tr class="crop-soy" data-crop="大豆">
               <td><span class="crop-badge soy">大豆</span></td>
               <td>Londrina, PR</td><td>巴西</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>越冬期</td>
-              <td class="mono">235.6</td><td class="mono">123.7</td><td class="mono">0.240</td>
+              <td class="mono">235.6</td><td class="mono">123.7</td>
+              <td class="mono">-</td><td class="mono">0.240</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">越冬期，条件正常</td>
             </tr>
             <tr class="crop-soy" data-crop="大豆">
               <td><span class="crop-badge soy">大豆</span></td>
               <td>Passo Fundo, RS</td><td>巴西</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>越冬期</td>
-              <td class="mono">57.7</td><td class="mono">173.5</td><td class="mono">0.367</td>
+              <td class="mono">57.7</td><td class="mono">173.5</td>
+              <td class="mono">-</td><td class="mono">0.367</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">越冬期，条件正常</td>
             </tr>
             <tr class="crop-soy" data-crop="大豆">
               <td><span class="crop-badge soy">大豆</span></td>
               <td>布宜诺斯艾利斯</td><td>阿根廷</td>
+              <td class="mono">14.7</td><td class="mono">10.3</td>
               <td>越冬期</td>
-              <td class="mono">20.9</td><td class="mono">48.7</td><td class="mono">0.352</td>
+              <td class="mono">20.9</td><td class="mono">48.7</td>
+              <td class="mono">50.5</td><td class="mono">0.352</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">越冬期，条件正常</td>
             </tr>
@@ -1817,56 +1870,70 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
             <tr class="crop-wheat" data-crop="小麦">
               <td><span class="crop-badge wheat">小麦</span></td>
               <td>Krasnodar</td><td>俄罗斯</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>收获期</td>
-              <td class="mono">415.2</td><td class="mono">25.2</td><td class="mono">0.266</td>
+              <td class="mono">415.2</td><td class="mono">25.2</td>
+              <td class="mono">-</td><td class="mono">0.266</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">收获期偏干，利于收割</td>
             </tr>
             <tr class="crop-wheat" data-crop="小麦">
               <td><span class="crop-badge wheat">小麦</span></td>
               <td>Saskatoon</td><td>加拿大</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>灌浆期</td>
-              <td class="mono">206.7</td><td class="mono">62.8</td><td class="mono">0.178</td>
+              <td class="mono">206.7</td><td class="mono">62.8</td>
+              <td class="mono">-</td><td class="mono">0.178</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">灌浆期条件良好</td>
             </tr>
             <tr class="crop-wheat" data-crop="小麦">
               <td><span class="crop-badge wheat">小麦</span></td>
               <td>Edmonton, AB</td><td>加拿大</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>灌浆期</td>
-              <td class="mono">175.0</td><td class="mono">192.2</td><td class="mono">0.322</td>
+              <td class="mono">175.0</td><td class="mono">192.2</td>
+              <td class="mono">-</td><td class="mono">0.322</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">灌浆期条件良好</td>
             </tr>
             <tr class="crop-wheat" data-crop="小麦">
               <td><span class="crop-badge wheat">小麦</span></td>
               <td>Kyiv</td><td>乌克兰</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>收获期</td>
-              <td class="mono">345.3</td><td class="mono">56.9</td><td class="mono">0.243</td>
+              <td class="mono">345.3</td><td class="mono">56.9</td>
+              <td class="mono">-</td><td class="mono">0.243</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">收获期正常</td>
             </tr>
             <tr class="crop-wheat" data-crop="小麦">
               <td><span class="crop-badge wheat">小麦</span></td>
               <td>Sydney, NSW</td><td>澳大利亚</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>播种期</td>
-              <td class="mono">141.0</td><td class="mono">60.9</td><td class="mono">0.275</td>
+              <td class="mono">141.0</td><td class="mono">60.9</td>
+              <td class="mono">-</td><td class="mono">0.275</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">蓄水率偏低，ENSO偏干格局增加旱播风险</td>
             </tr>
             <tr class="crop-wheat" data-crop="小麦">
               <td><span class="crop-badge wheat">小麦</span></td>
               <td>Melbourne, VIC</td><td>澳大利亚</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>播种期</td>
-              <td class="mono">62.7</td><td class="mono">70.2</td><td class="mono">0.314</td>
+              <td class="mono">62.7</td><td class="mono">70.2</td>
+              <td class="mono">-</td><td class="mono">0.314</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">蓄水率偏低，ENSO偏干格局增加旱播风险</td>
             </tr>
             <tr class="crop-wheat" data-crop="小麦">
               <td><span class="crop-badge wheat">小麦</span></td>
               <td>Adelaide, SA</td><td>澳大利亚</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>播种期</td>
-              <td class="mono">81.5</td><td class="mono">136.2</td><td class="mono">0.248</td>
+              <td class="mono">81.5</td><td class="mono">136.2</td>
+              <td class="mono">-</td><td class="mono">0.248</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">蓄水率偏低，ENSO偏干格局增加旱播风险</td>
             </tr>
@@ -1874,24 +1941,30 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
             <tr class="crop-palm" data-crop="棕榈油">
               <td><span class="crop-badge palm">棕榈油</span></td>
               <td>吉隆坡</td><td>马来西亚</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>开花-结果期</td>
-              <td class="mono">570.1</td><td class="mono">272.3</td><td class="mono">0.353</td>
+              <td class="mono">570.1</td><td class="mono">272.3</td>
+              <td class="mono">-</td><td class="mono">0.353</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">ENSO干旱风险上升，需持续关注</td>
             </tr>
             <tr class="crop-palm" data-crop="棕榈油">
               <td><span class="crop-badge palm">棕榈油</span></td>
               <td>棉兰</td><td>印度尼西亚</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>结果期</td>
-              <td class="mono">546.2</td><td class="mono">278.9</td><td class="mono">0.284</td>
+              <td class="mono">546.2</td><td class="mono">278.9</td>
+              <td class="mono">-</td><td class="mono">0.284</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">ENSO干旱风险上升，需持续关注</td>
             </tr>
             <tr class="crop-palm" data-crop="棕榈油">
               <td><span class="crop-badge palm">棕榈油</span></td>
               <td>曼谷</td><td>泰国</td>
+              <td class="mono">32.2</td><td class="mono">25.4</td>
               <td>结果期</td>
-              <td class="mono">616.5</td><td class="mono">250.2</td><td class="mono">0.343</td>
+              <td class="mono">616.5</td><td class="mono">250.2</td>
+              <td class="mono">70.1</td><td class="mono">0.343</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">ENSO干旱风险上升，需持续关注</td>
             </tr>
@@ -1899,40 +1972,50 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
             <tr class="crop-sugar" data-crop="白糖">
               <td><span class="crop-badge sugar">白糖</span></td>
               <td>南宁</td><td>中国</td>
+              <td class="mono">32.4</td><td class="mono">25.3</td>
               <td>拔节伸长期</td>
-              <td class="mono">554.6</td><td class="mono">531.4</td><td class="mono">0.382</td>
+              <td class="mono">554.6</td><td class="mono">531.4</td>
+              <td class="mono">48.4</td><td class="mono">0.382</td>
               <td><span class="risk-badge red"><span class="risk-dot red"></span>高风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">美莎克横穿+六蓝溃坝，灾害已发生产量待定</td>
             </tr>
             <tr class="crop-sugar" data-crop="白糖">
               <td><span class="crop-badge sugar">白糖</span></td>
               <td>昆明</td><td>中国</td>
+              <td class="mono">24.9</td><td class="mono">16.5</td>
               <td>伸长期</td>
-              <td class="mono">312.5</td><td class="mono">338.6</td><td class="mono">0.383</td>
+              <td class="mono">312.5</td><td class="mono">338.6</td>
+              <td class="mono">48.3</td><td class="mono">0.383</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">降水充沛，正常管护</td>
             </tr>
             <tr class="crop-sugar" data-crop="白糖">
               <td><span class="crop-badge sugar">白糖</span></td>
               <td>Ribeirão Preto, SP</td><td>巴西</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>生长期</td>
-              <td class="mono">289.1</td><td class="mono">93.1</td><td class="mono">0.285</td>
+              <td class="mono">289.1</td><td class="mono">93.1</td>
+              <td class="mono">-</td><td class="mono">0.285</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">冬季干燥正常</td>
             </tr>
             <tr class="crop-sugar" data-crop="白糖">
               <td><span class="crop-badge sugar">白糖</span></td>
               <td>Lucknow, UP</td><td>印度</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>伸长期</td>
-              <td class="mono">707.2</td><td class="mono">141.7</td><td class="mono">0.261</td>
+              <td class="mono">707.2</td><td class="mono">141.7</td>
+              <td class="mono">-</td><td class="mono">0.261</td>
               <td><span class="risk-badge red"><span class="risk-dot red"></span>高风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">季风严重偏慢，累计降水仅正常值56%</td>
             </tr>
             <tr class="crop-sugar" data-crop="白糖">
               <td><span class="crop-badge sugar">白糖</span></td>
               <td>Khon Kaen</td><td>泰国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>伸长期</td>
-              <td class="mono">636.4</td><td class="mono">98.6</td><td class="mono">0.280</td>
+              <td class="mono">636.4</td><td class="mono">98.6</td>
+              <td class="mono">-</td><td class="mono">0.280</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">累计降水不足</td>
             </tr>
@@ -1940,40 +2023,50 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
             <tr class="crop-cotton" data-crop="棉花">
               <td><span class="crop-badge cotton">棉花</span></td>
               <td>乌鲁木齐</td><td>中国</td>
+              <td class="mono">34.3</td><td class="mono">24.0</td>
               <td>花铃期</td>
-              <td class="mono">501.6</td><td class="mono">42.8</td><td class="mono">0.079</td>
+              <td class="mono">501.6</td><td class="mono">42.8</td>
+              <td class="mono">0.8</td><td class="mono">0.079</td>
               <td><span class="risk-badge orange"><span class="risk-dot orange"></span>中高风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">极端干旱(土壤0.079)，滴灌缓解</td>
             </tr>
             <tr class="crop-cotton" data-crop="棉花">
               <td><span class="crop-badge cotton">棉花</span></td>
               <td>济南</td><td>中国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>花铃期</td>
-              <td class="mono">532.8</td><td class="mono">92.4</td><td class="mono">0.301</td>
+              <td class="mono">532.8</td><td class="mono">92.4</td>
+              <td class="mono">-</td><td class="mono">0.301</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">巴威北上潜在威胁</td>
             </tr>
             <tr class="crop-cotton" data-crop="棉花">
               <td><span class="crop-badge cotton">棉花</span></td>
               <td>Ahmedabad, GJ</td><td>印度</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>播种-苗期</td>
-              <td class="mono">718.1</td><td class="mono">124.4</td><td class="mono">0.297</td>
+              <td class="mono">718.1</td><td class="mono">124.4</td>
+              <td class="mono">-</td><td class="mono">0.297</td>
               <td><span class="risk-badge red"><span class="risk-dot red"></span>高风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">季风缺口大，播种进度严重滞后</td>
             </tr>
             <tr class="crop-cotton" data-crop="棉花">
               <td><span class="crop-badge cotton">棉花</span></td>
               <td>Cuiabá, MT</td><td>巴西</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>休耕期</td>
-              <td class="mono">426.2</td><td class="mono">46.8</td><td class="mono">0.244</td>
+              <td class="mono">426.2</td><td class="mono">46.8</td>
+              <td class="mono">-</td><td class="mono">0.244</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">休耕期</td>
             </tr>
             <tr class="crop-cotton" data-crop="棉花">
               <td><span class="crop-badge cotton">棉花</span></td>
               <td>Memphis</td><td>美国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>花铃期</td>
-              <td class="mono">522.8</td><td class="mono">217.4</td><td class="mono">0.268</td>
+              <td class="mono">522.8</td><td class="mono">217.4</td>
+              <td class="mono">-</td><td class="mono">0.268</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">降水充足，墒情良好</td>
             </tr>
@@ -1981,56 +2074,70 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
             <tr class="crop-coffee" data-crop="咖啡">
               <td><span class="crop-badge coffee">咖啡</span></td>
               <td>普洱</td><td>中国</td>
+              <td class="mono">25.8</td><td class="mono">19.2</td>
               <td>果实膨大期</td>
-              <td class="mono">401.3</td><td class="mono">340.9</td><td class="mono">0.379</td>
+              <td class="mono">401.3</td><td class="mono">340.9</td>
+              <td class="mono">97.6</td><td class="mono">0.379</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">降水充沛，果实膨大期条件良好</td>
             </tr>
             <tr class="crop-coffee" data-crop="咖啡">
               <td><span class="crop-badge coffee">咖啡</span></td>
               <td>保山</td><td>中国</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>果实膨大期</td>
-              <td class="mono">362.7</td><td class="mono">274.7</td><td class="mono">0.323</td>
+              <td class="mono">362.7</td><td class="mono">274.7</td>
+              <td class="mono">-</td><td class="mono">0.323</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">降水充沛，果实膨大期条件良好</td>
             </tr>
             <tr class="crop-coffee" data-crop="咖啡">
               <td><span class="crop-badge coffee">咖啡</span></td>
               <td>Belo Horizonte, MG</td><td>巴西</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>果实发育期</td>
-              <td class="mono">287.3</td><td class="mono">10.0</td><td class="mono">0.236</td>
+              <td class="mono">287.3</td><td class="mono">10.0</td>
+              <td class="mono">-</td><td class="mono">0.236</td>
               <td><span class="risk-badge red"><span class="risk-dot red"></span>高风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">历史级干旱，160天无雨，30天降水仅10mm</td>
             </tr>
             <tr class="crop-coffee" data-crop="咖啡">
               <td><span class="crop-badge coffee">咖啡</span></td>
               <td>Manizales, Caldas</td><td>哥伦比亚</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>果实成熟期</td>
-              <td class="mono">210.9</td><td class="mono">306.2</td><td class="mono">0.270</td>
+              <td class="mono">210.9</td><td class="mono">306.2</td>
+              <td class="mono">-</td><td class="mono">0.270</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">土壤偏干(0.270)</td>
             </tr>
             <tr class="crop-coffee" data-crop="咖啡">
               <td><span class="crop-badge coffee">咖啡</span></td>
               <td>Armenia, Quindío</td><td>哥伦比亚</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>果实成熟期</td>
-              <td class="mono">338.6</td><td class="mono">261.6</td><td class="mono">0.267</td>
+              <td class="mono">338.6</td><td class="mono">261.6</td>
+              <td class="mono">-</td><td class="mono">0.267</td>
               <td><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">土壤偏干(0.267)</td>
             </tr>
             <tr class="crop-coffee" data-crop="咖啡">
               <td><span class="crop-badge coffee">咖啡</span></td>
               <td>Pereira, Risaralda</td><td>哥伦比亚</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>果实成熟期</td>
-              <td class="mono">362.0</td><td class="mono">106.7</td><td class="mono">0.322</td>
+              <td class="mono">362.0</td><td class="mono">106.7</td>
+              <td class="mono">-</td><td class="mono">0.322</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">正常</td>
             </tr>
             <tr class="crop-coffee" data-crop="咖啡">
               <td><span class="crop-badge coffee">咖啡</span></td>
               <td>Addis Ababa</td><td>埃塞俄比亚</td>
+              <td class="mono">-</td><td class="mono">-</td>
               <td>开花期</td>
-              <td class="mono">216.0</td><td class="mono">70.8</td><td class="mono">0.346</td>
+              <td class="mono">216.0</td><td class="mono">70.8</td>
+              <td class="mono">-</td><td class="mono">0.346</td>
               <td><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
               <td style="max-width:200px;font-size:12px;color:var(--text-muted);">雨季正常</td>
             </tr>
@@ -2867,6 +2974,112 @@ function initWeather(){
 
 }
 
+
+// Auto-populate static table from D.crop_chart_data on page load
+function populateMainTable() {
+  var cropMap = {'corn':'玉米','soy':'大豆','wheat':'小麦','palm':'棕榈油','sugar':'白糖','cotton':'棉花','coffee':'咖啡'};
+  var cnToEn = {'玉米':'corn','大豆':'soy','小麦':'wheat','棕榈油':'palm','白糖':'sugar','棉花':'cotton','咖啡':'coffee'};
+  Object.keys(D.crop_chart_data).forEach(function(cropEn) {
+    var cd = D.crop_chart_data[cropEn];
+    var cropCn = cropMap[cropEn] || cropEn;
+    var tbody = document.getElementById('tableBody');
+    if (!tbody) return;
+    var existingRows = tbody.querySelectorAll('tr.crop-' + cropEn);
+    var existingRegionMap = {};
+    existingRows.forEach(function(r) {
+      var rn = r.cells[1] ? r.cells[1].textContent.trim() : '';
+      if (rn) existingRegionMap[rn] = r;
+    });
+    cd.names.forEach(function(region, ri) {
+      // Find matching row by partial match
+      var row = existingRegionMap[region];
+      if (!row) {
+        for (var key in existingRegionMap) {
+          if (region.indexOf(key) >= 0 || key.indexOf(region) >= 0) {
+            row = existingRegionMap[key]; break;
+          }
+        }
+      }
+      // Build acc display with YoY/avg
+      var accVal = cd.acc_season[ri];
+      var accReq = cd.acc_season_req ? cd.acc_season_req[ri] : null;
+      var accYoy = cd.acc_season_yoy ? cd.acc_season_yoy[ri] : null;
+      var accAvg = cd.acc_season_avg ? cd.acc_season_avg[ri] : null;
+      var hs = cd.harvest_status ? cd.harvest_status[ri] : '';
+      var accHtml;
+      if (hs === '已收获') {
+        accHtml = '<span style="color:#64748b">已收获</span>';
+      } else if (accVal !== null && accVal !== undefined) {
+        accHtml = accVal.toFixed(1);
+        if (accReq) accHtml += '/' + accReq + ' (' + Math.round(accVal/accReq*100) + '%)';
+        if (accYoy !== null && accYoy !== undefined) accHtml += '<br><span style="color:#64748b;font-size:11px">去年: ' + accYoy.toFixed(0) + '</span>';
+        if (accAvg !== null && accAvg !== undefined) accHtml += '<br><span style="color:#94a3b8;font-size:11px">平均: ' + accAvg.toFixed(0) + '</span>';
+      } else {
+        accHtml = '-';
+      }
+      // Build precip display with YoY/avg
+      var pVal = cd.precip_season[ri];
+      var pYoy = cd.precip_season_yoy ? cd.precip_season_yoy[ri] : null;
+      var pAvg = cd.precip_season_avg ? cd.precip_season_avg[ri] : null;
+      var pHtml;
+      if (pVal !== null && pVal !== undefined) {
+        pHtml = pVal.toFixed(1);
+        if (pYoy !== null && pYoy !== undefined) pHtml += '<br><span style="color:#64748b;font-size:11px">去年: ' + pYoy.toFixed(1) + '</span>';
+        if (pAvg !== null && pAvg !== undefined) pHtml += '<br><span style="color:#94a3b8;font-size:11px">平均: ' + pAvg.toFixed(1) + '</span>';
+      } else {
+        pHtml = '-';
+      }
+      // Build soil display with avg
+      var soilVal = cd.soils[ri];
+      var soilAvg = cd.soils_avg && cd.soils_avg[ri] ? cd.soils_avg[ri] : 0.3;
+      var soilD = ((soilVal - soilAvg) / soilAvg * 100);
+      var riskLevel, riskBadge, dotClass, riskNote;
+      if (soilD <= -35) {
+        riskLevel = '高风险'; riskBadge = 'red'; dotClass = 'red';
+        riskNote = '严重干旱(墒情偏低' + Math.round(-soilD) + '%)';
+      } else if (soilD <= -20) {
+        riskLevel = '中高风险'; riskBadge = 'orange'; dotClass = 'orange';
+        riskNote = '土壤偏干(偏低' + Math.round(-soilD) + '%)';
+      } else if (soilD >= 30) {
+        riskLevel = '中高风险'; riskBadge = 'orange'; dotClass = 'orange';
+        riskNote = '渍涝风险(偏高' + Math.round(soilD) + '%)';
+      } else {
+        riskLevel = '低风险'; riskBadge = 'green'; dotClass = 'green';
+        riskNote = '墒情正常(较均值' + (soilD>=0?'+':'') + Math.round(soilD) + '%)';
+      }
+      var fmtT = function(v) { return (v !== null && v !== undefined) ? v.toFixed(1) : '-'; };
+      if (row) {
+        // Update existing row
+        if (row.cells[3]) row.cells[3].innerHTML = fmtT(cd.max_temps[ri]);
+        if (row.cells[4]) row.cells[4].innerHTML = fmtT(cd.min_temps[ri]);
+        if (row.cells[6]) row.cells[6].innerHTML = accHtml;
+        if (row.cells[7]) row.cells[7].innerHTML = pHtml;
+        if (row.cells[8]) row.cells[8].innerHTML = fmtT(cd.precip_14[ri]);
+        if (row.cells[9]) row.cells[9].innerHTML = soilVal.toFixed(3);
+        if (row.cells[10]) row.cells[10].innerHTML = '<span class="risk-badge ' + riskBadge + '"><span class="risk-dot ' + dotClass + '"></span>' + riskLevel + '</span>';
+        if (row.cells[11]) { row.cells[11].textContent = riskNote; row.cells[11].style.maxWidth = '200px'; row.cells[11].style.fontSize = '12px'; row.cells[11].style.color = 'var(--text-muted)'; }
+      } else {
+        // Add new row for region not yet in table
+        var tr = document.createElement('tr');
+        tr.className = 'crop-' + cropEn;
+        tr.setAttribute('data-crop', cropCn);
+        tr.innerHTML = '<td><span class="crop-badge ' + cropEn + '">' + cropCn + '</span></td>' +
+          '<td>' + region + '</td><td>中国</td>' +
+          '<td class="mono">' + fmtT(cd.max_temps[ri]) + '</td>' +
+          '<td class="mono">' + fmtT(cd.min_temps[ri]) + '</td>' +
+          '<td>-</td>' +
+          '<td class="mono">' + accHtml + '</td>' +
+          '<td class="mono">' + pHtml + '</td>' +
+          '<td class="mono">' + fmtT(cd.precip_14[ri]) + '</td>' +
+          '<td class="mono">' + soilVal.toFixed(3) + '</td>' +
+          '<td><span class="risk-badge ' + riskBadge + '"><span class="risk-dot ' + dotClass + '"></span>' + riskLevel + '</span></td>' +
+          '<td style="max-width:200px;font-size:12px;color:var(--text-muted);">' + riskNote + '</td>';
+        tbody.appendChild(tr);
+      }
+    });
+  });
+}
+
 function computeRisks(){
 var T=D.crop_risk_thresholds;
 var CN={'玉米':0,'大豆':1,'小麦':2,'棕榈油':3,'白糖':4,'棉花':5,'咖啡':6};
@@ -2882,28 +3095,31 @@ Object.keys(CN).forEach(function(crop){
     var soil=cd.soils[ri],avgS=cd.soils_avg?cd.soils_avg[ri]:0.3;
     var soilD=((soil-avgS)/avgS*100);
     var riskLevel='',riskNote='',badgeClass='green',dotClass='green';
-    if(soil<=th.soil_severe_dry){
+    // 改用相对历史均值偏离率判断风险（不再用绝对阈值）
+    if(soilD<=-35){
       riskLevel='高风险';badgeClass='red';dotClass='red';
       riskNote='严重干旱(墒情较历史均值偏低'+Math.round(-soilD)+'%)，需灌溉';
-    }else if(soil<=th.soil_moderate_dry){
+    }else if(soilD<=-20){
       riskLevel='中高风险';badgeClass='orange';dotClass='orange';
       riskNote='土壤偏干(偏低'+Math.round(-soilD)+'%)，关注后续降水';
-    }else if(soil>=th.soil_saturation){
+    }else if(soilD>=30){
       riskLevel='中高风险';badgeClass='orange';dotClass='orange';
       riskNote='渍涝风险(墒情较历史均值偏高'+Math.round(soilD)+'%)，根系缺氧';
     }else{
       riskLevel='低风险';badgeClass='green';dotClass='green';
       riskNote='墒情正常(较历史均值'+(soilD>=0?'+':'')+Math.round(soilD)+'%)';
     }
-    var badgeCell=row.cells[7];
+    // cell indices updated: 9→12 columns, risk at [10]/[11]
+    var badgeCell=row.cells[10];
     if(badgeCell)badgeCell.innerHTML='<span class="risk-badge '+badgeClass+'"><span class="risk-dot '+dotClass+'"></span>'+riskLevel+'</span>';
-    var noteCell=row.cells[8];
+    var noteCell=row.cells[11];
     if(noteCell)noteCell.textContent=riskNote;
     noteCell.style.maxWidth='200px';noteCell.style.fontSize='12px';noteCell.style.color='var(--text-muted)';
   });
 });
 }
 computeRisks();
+populateMainTable();
 
 // RONI Chart
 (function(){
