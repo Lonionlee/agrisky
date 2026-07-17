@@ -2977,13 +2977,13 @@ function initWeather(){
 
 // Auto-populate static table from D.crop_chart_data on page load
 function populateMainTable() {
-  var cropMap = {'corn':'玉米','soy':'大豆','wheat':'小麦','palm':'棕榈油','sugar':'白糖','cotton':'棉花','coffee':'咖啡'};
-  var cnToEn = {'玉米':'corn','大豆':'soy','小麦':'wheat','棕榈油':'palm','白糖':'sugar','棉花':'cotton','咖啡':'coffee'};
-  Object.keys(D.crop_chart_data).forEach(function(cropEn) {
-    var cd = D.crop_chart_data[cropEn];
-    var cropCn = cropMap[cropEn] || cropEn;
-    var tbody = document.getElementById('tableBody');
-    if (!tbody) return;
+  // crop_chart_data keys are Chinese (玉米/大豆/...), row classes use English (crop-corn/crop-soy/...)
+  var cnToEnClass = {'玉米':'corn','大豆':'soy','小麦':'wheat','棕榈油':'palm','白糖':'sugar','棉花':'cotton','咖啡':'coffee'};
+  var tbody = document.getElementById('tableBody');
+  if (!tbody) return;
+  Object.keys(D.crop_chart_data).forEach(function(cropCn) {
+    var cd = D.crop_chart_data[cropCn];
+    var cropEn = cnToEnClass[cropCn] || cropCn;
     var existingRows = tbody.querySelectorAll('tr.crop-' + cropEn);
     var existingRegionMap = {};
     existingRows.forEach(function(r) {
@@ -3029,7 +3029,7 @@ function populateMainTable() {
       } else {
         pHtml = '-';
       }
-      // Build soil display with avg
+      // Build soil display with relative deviation
       var soilVal = cd.soils[ri];
       var soilAvg = cd.soils_avg && cd.soils_avg[ri] ? cd.soils_avg[ri] : 0.3;
       var soilD = ((soilVal - soilAvg) / soilAvg * 100);
@@ -3049,32 +3049,16 @@ function populateMainTable() {
       }
       var fmtT = function(v) { return (v !== null && v !== undefined) ? v.toFixed(1) : '-'; };
       if (row) {
-        // Update existing row
+        // Update existing row cells
         if (row.cells[3]) row.cells[3].innerHTML = fmtT(cd.max_temps[ri]);
         if (row.cells[4]) row.cells[4].innerHTML = fmtT(cd.min_temps[ri]);
+        if (row.cells[5]) row.cells[5].textContent = cd.phenology && cd.phenology[ri] ? cd.phenology[ri] : '-';
         if (row.cells[6]) row.cells[6].innerHTML = accHtml;
         if (row.cells[7]) row.cells[7].innerHTML = pHtml;
         if (row.cells[8]) row.cells[8].innerHTML = fmtT(cd.precip_14[ri]);
         if (row.cells[9]) row.cells[9].innerHTML = soilVal.toFixed(3);
         if (row.cells[10]) row.cells[10].innerHTML = '<span class="risk-badge ' + riskBadge + '"><span class="risk-dot ' + dotClass + '"></span>' + riskLevel + '</span>';
         if (row.cells[11]) { row.cells[11].textContent = riskNote; row.cells[11].style.maxWidth = '200px'; row.cells[11].style.fontSize = '12px'; row.cells[11].style.color = 'var(--text-muted)'; }
-      } else {
-        // Add new row for region not yet in table
-        var tr = document.createElement('tr');
-        tr.className = 'crop-' + cropEn;
-        tr.setAttribute('data-crop', cropCn);
-        tr.innerHTML = '<td><span class="crop-badge ' + cropEn + '">' + cropCn + '</span></td>' +
-          '<td>' + region + '</td><td>中国</td>' +
-          '<td class="mono">' + fmtT(cd.max_temps[ri]) + '</td>' +
-          '<td class="mono">' + fmtT(cd.min_temps[ri]) + '</td>' +
-          '<td>-</td>' +
-          '<td class="mono">' + accHtml + '</td>' +
-          '<td class="mono">' + pHtml + '</td>' +
-          '<td class="mono">' + fmtT(cd.precip_14[ri]) + '</td>' +
-          '<td class="mono">' + soilVal.toFixed(3) + '</td>' +
-          '<td><span class="risk-badge ' + riskBadge + '"><span class="risk-dot ' + dotClass + '"></span>' + riskLevel + '</span></td>' +
-          '<td style="max-width:200px;font-size:12px;color:var(--text-muted);">' + riskNote + '</td>';
-        tbody.appendChild(tr);
       }
     });
   });
