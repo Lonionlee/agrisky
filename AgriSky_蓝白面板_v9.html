@@ -544,8 +544,60 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     </div>
   </div>
 
+    <!-- Row 5: 强对流天气预警 -->
+    <div class="section" style="margin-bottom:24px">
+      <div class="section-title">⚠️ 强对流天气预警</div>
+      <div class="section-subtitle" style="font-size:12px;color:var(--text-muted);margin-bottom:16px;padding-left:13px">中央气象台 2026-07-18 18时更新</div>
 
-    <!-- Row 5: Risk Matrix -->
+      <!-- 预警状态卡片 -->
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px">
+        <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.2);border-radius:8px;padding:12px;text-align:center">
+          <div style="font-size:24px;margin-bottom:4px">🟦</div>
+          <div style="font-size:12px;font-weight:600;color:var(--accent-blue)">暴雨蓝色预警</div>
+          <div style="font-size:10px;color:var(--text-muted);margin-top:4px">18时续发</div>
+        </div>
+        <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.2);border-radius:8px;padding:12px;text-align:center">
+          <div style="font-size:24px;margin-bottom:4px">🟦</div>
+          <div style="font-size:12px;font-weight:600;color:var(--accent-blue)">强对流蓝色预警</div>
+          <div style="font-size:10px;color:var(--text-muted);margin-top:4px">雷暴大风+短时强降水</div>
+        </div>
+        <div style="background:rgba(245,158,11,0.06);border:1px solid rgba(245,158,11,0.2);border-radius:8px;padding:12px;text-align:center">
+          <div style="font-size:24px;margin-bottom:4px">🟨</div>
+          <div style="font-size:12px;font-weight:600;color:var(--risk-orange)">山洪灾害黄色预警</div>
+          <div style="font-size:10px;color:var(--text-muted);margin-top:4px">华北/东北山区</div>
+        </div>
+        <div style="background:rgba(249,115,22,0.06);border:1px solid rgba(249,115,22,0.2);border-radius:8px;padding:12px;text-align:center">
+          <div style="font-size:24px;margin-bottom:4px">🟧</div>
+          <div style="font-size:12px;font-weight:600;color:var(--risk-orange)">地质灾害橙色预警</div>
+          <div style="font-size:10px;color:var(--text-muted);margin-top:4px">北京/河北北部山区</div>
+        </div>
+      </div>
+
+      <!-- 预警详情 -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+        <div class="info-box" style="border-left:3px solid var(--accent-blue)">
+          <p style="font-size:12px;color:var(--text-primary);line-height:1.7">
+            <strong style="color:var(--accent-blue)">暴雨蓝色预警</strong>（18时续发）：西南/江南/华南较强降水，贵州/广西局地大暴雨100-180mm。
+          </p>
+        </div>
+        <div class="info-box" style="border-left:3px solid var(--accent-blue)">
+          <p style="font-size:12px;color:var(--text-primary);line-height:1.7">
+            <strong style="color:var(--accent-blue)">强对流蓝色预警</strong>：内蒙古中部/华北中南部/江南中部8级+雷暴大风；东北南部/华北东北部短时强降水20mm+局地50-70mm。
+          </p>
+        </div>
+      </div>
+
+      <!-- 农业影响提示 -->
+      <div style="background:rgba(239,68,68,0.04);border:1px solid rgba(239,68,68,0.15);border-radius:8px;padding:14px">
+        <div style="font-size:12px;font-weight:600;color:var(--risk-red);margin-bottom:6px">🌽 农业影响提示</div>
+        <div style="font-size:11px;color:var(--text-secondary);line-height:1.8">
+          东北玉米/大豆产区处于灌浆关键期，短时强降水+雷暴大风易导致倒伏；华北夏玉米面临田间渍涝风险；新疆棉花蕾铃期需防范冰雹大风。七下八上期间（7.16-8.15）为全年强对流最活跃时段，需持续关注。
+        </div>
+      </div>
+      <div style="font-size:10px;color:var(--text-muted);margin-top:8px;text-align:right">来源：中央气象台 www.nmc.cn</div>
+    </div>
+
+    <!-- Row 6: Risk Matrix -->
     <div class="section risk-matrix-section">
       <div class="section-title" id="section-riskmatrix">全球产区风险矩阵</div>
       <div class="risk-grid">
