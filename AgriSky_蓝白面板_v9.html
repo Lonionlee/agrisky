@@ -2439,7 +2439,7 @@ function initWeather(){
     var so={responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#64748b',font:{size:10}}}},scales:{x:{grid:{color:'rgba(226,232,240,0.3)'},ticks:{color:'#94a3b8',font:{size:9},maxRotation:45}},y:{grid:{color:'rgba(226,232,240,0.3)'},ticks:{color:'#94a3b8',font:{size:10}}}}};
     
     var e1=document.getElementById('acc-'+crop);
-    if(e1){var avgAcc=(d.acc_season||d.acc_temps).reduce(function(a,b){return a+b},0)/d.acc_temps.length;var avgLine=d.names.map(function(){return Math.round(avgAcc*10)/10});new Chart(e1.getContext('2d'),{type:'bar',data:{labels:d.names,datasets:[{label:'全生育期积温',data:(d.acc_season||d.acc_temps),backgroundColor:'rgba(37,99,235,0.7)',borderRadius:4},{label:'均值 '+Math.round(avgAcc*10)/10+'°C',data:avgLine,type:'line',borderColor:'#ef4444',borderWidth:2,borderDash:[6,4],pointRadius:0,fill:false,order:0}]},options:Object.assign({},so,{plugins:{legend:{display:false}},scales:Object.assign({},so.scales,{y:Object.assign({},so.scales.y,{ticks:{color:'#94a3b8',callback:function(v){return v+'°C';}}})})})});}
+    if(e1){new Chart(e1.getContext('2d'),{type:'bar',data:{labels:d.names,datasets:[{label:'全生育期积温',data:(d.acc_season||d.acc_temps||[]).map(function(v){return v!=null?v:0}),backgroundColor:'rgba(37,99,235,0.7)',borderRadius:4},{label:'去年同期',data:(d.acc_season_yoy||[]).map(function(v){return v!=null?v:0}),backgroundColor:'rgba(59,130,246,0.4)',borderRadius:4},{label:'常年均值',data:(d.acc_season_avg||[]).map(function(v){return v!=null?v:0}),type:'line',borderColor:'#f59e0b',borderWidth:2,borderDash:[6,4],pointRadius:2,fill:false,order:0},{label:'积温需求',data:(d.acc_season_req||[]),type:'line',borderColor:'#ef4444',borderWidth:2,borderDash:[3,3],pointRadius:0,fill:false,order:0}]},options:Object.assign({},so,{plugins:{legend:{display:true,labels:{color:'#64748b',font:{size:9}}}},scales:Object.assign({},so.scales,{y:Object.assign({},so.scales.y,{ticks:{color:'#94a3b8',callback:function(v){return v+'°C';}}})})})});}
     
     var e2=document.getElementById('temp-'+crop);
     if(e2)new Chart(e2.getContext('2d'),{type:'bar',data:{labels:d.names,datasets:[
@@ -2451,9 +2451,10 @@ function initWeather(){
     
     var e3=document.getElementById('precip-'+crop);
     if(e3)new Chart(e3.getContext('2d'),{type:'bar',data:{labels:d.names,datasets:[
-      {label:'入汛以来降水',data:(d.precip_season||d.precip_30),backgroundColor:'rgba(37,99,235,0.7)',borderRadius:3},
-      {label:'14天降水',data:d.precip_14,backgroundColor:'rgba(59,130,246,0.5)',borderRadius:3},
-      {label:'常年月降水',data:d.normals_precip,type:'line',borderColor:'rgba(239,68,68,0.5)',borderDash:[5,3],pointRadius:0,borderWidth:1.5,fill:false}
+      {label:'入汛以来降水',data:(d.precip_season||d.precip_30||[]).map(function(v){return v!=null?v:0}),backgroundColor:'rgba(37,99,235,0.7)',borderRadius:3},
+      {label:'去年同期降水',data:(d.precip_season_yoy||[]).map(function(v){return v!=null?v:0}),backgroundColor:'rgba(59,130,246,0.4)',borderRadius:3},
+      {label:'常年同期均值',data:(d.precip_season_avg||[]).map(function(v){return v!=null?v:0}),type:'line',borderColor:'#f59e0b',borderWidth:2,borderDash:[6,4],pointRadius:2,fill:false,order:0},
+      {label:'14天降水',data:d.precip_14,backgroundColor:'rgba(147,197,253,0.5)',borderRadius:3}
     ]},options:so});
     
     var e4=document.getElementById('soil-'+crop);
@@ -2486,7 +2487,7 @@ function initWeather(){
     var tbody = document.createElement('tbody');
     d.names.forEach(function(r, i){
       var soil = d.soils[i];
-      var acc = d.acc_temps[i];
+      var acc = (d.acc_season||d.acc_temps)[i]||0;
       var soilRisk = soil <= (thresholds.soil_severe_dry||0.15) ? '🔴 干旱' :
                      soil <= (thresholds.soil_moderate_dry||0.25) ? '🟡 偏干' :
                      soil >= (thresholds.soil_saturation||0.40) ? '🔵 过湿' : '🟢 正常';
@@ -2530,7 +2531,7 @@ Object.keys(CN).forEach(function(crop){
     var row=null;
     rows.forEach(function(r){if(r.cells[1]&&r.cells[1].textContent.trim()===region)row=r;});
     if(!row)return;
-    var soil=cd.soils[ri],avgS=cd.soils_avg?cd.soils_avg[ri]:0.3,acc=c(d.acc_season||d.acc_temps)[ri];
+    var soil=cd.soils[ri],avgS=cd.soils_avg?cd.soils_avg[ri]:0.3,acc=(cd.acc_season||cd.acc_temps)[ri]||0;
     var soilD=((soil-avgS)/avgS*100);
     var riskLevel='',riskNote='',badgeClass='green',dotClass='green';
     if(soil<=th.soil_severe_dry){
