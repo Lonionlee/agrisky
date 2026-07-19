@@ -799,6 +799,10 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <span style="width:10px;height:10px;border-radius:50%;background:#ef4444;flex-shrink:0"></span>
     <span style="font-size:13px;font-weight:600;color:var(--text-primary)">ENSO 深度分析</span>
   </div>
+  <div onclick="document.getElementById('section-ohc').scrollIntoView({behavior:'smooth',block:'start'})" style="flex:1;min-width:140px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--accent-blue)';this.style.boxShadow='0 2px 8px rgba(37,99,235,0.15)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.boxShadow='none'">
+    <span style="width:10px;height:10px;border-radius:50%;background:#e11d48;flex-shrink:0"></span>
+    <span style="font-size:13px;font-weight:600;color:var(--text-primary)">OHC/WWV 海洋热含量</span>
+  </div>
   <div onclick="document.getElementById('section-pdo').scrollIntoView({behavior:'smooth',block:'start'})" style="flex:1;min-width:140px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--accent-blue)';this.style.boxShadow='0 2px 8px rgba(37,99,235,0.15)'" onmouseout="this.style.borderColor='var(--border-color)';this.style.boxShadow='none'">
     <span style="width:10px;height:10px;border-radius:50%;background:#3b82f6;flex-shrink:0"></span>
     <span style="font-size:13px;font-weight:600;color:var(--text-primary)">PDO 太平洋年代际振荡</span>
@@ -918,6 +922,34 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-subtitle">BOM · 30日SOI (基于Tahiti-Darwin标准化气压差) · 2009-01至2026-07</div>
     <div class="chart-container"><canvas id="soiChart"></canvas></div>
     <div class="analysis-text">🔴 超强厄尔尼诺</div>
+  </div>
+</div>
+
+<div class="ocean-section">
+  <div class="section-title" id="section-ohc">OHC/WWV 海洋热含量追踪</div>
+  <div class="ocean-card">
+    <div class="ocean-card-title">🌊 WWV 暖水体积异常时序（1980-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--risk-red);margin-left:auto">强充能状态</span></div>
+    <div class="ocean-card-subtitle">NOAA PMEL · 基于CPC GODAS · 热带太平洋5°N-5°S, 120°E-80°W 20°C以上暖水体积异常 · 基准期1981-2010</div>
+    <div style="text-align:center;padding:12px 0"><img src="https://www.pmel.noaa.gov/tao/wwv/gif/wwva_std_sm.gif" alt="WWV异常时序" style="max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)"></div>
+    <div class="analysis-text">🔴 WWV处于强充能状态（Recharge Phase），热带太平洋暖水体积显著偏大，为El Niño持续增强提供充沛能量储备。WWV领先SST约2-3个月，预示当前El Niño仍有进一步增强的动力条件。</div>
+  </div>
+  <div class="ocean-card">
+    <div class="ocean-card-title">📊 WWV与Niño 3.4 滑动平均对比（5个月）</div>
+    <div class="ocean-card-subtitle">NOAA PMEL · WWV异常与Niño 3.4指数5个月滑动平均对比 · 揭示充能-放热动力学关系</div>
+    <div style="text-align:center;padding:12px 0"><img src="https://www.pmel.noaa.gov/tao/wwv/gif/wwv_nino_sm.gif" alt="WWV与Niño3.4对比" style="max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)"></div>
+    <div class="analysis-text">WWV异常峰值通常领先Niño 3.4峰值约6-9个月（Recharge Oscillator机制）。当前WWV维持高位正值，与Niño 3.4快速上升趋势高度一致，印证了"海洋充能→SST增暖"的经典ENSO发展路径。</div>
+  </div>
+  <div class="ocean-card">
+    <div class="ocean-card-title">🔬 赤道太平洋次表层温度异常剖面（过去30天）</div>
+    <div class="ocean-card-subtitle">NOAA CPC GODAS · 赤道5°S-5°N温度异常经度-深度截面 · 揭示次表层暖核结构</div>
+    <div style="text-align:center;padding:12px 0"><img src="https://www.cpc.ncep.noaa.gov/products/GODAS/pent_gif/xz/pent.anom.xz.temp.0n.30d.gif" alt="次表层温度异常剖面" style="max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)"></div>
+    <div class="analysis-text">🔴 次表层暖核结构明确：赤道太平洋120°W-170°W区域50-150m深度层温度异常+4~+8°C，下沉开尔文波持续加深东太平洋温跃层。上层300m热含量远超2023年同期2倍以上，为El Niño进一步增幅提供充沛的次表层能量。</div>
+  </div>
+  <div class="ocean-card">
+    <div class="ocean-card-title">🌡️ 海表热含量异常（过去30天）</div>
+    <div class="ocean-card-subtitle">NOAA CPC GODAS · 全球上层300m热含量异常（H300） · 单位：10⁸ J/m²</div>
+    <div style="text-align:center;padding:12px 0"><img src="https://www.cpc.ncep.noaa.gov/products/GODAS/pent_gif/xy/pent.anom.xy.h300.30d.gif" alt="热含量异常分布" style="max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)"></div>
+    <div class="analysis-text">热带太平洋热含量正异常显著，赤道中东太平洋大范围偏暖。这一"热量水库"是支撑El Niño持续发展的核心能量来源，也是当前NMME集合预报81%概率出现超强厄尔尼诺的物理基础。</div>
   </div>
 </div>
 
