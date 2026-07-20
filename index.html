@@ -2550,7 +2550,7 @@ function initWeather(){
     wrap.style.cssText = 'overflow-x:auto; margin:8px 0;';
     var tbl = document.createElement('table');
     tbl.className = 'region-detail-table';
-    tbl.innerHTML = '<thead><tr><th>产区</th><th>生育期积温</th><th>去年积温</th><th>积温均值</th><th>14天均高</th><th>14天均低</th><th>入汛降水</th><th>去年降水</th><th>降水均值</th><th>土壤湿度</th><th>风险</th></tr></thead>';
+    tbl.innerHTML = '<thead><tr><th>产区</th><th>生育期积温</th><th>积温进度</th><th>去年积温</th><th>积温均值</th><th>14天均高</th><th>14天均低</th><th>入汛降水</th><th>去年降水</th><th>降水均值</th><th>土壤湿度</th><th>风险</th></tr></thead>';
     var tbody = document.createElement('tbody');
     d.names.forEach(function(r, i){
       var soil = d.soils[i];
@@ -2566,12 +2566,20 @@ function initWeather(){
                       soil >= (thresholds.soil_saturation||0.40) ? '#2563eb' : '#16a34a';
       var tr = document.createElement('tr');
       tr.id = 'region-' + crop + '-' + i;
+      var accRaw = (d.acc_season||d.acc_temps)[i];
+      var accReq = (d.acc_season_req||[])[i];
+      var progCell = '<td style="color:#94a3b8">—</td>';
+      if (accRaw != null && accReq) {
+        var progP = Math.min(accRaw/accReq*100, 100);
+        progCell = '<td><div style="display:flex;align-items:center;gap:5px;min-width:90px"><div style="flex:1;height:5px;background:rgba(37,99,235,0.12);border-radius:3px;overflow:hidden"><div style="width:' + progP.toFixed(1) + '%;height:100%;background:#3b82f6;border-radius:3px"></div></div><span style="font-size:11px;color:#2563eb;font-weight:600;white-space:nowrap">' + progP.toFixed(1) + '%</span></div></td>';
+      }
       var accYoy = (d.acc_season_yoy||[])[i];
       var accAvg = (d.acc_season_avg||[])[i];
       var precipYoy = (d.precip_season_yoy||[])[i];
       var precipAvg = (d.precip_season_avg||[])[i];
       tr.innerHTML = '<td class="region-name">' + r + '</td>' +
         '<td>' + (acc!=null?acc.toFixed(1):'—') + '</td>' +
+        progCell +
         '<td style="color:#60a5fa">' + (accYoy!=null?accYoy.toFixed(1):'—') + '</td>' +
         '<td style="color:#f59e0b">' + (accAvg!=null?accAvg.toFixed(1):'—') + '</td>' +
         '<td>' + d.max_temps[i].toFixed(1) + '</td>' +
