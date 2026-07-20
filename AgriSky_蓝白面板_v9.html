@@ -547,10 +547,15 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <!-- Row 5: 强对流天气预警 -->
     <div class="section" style="margin-bottom:24px">
       <div class="section-title">⚠️ 强对流天气预警</div>
-      <div class="section-subtitle" style="font-size:12px;color:var(--text-muted);margin-bottom:16px;padding-left:13px">中央气象台 2026-07-20 06时更新</div>
+      <div class="section-subtitle" style="font-size:12px;color:var(--text-muted);margin-bottom:16px;padding-left:13px">中央气象台 2026-07-20 10时更新</div>
 
       <!-- 预警状态卡片 -->
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px">
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:16px">
+        <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.2);border-radius:8px;padding:12px;text-align:center">
+          <div style="font-size:24px;margin-bottom:4px">🟦</div>
+          <div style="font-size:12px;font-weight:600;color:var(--accent-blue)">暴雨蓝色预警</div>
+          <div style="font-size:10px;color:var(--text-muted);margin-top:4px">皖赣桂粤 大暴雨100-220mm</div>
+        </div>
         <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.2);border-radius:8px;padding:12px;text-align:center">
           <div style="font-size:24px;margin-bottom:4px">🟦</div>
           <div style="font-size:12px;font-weight:600;color:var(--accent-blue)">短时强降水</div>
@@ -559,7 +564,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.2);border-radius:8px;padding:12px;text-align:center">
           <div style="font-size:24px;margin-bottom:4px">🟦</div>
           <div style="font-size:12px;font-weight:600;color:var(--accent-blue)">雷暴大风/冰雹</div>
-          <div style="font-size:10px;color:var(--text-muted);margin-top:4px">内蒙古/华北/江南/广西</div>
+          <div style="font-size:10px;color:var(--text-muted);margin-top:4px">晋/冀/皖/赣 10-11级</div>
         </div>
         <div style="background:rgba(245,158,11,0.06);border:1px solid rgba(245,158,11,0.2);border-radius:8px;padding:12px;text-align:center">
           <div style="font-size:24px;margin-bottom:4px">🟨</div>
@@ -574,27 +579,32 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       </div>
 
       <!-- 预警详情 -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px">
         <div class="info-box" style="border-left:3px solid var(--accent-blue)">
           <p style="font-size:12px;color:var(--text-primary);line-height:1.7">
-            <strong style="color:var(--accent-blue)">短时强降水</strong>：内蒙古中东部/河北/京津北部/安徽中南部/江苏/上海西部/湖南中南部/江西/浙江/福建北部/广西中东部/广东中西部，小时雨量20-50mm，局地80mm+。
+            <strong style="color:var(--accent-blue)">暴雨蓝色预警</strong>：7/20 14时至21日14时，内蒙古东北部/河北西部和中北部/北京/天津北部/安徽中南部/江苏中南部/上海/浙江中北部/江西中北部/湖南东部和南部/广东西部和北部/广西中东部有大到暴雨。安徽南部/江西北部/广西北部和东部/广东北部大暴雨100-220mm，短时强降水20-50mm/h局地80mm+。
           </p>
         </div>
         <div class="info-box" style="border-left:3px solid var(--accent-blue)">
           <p style="font-size:12px;color:var(--text-primary);line-height:1.7">
-            <strong style="color:var(--accent-blue)">雷暴大风/冰雹</strong>：新疆西北部/青海东北部/甘肃中部/宁夏南部/陕西东北部/内蒙古中东部/山西中部/河北/北京北部/天津北部/安徽南部/江苏/湖南南部/江西/浙江西部/福建西北部/广西东部/广东北部，局地雷暴大风或冰雹。
+            <strong style="color:var(--accent-blue)">短时强降水</strong>：西北地区东部/内蒙古中东部/华北/江淮南部/江南东部和南部/华南等地小时雨量20-50mm。河北东北部/安徽中部/湖北东部/湖南北部/江西北部/浙江北部/广西东北部/广东西部和西南部沿海局地>50mm，最大80mm+。
+          </p>
+        </div>
+        <div class="info-box" style="border-left:3px solid var(--accent-blue)">
+          <p style="font-size:12px;color:var(--text-primary);line-height:1.7">
+            <strong style="color:var(--accent-blue)">雷暴大风/冰雹</strong>：西北地区东部/内蒙古中东部/华北/江淮东部/江南东部和南部/华南等地8级以上雷暴大风或冰雹。山西中北部/河北北部和南部/北京东北部/安徽南部/江西北部10-11级雷暴大风，最大11级以上。
           </p>
         </div>
       </div>
 
       <!-- 强对流监测预报图 -->
       <div style="margin-bottom:16px">
-        <div style="font-size:12px;font-weight:600;color:var(--text-primary);margin-bottom:8px">📡 强对流落区预报图（中央气象台 7月19日22时发布）</div>
+        <div style="font-size:12px;font-weight:600;color:var(--text-primary);margin-bottom:8px">📡 强对流落区预报图（中央气象台 7月20日10时发布）</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-          <img src="http://image.nmc.cn/product/2026/07/19/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260719220000000_base64_1.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" alt="强对流落区预报图①" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/07/19/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260719220000000_base64_2.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" alt="强对流落区预报图②" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/07/19/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260719220000000_base64_3.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" alt="强对流落区预报图③" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/07/19/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260719220000000_base64_4.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" alt="强对流落区预报图④" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/07/20/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260720020000000_base64_1.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" alt="强对流落区预报图①" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/07/20/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260720020000000_base64_2.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" alt="强对流落区预报图②" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/07/20/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260720020000000_base64_3.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" alt="强对流落区预报图③" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/07/20/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260720020000000_base64_4.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" alt="强对流落区预报图④" onerror="this.style.display='none'" />
         </div>
       </div>
 
@@ -602,7 +612,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div style="background:rgba(239,68,68,0.04);border:1px solid rgba(239,68,68,0.15);border-radius:8px;padding:14px">
         <div style="font-size:12px;font-weight:600;color:var(--risk-red);margin-bottom:6px">🌽 农业影响提示</div>
         <div style="font-size:11px;color:var(--text-secondary);line-height:1.8">
-          内蒙古中东部/河北/湖南/江西/广西等地小时雨量20-50mm局地80mm+，东北渍涝区再迎降水叠加；华北雷暴大风或致玉米倒伏；江南华南短时强降水影响早稻收晒。七下八上期间（7.16-8.15）为全年强对流最活跃时段，需持续关注。
+          广西北部和东部大暴雨100-220mm，甘蔗伸长期渍涝压力骤升，叠加前期台风美莎克残余影响；河北北部和南部10-11级雷暴大风，华北玉米倒伏风险高；安徽南部/江西北部大暴雨影响早稻收晒；湖南北部短时强降水持续，东北前期渍涝区仍需关注退水进度。未来三天广西至长江中下游一带强降雨持续，七下八上防汛关键期（7.16-8.15）为全年强对流最活跃时段。
         </div>
       </div>
       <div style="font-size:10px;color:var(--text-muted);margin-top:8px;text-align:right">来源：中央气象台 www.nmc.cn</div>
