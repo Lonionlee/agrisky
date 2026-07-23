@@ -343,6 +343,56 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       </div>
     </div>
 
+  <!-- 台风追踪卡片 -->
+  <div class="typhoon-row">
+    <div class="typhoon-card" id="typhoon-tracking-card">
+      <div class="typhoon-card-header">
+        <h3>🌀 台风追踪 · 第12号台风"红霞"（Noul）</h3>
+        <span class="category-badge" style="background:rgba(255,255,255,0.2);color:white">热带低压 → 台风</span>
+      </div>
+      <div class="typhoon-card-body">
+        <div class="typhoon-stats">
+          <div class="typhoon-stat">
+            <div class="typhoon-stat-value" style="color:var(--risk-orange)">15<span style="font-size:12px">m/s</span></div>
+            <div class="typhoon-stat-label">中心最大风速（7级）</div>
+          </div>
+          <div class="typhoon-stat">
+            <div class="typhoon-stat-value">1000<span style="font-size:12px">hPa</span></div>
+            <div class="typhoon-stat-label">中心最低气压</div>
+          </div>
+          <div class="typhoon-stat">
+            <div class="typhoon-stat-value">15.8°N<br>130.4°E</div>
+            <div class="typhoon-stat-label">中心位置（07/23 05时）</div>
+          </div>
+        </div>
+        <div class="typhoon-path">
+          <div class="typhoon-path-title">📍 路径与时间线（中央气象台 7/23 06时）</div>
+          <strong>7/23 05时</strong>：热带低压生成，菲律宾马尼拉偏东约1020km（15.8°N, 130.4°E）<br>
+          <strong>7/23-24</strong>：向西偏北快速移动（~30km/h），强度逐渐加强，<strong>12-24h内发展为台风</strong><br>
+          <strong>7/24</strong>：穿过巴士海峡，PAGASA已命名"Kiyapo"（菲律宾名）<br>
+          <strong>7/25凌晨</strong>：移入南海东北部海面，强度快速发展<br>
+          <strong>7/25晚-26日凌晨</strong>：<span style="color:var(--risk-red);font-weight:700">登陆广东中东部至福建南部沿海（35-45m/s，12-14级，台风-强台风级）</span><br>
+          <strong>登陆后</strong>：逐渐转向北偏西，强度减弱
+        </div>
+        <div class="typhoon-info">
+          <strong>🌊 环境条件：</strong>南海北部SST≈30°C，热力条件充足，存在近海加强可能<br>
+          <strong>📊 模式共识：</strong>EC/GFS/NMC三方均锁定西行登陆华南，路径分歧收窄<br>
+          <strong>⚡ 强度预测：</strong>GFS预测1级飓风强度；EC预测登陆时台风级（120km/h）；NMC预测12-14级<br>
+          <strong>📌 PAGASA：</strong>已命名Kiyapo，最大风速45km/h，向WNW移动20km/h<br>
+          <strong>📌 HKO：</strong>7/26达峰值120km/h（台风级），7/27起减弱
+        </div>
+        <div class="typhoon-risk">
+          <strong>🚨 农业影响预警：</strong><br>
+          ① <strong>广东中东部/福建南部</strong>（登陆核心区）：甘蔗伸长期/香蕉抽蕾期遭12-14级狂风+暴雨，倒伏断折风险极高<br>
+          ② <strong>珠三角/粤西</strong>（外围影响）：暴雨导致水稻灌浆期渍涝， palm oil种植园排水压力<br>
+          ③ <strong>南海海域</strong>：风暴潮叠加天文大潮，沿海养殖/渔排面临严重威胁<br>
+          ④ <strong>菲律宾吕宋</strong>：7/24穿越期间带来暴雨，影响水稻/玉米收获<br>
+          <span style="font-size:11px;color:var(--text-muted)">数据来源：中央气象台(7/23 06时)、JTWC、PAGASA、HKO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="section" style="margin-bottom:24px">
     <div class="section-title" style="font-size:18px;margin-bottom:6px">综合气候判断与预测</div>
     <div style="font-size:13px;color:var(--text-muted);margin-bottom:20px;padding-left:13px">海洋-大气-农业耦合系统综合分析 · 基于2026年7月最新观测数据</div>
@@ -735,6 +785,15 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="section-title" id="section-timeline">重大事件时间线</div>
       <div class="events-card">
         <div class="timeline">
+          <div class="timeline-item severity-red">
+            <div class="timeline-header">
+              <span class="timeline-date">2026-07-23</span>
+              <span class="timeline-severity severity-red-tag">RED</span>
+            </div>
+            <div class="timeline-title">第12号台风"红霞"生成 预计25-26日登陆华南<span class="timeline-type">台风</span></div>
+            <div class="timeline-summary">92W于7/23 05时升级为热带低压（15.8°N,130.4°E，15m/s，1000hPa），PAGASA命名"Kiyapo"。NMC预报12-24h内发展为台风，7/24穿巴士海峡，7/25晚-26日凌晨登陆广东中东部至福建南部（35-45m/s，12-14级）。南海SST≈30°C，存在近海加强可能。三方模式共识西行登陆华南，路径分歧收窄。国家防总提前部署防汛防台风。</div>
+            <div class="timeline-crops"><span class="timeline-crop-tag">白糖</span><span class="timeline-crop-tag">棕榈油</span><span class="timeline-crop-tag">棉花</span><span class="timeline-crop-tag">咖啡</span></div>
+          </div>
           <div class="timeline-item severity-red">
             <div class="timeline-header">
               <span class="timeline-date">2026-07-22</span>
