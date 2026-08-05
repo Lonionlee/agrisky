@@ -548,7 +548,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:14px">🌊 海洋指数趋势预判</div>
         <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 12px;background:rgba(239,68,68,0.04);border-radius:6px;margin-bottom:8px;border-left:3px solid var(--risk-red)">
           <span style="font-weight:600;font-size:12px;min-width:100px">ENSO (Niño 3.4)</span>
-          <span style="font-size:12px;color:var(--text-secondary)">已突破+2.2°C超强门槛(+2.2°C, CPC周度7/21)。IRI 7月预测峰值+3.1°C(10-12月)，或为有史以来最强。NOAA：97%概率持续至2027年春，CPC 10-12月81%概率超强。ECMWF C3S预测12月异常+3.5°C</span>
+          <span style="font-size:12px;color:var(--text-secondary)">已突破+2.3°C超强门槛(+2.2°C, CPC周度7/21)。IRI 7月预测峰值+3.1°C(10-12月)，或为有史以来最强。NOAA：97%概率持续至2027年春，CPC 10-12月81%概率超强。ECMWF C3S预测12月异常+3.5°C</span>
         </div>
         <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 12px;background:rgba(37,99,235,0.04);border-radius:6px;margin-bottom:8px;border-left:3px solid var(--accent-blue)">
           <span style="font-weight:600;font-size:12px;min-width:100px">PDO</span>
@@ -751,7 +751,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           <div class="risk-item">
             <div class="risk-item-region">美国棉花带</div>
             <div class="risk-item-crop">棉花</div>
-            <div class="risk-item-threat">干旱56%(7/21)较去年3%暴增53个百分点；优良率46%(持平)；得州持续高温100°F+，关键窗口期降水成核心变量</div>
+            <div class="risk-item-threat">干旱56%(7/21)较去年3%暴增53个百分点；优良率46%(↑1pp)；得州持续高温100°F+，关键窗口期降水成核心变量</div>
           </div>
           <div class="risk-item">
             <div class="risk-item-region">澳大利亚</div>
@@ -985,8 +985,8 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div class="ocean-card">
     <div class="ocean-card-title">🌡️ 全球SST异常分布</div>
     <div class="sst-grid">
-      <div class="sst-item"><div class="sst-name">Niño 1+2</div><div class="sst-value warm">+3.8°C</div><div class="sst-desc">南美西海岸极端增暖</div></div>
-      <div class="sst-item"><div class="sst-name">Niño 3.4</div><div class="sst-value warm">+2.2°C</div><div class="sst-desc">赤道中太平洋</div></div>
+      <div class="sst-item"><div class="sst-name">Niño 1+2</div><div class="sst-value warm">+4.1°C</div><div class="sst-desc">南美西海岸极端增暖</div></div>
+      <div class="sst-item"><div class="sst-name">Niño 3.4</div><div class="sst-value warm">+2.3°C</div><div class="sst-desc">赤道中太平洋</div></div>
       <div class="sst-item"><div class="sst-name">Niño 4</div><div class="sst-value warm">+1.0°C</div><div class="sst-desc">赤道西太平洋暖池略偏暖</div></div>
       <div class="sst-item"><div class="sst-name">超级海洋热浪</div><div class="sst-value warm">13.5%</div><div class="sst-desc">占地球海洋面积</div></div>
       <div class="sst-item"><div class="sst-name">印度洋整体</div><div class="sst-value warm">+0.3°C</div><div class="sst-desc">整体偏暖但东西梯度异常</div></div>
@@ -1037,7 +1037,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div class="ocean-section">
   <div class="section-title" id="section-enso">ENSO 深度分析</div>
   <div class="stat-row">
-    <div class="stat-box"><div class="stat-box-value red">+2.2°C</div><div class="stat-box-label">当前 Niño 3.4 周度SST距平（-1.34年7月·CPC）</div></div>
+    <div class="stat-box"><div class="stat-box-value red">+2.3°C</div><div class="stat-box-label">当前 Niño 3.4 周度SST距平（-1.34年7月·CPC）</div></div>
     <div class="stat-box"><div class="stat-box-value red">强厄尔尼诺</div><div class="stat-box-label">向超强发展 · 次表层暖核+8~+9°C</div></div>
     <div class="stat-box"><div class="stat-box-value red">95-97%</div><div class="stat-box-label">Q4强/超强事件概率 (CPC 7月更新)</div></div>
   </div>
@@ -1045,7 +1045,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📈 Niño 3.4 时间序列（2009-2026）</div>
     <div class="ocean-card-subtitle">NOAA CPC ERSSTv5 · 周度Niño 3.4距平 · 2009-01至2026-07 · ±0.5°C阈值</div>
     <div class="chart-container tall"><canvas id="ensoHistoryChart"></canvas></div>
-    <div class="analysis-text">Niño 3.4自2025年末负值迅速转正，2026年5月已达+0.94°C，6月跳升至+1.8°C，月际增量为有记录以来最快之一。周度RONI持续攀升：6/27→1.2°C → 7/4→1.2°C → 7/11→1.3°C → 7/18→1.4°C。CPC官方周度Niño 3.4已达+2.20°C，突破超强门槛。NOAA 7月9日发布El Niño Advisory，97%概率持续至2027年春季；Q4强/超强概率从5月65-67%→6月88-89%→7月95-97%（11月超强81%+强16%，12月超强75%+强20%）。次表层暖化加剧（下沉开尔文波加深东太平洋温跃层），海气耦合正反馈加速，CFSv2预测持续增强至年底。Niño-1+2已达+2.8°C（远超超强门槛），Niño-4为+0.4°C（东西梯度显著加大）。<i>（含凯丰投资7/22报告数据）</i></div>
+    <div class="analysis-text">Niño 3.4自2025年末负值迅速转正，2026年5月已达+0.94°C，6月跳升至+1.8°C，月际增量为有记录以来最快之一。周度RONI持续攀升：6/27→1.2°C → 7/4→1.2°C → 7/11→1.3°C → 7/18→1.4°C。CPC官方周度Niño 3.4已达+2.30°C，突破超强门槛。NOAA 7月9日发布El Niño Advisory，97%概率持续至2027年春季；Q4强/超强概率从5月65-67%→6月88-89%→7月95-97%（11月超强81%+强16%，12月超强75%+强20%）。次表层暖化加剧（下沉开尔文波加深东太平洋温跃层），海气耦合正反馈加速，CFSv2预测持续增强至年底。Niño-1+2已达+2.8°C（远超超强门槛），Niño-4为+0.4°C（东西梯度显著加大）。<i>（含凯丰投资7/22报告数据）</i></div>
   </div>
   <div class="ocean-card">
     <div class="ocean-card-title">🔮 ENSO 预测与多模型对比</div>
@@ -1146,26 +1146,26 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div class="section-title" id="section-monsoon">季风与环流</div>
   <div class="ocean-card">
     <div class="ocean-card-title">🌀 印度季风进度</div>
-    <div class="ocean-card-subtitle">IMD数据 · 截至2026年08月02日</div>
+    <div class="ocean-card-subtitle">IMD数据 · 截至2026年08月05日</div>
     <div class="three-col" style="margin-bottom:16px">
-      <div class="stat-box"><div class="stat-box-value red">342.5mm</div><div class="stat-box-label">累计降雨（比常年低38%）</div></div>
+      <div class="stat-box"><div class="stat-box-value red">366.1mm</div><div class="stat-box-label">累计降雨（比常年低38%）</div></div>
       <div class="stat-box"><div class="stat-box-value red">12年最干</div><div class="stat-box-label">6月降雨量历史排名</div></div>
       <div class="stat-box"><div class="stat-box-value red">397个</div><div class="stat-box-label">干旱重灾县区</div></div>
     </div>
     <div class="monsoon-bar"><div class="bar-label">季风推进</div><div class="bar-track"><div class="bar-fill" style="width:35%;background:var(--risk-red)"></div></div><div class="bar-value" style="color:var(--risk-red)">仅达南部</div></div>
-    <div class="monsoon-bar"><div class="bar-label">累计降雨距平</div><div class="bar-track"><div class="bar-fill" style="width:84%;background:var(--risk-red)"></div></div><div class="bar-value" style="color:var(--risk-red)">--16%-16%-23%-14%-38%</div></div>
+    <div class="monsoon-bar"><div class="bar-label">累计降雨距平</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--risk-red)"></div></div><div class="bar-value" style="color:var(--risk-red)">--16%-16%-23%-14%-38%</div></div>
     <div class="monsoon-bar"><div class="bar-label">棉花播种进度</div><div class="bar-track"><div class="bar-fill" style="width:72%;background:var(--risk-orange)"></div></div><div class="bar-value" style="color:var(--risk-orange)">面积缩减28%</div></div>
     <div style="margin-top:16px">
       <div style="font-size:12px;font-weight:600;color:var(--text-secondary);margin-bottom:8px">副热带高压分析</div>
-      <div class="info-box"><p>副高当前强势西伸北抬，位置偏北且强度超常年。其稳定控制中国中东部及台湾，导致南方降水稀少、转为大范围晴热高温，并抑制台风生成使其路径偏北。</p></div>
+      <div class="info-box"><p>当前副高较常年更强且偏北，强势控制西太平洋及我国中东部。其控制区内部晴热高温，南部雨季结束转干；边缘水汽北上与冷空气交汇，引发华北、黄淮等地集中暴雨。</p></div>
       <div style="font-size:12px;font-weight:600;color:var(--text-secondary);margin-bottom:8px;margin-top:12px">Walker环流状态</div>
-      <div class="info-box"><p>受超强厄尔尼诺影响，Walker环流持续减弱，下沉支主导东南亚带来干旱异常，上升支东移。致使西太平洋对流受抑，配合副高导致中国夏季降水北多南少及中东部高温。</p></div>
+      <div class="info-box"><p>受超强厄尔尼诺影响，当前沃克环流持续减弱。下沉支主导印尼等东南亚地区，引发干旱异常；同时环流改变致使西北太平洋台风生成偏强，对中国东南沿海影响增大。</p></div>
     </div>
   </div>
   <!-- IMD 西南季风推进图 -->
   <div class="ocean-card">
     <div class="ocean-card-title">🗺️ IMD西南季风推进实况图</div>
-    <div class="ocean-card-subtitle">印度气象局(IMD) · 2026年08月02日 · <a href="https://mausam.imd.gov.in/responsive/monsooninformation.php" target="_blank" style="color:var(--accent-blue)">原始数据</a></div>
+    <div class="ocean-card-subtitle">印度气象局(IMD) · 2026年08月05日 · <a href="https://mausam.imd.gov.in/responsive/monsooninformation.php" target="_blank" style="color:var(--accent-blue)">原始数据</a></div>
     <div style="text-align:center;margin:12px 0">
       <img src="https://mausam.imd.gov.in/ClimateInformation/imdweb/DAY_WEEK/onset_SW.gif" alt="IMD西南季风推进图2026" style="max-width:100%;border-radius:8px;border:1px solid var(--border-color)" onerror="this.style.display='none'">
     </div>
@@ -1412,7 +1412,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:12px;text-align:center">
           <div style="font-size:11px;color:#64748b;margin-bottom:4px">当前受旱面积 (D1+)</div>
           <div style="font-family:'JetBrains Mono';font-size:28px;font-weight:700;color:#eab308">18%</div>
-          <div style="font-size:11px;color:#64748b">上周: 18% · <span style="color:#ef4444">持平</span> · <span style="color:#ef4444">持平</span> (截至7/21)</div>
+          <div style="font-size:11px;color:#64748b">上周: 18% · <span style="color:#ef4444">持平</span> · <span style="color:#ef4444">持平</span> · <span style="color:#ef4444">持平</span> (截至7/21)</div>
         </div>
         <div style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:12px;text-align:center">
           <div style="font-size:11px;color:#64748b;margin-bottom:4px">去年同期 (D1+)</div>
@@ -2247,7 +2247,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <span style="font-size:11px;padding:3px 8px;background:#fff1f0;color:#cf1322;border-radius:4px;font-weight:600;">🔴 高风险</span>
     </div>
     <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-      <div><strong>USDA 7/26</strong>：优良率46%(持平)，81%现蕾，45%结铃；干旱D1+面积56%（去年同期3%）</div>
+      <div><strong>USDA 7/26</strong>：优良率46%(↑1pp)，81%现蕾，45%结铃；干旱D1+面积56%（去年同期3%）</div>
       <div style="margin-top:6px;">德州 TX：🔴西区旱地仍需大量水分，西南棉区干旱持续</div>
       <div>东南棉区 GA/MS/AL：🟡花铃期高温压力+卡罗莱纳需雨，优良率同比降6个百分点</div>
       <div style="margin-top:6px;padding-top:6px;border-top:1px solid var(--border-color);color:#d48806;">💰 ICE棉花期货承压，南部平原干旱引发减产担忧</div>
@@ -2505,7 +2505,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <h4>IOD — 印度洋偶极子</h4>
   <p>IOD衡量印度洋东西海温差异（DMI = 西印度洋SST - 东印度洋SST）。正IOD使东非降水偏多、印尼偏干；负IOD效果相反。负IOD常与厄尔尼诺同步发展，放大东南亚干旱。</p>
   <img src="images/knowledge/iod_phases.jpg" alt="IOD正负位相对比" style="width:100%;max-width:600px;border-radius:8px;margin:10px 0;border:1px solid var(--border-color);" />
-  <div class="info-box"><p><strong>IOD阈值：</strong>≥+0.4°C为正IOD事件，≤-0.4°C为正IOD事件。当前DMI=+0.63°C处于正IOD事件区间。<br><strong>IOD-ENSO协同效应：</strong>El Niño + 正IOD → 澳大利亚干旱协同增强；La Niña + 负IOD → 印度季风协同增强。正IOD可部分抵消El Niño对印度季风的抑制。<br><strong>非对称性：</strong>极端正IOD和极端负IOD均可增强西苏门答腊-澳大利亚季风降雨，非线性关系。<br><em>来源：GRL 2025; GRL 2024</em></p></div>
+  <div class="info-box"><p><strong>IOD阈值：</strong>≥+0.4°C为正IOD事件，≤-0.4°C为正IOD事件。当前DMI=++0.63°C处于正IOD事件区间。<br><strong>IOD-ENSO协同效应：</strong>El Niño + 正IOD → 澳大利亚干旱协同增强；La Niña + 负IOD → 印度季风协同增强。正IOD可部分抵消El Niño对印度季风的抑制。<br><strong>非对称性：</strong>极端正IOD和极端负IOD均可增强西苏门答腊-澳大利亚季风降雨，非线性关系。<br><em>来源：GRL 2025; GRL 2024</em></p></div>
 </div></div>
 <!-- New: Multi-index synergy card -->
 <div class="knowledge-section" id="know-synergy"><div class="knowledge-card">
