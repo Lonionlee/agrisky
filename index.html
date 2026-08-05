@@ -602,48 +602,14 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     </div>
   </div>
 
-  <!-- 台风追踪卡片 -->
+    <!-- 台风追踪 + 强对流预警 -->
   <div class="typhoon-row">
+    <!-- Left: 白海豚台风追踪 -->
     <div class="typhoon-card" id="typhoon-tracking-card">
       <div class="typhoon-card-header">
         <h3>白海豚 (Baitu)</h3>
         <span class="category-badge" style="background:rgba(59,130,246,0.8);color:white">🔴 强台风</span>
       </div>
-    <!-- Row 5: 强对流天气预警 -->
-    <div class="section" style="margin-bottom:0">
-      <div class="section-title">⚠️ 强对流天气预警</div>
-      <div class="section-subtitle" style="font-size:12px;color:var(--text-muted);margin-bottom:16px;padding-left:13px">中央气象台 2026-08-05 10时更新</div>
-
-      <!-- 预警详情 -->
-      <div style="display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:16px">
-        <div class="info-box" style="border-left:3px solid var(--risk-orange)">
-          <p style="font-size:12px;color:var(--text-primary);line-height:1.7">
-            <strong style="color:var(--risk-orange)">短时强降水预报：8月5日14时至6日08时，内蒙古东北部、黑龙江东南部、陕西、山西、河北中北部、北京西北部、河南西南部和北部、江苏南部、上海西部、湖北、湖南、浙江中南部、四川中东部、重庆、贵州东南部、云南中南部、广西、广东西南部、海南岛等地部分地区小时雨量20-50mm，局地80mm+</p>
-        </div>
-        <div class="info-box" style="border-left:3px solid var(--risk-orange)">
-          <p style="font-size:12px;color:var(--text-primary);line-height:1.7">
-            <strong style="color:var(--risk-orange)">雷暴大风/冰雹预报：8月5日14时至6日08时，内蒙古东部、黑龙江东南部、吉林西部、陕西东部、山西北部、河北西北部、河南西南部、安徽南部、湖北西北部和南部、湖南北部、浙江南部等地局地将有雷暴大风或冰雹天气</p>
-        </div>
-        <div class="info-box" style="border-left:3px solid var(--text-muted)">
-          <p style="font-size:12px;color:var(--text-muted);line-height:1.7">
-            强对流天气：目前是指伴随雷暴现象的对流性大风（≥17.2m/s）、冰雹、短时强降水
-          </p>
-        </div>
-
-      <!-- 强对流监测预报图 -->
-      <div style="margin-bottom:16px">
-        <div style="font-size:12px;font-weight:600;color:var(--text-primary);margin-bottom:8px">📡 强对流落区预报图（中央气象台 8月5日10时发布）</div>
-                  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-            <img src="http://image.nmc.cn/product/2026/08/05/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260805020000000_base64_1.jpg?v=1785898227473" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" alt="短时强降水预报 8/5 14时-8/6 08时" onerror="this.style.display='none'" />
-            <img src="http://image.nmc.cn/product/2026/08/05/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260805020000000_base64_2.jpg?v=1785898227745" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" alt="短时强降水预报 8/6 08时-8/7 08时" onerror="this.style.display='none'" />
-            <img src="http://image.nmc.cn/product/2026/08/05/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260805020000000_base64_3.jpg?v=1785898227984" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/5 14时-8/6 08时" onerror="this.style.display='none'" />
-            <img src="http://image.nmc.cn/product/2026/08/05/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260805020000000_base64_4.jpg?v=1785898228227" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/6 08时-8/7 08时" onerror="this.style.display='none'" />
-          </div>
-      </div>
-      <div style="font-size:10px;color:var(--text-muted);margin-top:8px;text-align:right">来源：中央气象台 www.nmc.cn</div>
-    </div>
-
-    
       <div class="typhoon-card-body">
         <div class="typhoon-stats">
           <div class="typhoon-stat">
@@ -659,7 +625,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
             <div class="typhoon-stat-label">中心位置（08/05 05时）</div>
           </div>
         </div>
-                <div class="typhoon-path">
+        <div class="typhoon-path">
           <div class="typhoon-path-title">📍 路径与时间线（中央气象台 8/5 05时）</div>
           <strong>08/05 05时</strong>：<span style="color:var(--accent-blue);font-weight:700">强台风"白海豚"</span>（25.4°N, 138.9°E），15级50m/s，940hPa，七级风圈260-360km<br>
           <strong>移动趋势</strong>：向西偏北移动，20-25km/h，强度变化不大<br>
@@ -667,14 +633,14 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           <strong>路径预测</strong>：<span style="color:var(--risk-red);font-weight:700">路径一</span>：8/10前后浙闽沿海登陆（强台风/台风级）；<span style="color:var(--risk-red);font-weight:700">路径二</span>：近海北上，长江口以北至山东半岛登陆（强热带风暴/台风级）<br>
           <strong>14号台风"鲸鱼"</strong>：8/5凌晨生成（南海中东部），热带风暴级8级18m/s，998hPa，未来或被白海豚吸收
         </div>
-                <div class="typhoon-info">
+        <div class="typhoon-info">
           <strong>🌊 环境条件：</strong>SST≈29°C，垂直风切变中等偏弱，远洋发展空间良好<br>
           <strong>📊 模式共识：</strong>EC/GFS均指向西行，8/8进入东海后路径变数大，取决于副高断裂时机<br>
           <strong>⚡ 强度趋势：</strong>维持强台风级，进入东海后海温略降，强度可能缓慢减弱<br>
           <strong>📌 14号台风"鲸鱼"：</strong>8/5凌晨生成（17.1°N, 119.8°E），热带风暴级8级18m/s，向偏东移动，或被白海豚吞并<br>
           <strong>📌 红霞回顾：</strong>7/26凌晨登陆惠东平海镇（强台风级14级45m/s），7/27 14时停编；广东揭阳/汕尾累计雨量超600mm
         </div>
-                <div class="typhoon-risk">
+        <div class="typhoon-risk">
           <strong>🚨 农业影响评估：</strong><br>
           ① <strong>白海豚</strong>：8/7前对我国近海无影响；8/8进入东海后，<span style="color:var(--risk-red);font-weight:700">8/10前后浙闽沿海或迎强风雨</span>，浙江/福建水稻和设施农业需提前防范<br>
           ② <strong>鲸鱼</strong>：强度弱，未来或被白海豚吸收，对我国农业影响有限<br>
@@ -682,6 +648,32 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           ④ <strong>东北</strong>：佳木斯松花江/黑龙江洪峰过境，管控升级，前期渍涝风险延续，玉米/大豆产区需密切关注<br>
           <span style="font-size:11px;color:var(--text-muted)">数据来源：中央气象台(8/5 05时)、央视新闻、中国天气</span>
         </div>
+      </div>
+    </div>
+    <!-- Right: 强对流天气预警 -->
+    <div class="typhoon-card" style="overflow:visible">
+      <div class="typhoon-card-header" style="background:var(--risk-orange)">
+        <h3>⚠️ 强对流天气预警</h3>
+        <span class="category-badge" style="background:rgba(255,255,255,0.25);color:white">中央气象台 8月5日10时</span>
+      </div>
+      <div class="typhoon-card-body">
+        <div style="display:grid;grid-template-columns:1fr;gap:8px;margin-bottom:14px">
+          <div class="info-box" style="border-left:3px solid var(--risk-orange);padding:8px 12px">
+            <p style="font-size:11px;color:var(--text-primary);line-height:1.6">
+              <strong style="color:var(--risk-orange)">短时强降水预报：</strong>8月5日14时至6日08时，内蒙古东北部、黑龙江东南部、陕西、山西、河北中北部、北京西北部、河南西南部和北部、江苏南部、上海西部、湖北、湖南、浙江中南部、四川中东部、重庆、贵州东南部、云南中南部、广西、广东西南部、海南岛等地部分地区小时雨量20-50mm，局地80mm+</p>
+          </div>
+          <div class="info-box" style="border-left:3px solid var(--risk-orange);padding:8px 12px">
+            <p style="font-size:11px;color:var(--text-primary);line-height:1.6">
+              <strong style="color:var(--risk-orange)">雷暴大风/冰雹预报：</strong>8月5日14时至6日08时，内蒙古东部、黑龙江东南部、吉林西部、陕西东部、山西北部、河北西北部、河南西南部、安徽南部、湖北西北部和南部、湖南北部、浙江南部等地局地将有雷暴大风或冰雹天气</p>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px">
+          <img src="http://image.nmc.cn/product/2026/08/05/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260805020000000_base64_1.jpg?v=1785898227473" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/5 14时-8/6 08时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/08/05/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260805020000000_base64_2.jpg?v=1785898227745" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/6 08时-8/7 08时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/08/05/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260805020000000_base64_3.jpg?v=1785898227984" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/5 14时-8/6 08时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/08/05/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260805020000000_base64_4.jpg?v=1785898228227" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/6 08时-8/7 08时" onerror="this.style.display='none'" />
+        </div>
+        <div style="font-size:9px;color:var(--text-muted);text-align:right">来源：中央气象台 www.nmc.cn</div>
       </div>
     </div>
   </div>
@@ -701,14 +693,21 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           <div class="risk-item">
             <div class="risk-item-region">印度全境</div>
             <div class="risk-item-crop">白糖/棉花</div>
-            <div class="risk-item-threat">季风累计偏少23%（截至7/20），东部偏少33%；甘蔗苗枯萎+棉花播种同比少6%，8月初预计出现<div class="risk-item-threat">印度全境季风降雨偏少且分布不均，甘蔗苗枯萎、棉花播种减少，季风中断风险威胁作物产量。</div></div>新疆</div>
+            <div class="risk-item-threat">季风累计偏少23%（截至7/20），东部偏少33%；甘蔗苗枯萎+棉花播种同比少6%，季风降雨偏少且分布不均，季风中断风险威胁作物产量。</div>
+          </div>
+          <div class="risk-item">
+            <div class="risk-item-region">新疆</div>
             <div class="risk-item-crop">棉花</div>
             <div class="risk-item-threat">吐鲁番艾丁湖50°C（7/21）破纪录，高昌故城50°C；7月仅1天低于40°C，花铃期极端高温热害，热穹顶持续</div>
           </div>
           <div class="risk-item">
             <div class="risk-item-region">印度古吉拉特/马邦</div>
             <div class="risk-item-crop">棉花</div>
-            <div class="risk-item-threat">印度古吉拉特/马邦棉田面临干旱与极端暴雨急转双重打击，渍涝严重，季风累计偏少的结构性风险仍在。</div></div>    <div class="risk-item-crop">咖啡</div>
+            <div class="risk-item-threat">印度古吉拉特/马邦棉田面临干旱与极端暴雨急转双重打击，渍涝严重，季风累计偏少的结构性风险仍在。</div>
+          </div>
+          <div class="risk-item">
+            <div class="risk-item-region">巴西</div>
+            <div class="risk-item-crop">咖啡</div>
             <div class="risk-item-threat">历史级干旱(160天无雨)+收获期降雨干扰，阿拉比卡减产10.5%；Esírito Santo异常高温+17.6%影响下季花芽分化</div>
           </div>
           <div class="risk-item">
