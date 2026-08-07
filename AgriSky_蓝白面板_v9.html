@@ -375,7 +375,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:20px;border-top:3px solid var(--risk-orange);transition:all 0.2s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.06)'" onmouseout="this.style.boxShadow='none'">
         <div style="font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">IOD DMI</div>
         <div style="font-family:'JetBrains Mono';font-size:32px;font-weight:700;color:var(--risk-orange);line-height:1.1">+0.63<span style="font-size:14px;color:var(--text-muted)">°C</span></div>
-        <div style="margin-top:8px;display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:12px;font-weight:600;background:rgba(249,115,22,0.1);color:var(--risk-orange)">正阈值连续触及</div>
+        <div style="margin-top:8px;display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:12px;font-weight:600;background:rgba(249,115,22,0.1);color:var(--risk-orange)">正阈值连续触及·发展中未确立</div>
         <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">DMI（印度洋偶极模态指数=西印度洋SST距平-东印度洋SST距平）连续2周触及+0.4°C正阈值（BOM，截至8/2周）。正阈值连续触及·发展中未确立判定标准：DMI连续多周≥+0.4°C，当前事件发展中、尚未确立，BOM模式暗示南半球冬季可能发展并持续至春季</div>
       </div>
     </div>
@@ -607,7 +607,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <!-- Left: 白海豚台风追踪 -->
     <div class="typhoon-card" id="typhoon-tracking-card">
       <div class="typhoon-card-header">
-        <h3>白海豚 (Dolphin) (Dolphin)</h3>
+        <h3>白海豚</h3>
         <span class="category-badge" style="background:rgba(59,130,246,0.8);color:white"></span>
       </div>
       <div class="typhoon-card-body">
@@ -967,7 +967,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="summary-card" style="text-align:center;padding:16px;border-radius:10px;background:rgba(249,115,22,0.05)">
       <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">IOD DMI</div>
       <div style="font-family:'JetBrains Mono';font-size:22px;font-weight:700;color:var(--risk-orange)">+0.63°C</div>
-      <div style="font-size:11px;color:var(--risk-orange);margin-top:4px">正阈值连续触及</div>
+      <div style="font-size:11px;color:var(--risk-orange);margin-top:4px">正阈值连续触及·发展中未确立</div>
     </div>
     <div class="summary-card" style="text-align:center;padding:16px;border-radius:10px;background:rgba(239,68,68,0.05)">
       <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">RONI</div>
@@ -1058,7 +1058,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div class="ocean-section">
   <div class="section-title" id="section-pdo">PDO 太平洋年代际振荡</div>
   <div class="ocean-card">
-    <div class="ocean-card-title">📊 PDO 时间序列（2009-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -1.29</span></div>
+    <div class="ocean-card-title">📊 PDO 时间序列（-1.29-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -1.29</span></div>
     <div class="ocean-card-subtitle">NOAA ERSSTv5 · 月均PDO指数（EOF1分析）· 2009-01至2026-07</div>
     <div class="chart-container"><canvas id="pdoChart"></canvas></div>
     <div class="analysis-text">🔵 PDO冷位相（-1.29，2026年7月，ERSSTv6）并不直接抑制ENSO振幅，而是通过改变背景场调制ENSO的遥相关效应：①削弱El Niño→东亚夏季风的相关性（r从-0.63降至-0.24，Zhang et al. 2025）；②使WPSH偏弱偏北→东南亚-澳洲干旱更显著。当前超级海洋热浪面积占地球13.5%+次表层暖核+8~9°C，海洋动力学压倒年代际背景抑制→仍可能达超强。</div>
@@ -1078,7 +1078,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div class="ocean-section">
   <div class="section-title" id="section-iod">IOD 印度洋偶极子</div>
   <div class="ocean-card">
-    <div class="ocean-card-title">📊 IOD DMI 时间序列（2016-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:#a16207;margin-left:auto">当前: +0.63°C</span></div>
+    <div class="ocean-card-title">📊 IOD DMI 时间序列（-1.29-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:#a16207;margin-left:auto">当前: +0.63°C</span></div>
     <div class="ocean-card-subtitle">周度DMI · BOM数据 · 2016-2026 · DMI = TIO(10°S-10°N,50°-70°E) - TIO(10°S-0°,90°-110°E)</div>
     <div class="chart-container"><canvas id="iodChart"></canvas></div>
     <div class="analysis-text">🟠 正IOD（DMI≥+0.4°C）= 西印度洋（非洲东岸）偏暖+东印度洋（印尼以南）偏冷→印尼对流抑制→东南亚/澳大利亚干旱加剧。当前DMI=+0.63°C（BOM周度，截至8/2周），连续2周触及+0.4°C正阈值；BOM判定目前仍处中性——正阈值连续触及·发展中未确立需DMI连续多周≥+0.4°C方可确立，当前事件发展中、尚未确立。BOM模式暗示正IOD可能于南半球冬季发展并持续至春季，若确立将与超强El Niño协同加剧印尼-澳洲干旱。</div>
@@ -2465,13 +2465,13 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div class="info-box warning"><p><strong>2025年最新发现：</strong>Zhang et al. (2025, J. Climate) 首次量化PDO+VM双调制效应——PDO冷位相将El Niño与东亚夏季风的相关系数从-0.63削弱至-0.12~-0.24，物理机制为西太暖池冷却缺失导致WNPAAC偏弱。<strong>当前强El Niño+PDO冷的组合下，El Niño对东亚夏季风的影响被显著削弱。</strong></p></div>
 
   <h4>NAO — 北大西洋涛动</h4>
-  <p>NAO基于冰岛低压和亚速尔高压之间的气压差。正相位时欧洲冬季温和多雨，负相位时偏冷偏干。NAO主要影响冬季（12-3月），对欧洲和北美东部农业影响显著。</p>
-  <div class="info-box"><p><strong>遥相关路径：</strong>NAO通过激发沿亚洲急流波导传播的Rossby波列（CGT），影响东亚冬季风。NAO正位相→东亚偏暖、东北亚偏冷；NAO负位相则相反。<br><strong>近年发现：</strong>强负PDO+正NAO协同增强EASM，可推动副高异常偏北导致华北极端雨季（2021年案例）。<br><em>来源：Li et al. (2024) Advances in Atmospheric Sciences; Wang et al. (2025) Theor. Appl. Climatol.</em></p></div>
+  <p>NAO基于冰岛低压和亚速尔高压之间的气压差。正相位时欧洲冬季温和多雨，负相位时偏冷偏干。NAO主要影响冬季（-1.29-3月），对欧洲和北美东部农业影响显著。</p>
+  <div class="info-box"><p><strong>遥相关路径：</strong>NAO通过激发沿亚洲急流波导传播的Rossby波列（CGT），影响东亚冬季风。NAO正位相→东亚偏暖、东北亚偏冷；NAO负位相则相反。<br><strong>近年发现：</strong>强负PDO+正NAO协同增强EASM，可推动副高异常偏北导致华北极端雨季（-1.29年案例）。<br><em>来源：Li et al. (2024) Advances in Atmospheric Sciences; Wang et al. (2025) Theor. Appl. Climatol.</em></p></div>
 
   <h4>IOD — 印度洋偶极子</h4>
   <p>IOD衡量印度洋东西海温差异（DMI = 西印度洋SST - 东印度洋SST）。正IOD使东非降水偏多、印尼偏干；负IOD效果相反。负IOD常与厄尔尼诺同步发展，放大东南亚干旱。</p>
   <img src="images/knowledge/iod_phases.jpg" alt="IOD正负位相对比" style="width:100%;max-width:600px;border-radius:8px;margin:10px 0;border:1px solid var(--border-color);" />
-  <div class="info-box"><p><strong>IOD阈值：</strong>≥+0.4°C为正IOD事件，≤-0.4°C为负IOD事件。当前DMI=+0.63°C连续2周触及正阈值，事件发展中、尚未确立（BOM口径需连续多周达标方可确立）。<br><strong>IOD-ENSO协同效应：</strong>El Niño + 正IOD → 澳大利亚干旱协同增强；La Niña + 负IOD → 印度季风协同增强。正IOD可部分抵消El Niño对印度季风的抑制。<br><strong>非对称性：</strong>极端正IOD和极端负IOD均可增强西苏门答腊-澳大利亚季风降雨，非线性关系。<br><em>来源：GRL 2025; GRL 2024</em></p></div>
+  <div class="info-box"><p><strong>IOD阈值：</strong>≥+0.4°C为正阈值连续触及·发展中未确立，≤-0.4°C为正阈值连续触及·发展中未确立。当前DMI=+0.63°C连续2周触及正阈值，事件发展中、尚未确立（BOM口径需连续多周达标方可确立）。<br><strong>IOD-ENSO协同效应：</strong>El Niño + 正IOD → 澳大利亚干旱协同增强；La Niña + 负IOD → 印度季风协同增强。正IOD可部分抵消El Niño对印度季风的抑制。<br><strong>非对称性：</strong>极端正IOD和极端负IOD均可增强西苏门答腊-澳大利亚季风降雨，非线性关系。<br><em>来源：GRL 2025; GRL 2024</em></p></div>
 </div></div>
 <!-- New: Multi-index synergy card -->
 <div class="knowledge-section" id="know-synergy"><div class="knowledge-card">
