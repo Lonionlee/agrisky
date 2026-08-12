@@ -326,10 +326,10 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           <div class="summary-tag tag-red">超强厄尔尼诺</div>
         </div>
         <div class="summary-card red clickable" onclick="navigateTo('dashboard','section-riskmatrix')" title="点击查看防汛详情">
-          <div class="summary-label">防汛关键期</div>
-          <div class="summary-title">甘河1号洪水</div>
-          <div class="summary-value">371.68<span style="font-size:14px;color:var(--text-muted)">m 超警</span></div>
-          <div class="summary-tag tag-red">🔴 Ⅳ级应急响应</div>
+          <div class="summary-label">暴雨预警</div>
+          <div class="summary-title">残涡暴雨</div>
+          <div class="summary-value">豫鲁皖<span style="font-size:14px;color:var(--text-muted)"> 200-400mm</span></div>
+          <div class="summary-tag tag-red">🔴 特大暴雨</div>
         </div>
         <div class="summary-card red clickable" onclick="navigateTo('weather','section-riskmatrix')" title="点击查看产区风险">
           <div class="summary-label">高风险产区</div>
@@ -659,11 +659,16 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           </div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px">
-          <img src="http://image.nmc.cn/product/2026/08/12/IMAT/SEVP_NMC_IMAT_SFER_ERSA_ACHN_L88_P9_20260812020002400_base64_1.png?v=1786502073359" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/12 02时-20时" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/08/12/GOFC/SEVP_NMC_GOFC_SFER_EME_ACHN_L88_P9_20260812000002400_base64_1.jpg?v=1786498305730" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/12 02时-20时" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/08/12/IMAT/SEVP_NMC_IMAT_SFER_ERSA_ACHN_L88_P9_20260812020002400_base64_1.png?v=1786502073359" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/12 02时-20时" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/08/12/GOFC/SEVP_NMC_GOFC_SFER_EME_ACHN_L88_P9_20260812000002400_base64_1.jpg?v=1786498305730" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/12 02时-20时" onerror="this.style.display='none'" />
+          <div style="text-align:center">
+            <div style="font-size:10px;color:var(--text-muted);margin-bottom:3px;font-weight:600">短时强降水预报（8/12 02-26时）</div>
+            <img src="http://image.nmc.cn/product/2026/08/12/IMAT/SEVP_NMC_IMAT_SFER_ERSA_ACHN_L88_P9_20260812020002400_base64_1.png?v=1786502073359" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/12" onerror="this.style.display='none'" />
+          </div>
+          <div style="text-align:center">
+            <div style="font-size:10px;color:var(--text-muted);margin-bottom:3px;font-weight:600">雷暴大风/冰雹预报（8/12 00-24时）</div>
+            <img src="http://image.nmc.cn/product/2026/08/12/GOFC/SEVP_NMC_GOFC_SFER_EME_ACHN_L88_P9_20260812000002400_base64_1.jpg?v=1786498305730" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/12" onerror="this.style.display='none'" />
+          </div>
         </div>
+        <div style="font-size:9px;color:var(--text-muted);text-align:center;margin-bottom:4px">NMC今日仅发布24h单时效预警产品，48h暂无</div>
         <div style="font-size:9px;color:var(--text-muted);text-align:right">来源：中央气象台 www.nmc.cn</div>
       </div>
     </div>
@@ -2250,28 +2255,28 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <!-- 巴西大豆降水 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇧🇷 巴西大豆产区 · 15天降水预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_brazil_5127.png?v=20260812" style="width:100%;border-radius:8px;" alt="巴西大豆15天降水预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_brazil_5127.png?v=20260809" style="width:100%;border-radius:8px;" alt="巴西大豆15天降水预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">当前为冬季，巴西大豆产区（MT/GO/MS/BA）处于旱季，降水偏少属正常</div>
   </div>
 
   <!-- 巴西大豆温度 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇧🇷 巴西大豆产区 · 15天温度预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_brazil_5127.png?v=20260812" style="width:100%;border-radius:8px;" alt="巴西大豆15天温度预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_brazil_5127.png?v=20260809" style="width:100%;border-radius:8px;" alt="巴西大豆15天温度预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">冬季温度偏低属正常，关注9月春播前土壤墒情恢复情况</div>
   </div>
 
   <!-- 阿根廷大豆降水 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇦🇷 阿根廷大豆产区 · 15天降水预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_argentina_5127.png?v=20260812" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天降水预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_argentina_5127.png?v=20260809" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天降水预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">冬季阿根廷核心产区（布宜诺斯艾利斯/科尔多瓦/圣塔菲）降水偏少</div>
   </div>
 
   <!-- 阿根廷大豆温度 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇦🇷 阿根廷大豆产区 · 15天温度预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_argentina_5127.png?v=20260812" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天温度预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_argentina_5127.png?v=20260809" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天温度预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">冬季温度正常偏低，超强厄尔尼诺持续中，关注9-10月春播窗口降水恢复</div>
   </div>
 
