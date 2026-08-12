@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>强El Niño事件季节性对比 - Niño 3.4距平演变</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #e2e8f0; min-height: 100vh; padding: 24px; }
+.container { max-width: 1200px; margin: 0 auto; }
+.header { text-align: center; margin-bottom: 24px; }
+.header h1 { font-size: 22px; font-weight: 700; background: linear-gradient(135deg, #f97316, #ef4444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 6px; }
+.header .sub { font-size: 13px; color: #94a3b8; }
+.chart-box { background: rgba(30,41,59,0.8); border: 1px solid rgba(148,163,184,0.15); border-radius: 16px; padding: 20px; margin-bottom: 20px; }
+canvas { width: 100% !important; }
+.insights { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 20px; }
+.card { background: rgba(30,41,59,0.8); border: 1px solid rgba(148,163,184,0.15); border-radius: 12px; padding: 16px; }
+.card h3 { font-size: 14px; font-weight: 600; color: #f97316; margin-bottom: 10px; }
+.card p { font-size: 12px; color: #94a3b8; line-height: 1.6; }
+.stat { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid rgba(148,163,184,0.1); font-size: 12px; }
+.stat .label { color: #94a3b8; }
+.stat .value { color: #e2e8f0; font-weight: 600; font-family: 'SF Mono', monospace; }
+.highlight { color: #ef4444; font-weight: 700; }
+.source { text-align: center; font-size: 11px; color: #64748b; margin-top: 16px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🌊 强El Niño事件季节性演变对比</h1>
+    <div class="sub">Niño 3.4 SST距平 (°C) · 数据源: NOAA CPC/ERSST v6 · 更新至2026年7月</div>
+  </div>
+  <div class="chart-box">
+    <canvas id="chart" height="420"></canvas>
+  </div>
+  <div class="insights">
+    <div class="card">
+      <h3>📊 峰值对比</h3>
+      <div class="stat"><span class="label">2015-16 (历史最强)</span><span class="value highlight">+2.72°C</span></div>
+      <div class="stat"><span class="label">1982-83</span><span class="value">+2.21°C</span></div>
+      <div class="stat"><span class="label">1997-98</span><span class="value">+2.11°C</span></div>
+      <div class="stat"><span class="label">2023-24</span><span class="value">+1.99°C</span></div>
+      <div class="stat"><span class="label">2009-10</span><span class="value">+1.68°C</span></div>
+      <div class="stat"><span class="label">2026 (7月已达)</span><span class="value highlight">+2.03°C</span></div>
+    </div>
+    <div class="card">
+      <h3>🔥 2026关键发现</h3>
+      <p>• 7月Niño 3.4已达 <b>+2.03°C</b>，超过2015年同期 (+1.26°C)</p>
+      <p>• 增速为所有强El Niño中最快：5→7月上升 <b>1.09°C</b></p>
+      <p>• 10月前有望超越2015-16峰值 (+2.72°C)</p>
+      <p>• BOM周度相对指数已达 <b>+2.20°C</b> (week ending Aug 9)</p>
+      <p>• ECMWF预测峰值 <b>>4.0°C</b> (12月), NOAA 81%概率very strong</p>
+    </div>
+    <div class="card">
+      <h3>🌍 历史事件特征</h3>
+      <p>• <b>1982-83</b>: 首个被全球监测的超级EN，10月起急速增温</p>
+      <p>• <b>1997-98</b>: 经典超级EN，7月起快速上升，11月达峰</p>
+      <p>• <b>2015-16</b>: 有记录最强，8月后爆发式增长至+2.72°C</p>
+      <p>• <b>2023-24</b>: 稳健增长型，12月达峰，持续时间较长</p>
+      <p>• <b>2026</b>: 目前轨迹与1997-98高度相似，但起点更高</p>
+    </div>
+  </div>
+  <div class="source">数据来源: NOAA CPC ERSST v6 sstoi.indices · 图表生成于 2026-08-12 · AgriSky</div>
+</div>
+<script>
+const ctx = document.getElementById('chart').getContext('2d');
+const datasets = [{"label": "1982-83", "data": [0.49, 0.65, 0.27, 0.86, 1.24, 1.73, 1.68, 2.21, 2.13, 1.81, 1.22], "borderColor": "#94a3b8", "backgroundColor": "#94a3b820", "borderWidth": 2, "pointRadius": 2, "borderDash": [5, 5], "tension": 0.3, "fill": false}, {"label": "1997-98", "data": [0.4, 0.81, 1.27, 1.68, 1.84, 1.96, 2.11, 2.1, 2.03, 1.74, 1.18], "borderColor": "#3b82f6", "backgroundColor": "#3b82f620", "borderWidth": 2, "pointRadius": 2, "borderDash": [], "tension": 0.3, "fill": false}, {"label": "2009-10", "data": [0.18, 0.42, 0.53, 0.69, 0.71, 0.92, 1.43, 1.68, 1.53, 1.19, 1.11], "borderColor": "#a855f7", "backgroundColor": "#a855f720", "borderWidth": 2, "pointRadius": 2, "borderDash": [], "tension": 0.3, "fill": false}, {"label": "2015-16", "data": [0.83, 1.02, 1.26, 1.65, 1.79, 2.21, 2.72, 2.39, 2.47, 2.23, 1.61], "borderColor": "#ef4444", "backgroundColor": "#ef444420", "borderWidth": 2, "pointRadius": 2, "borderDash": [], "tension": 0.3, "fill": false}, {"label": "2023-24", "data": [0.47, 0.88, 1.07, 1.3, 1.53, 1.59, 1.9, 1.99, 1.78, 1.53, 1.24], "borderColor": "#f59e0b", "backgroundColor": "#f59e0b20", "borderWidth": 2, "pointRadius": 2, "borderDash": [], "tension": 0.3, "fill": false}, {"label": "2026", "data": [0.94, 1.55, 2.03, null, null, null, null, null, null, null, null], "borderColor": "#dc2626", "backgroundColor": "#dc262620", "borderWidth": 3, "pointRadius": 4, "borderDash": [], "tension": 0.3, "fill": false}];
+
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar"],
+    datasets: datasets
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: {
+      legend: {
+        position: 'top',
+        labels: { color: '#94a3b8', padding: 16, font: { size: 12 }, usePointStyle: true, pointStyle: 'circle' }
+      },
+      tooltip: {
+        backgroundColor: 'rgba(15,23,42,0.95)',
+        titleColor: '#f97316',
+        bodyColor: '#e2e8f0',
+        borderColor: 'rgba(148,163,184,0.2)',
+        borderWidth: 1,
+        callbacks: {
+          label: function(ctx) { return ctx.dataset.label + ': ' + (ctx.parsed.y !== null ? ctx.parsed.y.toFixed(2) + '°C' : 'N/A'); }
+        }
+      },
+      annotation: {
+        annotations: {
+          elNinoThreshold: {
+            type: 'line', yMin: 0.5, yMax: 0.5,
+            borderColor: 'rgba(239,68,68,0.4)', borderWidth: 1, borderDash: [6,4],
+            label: { content: 'El Niño阈值 +0.5°C', display: true, position: 'start', color: '#ef4444', font: { size: 10 } }
+          },
+          strongThreshold: {
+            type: 'line', yMin: 1.5, yMax: 1.5,
+            borderColor: 'rgba(239,68,68,0.3)', borderWidth: 1, borderDash: [4,4],
+            label: { content: '强El Niño +1.5°C', display: true, position: 'start', color: '#f97316', font: { size: 10 } }
+          },
+          veryStrongThreshold: {
+            type: 'line', yMin: 2.0, yMax: 2.0,
+            borderColor: 'rgba(239,68,68,0.5)', borderWidth: 1, borderDash: [3,3],
+            label: { content: '超强El Niño +2.0°C', display: true, position: 'start', color: '#dc2626', font: { size: 10 } }
+          }
+        }
+      }
+    },
+    scales: {
+      x: {
+        grid: { color: 'rgba(148,163,184,0.08)' },
+        ticks: { color: '#94a3b8', font: { size: 12 } }
+      },
+      y: {
+        title: { display: true, text: 'Niño 3.4 SST距平 (°C)', color: '#94a3b8', font: { size: 12 } },
+        grid: { color: 'rgba(148,163,184,0.08)' },
+        ticks: { color: '#94a3b8', callback: v => v.toFixed(1) + '°C' },
+        min: -1.0,
+        max: 4.5
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>
