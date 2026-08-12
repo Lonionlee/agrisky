@@ -312,7 +312,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="nav-tab" onclick="switchTab('forecast')">天气展望</div>
     <div class="nav-tab" onclick="switchTab('knowledge')">知识科普</div>
   </div>
-  <div class="navbar-status"><div class="status-dot"></div><span id="nav-date">2026-08-10</span></div>
+  <div class="navbar-status"><div class="status-dot"></div><span id="nav-date">2026-08-12</span></div>
 </div></nav>
 <div class="page-container active"><div id="page-dashboard" class="page-section active">
 
@@ -375,12 +375,12 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:20px;border-top:3px solid var(--risk-orange);transition:all 0.2s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.06)'" onmouseout="this.style.boxShadow='none'">
         <div style="font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">IOD DMI</div>
         <div style="font-family:'JetBrains Mono';font-size:32px;font-weight:700;color:var(--risk-orange);line-height:1.1">+0.41°C</div>
-        <div style="margin-top:8px;display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:12px;font-weight:600;background:rgba(249,115,22,0.1);color:var(--risk-orange)">正阈值连续触及·发展中未确立</div>
+        <div style="margin-top:8px;display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:12px;font-weight:600;background:rgba(249,115,22,0.1);color:var(--risk-orange)">正阈值连续3周·发展中未确立</div>
         <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">DMI（印度洋偶极模态指数=西印度洋SST距平-东印度洋SST距平）连续2周触及+0.4°C正阈值（BOM，截至8/9周）。正阈值连续触及·发展中未确立判定标准：DMI连续多周≥+0.4°C，当前事件发展中、尚未确立，BOM模式暗示南半球冬季可能发展并持续至春季</div>
       </div>
     </div>
     <div class="analysis-text" style="margin-top:0">
-      <strong>🔗 综合诊断：</strong>超强厄尔尼诺与极端负SOI显示热带太平洋海气异常强烈，IOD正发展中，PDO强冷相位则从太平洋中纬度施加影响，三者共同作用使西太平洋副热带高压偏强偏西，配合NAO中性偏弱，引导水汽向黄淮、江淮输送。目前强降雨集中在河南、山东、安徽等地，农田渍涝风险高，雷暴大风易致作物倒伏，需加强田间管理和沟渠疏通，防范局地强对流叠加效应。<strong>关键耦合信号：</strong>①超强El Niño主导Walker环流减弱，东太平洋SST持续增暖，东南亚干旱风险高（IOD连续2周触及正阈值+0.63°C，若确立将与ENSO协同加剧澳大利亚干旱）；②IOD正阈值连续触及、事件尚未确立，对印度季风暂不构成额外抑制，但需跟踪其能否连续多周≥+0.4°C；③PDO冷位相在VM/NAO联合调制下影响WPSH强度与脊线位置→当前负PDO背景下东亚夏季风有偏强倾向、雨带存在北移风险，但WPSH响应非单向（需结合VM/NAO实时相位判断）。
+      <strong>🔗 综合诊断：</strong>超强厄尔尼诺叠加极端负SOI，导致西太平洋副热带高压偏强偏西，同时PDO强冷相位与正IOD发展中相互作用，共同增强东亚夏季风水汽输送。目前强降雨带北抬至黄淮华北，与台风残涡和冷空气结合，极易引发极端降水。农业方面，土壤过饱和将加剧农田渍涝和作物倒伏风险，需提前疏通沟渠、加固大棚。各指数联动表明，未来一周黄淮、华北及东北西部需高度警惕强对流天气，并防范次生灾害。<strong>关键耦合信号：</strong>①超强El Niño主导Walker环流减弱，东太平洋SST持续增暖，东南亚干旱风险高（IOD连续2周触及正阈值+0.63°C，若确立将与ENSO协同加剧澳大利亚干旱）；②IOD正阈值连续触及、事件尚未确立，对印度季风暂不构成额外抑制，但需跟踪其能否连续多周≥+0.4°C；③PDO冷位相在VM/NAO联合调制下影响WPSH强度与脊线位置→当前负PDO背景下东亚夏季风有偏强倾向、雨带存在北移风险，但WPSH响应非单向（需结合VM/NAO实时相位判断）。
     </div>
   </div>
 
@@ -627,13 +627,10 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div class="typhoon-path">
           <div class="typhoon-path-title">📍 路径与时间线（中央气象台 8月11日14时）</div>
           <strong>8/11 14时</strong>：<span style="color:var(--accent-blue);font-weight:700">热带低压"白海豚"</span>（31.0°N, 115.1°E），7级15m/s，998hPa<br>
-          <strong>台风动态</strong>：白海豚 已于8月11日17时停止编号<span style="color:var(--risk-red);font-weight:700">14级42m/s，强台风级</span>），18:40再登陆温州乐清（13级38m/s，台风级）<br>
+          <strong>台风动态</strong>：白海豚 已停编，残涡影响中<br>
           <strong>当前状态</strong>：8/10 07时位于浙江丽水龙泉市（27.8°N,119.1°E），<span style="color:var(--accent-blue);font-weight:700">9级23m/s，热带风暴级</span>，985hPa<br>
           <strong>移动趋势</strong>：向西北移动，35-40公里/h，强度逐渐减弱<br>
-          <strong>影响范围</strong>：<span style="color:var(--risk-red);font-weight:700">8/10三预警齐发（台风蓝+暴雨橙+强对流蓝）</span>，浙皖局地特大暴雨250-320mm
-        </div>
-        <div class="typhoon-info">
-          <strong>🌊 环境条件：</strong>已深入内陆，SST影响消退；地形摩擦+干空气卷入，结构快速瓦解<br>
+          <strong>影响范围</strong>：残涡与冷空气结合，强降雨带北抬至黄淮华北，致灾风险高<br>
           <strong>📊 模式共识：</strong>残涡继续向西北移动，8/10-11在浙皖赣一带减弱消散，12日影响基本结束<br>
           <strong>⚡ 强度趋势：</strong>登陆后持续减弱，预计8/10夜间减弱为热带低压，11日消散<br>
           <strong>📌 影响评估：</strong>浙闽苏皖豫暴雨，农业影响待评估；东海/黄海仍有9-11级大风<br>
@@ -654,18 +651,18 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div style="display:grid;grid-template-columns:1fr;gap:8px;margin-bottom:14px">
           <div class="info-box" style="border-left:3px solid var(--risk-orange);padding:8px 12px">
             <p style="font-size:11px;color:var(--text-primary);line-height:1.6">
-              <strong style="color:var(--risk-orange)">短时强降水预报：8月11日14时至12日14时，山东南部、河南中东部和南部、安徽北部、浙江东北部等地部分地区小时雨量大于50毫米，最大可达80毫米以上，局地有短时强降水。</strong></p>
+              <strong style="color:var(--risk-orange)">短时强降水预报：8月12日08时至13日08时，河南、山东西部、湖北中北部等地大到暴雨，局地特大暴雨</strong></p>
           </div>
           <div class="info-box" style="border-left:3px solid var(--risk-orange);padding:8px 12px">
             <p style="font-size:11px;color:var(--text-primary);line-height:1.6">
-              <strong style="color:var(--risk-orange)">雷暴大风/冰雹预报：内蒙古中东部、西北地区东部、东北地区西部、黄淮、江汉北部、江淮东部、江南东北部、西南地区东部等地的部分地区将有8级以上雷暴大风或冰雹天气，其中内蒙古中部、陕西北部、河南中部和东部、安徽北部、江苏西部和南部、浙江东北部等地部分地区有10级以上雷暴大风，最大风力可达11级以上，局地不排除龙卷。</strong></p>
+              <strong style="color:var(--risk-orange)">雷暴大风/冰雹预报：东北西部、黄淮中西部等部分地区8级以上雷暴大风，局地11级</strong></p>
           </div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px">
-          <img src="http://image.nmc.cn/product/2026/08/11/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260811020000000_base64_1.jpg?v=1786413999622" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/7 14时-8/8 08时" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/08/11/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260811020000000_base64_2.jpg?v=1786413999980" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/7 14时-8/8 08时" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/08/11/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260811020000000_base64_3.jpg?v=1786414000229" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/7 14时-8/8 08时" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/08/11/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260811020000000_base64_4.jpg?v=1786414000419" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/7 14时-8/8 08时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/08/11/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260811020000000_base64_1.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/7 14时-8/8 08时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/08/11/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260811020000000_base64_2.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/7 14时-8/8 08时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/08/11/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260811020000000_base64_3.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/7 14时-8/8 08时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/08/11/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260811020000000_base64_4.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/7 14时-8/8 08时" onerror="this.style.display='none'" />
         </div>
         <div style="font-size:9px;color:var(--text-muted);text-align:right">来源：中央气象台 www.nmc.cn</div>
       </div>
@@ -945,7 +942,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     </div>
     <div class="summary-card" style="text-align:center;padding:16px;border-radius:10px;background:rgba(239,68,68,0.05)">
       <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">SOI (BOM 30日)</div>
-      <div style="font-family:'JetBrains Mono';font-size:22px;font-weight:700;color:var(--risk-red)">-23.8</div>
+      <div style="font-family:'JetBrains Mono';font-size:22px;font-weight:700;color:var(--risk-red)">-22.0</div>
       <div style="font-size:11px;color:var(--risk-red);margin-top:4px">极端负值</div>
     </div>
     <div class="summary-card" style="text-align:center;padding:16px;border-radius:10px;background:rgba(37,99,235,0.05)">
@@ -974,7 +971,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div class="ocean-section">
   <div class="section-title" id="section-enso">ENSO 深度分析</div>
   <div class="stat-row">
-    <div class="stat-box"><div class="stat-box-value red">+2.60°C</div><div class="stat-box-label">当前 Niño 3.4 周度SST距平（-1.29AUG2026·CPC）</div></div>
+    <div class="stat-box"><div class="stat-box-value red">+2.60°C</div><div class="stat-box-label">当前 Niño 3.4 周度SST距平（05AUG2026·CPC）</div></div>
     <div class="stat-box"><div class="stat-box-value red">超强厄尔尼诺</div><div class="stat-box-label">持续增强 · 次表层暖核+8~+9°C</div></div>
     <div class="stat-box"><div class="stat-box-value red">95-97%</div><div class="stat-box-label">Q4强/超强事件概率 (CPC 7月更新)</div></div>
   </div>
@@ -2041,100 +2038,87 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div id="fc-global" style="margin-bottom:28px;">
 <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
   <span style="font-size:16px;font-weight:600;color:var(--accent-blue);">🌍 全球其他产区天气展望</span>
-  <span style="font-size:11px;color:var(--text-muted);">（ECMWF IFS 8月预报 · 2026年8月10日更新 · 除中美巴阿）</span>
+  <span style="font-size:11px;color:var(--text-muted);">（ECMWF IFS 8月预报 · 2026年08月12日更新 · 除中美巴阿）</span>
 </div>
 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
 
   <!-- 欧洲 -->
         <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
-      <span style="font-size:14px;font-weight:600;">🇪🇺欧洲</span>
-      <span style="font-size:11px;padding:3px 8px;background:#fff7e6;color:#d48806;border-radius:4px;font-weight:600;">🟡关注</span>
-    </div>
-    <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-      <div style="margin-bottom:6px;"><strong>南欧极端热浪持续，作物热胁迫风险升高</strong>：</div>
-      <div>8月上旬南欧受副热带高压控制，意大利、西班牙气温连续多日超40°C，极端高温对玉米授粉和向日葵灌浆构成直接威胁。</div>
-      <div>北欧维持温和多云天气，中欧高温与短时暴雨交替；南欧地中海沿岸持续偏高2-4°C，午后伊比利亚与亚得里亚海地区有强对流雷阵雨。</div>
-      <div>南欧农业灌溉压力加大，果园和葡萄园需加强水分管理；中部地区注意收获期作物的短时强降水影响。</div>
-    </div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+    <span style="font-size:14px;font-weight:600;">欧洲</span>
+    <span style="font-size:11px;padding:3px 8px;background:#fff1f0;color:#cf1322;border-radius:4px;font-weight:600;">🟥高风险</span>
   </div>
+  <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
+    <div style="margin-bottom:6px;"><strong>极端炎热干燥天气重创欧洲作物</strong>：</div>
+<div>近期欧洲西部和中部遭遇极端高温和干旱，冬小麦收获产量低于平均，捷克、法国、德国、斯洛伐克等地玉米减产显著。预计8月下旬高温持续，作物生长条件恶化。</div>
+<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">欧洲需警惕高温干旱对夏收和秋收作物的双重打击。</div>
+  </div>
+</div>
 
   <!-- 东南亚 -->
         <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
-      <span style="font-size:14px;font-weight:600;">🌴东南亚(棕榈油)</span>
-      <span style="font-size:11px;padding:3px 8px;background:#fff7e6;color:#d48806;border-radius:4px;font-weight:600;">🟡关注</span>
-    </div>
-    <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-      <div style="margin-bottom:6px;"><strong>El Niño+正IOD双重干旱压力，马来西亚燃油危机影响采收</strong>：</div>
-      <div>印尼受El Niño残余+正IOD（DMI +0.41°C）影响，降水偏少趋势明显；8月为传统旱季高峰，苏门答腊和加里曼丹干旱压力加重，影响棕榈果单产。</div>
-      <div>马来西亚Sabah/Sarawak占CPO产量43.9%，当前面临燃油危机导致采收节奏放缓，鲜果串（FFB）供应趋紧。</div>
-      <div>MPOC预测8月CPO价格RM4400-4650/吨；印尼B50生物柴油计划2026下半年逐步扩大，支撑需求端。</div>
-      <div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">干旱+燃油危机双重减产风险，棕榈油供给趋紧。</div>
-    </div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+    <span style="font-size:14px;font-weight:600;">东南亚</span>
+    <span style="font-size:11px;padding:3px 8px;background:#fff7e6;color:#d48806;border-radius:4px;font-weight:600;">🟡关注</span>
   </div>
+  <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
+    <div style="margin-bottom:6px;"><strong>部分地区干旱威胁玉米和水稻</strong>：</div>
+<div>泰国湿季玉米受干天气影响生长受阻，印度尼西亚旱季作物播种持续但条件一般，马来西亚、柬埔寨等水稻总体有利但局部干旱。未来两周降雨不均，需关注水源管理。</div>
+<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">东南亚需加强灌溉调度，防范局部干旱对秋粮的影响。</div>
+  </div>
+</div>
 
   <!-- 印度 -->
         <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
-      <span style="font-size:14px;font-weight:600;">🇮🇳印度(棉花/甘蔗)</span>
-      <span style="font-size:11px;padding:3px 8px;background:#fff7e6;color:#d48806;border-radius:4px;font-weight:600;">🟡关注</span>
-    </div>
-    <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-      <div style="margin-bottom:6px;"><strong>季风降水分布极不均，古吉拉特邦棉花区降水严重偏少</strong>：</div>
-      <div>IMD截至8/7：全印西南季风降雨较历年均值偏低11%，区域差异显著。</div>
-      <div>西海岸古吉拉特邦：虽已获季节降水70%，但Devbhumi Dwarka等9区降水缺口超30%（最高缺81%），棉花现蕾受阶段性干旱影响；旁遮普邦季风推进正常。</div>
-      <div>马哈拉施特拉邦降水接近常年，甘蔗伸长期水热条件尚可；恒河平原部分地区农田渍涝，病虫害传播风险上升。</div>
-      <div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">IOD已转正(DMI +0.41°C)，若持续发展可能削弱季风强度，需密切关注印度棉花产量形成。</div>
-    </div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+    <span style="font-size:14px;font-weight:600;">印度</span>
+    <span style="font-size:11px;padding:3px 8px;background:#fff1f0;color:#cf1322;border-radius:4px;font-weight:600;">🟥高风险</span>
   </div>
+  <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
+    <div style="margin-bottom:6px;"><strong>西南季风偏弱，水稻玉米播种受阻</strong>：</div>
+<div>印度西南季风推进缓慢、降雨减少，南部、东部和东北部的水稻及玉米播种进度滞后，作物生长面临水分胁迫。预计未来一个月降水仍低于正常，旱情或加剧。</div>
+<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">印度需紧急应对季风雨不足，保障秋收作物播种面积。</div>
+  </div>
+</div>
 
   <!-- 西非 -->
         <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
-      <span style="font-size:14px;font-weight:600;">🌍西非(可可)</span>
-      <span style="font-size:11px;padding:3px 8px;background:#fff7e6;color:#d48806;border-radius:4px;font-weight:600;">🟡关注</span>
-    </div>
-    <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-      <div style="margin-bottom:6px;"><strong>主雨季高峰期，但中期干旱(Mid-dry Season)窗口需警惕</strong>：</div>
-      <div>科特迪瓦和加纳8月上旬处于主雨季降水集中期，日均降水3-6mm，土壤墒情良好，正值可可主季(Main crop)豆荚膨大关键期。</div>
-      <div>历史气候特征显示8月中下旬可能出现2-3周中期干旱窗口（Mid-dry Season break），若干旱提前或延长，将影响嫩梢分化和下季开花准备。</div>
-      <div>持续高湿环境增加黑果病（Phytophthora）风险，科特迪瓦南部和加纳Ashanti产区需加强田间排水和病害监测。</div>
-      <div>全球可可库存仍处于历史低位（ICCO预测2025/26年度缺口约30万吨），当前产区天气条件若持续有利，有助于缓解供给紧张。</div>
-      <div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">主雨季条件有利，但中期干旱窗口和全球低库存背景下仍需密切关注。</div>
-    </div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+    <span style="font-size:14px;font-weight:600;">西非</span>
+    <span style="font-size:11px;padding:3px 8px;background:#fff7e6;color:#d48806;border-radius:4px;font-weight:600;">🟡关注</span>
   </div>
+  <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
+    <div style="margin-bottom:6px;"><strong>撒哈拉地区高温预警，作物生长受考验</strong>：</div>
+<div>西非萨赫勒地带近期出现异常高温，主季作物正处于种植和发育期，高温可能加剧土壤水分蒸发，影响玉米、高粱等作物。但部分地区降雨尚可，整体风险可控。</div>
+<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">西非需防范高温热害，适时补水保苗。</div>
+  </div>
+</div>
 
   <!-- 澳洲 -->
         <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
-      <span style="font-size:14px;font-weight:600;">🇦🇺澳洲(小麦/棉花)</span>
-      <span style="font-size:11px;padding:3px 8px;background:#fff7e6;color:#d48806;border-radius:4px;font-weight:600;">🟡关注</span>
-    </div>
-    <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-      <div style="margin-bottom:6px;"><strong>冬末关键生长期，霜冻与IOD信号需重点关注</strong>：</div>
-      <div>8月澳大利亚冬末，小麦进入拔节至孕穗关键阶段，对霜冻极为敏感；棉花产区开始播种准备。</div>
-      <div>东部新南威尔士和维多利亚州本周受冷空气南下影响，最低气温降至2-4°C，局地出现霜冻。</div>
-      <div>印度洋偶极子(IOD)已正式转正——BOM 8/9数据显示DMI达+0.63°C，超过+0.4°C阈值，100%概率维持正IOD至10月。春季降水可能偏少20-30%，影响小麦灌浆和棉花播种出苗。</div>
-      <div>西澳和南澳产区土壤墒情尚可，但降雨趋势偏弱，需关注9月后降水能否及时恢复。</div>
-      <div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">霜冻+IOD转正双重风险，冬小麦产量形成关键期需密切关注。</div>
-    </div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+    <span style="font-size:14px;font-weight:600;">澳洲</span>
+    <span style="font-size:11px;padding:3px 8px;background:#fff7e6;color:#d48806;border-radius:4px;font-weight:600;">🟡关注</span>
   </div>
+  <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
+    <div style="margin-bottom:6px;"><strong>南部东部降水偏少，小麦播种面积缩减</strong>：</div>
+<div>澳大利亚未来一至三个月南部和东部降雨低于平均，昆士兰干旱持续，小麦播种面积较去年明显下降。西部降水偏多，但整体温度偏高，作物生长条件分化。</div>
+<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">澳洲需关注干旱对小麦产量的潜在影响，西部丰产可部分抵消。</div>
+  </div>
+</div>
 
   <!-- 黑海 -->
         <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
-      <span style="font-size:14px;font-weight:600;">🌾黑海(小麦)</span>
-      <span style="font-size:11px;padding:3px 8px;background:#fff7e6;color:#d48806;border-radius:4px;font-weight:600;">🟡 物流重构</span>
-    </div>
-    <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-      <div style="margin-bottom:6px;"><strong>收割快速推进，黑海港口遇袭推动出口通道向多瑙河/铁路/公路转移</strong>（APK-Inform 8/4-8/7）：</div>
-      <div><strong>乌克兰</strong>：截至8/3谷物已收34%（401万ha），1759万吨，均产45.7dt/ha；小麦已收53%（274万ha）1251万吨，同比增产59%。预计全年谷物+油籽总产8100-8300万吨。7月公路出口约28万吨，8月初增加对罗/波铁路谷物运输。</div>
-      <div><strong>俄罗斯</strong>：南部斯塔夫罗波尔95%完成（880万吨，41.8dt/ha），克拉斯诺达尔90%完成（1020万吨，55.9dt/ha）。7月谷物出口203万吨同比↓37.6%（小麦180万吨↓17.7%），主因亚速海-黑海水域紧张局势，新罗西斯克仍正常运转但装载放缓。</div>
-      <div style="margin-top:4px;"><strong>物流格局变化</strong>：敖德萨/切尔诺莫斯克港商船暂停靠泊，但多瑙河港口、铁路和公路替代路线持续运转。农业部长称替代路线满负荷可承载黑海港口月运力（约600万吨）的50-55%，额外成本$45-50/吨。多瑙河受干旱影响水位偏低，10月前运力受限。俄方恢复小麦出口关税5.7卢布/吨，FOB报价$226/吨（9月装船，周降$9）。</div>
-      <div>IKAR预测2026/27年度俄麦出口4450万吨。黑海贸易流重构推高物流溢价，俄麦相对欧麦贴水$35/吨维持价格竞争力。</div>
-    </div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+    <span style="font-size:14px;font-weight:600;">黑海</span>
+    <span style="font-size:11px;padding:3px 8px;background:#f6ffed;color:#389e0d;border-radius:4px;font-weight:600;">🟢正常</span>
   </div>
+  <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
+    <div style="margin-bottom:6px;"><strong>乌俄小麦收获顺利，整体条件良好</strong>：</div>
+<div>乌克兰和俄罗斯冬小麦收获已近尾声，乌克兰除南部部分产区干旱外，整体产量高于平均；俄罗斯南部收获良好。春季作物生长正常，未来无重大天气威胁。</div>
+<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">黑海地区农业前景稳定，但需留意乌克兰南部干旱的后续影响。</div>
+  </div>
+</div>
 
 </div>
 </div>
