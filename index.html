@@ -347,7 +347,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 
   <div class="section" style="margin-bottom:24px">
     <div class="section-title" style="font-size:18px;margin-bottom:6px">综合气候判断与预测</div>
-    <div style="font-size:13px;color:var(--text-muted);margin-bottom:20px;padding-left:13px">海洋-大气-农业耦合系统综合分析 · 基于2026年08月18日最新观测数据（CPC周度截至12AUG2026 · BOM截至2026-08-16 · USDA 8/17报告）</div>
+    <div style="font-size:13px;color:var(--text-muted);margin-bottom:20px;padding-left:13px"><strong>🔴 超强厄尔尼诺持续！Niño 3.4 +2.60°C（8/12周）</strong><br>NOAA确认97%概率持续至2027年春季，ECMWF预测峰值+3.2°C(11-12月)。<br>IOD DMI=+0.41°C发展中未确立，与ENSO协同影响全球气候。<br>PDO=-0.87（冷相位），与暖ENSO形成罕见配置。<br><strong>国内：8/19强对流覆盖东北-华北-华东-华南-西南，多地暴雨+雷暴大风。</strong></div>
   </div>
 
   <!-- A. 当前海洋-大气状态诊断 -->
@@ -602,41 +602,35 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 
     <!-- 台风追踪 + 强对流预警 -->
   <div class="typhoon-row">
-    <!-- Left: 白海豚台风追踪 -->
+    <!-- Left: 台风动态追踪 -->
     <div class="typhoon-card" id="typhoon-tracking-card">
       <div class="typhoon-card-header">
-        <h3>白海豚</h3>
+        <h3>🌀 台风动态</h3>
         <span class="category-badge" style="background:rgba(239,68,68,0.8);color:white"></span>
       </div>
       <div class="typhoon-card-body">
         <div class="typhoon-stats">
           <div class="typhoon-stat">
-            <div class="typhoon-stat-value" style="color:var(--text-muted);font-size:18px">白海豚<br>已停编</div>
-            <div class="typhoon-stat-label">13号·15天/7100km</div>
+            <div class="typhoon-stat-value" style="color:var(--accent-blue);font-size:18px">94W<br>发展中</div>
+            <div class="typhoon-stat-label">18号候选·趋向台湾</div>
           </div>
           <div class="typhoon-stat">
-            <div class="typhoon-stat-value" style="color:var(--text-muted);font-size:18px">灿鸿<br>已停编</div>
-            <div class="typhoon-stat-label">15号·登陆日本</div>
+            <div class="typhoon-stat-value" style="color:var(--warning);font-size:18px">LPA<br>南海北部</div>
+            <div class="typhoon-stat-label">中等概率发展</div>
           </div>
           <div class="typhoon-stat">
-            <div class="typhoon-stat-value" style="color:var(--accent-blue);font-size:18px">浪卡<br>8级</div>
-            <div class="typhoon-stat-label">17号·新生成</div>
+            <div class="typhoon-stat-value" style="color:var(--accent-blue);font-size:18px">92W/Lala<br>远海</div>
+            <div class="typhoon-stat-label">20号候选/跨日界线</div>
           </div>
         </div>
         <div class="typhoon-path">
-          <div class="typhoon-path-title">📍 台风动态（中央气象台 8月18日）</div>
-          <strong>🔴 13号白海豚/15号灿鸿/17号浪卡</strong>：均已停编，残涡影响基本结束<br>
+          <div class="typhoon-path-title">📍 台风动态（中央气象台 8月19日）</div>
+          <strong>🔴 活跃系统（8/19）：</strong>13号白海豚/15号灿鸿/17号浪卡均已停编<br>
           <strong>🟡 94W(菲律宾以东)</strong>：高概率24h内发展为18号台风"沙德尔"，趋向台湾方向<br>
           <strong>🔵 南海北部LPA</strong>：中等概率发展，或受藤原效应在华南沿海打转<br>
           <strong>🟣 92W远海/飓风Lala</strong>：92W可能发展为20号台风；Lala或跨日界线变21号台风<br>
           <strong>📊 后期展望：</strong>8月下旬可能四台风同框，副高变动决定路径，需密切关注华南/东南沿海风雨<br></div>
-        <div class="typhoon-risk">
-          🚨 农业影响评估：<br>
-① <strong>华南连阴雨</strong>：台风胚胎外围+季风，甘蔗果蔬渍涝风险高<br>
-② <strong>东北持续暴雨</strong>：玉米大豆低洼田块渍涝加重<br>
-③ <strong>四川盆地强降雨</strong>：农田受灾与设施受损风险高<br>
-④ <strong>台风胚胎活跃</strong>：晚稻授粉及田间作业可能受阻<br>
-<span style="font-size:11px;color:var(--text-muted)">数据来源：中央气象台(8月18日)、JMA、PAGASA</span></div>
+        
       </div>
     </div>
     <!-- Right: 强对流天气预警 -->
@@ -649,18 +643,18 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div style="display:grid;grid-template-columns:1fr;gap:8px;margin-bottom:14px">
           <div class="info-box" style="border-left:3px solid var(--risk-orange);padding:8px 12px">
             <p style="font-size:11px;color:var(--text-primary);line-height:1.6">
-              <strong style="color:var(--risk-orange)">短时强降水预报：8月13日08时至14日08时，河南南部、安徽中南部、江苏中南部、湖北北部和东部、浙江中北部、广东北部、广西东部等地短时强降水20-50mm，局地70mm以上</strong></p>
+              <strong style="color:var(--risk-orange)">短时强降水预报：8月19日14时至20日08时，内蒙古东北部、黑龙江东北部、吉林东部、辽宁东部、陕西南部、山东南部、河南西部、安徽中部、江苏中北部、湖北东部和南部、湖南北部和南部、浙江东部、福建东部、四川东北部和南部、重庆、贵州北部和西部、云南、广西、广东西南部、海南岛、台湾岛等地20-40mm，局地60mm以上</strong></p>
           </div>
           <div class="info-box" style="border-left:3px solid var(--risk-orange);padding:8px 12px">
             <p style="font-size:11px;color:var(--text-primary);line-height:1.6">
-              <strong style="color:var(--risk-orange)">雷暴大风/冰雹预报：广东东部和南部、广西北部、安徽中南部、江苏西南部、湖北东部、浙江东南部等地局地8级以上雷暴大风或冰雹</strong></p>
+              <strong style="color:var(--risk-orange)">雷暴大风/冰雹预报：内蒙古东北部、黑龙江西北部、安徽中部、江苏北部、湖南北部和南部、广西西部和南部沿海、广东西南部沿海、海南岛东北部等地局地8级以上</strong></p>
           </div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px">
-          <img src="http://image.nmc.cn/product/2026/08/12/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260812220000000_base64_1.jpg?v=1786571736228" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/13 02时-20时" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/08/12/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260812220000000_base64_2.jpg?v=1786571736595" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/13 02时-20时" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/08/12/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260812220000000_base64_3.jpg?v=1786571736846" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/13 02时-20时" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/08/12/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260812220000000_base64_4.jpg?v=1786571737123" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/13 02时-20时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/08/19/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260819020000000_base64_1.jpg?v=1787109411" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/19 14时-20日08时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/08/19/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260819020000000_base64_2.jpg?v=1787109411" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/19 14时-20日08时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/08/19/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260819020000000_base64_3.jpg?v=1787109411" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/19 14时-20日08时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/08/19/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260819020000000_base64_4.jpg?v=1787109411" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/19 14时-20日08时" onerror="this.style.display='none'" />
         </div>
         <div style="font-size:9px;color:var(--text-muted);text-align:right">来源：中央气象台 www.nmc.cn</div>
       </div>
@@ -743,7 +737,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           <div class="risk-item">
             <div class="risk-item-region">美国中西部</div>
             <div class="risk-item-crop">大豆/玉米</div>
-            <div class="risk-item-threat">大豆优良率62%(↓1pp)但26%面积受旱；玉米优良率61%(持平)同比-12pp（USDA 8/17报告）；西部大平原持续高温36-40°C，结荚/吐丝期热胁迫</div>
+            <div class="risk-item-threat">大豆优良率62%(↓1pp)但26%面积受旱；玉米优良率61%(持平)同比-12pp（USDA 8/18报告）；西部大平原持续高温36-40°C，结荚/吐丝期热胁迫</div>
           </div>
           <div class="risk-item">
             <div class="risk-item-region">华东/江南</div>
@@ -796,7 +790,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div class="timeline">
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
+              <span class="timeline-date">2026-08-17</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
             <div class="timeline-title">嫩江支流甘河2026年第1号洪水 水利部启动Ⅳ级应急响应<span class="timeline-type">洪水</span></div>
@@ -809,7 +803,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
+              <span class="timeline-date">2026-08-17</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
             <div class="timeline-title">印度古吉拉特邦极端暴雨1064mm 历史第三高单日降雨<span class="timeline-type">暴雨</span></div>
@@ -822,7 +816,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
+              <span class="timeline-date">2026-08-17</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
             <div class="timeline-title">巴西咖啡收获期降雨阻碍进度<span class="timeline-type">降雨</span></div>
@@ -831,7 +825,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           </div>
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
+              <span class="timeline-date">2026-08-17</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
             <div class="timeline-title">东北农田渍涝持续<span class="timeline-type">渍涝</span></div>
@@ -840,25 +834,16 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           </div>
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
-              <span class="timeline-severity severity-red-tag">RED</span>
-            </div>
-            <div class="timeline-title">白海豚三预警齐发：台风蓝+暴雨橙+强对流蓝<span class="timeline-type">预警</span></div>
-            <div class="timeline-summary">8/10热带风暴"白海豚"(27.8°N,119.1°E)9级23m/s已登陆减弱中。台风蓝色预警+暴雨橙色预警+强对流蓝色预警齐发，浙皖局地特大暴雨250-320mm，苏皖豫玉米、水稻受淹风险高</div>
-            <div class="timeline-crops"><span class="timeline-crop-tag">玉米</span><span class="timeline-crop-tag">小麦</span><span class="timeline-crop-tag">棉花</span></div>
-          </div>
-          <div class="timeline-item severity-red">
-            <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
+              <span class="timeline-date">2026-08-17</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
             <div class="timeline-title">国家防总维持防汛应急响应 嫩江浑河牡丹江超警<span class="timeline-type">防汛</span></div>
-            <div class="timeline-summary">8月防汛关键期持续，国家防总维持辽宁/吉林三级应急响应，黑龙江/山东四级响应。嫩江流域渍涝持续，浑河/牡丹江仍超警，9条河流超警4条超保；朝阳/凌源等地玉米大面积倒伏泡水。白海豚登陆叠加，浙皖暴雨250-320mm，苏皖豫受淹风险高</div>
+            <div class="timeline-summary">8月防汛关键期持续，国家防总维持辽宁/吉林三级应急响应，黑龙江/山东四级响应。嫩江流域渍涝持续，浑河/牡丹江仍超警，9条河流超警4条超保；朝阳/凌源等地玉米大面积倒伏泡水。四川盆地西部南部暴雨持续，多地农田渍涝风险高</div>
             <div class="timeline-crops"><span class="timeline-crop-tag">棕榈油</span><span class="timeline-crop-tag">白糖</span><span class="timeline-crop-tag">棉花</span></div>
           </div>
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
+              <span class="timeline-date">2026-08-17</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
             <div class="timeline-title">松辽流域渍涝持续 9条河流超警4条超保<span class="timeline-type">洪水</span></div>
@@ -1088,7 +1073,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="monsoon-bar"><div class="bar-label">累计降雨距平</div><div class="bar-track"><div class="bar-fill" style="width:60%;background:var(--risk-red)"></div></div><div class="bar-value" style="color:var(--risk-red)">全国-12% 东-26% 中-0.6%</div></div>
     <div class="monsoon-bar"><div class="bar-label">Kharif播种进度</div><div class="bar-track"><div class="bar-fill" style="width:87%;background:var(--risk-orange)"></div></div><div class="bar-value" style="color:var(--risk-orange)">达常年87.7%</div></div>
     <div style="margin-top:16px">
-      <div style="font-size:12px;font-weight:600;color:var(--text-secondary);margin-bottom:8px">季风综合分析（8/12更新）</div>
+      <div style="font-size:12px;font-weight:600;color:var(--text-secondary);margin-bottom:8px">季风综合分析（8/19更新）</div>
       <div class="info-box"><p>全国累计降雨较LPA低12%，东部/东北偏少26.3%为最大短板；8月上旬降雨恢复至仅低9%，德里经历2011年以来最湿开局，但45%县区仍不足。水库蓄水升至53%，Kharif播种缺口收窄至17.96万公顷，水稻仍缺4.4%。IMD预测后半季低于正常，叠加El Niño与正IOD协同，或加剧干旱风险。棉花受干旱扰动、白糖产区中部近正常但东部/南部不足，水稻因东部缺口承压。</p></div>
       <div style="font-size:12px;font-weight:600;color:var(--text-secondary);margin-bottom:8px;margin-top:12px">副热带高压分析</div>
       <div class="info-box"><p>副高异常偏强，整体偏北偏西，脊线维持25°N以北，北界至内蒙古南部至河北北部。其外围气流使台风登陆我国概率增加并利于北上，同时助长黑龙江持续暴雨。</p></div>
@@ -1319,7 +1304,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div class="crop-overview-card" onclick="document.getElementById('crop-白糖').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🍬</div><div class="crop-name">白糖</div><div class="crop-risk" style="background:rgba(249,115,22,0.08);color:var(--risk-orange)">中高风险</div><div class="crop-regions">5个产区</div><div class="crop-summary">广东、广西中雨暴雨频繁，台风胚胎活跃，甘蔗低洼田块渍涝和倒伏风险上升。</div></div>
 <div class="crop-overview-card" onclick="document.getElementById('crop-棉花').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🧶</div><div class="crop-name">棉花</div><div class="crop-risk" style="background:rgba(249,115,22,0.08);color:var(--risk-orange)">中高风险</div><div class="crop-regions">5个产区</div><div class="crop-summary">新疆高温持续，棉花花铃期易受热害，不利蕾铃发育与吐絮。</div></div>
 <div class="crop-overview-card" onclick="document.getElementById('crop-咖啡').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">☕</div><div class="crop-name">咖啡</div><div class="crop-risk" style="background:rgba(234,179,8,0.08);color:#a16207">中风险</div><div class="crop-regions">7个产区</div><div class="crop-summary">西南多雨，云南咖啡产区降雨偏多，需防暴雨落果、病害及田间作业受阻。</div></div></div></div>
-<!-- NMC 中国农业气象周报 (2026-08-05写入) -->
+<!-- NMC 中国农业气象周报 (2026-08-19写入) -->
 <div style="margin-bottom:20px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:18px">
   <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
     <span style="font-size:18px">🇨🇳</span>
@@ -1329,8 +1314,8 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div style="font-size:12px;font-weight:600;color:var(--risk-orange);margin-bottom:6px">中东部农田过湿尚未完全缓解，东北、西南东部和华南降雨持续，低洼田块渍涝风险较高，需及时排水降渍。</div>
     </div>
     <div style="background:var(--bg-section);border-radius:8px;padding:12px;border-top:3px solid var(--risk-red)">
-      <div style="font-size:12px;font-weight:600;color:var(--risk-red);margin-bottom:6px">8月18日：四川盆地西部南部暴雨或大暴雨，黑龙江东北部局地大暴雨，广东西南部沿海暴雨，山洪、渍涝及农田受灾风险高，需重点防范。未来10天西南/华南/东北持续多雨（累计50~80mm，局地100~150mm，华南沿海超250mm）；20-24日中东部大到中雨，东北东部/江南南部/华南大到暴雨；24-27日华北南部至华南北部晴热高温。需重点防范：东北农田渍涝、华南连阴雨、新疆高温对棉花不利影响。
-      <span style="font-size:11px;color:var(--text-muted)">数据来源：中央气象台(2026年8月18日)</div>
+      <div style="font-size:12px;font-weight:600;color:var(--risk-red);margin-bottom:6px">8月19日：内蒙古、安徽、广西、云南、海南等地将有强对流天气；黑龙江东北部、陕西南部、山东西部等地昨日出现短时强降水（20-40mm，局地70mm+）。未来10天西南/华南/东北持续多雨（累计50~80mm，局地100~150mm，华南沿海超250mm）；20-24日中东部大到中雨，东北东部/江南南部/华南大到暴雨；24-27日华北南部至华南北部晴热高温。需重点防范：东北农田渍涝、华南连阴雨、新疆高温对棉花不利影响。
+      <span style="font-size:11px;color:var(--text-muted)">数据来源：中央气象台(2026年8月19日)</div>
   </div>
 </div>
 <div class="crop-section" id="crop-玉米">
@@ -1984,11 +1969,11 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
         <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:14px;">
           <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px;">10cm 土壤相对湿度</div>
-          <img src="https://image.nmc.cn/product/2026/08/13/AMSM/medium/SEVP_NMC_AMSM_CAGMSS_ESRH_ACHN_L10CM_PS_20260813000000000.jpg" style="width:100%;border-radius:8px;" alt="10cm土壤相对湿度" />
+          <img src="https://image.nmc.cn/product/2026/08/19/AMSM/medium/SEVP_NMC_AMSM_CAGMSS_ESRH_ACHN_L10CM_PS_20260819000000000.jpg" style="width:100%;border-radius:8px;" alt="10cm土壤相对湿度" />
         </div>
         <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:14px;">
           <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px;">20cm 土壤相对湿度</div>
-          <img src="https://image.nmc.cn/product/2026/08/13/AMSM/medium/SEVP_NMC_AMSM_CAGMSS_ESRH_ACHN_L20CM_PS_20260813000000000.jpg" style="width:100%;border-radius:8px;" alt="20cm土壤相对湿度" />
+          <img src="https://image.nmc.cn/product/2026/08/19/AMSM/medium/SEVP_NMC_AMSM_CAGMSS_ESRH_ACHN_L20CM_PS_20260819000000000.jpg" style="width:100%;border-radius:8px;" alt="20cm土壤相对湿度" />
         </div>
       </div>
     </div>
@@ -2030,7 +2015,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div id="fc-global" style="margin-bottom:28px;">
 <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
   <span style="font-size:16px;font-weight:600;color:var(--accent-blue);">🌍 全球其他产区天气展望</span>
-  <span style="font-size:11px;color:var(--text-muted);">（ECMWF IFS 8月预报 · 2026年08月18日更新 · 除中美巴阿）</span>
+  <span style="font-size:11px;color:var(--text-muted);">（ECMWF IFS 8月预报 · 2026年08月19日更新 · 除中美巴阿）</span>
 </div>
 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
 
@@ -2135,7 +2120,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <img src="https://www.cpc.ncep.noaa.gov/products/predictions/610day/610prcp.new.gif" style="width:100%;border-radius:8px;border:1px solid var(--border-color);" alt="CPC 6-10天降水概率展望" />
     </div>
   </div>
-  <div style="font-size:10px;color:var(--text-muted);margin-top:8px;">来源：<a href="https://www.cpc.ncep.noaa.gov/products/predictions/610day/index.php" target="_blank" style="color:var(--accent-blue);">NOAA CPC 6-10 Day Outlooks</a>（2026-08-17更新）</div>
+  <div style="font-size:10px;color:var(--text-muted);margin-top:8px;">来源：<a href="https://www.cpc.ncep.noaa.gov/products/predictions/610day/index.php" target="_blank" style="color:var(--accent-blue);">NOAA CPC 6-10 Day Outlooks</a>（2026-08-19更新）</div>
 </div>
 
 <!-- CPC分区概率表 -->
@@ -2159,7 +2144,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <tr><td style="padding:6px 10px;">东南部</td><td style="text-align:center;padding:6px;">🔴 偏高</td><td style="text-align:center;padding:6px;">🟡 正常偏低</td><td style="padding:6px;">副高西伸边缘，干旱发展</td></tr>
     </tbody>
   </table>
-  <div style="font-size:11px;color:var(--text-muted);margin-top:8px;">来源：<a href="https://www.cpc.ncep.noaa.gov/products/predictions/610day/fxus06.html" target="_blank" style="color:var(--accent-blue);">NOAA CPC Prognostic Discussion</a>（2026年8月17日发布）</div>
+  <div style="font-size:11px;color:var(--text-muted);margin-top:8px;">来源：<a href="https://www.cpc.ncep.noaa.gov/products/predictions/610day/fxus06.html" target="_blank" style="color:var(--accent-blue);">NOAA CPC Prognostic Discussion</a>（2026年8月19日发布）</div>
 </div>
 
 <!-- 美国三作物卡片 -->
@@ -2172,8 +2157,8 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <span style="font-size:11px;padding:3px 8px;background:#fff7e6;color:#d48806;border-radius:4px;font-weight:600;">🟡 强降水与高温并存</span>
     </div>
     <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-      <div><strong>CPC 8/18</strong></div>
-<div style="margin-top:6px;">CPC 8/18展望：印第安纳8/11以来累计降水超过280mm，并伴有强对流大风；北部平原高温持续。未来6-10天美国中西部降水与高温形势暂缓，但南部平原干热加剧。</div>
+      <div><strong>CPC 8/19</strong></div>
+<div style="margin-top:6px;">CPC 8/19展望：印第安纳8/11以来累计降水超过280mm，并伴有强对流大风；北部平原高温持续。未来6-10天美国中西部降水与高温形势暂缓，但南部平原干热加剧。</div>
     </div>
   </div>
 
@@ -2184,8 +2169,8 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <span style="font-size:11px;padding:3px 8px;background:#fff1f0;color:#cf1322;border-radius:4px;font-weight:600;">🔴 高温少雨加剧</span>
     </div>
     <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-      <div><strong>CPC 8/18</strong></div>
-<div style="margin-top:6px;">CPC 8/18展望：德州及南部平原受高压脊中心控制，高温显著，降水偏少；俄克拉何马周边高温少雨形势持续。</div>
+      <div><strong>CPC 8/19</strong></div>
+<div style="margin-top:6px;">CPC 8/19展望：德州及南部平原受高压脊中心控制，高温显著，降水偏少；俄克拉何马周边高温少雨形势持续。</div>
     </div>
   </div>
 
@@ -2199,10 +2184,10 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div style="font-size:11px;font-weight:600;color:#cf1322;">① 干热</div><div style="font-size:11px;color:var(--text-muted);">南部平原5天均温超正常10°F+，降水<0.25英寸，大豆/高粱/棉花受威胁</div>
     </div>
     <div style="padding:10px;background:var(--bg-white,#fff);border-radius:8px;border:1px solid var(--border-color);">
-      <div style="font-size:11px;font-weight:600;color:#d48806;">南部平原与下密西西比谷地降水亏缺</div><div style="font-size:11px;color:var(--text-muted);">高压脊抑制对流发展，俄克拉荷马、德州、阿肯色及路易斯安那多地在6-10天期间累计降水不足0.25英寸，8-14天仍偏干。</div>
+      <div style="font-size:11px;font-weight:600;color:#1d39c4;">② 洪涝</div><div style="font-size:11px;color:var(--text-muted);">印第安纳历史洪水后渐改善，但新 storms 可能续发；玉米带3-4天窗口不足以结构性恢复</div>
     </div>
     <div style="padding:10px;background:var(--bg-white,#fff);border-radius:8px;border:1px solid var(--border-color);">
-      <div style="font-size:11px;font-weight:600;color:#389e0d;">中西部玉米带温度与降水边际变化</div><div style="font-size:11px;color:var(--text-muted);">玉米带温度总体偏暖但概率弱于大平原；威斯康星、密歇根在8-14天降水偏少，需关注灌浆期水分压力是否扩大。</div>
+      <div style="font-size:11px;font-weight:600;color:#d48806;">③ 飓风</div><div style="font-size:11px;color:var(--text-muted);">东太平洋热带气旋生成概率高，后期路径不确定性大</div>
     </div>
     <div style="padding:10px;background:var(--bg-white,#fff);border-radius:8px;border:1px solid var(--border-color);">
       <div style="font-size:11px;font-weight:600;color:#d48806;">④ 干旱</div><div style="font-size:11px;color:var(--text-muted);">Oklahoma 30天降水<正常25%，33%大豆差/极差，牧草44%差/极差</div>
@@ -2215,7 +2200,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div id="fc-sa" style="margin-bottom:28px;">
 <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
   <span style="font-size:16px;font-weight:600;color:var(--accent-blue);">🌎 南美产区 · 大豆15天天气展望</span>
-  <span style="font-size:11px;color:var(--text-muted);">（WorldAgWeather · 源图最后更新 8/17 · 南半球冬季暂停更新 · 巴西二茬玉米收获关键期进行中）</span>
+  <span style="font-size:11px;color:var(--text-muted);">（WorldAgWeather · 源图最后更新 8/19 · 南半球冬季暂停更新 · 巴西二茬玉米收获关键期进行中）</span>
 </div>
 <div style="background:#fffbe6;border:1px solid #ffe58f;border-radius:8px;padding:8px 14px;margin-bottom:14px;font-size:12px;color:#8c6d1f;">⏸️ WAW源图自8/12起更新（南半球冬季大豆休耕期，GFS15天预报与NOAA同步）。超强厄尔尼诺、正IOD、冷PDO与MJO相位6叠加，9月底南美春播水热波动需持续跟踪。<strong>🌽 巴西二茬玉米（safrinha）正处于关键收获期：</strong>全国收获进度69.1%（CONAB截至7/31），上周58.3%；马托格罗索99.1%接近完成（Imea 8/7），产量预估5730万吨；南马托格罗索仅37.3%明显滞后；二茬玉米产量预估1.105亿吨（AgRural 8/3），巴西玉米总产2025/26达1.428亿吨创纪录。</div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
@@ -2223,28 +2208,28 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <!-- 巴西大豆降水 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇧🇷 巴西大豆产区 · 15天降水预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_brazil_5134.png?v=1786958360" style="width:100%;border-radius:8px;" alt="巴西大豆15天降水预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_brazil_5135.png?v=1787109411" style="width:100%;border-radius:8px;" alt="巴西大豆15天降水预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">巴西南部处冬季旱季，降水仍偏少，土壤墒情恢复有限；厄尔尼诺背景下，9月春播期雨水有望逐步增加。</div>
   </div>
 
   <!-- 巴西大豆温度 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇧🇷 巴西大豆产区 · 15天温度预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_brazil_5134.png?v=1786958360" style="width:100%;border-radius:8px;" alt="巴西大豆15天温度预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_brazil_5135.png?v=1787109411" style="width:100%;border-radius:8px;" alt="巴西大豆15天温度预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">巴西大部气温总体偏高，南部休耕期霜冻风险较低；PDO冷相位或带来阶段性降温，需关注播种窗口。</div>
   </div>
 
   <!-- 阿根廷大豆降水 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇦🇷 阿根廷大豆产区 · 15天降水预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_argentina_5134.png?v=1786958360" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天降水预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_argentina_5135.png?v=1787109411" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天降水预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">阿根廷冬季休耕降水偏少，田间偏干；厄尔尼诺与MJO相位6叠加，春播前后降雨概率趋于回升。</div>
   </div>
 
   <!-- 阿根廷大豆温度 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇦🇷 阿根廷大豆产区 · 15天温度预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_argentina_5134.png?v=1786958360" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天温度预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_argentina_5135.png?v=1787109411" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天温度预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">阿根廷气温整体偏暖，利于休耕后整地；但冷PDO可能引发短促降温，春播初期需防温度波动。</div>
   </div>
 
@@ -2256,12 +2241,12 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div id="fc-cn" style="margin-bottom:28px;">
 <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
   <span style="font-size:16px;font-weight:600;color:var(--accent-blue);">🇨🇳 中国产区天气展望</span>
-  <span style="font-size:11px;color:var(--text-muted);">（中央气象台+和风天气 · 2026年8月18日更新 · 西南华南暴雨频繁，东北强降雨持续）</span>
+  <span style="font-size:11px;color:var(--text-muted);">（中央气象台+和风天气 · 2026年8月19日更新 · 西南华南暴雨频繁，东北强降雨持续）</span>
 </div>
 
 <!-- 本周天气特点 -->
 <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;margin-bottom:14px;">
-  <div style="font-size:13px;font-weight:600;margin-bottom:10px;">📊 8/12最新天气形势</div>
+  <div style="font-size:13px;font-weight:600;margin-bottom:10px;">📊 8/19最新天气形势</div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:12px;color:var(--text-secondary);line-height:1.7;">
     <div>
       <div style="font-weight:600;margin-bottom:4px;">🌡️ 气温</div>
@@ -2269,7 +2254,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div>东北7天最高33°C（沈阳33°C最高），降水15~23mm，多地阵雨/中雨。春玉米灌浆期和大豆结荚期水热条件尚可，但需防范局地强降水渍涝。</div>
 <div>长江中下游7天最高35°C（武汉35°C），南京降水36mm偏多。高温仍存，需关注水稻灌浆期热害。</div>
 🌧️ 降水</div>
-<div>🌀 8/17更新（和风天气）：华南强降水突出（广州58mm+、南宁37mm），西南成都59mm中雨持续。东北多阵雨（沈阳中雨21mm），华北以多云为主。</div>
+<div>🌀 8/19更新（和风天气）：华南强降水突出（广州58mm+、南宁37mm），西南成都59mm中雨持续。东北多阵雨（沈阳中雨21mm），华北以多云为主。</div>
 <div>华南7天最高35°C，广州降水58mm（中雨），南宁37mm。需防局地强降水引发的山洪和农区渍涝。</div>
 <div>西南降水突出：成都7天累计59mm（中雨），昆明24mm伴雷阵雨。重庆/成都需防范持续降水引发的地质灾害</div>
 <div>西北乌鲁木齐7天最高36°C，降水仅1.0mm，持续干燥。西安21mm小雨。</div>
@@ -2294,30 +2279,30 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:10px;">
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--risk-red);margin-bottom:6px;">🌡️ 最高气温 24小时</div>
-      <img src="https://image.nmc.cn/product/2026/08/18/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260818080002412.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/08/19/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260819080002412.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--risk-red);margin-bottom:6px;">🌡️ 最高气温 48小时</div>
-      <img src="https://image.nmc.cn/product/2026/08/18/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260818080004812.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/08/19/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260819080004812.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--risk-red);margin-bottom:6px;">🌡️ 最高气温 72小时</div>
-      <img src="https://image.nmc.cn/product/2026/08/18/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260818080007212.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/08/19/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260819080007212.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
   </div>
   <!-- Row 2: 降水量预报 -->
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--accent-blue);margin-bottom:6px;">🌧️ 降水量 24小时</div>
-      <img src="https://image.nmc.cn/product/2026/08/18/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260818000002400.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/08/19/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260819060002400.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--accent-blue);margin-bottom:6px;">🌧️ 降水量 48小时</div>
-      <img src="https://image.nmc.cn/product/2026/08/18/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260818000004800.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/08/19/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260819000004800.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--accent-blue);margin-bottom:6px;">🌧️ 降水量 72小时</div>
-      <img src="https://image.nmc.cn/product/2026/08/18/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260818000007200.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/08/19/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260819000007200.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
   </div>
   <div style="font-size:10px;color:var(--text-muted);margin-top:8px;">来源：<a href="http://www.nmc.cn/publish/precipitation/1-day.html" target="_blank" style="color:var(--accent-blue);">中央气象台降水量预报</a> · <a href="https://m.nmc.cn/publish/temperature/hight/24hour.html" target="_blank" style="color:var(--accent-blue);">气温预报</a></div>
@@ -2405,10 +2390,10 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <tr><td style="color:var(--risk-red);font-weight:600">强厄尔尼诺</td><td class="mono">+1.5 ~ +1.9°C</td><td>全球气候显著受影响</td></tr>
     <tr><td style="color:var(--risk-red);font-weight:600">超强厄尔尼诺</td><td class="mono">≥ +2.0°C</td><td>21世纪仅3次：1997/2015/2026</td></tr>
   </table>
-  <div class="info-box warning"><p><strong>当前状态（8月18日更新）：</strong><strong>🔴 西南华南东北暴雨频繁！</strong><br>NMC 8/17周报：台风"白海豚"致中东部大范围降水偏多，黄淮/江淮/江汉强降水导致地表湿度偏高。8/18四川盆地西部南部、黑龙江东北部、广东西南部沿海暴雨或大暴雨(100-120mm)。未来10天西南/华南/东北多雨(累计50-80mm，局地100-150mm)。<br><em>叠加超强厄尔尼诺(+2.60°C)背景，东北渍涝+华南连阴雨+新疆高温三重风险。</em></p></div>
+  <div class="info-box warning"><p><strong>当前状态（8月19日更新）：</strong><strong>🔴 西南华南东北暴雨频繁！</strong><br>NMC 8/19周报：内蒙古/安徽/广西/云南/海南等地将有强对流天气。东北、黑龙江东部短时强降水持续。未来10天西南/华南/东北多雨(累计50-80mm，局地100-150mm)。<br><em>叠加超强厄尔尼诺(+2.60°C)背景，东北渍涝+华南连阴雨+新疆高温三重风险。</em></p></div>
   <h4>Walker环流的变化</h4>
   <p>在正常年份，Walker环流表现为：太平洋西岸（印尼/菲律宾）暖湿气流上升→高空东流→东太平洋下沉→信风将表层暖水向西输送。厄尔尼诺时，这一环流减弱甚至反转：东太平洋异常增暖→上升支东移→西岸下沉增强→东南亚干旱。</p>
-  <div class="info-box warning"><p><strong>当前状态（8月18日更新）：</strong><strong>🔴 超强厄尔尼诺确认！</strong><br>BOM周度Niño 3.4达<strong>+2.60°C</strong>（8/16周），稳居超强区间。NOAA 97%概率持续至2027年春季，Q4强/超强概率95-97%。ECMWF预测峰值+3.2°C(11-12月)。次表层暖核+8~+9°C，海气耦合正反馈加速。IOD DMI=+0.41°C发展中，与ENSO协同影响全球气候。</p></div>
+  <div class="info-box warning"><p><strong>当前状态（8月19日更新）：</strong><strong>🔴 超强厄尔尼诺确认！</strong><br>BOM周度Niño 3.4达<strong>+2.60°C</strong>（8/16周），稳居超强区间。NOAA 97%概率持续至2027年春季，Q4强/超强概率95-97%。ECMWF预测峰值+3.2°C(11-12月)。次表层暖核+8~+9°C，海气耦合正反馈加速。IOD DMI=+0.41°C发展中，与ENSO协同影响全球气候。</p></div>
 </div></div>
 <div class="knowledge-section" id="know-indices"><div class="knowledge-card">
   <h3>📊 主要气候指数与遥相关链</h3>
@@ -2542,7 +2527,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 </div>
 <footer class="footer">
   <div class="footer-sources">数据来源：NOAA CPC · BOM · IMD · WMO · 中国气象局 · ECMWF</div>
-  <div class="footer-update">更新时间：2026-08-19</div>
+  <div class="footer-update">更新时间：2026-08-17</div>
 </div>
 </footer>
 
