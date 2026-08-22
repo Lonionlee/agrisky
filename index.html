@@ -977,7 +977,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📈 Niño 3.4 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--risk-red);margin-left:auto">当前: +2.7°C</span>（2011-2026）</div>
     <div class="ocean-card-subtitle">NOAA CPC ERSSTv5 · 周度Niño 3.4距平 · 2011-01至今 · ±0.5°C阈值</div>
     <div class="chart-container tall"><canvas id="ensoHistoryChart"></canvas></div>
-    <div class="analysis-text"><strong>结论：</strong>Niño 3.4 SST距平达2.7°C，显著高于+0.5°C阈值，处于强厄尔尼诺状态。<br><strong>当前值：</strong>2.7°C（2026年8月12日），位于15年范围-1.7°C至3.0°C的高位，接近上限。<br><strong>趋势：</strong>近12期由1.0°C升至2.7°C，持续快速增强，暖事件风险高。</div>
+    <div class="analysis-text"><strong>结论：</strong>Niño 3.4 SST距平达2.7°C，显著高于+0.5°C阈值，处于强暖事件状态，接近15年高位。<br><strong>当前值：</strong>2.7°C（2026年8月12日）。<br><strong>15年范围：</strong>-1.7°C至3.0°C。<br><strong>近期趋势：</strong>近12期由1.0°C升至2.7°C，持续上升增强。</div>
   </div>
   <div class="ocean-card">
     <div class="ocean-card-title">🔮 ENSO 预测与多模型对比</div>
@@ -1012,7 +1012,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📉 SOI 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--risk-red);margin-left:auto">当前: -0.0</span>（2011-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--risk-red);margin-left:auto">当前: -22.0</span></div>
     <div class="ocean-card-subtitle">BOM · 30日SOI (基于Tahiti-Darwin标准化气压差) · 2011-01至今</div>
     <div class="chart-container"><canvas id="soiChart"></canvas></div>
-    <div class="analysis-text"><strong>结论：</strong>SOI处于中性略偏负，厄尔尼诺状态仍被确认但强度较弱。<strong>当前值：</strong>2025年12月为-0.0。<strong>15年范围：</strong>-3.6至4.5，当前接近中性区。<strong>趋势：</strong>近12期下降，由0.2回落至-0.0，显示负位相压力增强但幅度有限。</div>
+    <div class="analysis-text"><strong>结论：</strong>SOI维持负值，El Niño状态仍在但强度较弱。<strong>当前值：</strong>2025年12月为-0.0。<strong>15年范围：</strong>-3.6至4.5，当前处于中性略偏负区间。<strong>近期趋势：</strong>近12期由0.2降至-0.0，呈下降并转弱态势。</div>
   </div>
 </div>
 
@@ -1022,19 +1022,19 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">🌊 WWV 暖水体积异常时序（1980-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--risk-red);margin-left:auto">强充能状态</span></div>
     <div class="ocean-card-subtitle">NOAA PMEL · 基于CPC GODAS · 热带太平洋5°N-5°S, 120°E-80°W 20°C以上暖水体积异常 · 基准期1981-2010</div>
     <div style="text-align:center;padding:12px 0"><img src="https://www.pmel.noaa.gov/tao/wwv/gif/wwva_std.gif" alt="WWV异常时序" style="max-width:900px;width:100%;height:auto;display:block;margin:0 auto;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)"></div>
-    <div class="analysis-text"><strong>结论：</strong>PDO当前为-2.03，仍处冷相位，但冷强度较前期减弱。<strong>数值与范围：</strong>2026-07最新值-2.03，近15年范围为-4.21至1.86。<strong>近期趋势：</strong>近12期由-3.23回升至-2.03，呈上升趋势，尚未转为暖相位。</div>
+    <div class="analysis-text">🔴 WWV处于极强充能状态（Recharge Phase）。据BOM 8/12报告，7月赤道太平洋上层海洋热含量异常已达历史最高纪录（1979年有记录以来最强）。NOAA PMEL数据显示暖水体积持续大幅偏正，为El Niño在秋冬季进一步冲击超强级别提供充沛能量储备。</div>
   </div>
   <div class="ocean-card">
     <div class="ocean-card-title">📊 WWV与Niño 3.4 滑动平均对比（5个月）</div>
     <div class="ocean-card-subtitle">NOAA PMEL · WWV异常与Niño 3.4指数5个月滑动平均对比 · 揭示充能-放热动力学关系</div>
     <div style="text-align:center;padding:12px 0"><img src="https://www.pmel.noaa.gov/tao/wwv/gif/wwv_nino.gif" alt="WWV与Niño3.4对比" style="max-width:900px;width:100%;height:auto;display:block;margin:0 auto;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)"></div>
-    <div class="analysis-text"><strong>结论：</strong>NAO已由正转负，进入弱负相位，北大西洋中纬度气压梯度趋于减弱。<strong>当前值：</strong>2026年7月为-0.31。<strong>15年范围：</strong>-3.18至2.69，当前处于中性略偏负区间。<strong>近期趋势：</strong>近12期由0.26降至-0.31，呈下降趋势，短期负相位特征增强。</div>
+    <div class="analysis-text">WWV异常峰值通常领先Niño 3.4峰值约6-9个月（Recharge Oscillator机制）。当前WWV创历史新高，远超2023/2024年同期水平，且6月新生的开尔文波已推动次表层暖水进一步东移。这意味着当前El Niño仍具备持续增强的海洋动力学条件，秋季峰值可能更高。</div>
   </div>
   <div class="ocean-card">
     <div class="ocean-card-title">🔬 赤道太平洋次表层温度异常剖面（过去30天）</div>
     <div class="ocean-card-subtitle">NOAA CPC GODAS · 赤道5°S-5°N温度异常经度-深度截面 · 揭示次表层暖核结构</div>
     <div style="text-align:center;padding:12px 0"><img src="https://www.cpc.ncep.noaa.gov/products/GODAS/pent_gif/xz/pent.anom.xz.temp.0n.30d.gif" alt="次表层温度异常剖面" style="max-width:900px;width:100%;height:auto;display:block;margin:0 auto;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)"></div>
-    <div class="analysis-text"><p><strong>结论：</strong>IOD DMI最新为0.146°C，呈弱正位相，近12期由-0.014°C升至0.146°C，趋势回升。</p><p><strong>区间与展望：</strong>当前值处于15年范围-0.757°C至0.964°C的偏低区间，尚未达强正IOD；后续若持续走高，需关注正IOD事件发展。</p></div>
+    <div class="analysis-text">🔴 次表层暖核结构极其显著：据BOM和NOAA 8/12数据，赤道太平洋50-150m深度层温度异常已达+4~+9°C（7月赤道上层热含量创1979年以来最高纪录）。6月新生开尔文波推动暖水东传，上层300m热含量远超历史同期，为El Niño冲击超强级别提供了充沛的次表层能量储备。</div>
   </div>
   <div class="ocean-card">
     <div class="ocean-card-title">🌡️ 海表热含量异常（过去30天）</div>
@@ -1050,7 +1050,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📊 PDO 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -2.03</span>（2011-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -1.29</span></div>
     <div class="ocean-card-subtitle">NOAA ERSSTv5 · 月均PDO指数（EOF1分析）· 2011-01至今</div>
     <div class="chart-container"><canvas id="pdoChart"></canvas></div>
-    <div class="analysis-text"><strong>PDO冷位相加深</strong>：NCEI月度PDO最新2026年7月为-2.03，处于15年范围-4.21~+1.86偏冷区。2026年各月由-1.24降至-2.03，观测事实为冷位相持续增强；趋势或延续，但预测存在不确定性。</div>
+    <div class="analysis-text"><p><strong>结论：</strong>PDO处于冷相位，冷强度减弱。<strong>当前值：</strong>-2.03（2026-07）。<strong>15年范围：</strong>-4.21～1.86。<strong>趋势：</strong>近12期由-3.23升至-2.03，呈回升趋势，但仍处负值区间。</p></div>
   </div>
 </div>
 
@@ -1060,7 +1060,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📊 NAO 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -0.31</span>（2011-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -0.31</span></div>
     <div class="ocean-card-subtitle">NOAA CPC/AOML数据 · 2011-01至今 · 月均NAO指数</div>
     <div class="chart-container"><canvas id="naoChart"></canvas></div>
-    <div class="analysis-text"><strong>NAO中性偏弱、波动大</strong>：CPC月度NAO最新2026年7月为-0.31，位于15年范围-3.18~+2.69中部。2026年出现-2.69与+1.39等大幅波动，夏季信号弱；观测显示位相切换频繁，趋势不显著，预测置信度较低。</div>
+    <div class="analysis-text"><p><strong>结论：</strong>NAO已转为弱负相位。</p><p><strong>当前值：</strong>-0.31（2026-07），低于零值，强度偏弱。</p><p><strong>15年范围：</strong>-3.18至2.69，当前值处于中性附近。</p><p><strong>近期趋势：</strong>近12期由0.26降至-0.31，呈下降并转负态势。</p></div>
   </div>
 </div>
 
@@ -1070,7 +1070,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📊 IOD DMI 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:#a16207;margin-left:auto">当前: 0.146°C</span>（2011-2026）</div>
     <div class="ocean-card-subtitle">周度DMI · BOM数据 · 2011-2026 · DMI = TIO(10°S-10°N,50°-70°E) - TIO(10°S-0°,90°-110°E)</div>
     <div class="chart-container"><canvas id="iodChart"></canvas></div>
-    <div class="analysis-text"><strong>正向IOD风险上升</strong>：NOAA月度DMI截至2026年5月为+0.146°C，位于15年范围-0.757~+0.964中低区。当前参考为BOM周度DMI截至8/9周的+0.41°C，连续3周触及+0.4正阈值；观测显示近期偏正增强，是否持续需确认。</div>
+    <div class="analysis-text"><strong>结论</strong>：IOD DMI升至0.146°C，进入弱正位相，正IOD信号增强。<strong>当前值</strong>：2026年5月为0.146°C。<strong>历史范围</strong>：近15年为-0.757°C至0.964°C，当前处于中低区间。<strong>趋势</strong>：近12期由-0.014°C升至0.146°C，由近零转弱正，短期呈上升趋势。</div>
   </div>
 </div>
 
@@ -1080,7 +1080,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📈 RONI 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--risk-red);margin-left:auto">当前: +0.98°C</span>（2011-2026）</div>
     <div class="ocean-card-subtitle">NOAA CPC · 去趋势Niño3.4三月滑动平均 · 2011-02至2026-05 · ±0.5°C阈值</div>
     <div class="chart-container"><canvas id="roniChart"></canvas></div>
-    <div class="analysis-text"><strong>结论</strong>当前RONI为0.98°C，已超过+0.5°C阈值，显示热带中东太平洋偏暖，处于厄尔尼诺状态或增强阶段。<br/><strong>区间</strong>最新值位于近15年-1.2°C至2.75°C范围内，属中高位偏暖水平。<br/><strong>趋势</strong>近12期由-0.04°C升至0.98°C，呈明显上升趋势，需关注ENSO偏暖位相的持续性。</div>
+    <div class="analysis-text"><strong>结论</strong> RONI最新值为0.98°C，已超过+0.5°C阈值，显示偏暖/厄尔尼诺倾向。<strong>范围</strong>近15年介于-1.2°C至2.75°C，当前处于偏暖区间但未达历史高位。<strong>趋势</strong>近12期由-0.04°C升至0.98°C，升温趋势明显，需关注ENSO位相转换。</div>
   </div>
 </div>
 
