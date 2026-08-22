@@ -347,7 +347,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 
   <div class="section" style="margin-bottom:24px">
     <div class="section-title" style="font-size:18px;margin-bottom:6px">综合气候判断与预测</div>
-    <div style="font-size:13px;color:var(--text-muted);margin-bottom:20px;padding-left:13px">海洋-大气-农业耦合系统综合分析 · 基于2026年08月21日最新观测数据（CPC周度截至12AUG2026 · BOM截至2026-08-16 · USDA 8/17报告）</div>
+    <div style="font-size:13px;color:var(--text-muted);margin-bottom:20px;padding-left:13px">海洋-大气-农业耦合系统综合分析 · 基于2026年08月22日最新观测数据（CPC周度12AUG2026 · NCEI PDO 2026-07 · BOM SOI 8/8）（CPC周度截至12AUG2026 · BOM截至2026-08-16 · USDA 8/17报告）</div>
   </div>
 
   <!-- A. 当前海洋-大气状态诊断 -->
@@ -977,7 +977,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📈 Niño 3.4 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--risk-red);margin-left:auto">当前: +2.7°C</span>（2011-2026）</div>
     <div class="ocean-card-subtitle">NOAA CPC ERSSTv5 · 周度Niño 3.4距平 · 2011-01至今 · ±0.5°C阈值</div>
     <div class="chart-container tall"><canvas id="ensoHistoryChart"></canvas></div>
-    <div class="analysis-text">Niño 3.4自2025年末负值迅速转正，2026年5月已达+0.94°C，6月跳升至+1.8°C，月际增量为有记录以来最快之一。周度RONI持续攀升：6/27→1.2°C → 7/4→1.2°C → 7/11→1.3°C → 7/18→1.4°C。BOM周度Niño 3.4已达+2.60°C（12AUG2026周），稳居超强区间。NOAA 7月9日发布El Niño Advisory，97%概率持续至2027年春季；Q4强/超强概率从5月65-67%→6月88-89%→7月95-97%（11月超强81%+强16%，12月超强75%+强20%）。次表层暖化加剧（下沉开尔文波加深东太平洋温跃层），海气耦合正反馈加速，CFSv2预测持续增强至年底。Niño-1+2已达+2.8°C（远超超强门槛），Niño-4为+0.4°C（东西梯度显著加大）。<i>（含凯丰投资7/22报告数据；CPC周度截至8/5）</i></div>
+    <div class="analysis-text"><strong>强厄尔尼诺已确立</strong>：CPC周度Niño3.4于2026年8月12日达+2.7°C，接近15年上限+3.0°C（范围-1.7~+3.0°C）。近12周由+1.0°C升至+2.7°C，观测事实为持续快速增暖；短期是否维持强阈值需后续验证。</div>
   </div>
   <div class="ocean-card">
     <div class="ocean-card-title">🔮 ENSO 预测与多模型对比</div>
@@ -1012,7 +1012,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📉 SOI 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--risk-red);margin-left:auto">当前: -0.0</span>（2011-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--risk-red);margin-left:auto">当前: -22.0</span></div>
     <div class="ocean-card-subtitle">BOM · 30日SOI (基于Tahiti-Darwin标准化气压差) · 2011-01至今</div>
     <div class="chart-container"><canvas id="soiChart"></canvas></div>
-    <div class="analysis-text">🔴 超强厄尔尼诺</div>
+    <div class="analysis-text"><strong>大气耦合偏厄尔尼诺</strong>：CPC月度SOI截至2025年12月为-0.0，处于15年范围-3.6~+4.5中位附近。当前参考为BOM 30日SOI截至8/8的-25，持续强负值；观测显示近期大气响应偏负，月度确认仍滞后。</div>
   </div>
 </div>
 
@@ -1050,7 +1050,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📊 PDO 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -2.03</span>（2011-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -1.29</span></div>
     <div class="ocean-card-subtitle">NOAA ERSSTv5 · 月均PDO指数（EOF1分析）· 2011-01至今</div>
     <div class="chart-container"><canvas id="pdoChart"></canvas></div>
-    <div class="analysis-text">🔵 PDO冷位相（-1.29，2026年7月，ERSSTv6）并不直接抑制ENSO振幅，而是通过改变背景场调制ENSO的遥相关效应：①削弱El Niño→东亚夏季风的相关性（r从-0.63降至-0.24，Zhang et al. 2025）；②使WPSH偏弱偏北→东南亚-澳洲干旱更显著。当前超级海洋热浪面积占地球13.5%+次表层暖核+8~9°C，海洋动力学压倒年代际背景抑制→仍可能达超强。</div>
+    <div class="analysis-text"><strong>PDO冷位相加深</strong>：NCEI月度PDO最新2026年7月为-2.03，处于15年范围-4.21~+1.86偏冷区。2026年各月由-1.24降至-2.03，观测事实为冷位相持续增强；趋势或延续，但预测存在不确定性。</div>
   </div>
 </div>
 
@@ -1060,17 +1060,27 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📊 NAO 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -0.31</span>（2011-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -0.31</span></div>
     <div class="ocean-card-subtitle">NOAA CPC/AOML数据 · 2011-01至今 · 月均NAO指数</div>
     <div class="chart-container"><canvas id="naoChart"></canvas></div>
-    <div class="analysis-text">🔵 NAO（NOAA CPC/AOML）基于冰岛低压与亚速尔高压标准化气压差。当前NAO=-0.31（2026年7月），接近中性。NAO信号主要集中在冬季（12-3月），夏季影响有限。遥相关路径：NAO通过CGT（环全球遥相关波列）沿副热带急流传播至东亚，影响冬季风强度（Li et al. 2024）。2025年研究证实：强负PDO+正NAO协同可推动副高异常偏北→华北极端降水。</div>
+    <div class="analysis-text"><strong>NAO中性偏弱、波动大</strong>：CPC月度NAO最新2026年7月为-0.31，位于15年范围-3.18~+2.69中部。2026年出现-2.69与+1.39等大幅波动，夏季信号弱；观测显示位相切换频繁，趋势不显著，预测置信度较低。</div>
   </div>
 </div>
 
 <div class="ocean-section">
   <div class="section-title" id="section-iod">IOD 印度洋偶极子</div>
   <div class="ocean-card">
-    <div class="ocean-card-title">📊 IOD DMI 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:#a16207;margin-left:auto">当前: 0.146°C</span>（2011-2026）<span style="font-family:JetBrains Mono;font-size:14px;color:#a16207;margin-left:auto">当前: +0.41°C</span></div>
+    <div class="ocean-card-title">📊 IOD DMI 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:#a16207;margin-left:auto">当前: +0.41°C</span>（2011-2026）</div>
     <div class="ocean-card-subtitle">周度DMI · BOM数据 · 2011-2026 · DMI = TIO(10°S-10°N,50°-70°E) - TIO(10°S-0°,90°-110°E)</div>
     <div class="chart-container"><canvas id="iodChart"></canvas></div>
-    <div class="analysis-text">🟠 正IOD（DMI≥+0.4°C）= 西印度洋（非洲东岸）偏暖+东印度洋（印尼以南）偏冷→印尼对流抑制→东南亚/澳大利亚干旱加剧。当前DMI=+0.41°C（BOM周度，截至2026-08-09周），连续3周触及+0.4°C正阈值；BOM判定目前仍处中性——正阈值连续触及·发展中未确立需DMI连续多周≥+0.4°C方可确立，当前事件发展中、尚未确立。BOM模式暗示正IOD可能于南半球冬季发展并持续至春季，若确立将与超强El Niño协同加剧印尼-澳洲干旱。</div>
+    <div class="analysis-text"><strong>正向IOD风险上升</strong>：NOAA月度DMI截至2026年5月为+0.146°C，位于15年范围-0.757~+0.964中低区。当前参考为BOM周度DMI截至8/9周的+0.41°C，连续3周触及+0.4正阈值；观测显示近期偏正增强，是否持续需确认。</div>
+  </div>
+</div>
+
+<div class="ocean-section">
+  <div class="section-title" id="section-roni">RONI 去趋势Niño3.4</div>
+  <div class="ocean-card">
+    <div class="ocean-card-title">📈 RONI 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--risk-red);margin-left:auto">当前: +0.98°C</span>（2011-2026）</div>
+    <div class="ocean-card-subtitle">NOAA CPC · 去趋势Niño3.4三月滑动平均 · 2011-02至2026-05 · ±0.5°C阈值</div>
+    <div class="chart-container"><canvas id="roniChart"></canvas></div>
+    <div class="analysis-text"><strong>RONI快速转正</strong>：CPC去趋势Niño3.4三月滑动最新2026年5月为+0.98°C，位于15年范围-1.20~+2.75偏暖区。2026年由-0.37升至+0.98，观测支持暖异常快速增强；后续需观察是否进入稳定暖位相。</div>
   </div>
 </div>
 
