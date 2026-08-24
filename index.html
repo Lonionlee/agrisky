@@ -917,7 +917,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">🌡️ 全球SST异常分布</div>
     <div class="sst-grid">
       <div class="sst-item"><div class="sst-name">Niño 1+2</div><div class="sst-value warm">+4.1°C</div><div class="sst-desc">南美西海岸强增暖(周度05AUG)</div></div>
-      <div class="sst-item"><div class="sst-name">Niño 3.4</div><div class="sst-value warm">+2.7°C</div><div class="sst-desc">赤道中太平洋(周度12AUG)</div></div>
+      <div class="sst-item"><div class="sst-name">Niño 3.4</div><div class="sst-value warm">+2.6°C</div><div class="sst-desc">赤道中太平洋(月度07)</div></div>
       <div class="sst-item"><div class="sst-name">Niño 4</div><div class="sst-value warm">+1.1°C</div><div class="sst-desc">赤道西太平洋暖池偏暖(月度07)</div></div>
       <div class="sst-item"><div class="sst-name">超级海洋热浪</div><div class="sst-value warm">14.2%</div><div class="sst-desc">占地球海洋面积(创7月纪录)</div></div>
       <div class="sst-item"><div class="sst-name">印度洋整体</div><div class="sst-value warm">+0.4°C</div><div class="sst-desc">正IOD发展中·DMI+0.41</div></div>
@@ -968,7 +968,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div class="ocean-section">
   <div class="section-title" id="section-enso">ENSO 深度分析</div>
   <div class="stat-row">
-    <div class="stat-box"><div class="stat-box-value red">+2.7°C</div><div class="stat-box-label">当前 Niño 3.4 周度SST距平（12AUG2026·CPC）</div></div>
+    <div class="stat-box"><div class="stat-box-value red">+2.6°C</div><div class="stat-box-label">当前 Niño 3.4 周度SST距平（-1.29AUG2026·BOM）</div></div>
     <div class="stat-box"><div class="stat-box-value red">超强厄尔尼诺</div><div class="stat-box-label">持续增强 · 次表层暖核+8~+9°C</div></div>
     <div class="stat-box"><div class="stat-box-value red">95-97%</div><div class="stat-box-label">Q4强/超强事件概率 (CPC 7月更新)</div></div>
   </div>
@@ -1350,7 +1350,9 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="crop-chart-card"><div class="chart-title">入汛以来降水进度 (mm)</div><div class="chart-container short"><canvas id="precip-玉米"></canvas></div></div>
       <div class="crop-chart-card"><div class="chart-title">土壤湿度</div><div class="chart-container short"><canvas id="soil-玉米"></canvas></div></div>
     </div>
-    <div class="analysis-text">🟡 东北降水偏多存渍涝风险，美国偏干。哈尔滨土湿0.37（均值+8%）、佳木斯0.42（+29%）、长春0.38（+10%），渍涝压力显著；白城0.23、通辽0.21偏干。美国玉米带IL 0.24、NE 0.16、SD 0.19偏干，南达科他入汛降水仅均值13%；新疆乌鲁木齐0.08、阿克苏0.09严重干旱。华北济南0.22、菏泽0.18土壤偏干，但近14天降水60-68mm有缓解。</div>
+    <div class="analysis-text">
+      🔴齐齐哈尔0.14🔴、乌鲁木齐0.14🔴、巴拉那0.39(+3.0%)🔴；🟡长春0.19(-4.0%)🟡、沈阳0.21(-6.0%)🟡、铁岭0.20(-3.0%)🟡、白城0.21🟡、通辽0.18🟡、赤峰0.19🟡、石家庄0.25🟡、济南0.18🟡、伊利诺伊0.24🟡、内布拉斯加0.16🟡、密苏里0.22🟡、南达科他0.19🟡，高温热害风险升；哈尔滨0.26(-3.0%)🟢、菏泽0.36🟢等🟢正常。降水偏少，灌浆期缺水；布宜诺斯艾利斯低温冷害低；南美三站已收获，防渍涝。
+    </div>
   </div>
 <div class="crop-section" id="crop-大豆">
     <div class="crop-section-header"><span class="crop-icon">🫘</span><h3>大豆专区</h3><span class="region-count">14个监测产区</span></div>
@@ -1361,7 +1363,9 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="crop-chart-card"><div class="chart-title">土壤湿度</div><div class="chart-container short"><canvas id="soil-大豆"></canvas></div></div>
     </div>
 
-    <div class="analysis-text">🟡 东北存渍涝风险，南里奥格兰德过湿。哈尔滨土湿0.37、长春0.38、佳木斯0.42（超均值29%），渍涝压力显著；齐齐哈尔0.25偏低。美国内布拉斯加0.16、南达科他0.19偏干。南美冬季休耕期风险较低，但南里奥格兰德0.44（+1%）偏湿需关注排水。巴西圣马托格罗索0.09（-73%）旱季正常。</div>
+    <div class="analysis-text">
+      🔴齐齐哈尔重旱，🟡多站偏干，🟢主体正常。齐齐哈尔0.14(0.0%)🔴、黑河0.34(+4.0%)🟢、哈尔滨0.26(-3.0%)🟢、长春0.19(-4.0%)🟡、沈阳0.21(-6.0%)🟡、艾奥瓦0.37(0.0%)🟢、伊利诺伊0.24(0.0%)🟢、印第安纳0.29(0.0%)🟢、俄亥俄0.34(0.0%)🟢、明尼苏达0.28(0.0%)🟢、内布拉斯加0.16(0.0%)🟡、密苏里0.22(0.0%)🟡、南达科他0.19(0.0%)🟡、南马托格罗索0.33(0.0%)🟢收、巴拉那0.39(+3.0%)🟢收、南里奥格兰德0.48(0.0%)🔴涝收、布宜诺斯艾利斯0.34(0.0%)🟢收。美国降水偏少且密苏里30.4°C，花荚期高温干旱；齐齐哈尔雨多但底墒差，哈尔滨雨少不利结荚；伊利诺伊局部渍涝；南美已收获区影响小，布市8.4°C低温。
+    </div>
     <!-- USDA Drought Monitor for Soybean -->
     <div style="margin-top:16px;padding:16px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px">
       <div style="font-size:13px;font-weight:600;color:#1e293b;margin-bottom:12px;display:flex;align-items:center;gap:8px">🏜️ USDA干旱监测 — 大豆产区</div>
@@ -1413,7 +1417,9 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="crop-chart-card"><div class="chart-title">入汛以来降水进度 (mm)</div><div class="chart-container short"><canvas id="precip-小麦"></canvas></div></div>
       <div class="crop-chart-card"><div class="chart-title">土壤湿度</div><div class="chart-container short"><canvas id="soil-小麦"></canvas></div></div>
     </div>
-    <div class="analysis-text">🔴 基辅严重干旱，中国及澳洲多地偏干。乌克兰基辅土湿0.08（-76%），严重干旱。中国郑州0.23（-17%）、济南0.22（-31%）、石家庄0.26（-11%）均偏干。澳洲新南威尔士0.18（-22%）、南澳0.19（-22%）偏干。加拿大萨斯喀彻温0.22（-4%）接近偏干阈值，入汛降水仅均值2%。克拉斯诺达尔0.21（-29%）偏干。仅合肥0.32和艾伯塔0.34处于正常区间。</div>
+    <div class="analysis-text">
+      🔴维多利亚渍涝低温冷害，🟡萨斯喀彻温、新南威尔士干旱，🟢其余正常。郑州0.32(-71%)正常、济南0.18(-33%)偏干、石家庄0.25(0%)偏干、合肥0.37(+3%)正常、克拉斯诺达尔边疆区0.32(-96%)正常、基辅州0.32(+109%)正常均已收；萨斯喀彻温0.22(+356%)偏干、艾伯塔0.34(-28%)正常、新南威尔士0.20(+348%)偏干、维多利亚0.41(0%)渍涝、南澳大利亚0.25(+113%)正常。降水偏多利未收田生长；渍涝低温抑制，已收区高温热害轻。
+    </div>
   </div>
 <div class="crop-section" id="crop-棕榈油">
     <div class="crop-section-header"><span class="crop-icon">🌴</span><h3>棕榈油专区</h3><span class="region-count">3个监测产区</span></div>
@@ -1424,7 +1430,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="crop-chart-card"><div class="chart-title">土壤湿度</div><div class="chart-container short"><canvas id="soil-棕榈油"></canvas></div></div>
     </div>
     <div class="analysis-text">
-      总体🟡：北苏门答腊土湿0.28，接近中度干旱阈值，干旱风险为主；雪兰莪、曼谷🟢正常，渍涝与低温冷害风险低，高温热害较轻。雪兰莪 0.30（-3.0%）🟢正常，气温24.0~32.7°C，降水54.0mm，蒸散增加但墒情适宜。北苏门答腊 0.28（-5.0%）🟡偏干，降水118.0mm、较均值偏多79.0%，短期利于果串膨大补水，但土湿仍降，需防降水不均加剧干旱及低洼积水。曼谷 0.34（-2.0%）🟢正常，降水84.1mm，水分条件较好。未见已收获站点。
+      🟡总体偏旱，局部降水偏多，无明显低温冷害。雪兰莪 0.30（-3%）正常🟢，北苏门答腊 0.28（-5%）偏干🟡，曼谷 0.34（-2%）正常🟢。北苏门答腊土湿0.28接近中度干旱阈值，需防旱；降水118.0mm较均值偏多79%，短期补墒，但持续偏多或致低洼渍涝并影响根系与采收。雪兰莪降水54.0mm偏少，若土湿续降需防干旱；曼谷墒情适宜，利于开花坐果与果串膨大。气温23.4~32.7°C，雪兰莪午后存在轻度高温热害风险。无已收获站点。
     </div>
   </div>
 <div class="crop-section" id="crop-白糖">
@@ -1436,7 +1442,13 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="crop-chart-card"><div class="chart-title">土壤湿度</div><div class="chart-container short"><canvas id="soil-白糖"></canvas></div></div>
     </div>
     <div class="analysis-text">
-      总体🟡：主产区在田甘蔗受偏干、高温与热量不足影响，已收获区降水偏多。南宁 0.41（-6%）🟢正常，墒情适宜但接近渍涝阈值，降水维持利于伸长，需防高温湿热。昆明 0.26（-6%）🟡偏干，降水偏少25%且GDD仅6.0，生长缓慢，有低温冷害风险。广州 0.24（-7%）🟡偏干，接近中度干旱，降水偏少24%叠加最高32.2°C，干旱高温热害并存。圣保罗 0.36（0.0%）🟢正常，已收获。北方邦 0.34（-5%）🟢正常，已收获，降水偏多113%，需防渍涝影响糖分。孔敬 0.40（-5%）🟢正常，已收获，降水偏多55%，注意收获质量。
+      🟡总体中等风险：广西墒情适宜，云南、广东偏干少雨，需防干旱、高温热害及低温影响；已收获区降水偏多关注渍涝。
+南宁 0.41（-6.0%）🟢正常，墒情利于甘蔗伸长。
+昆明 0.26（-6.0%）🟡偏干，降水偏少25.0%，低温干旱叠加，伸长期水分不足。
+广州 0.24（-7.0%）🟡偏干，降水偏少24.0%，高温加剧旱情与热害。
+圣保罗 0.36（0.0%）🟢正常，已收获，少雨利于收运。
+北方邦 0.34（-5.0%）🟢正常，已收获，降水偏多113.0%，防渍涝。
+孔敬 0.40（-5.0%）🟢正常，已收获，降水偏多55.0%，防湿害。
     </div>
   </div>
 <div class="crop-section" id="crop-棉花">
@@ -1448,7 +1460,9 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="crop-chart-card"><div class="chart-title">土壤湿度</div><div class="chart-container short"><canvas id="soil-棉花"></canvas></div></div>
     </div>
 
-    <div class="analysis-text">🟢 新疆干旱受滴灌缓解，其他产区正常。乌鲁木齐土湿0.08（-53%）、阿克苏0.09（-67%）严重干旱，但新疆棉花普遍采用滴灌技术，干旱实际影响大幅降低。山东济南0.22（-31%）偏干。古吉拉特0.35正常，但季风降水仅均值65%需关注。巴西马托格罗索0.13（-55%）偏干，正值播种准备期。美国田纳西0.35（+31%）墒情良好。</div>
+    <div class="analysis-text">
+      🔴结论：干旱风险偏高，局部高温热害，渍涝与低温冷害低；美国D1+达42.0%。乌鲁木齐 0.14（-100.0%）🟡偏干，济南 0.18（-33.0%）🟡偏干，阿克苏 0.26（+126.0%）🟢正常，古吉拉特 0.28（+3.0%）🟢正常，马托格罗索 0.31（-100.0%）🟢已收获，田纳西 0.35（-89.0%）🟢正常。乌鲁木齐、济南降水偏少，花铃期缺水压力增大；阿克苏墒情适宜；田纳西最高36.4°C、土湿近渍涝阈值，需防高温热害。马托格罗索已收获，无雨利于收后管理。
+    </div>
     <!-- USDA Drought Monitor for Cotton -->
     <div style="margin-top:16px;padding:16px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px">
       <div style="font-size:13px;font-weight:600;color:#1e293b;margin-bottom:12px;display:flex;align-items:center;gap:8px">🏜️ USDA干旱监测 — 棉花产区</div>
@@ -1527,7 +1541,9 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="crop-chart-card"><div class="chart-title">入汛以来降水进度 (mm)</div><div class="chart-container short"><canvas id="precip-咖啡"></canvas></div></div>
       <div class="crop-chart-card"><div class="chart-title">土壤湿度</div><div class="chart-container short"><canvas id="soil-咖啡"></canvas></div></div>
     </div>
-    <div class="analysis-text">🔴 巴西米纳斯吉拉斯产区遭遇严重干旱。米纳斯吉拉斯土湿0.17（-4%），严重干旱威胁咖啡果实发育。哥伦比亚产区正常：卡尔达斯0.41、金迪奥0.42、里萨拉尔达0.41。中国云南正常：普洱0.50、保山0.49。埃塞俄比亚亚的斯亚贝巴0.29（-43%）偏低但未达干旱阈值，需持续关注。</div>
+    <div class="analysis-text">
+      总体🔴里萨拉尔达严重干旱，🟡米纳斯吉拉斯偏干，其余🟢适宜；无明显高温热害，需防局地渍涝和低温冷害。普洱0.46（-4%）正常、保山0.37（-7%）正常，土湿下降且降水偏少，咖啡幼果膨大需补水。米纳斯吉拉斯0.20（无偏差）偏干，降水虽增仍近旱阈。卡尔达斯0.42（无偏差）正常、金迪奥0.43（无偏差）正常，强降水利于蓄水但易致渍涝病害。里萨拉尔达0.15（-11%）严重干旱，落果风险高。亚的斯亚贝巴0.48（无偏差）正常，低温低积温，冷害抑制生长。未见已收获站点。
+    </div>
   </div>
     <!-- Row 8: Crop Table -->
     <div class="section table-section">
