@@ -443,7 +443,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         </div>
         <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 12px;background:rgba(37,99,235,0.04);border-radius:6px;margin-bottom:8px;border-left:3px solid var(--accent-blue)">
           <span style="font-weight:600;font-size:12px;min-width:100px">PDO</span>
-          <span style="font-size:12px;color:var(--text-secondary)">冷位相持续（-1.29，ERSSTv6 2026年7月月均），年代际背景不变</span>
+          <span style="font-size:12px;color:var(--text-secondary)">冷位相持续加深（-2.03，ERSSTv6 2026年7月月均），年代际背景不变</span>
         </div>
         <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 12px;background:rgba(100,116,139,0.04);border-radius:6px;margin-bottom:8px;border-left:3px solid #94a3b8">
           <span style="font-weight:600;font-size:12px;min-width:100px">NAO</span>
@@ -837,8 +837,8 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     </div>
     <div class="summary-card" style="text-align:center;padding:16px;border-radius:10px;background:rgba(37,99,235,0.05)">
       <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">PDO</div>
-      <div style="font-family:'JetBrains Mono';font-size:22px;font-weight:700;color:var(--accent-blue)">-1.29</div>
-      <div style="font-size:11px;color:var(--accent-blue);margin-top:4px">强冷相位</div>
+      <div style="font-family:'JetBrains Mono';font-size:22px;font-weight:700;color:var(--accent-blue)">-2.03</div>
+      <div style="font-size:11px;color:var(--accent-blue);margin-top:4px">强冷相位加深</div>
     </div>
     <div class="summary-card" style="text-align:center;padding:16px;border-radius:10px;background:rgba(148,163,184,0.08)">
       <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">NAO</div>
@@ -939,7 +939,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div class="ocean-section">
   <div class="section-title" id="section-pdo">PDO 太平洋年代际振荡</div>
   <div class="ocean-card">
-    <div class="ocean-card-title">📊 PDO 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -2.03</span>（2011-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -1.29</span></div>
+    <div class="ocean-card-title">📊 PDO 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -2.03</span>（2011-2026）</div>
     <div class="ocean-card-subtitle">NOAA ERSSTv5 · 月均PDO指数（EOF1分析）· 2011-01至今</div>
     <div class="chart-container"><canvas id="pdoChart"></canvas></div>
     <div class="analysis-text"><p><strong>结论</strong>：PDO最新值为-2.03（2026-07），处于冷相位，冷态较前期减弱。</p><p><strong>区间</strong>：15年范围为-4.21～1.86，当前位于负值区间，未达极端低位。</p><p><strong>趋势</strong>：近12期由-3.23升至-2.03，呈上升趋势，冷相位强度有所缓和。</p></div>
@@ -959,7 +959,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div class="ocean-section">
   <div class="section-title" id="section-iod">IOD 印度洋偶极子</div>
   <div class="ocean-card">
-    <div class="ocean-card-title">📊 IOD DMI 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:#a16207;margin-left:auto">当前: 0.146°C</span>（2011-2026）</div>
+    <div class="ocean-card-title">📊 IOD DMI 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:#a16207;margin-left:auto">当前: +0.41°C</span>（周度·2011-2026）</div>
     <div class="ocean-card-subtitle">周度DMI · BOM数据 · 2011-2026 · DMI = TIO(10°S-10°N,50°-70°E) - TIO(10°S-0°,90°-110°E)</div>
     <div class="chart-container"><canvas id="iodChart"></canvas></div>
     <div class="analysis-text"><strong>结论：</strong>IOD DMI转为弱正位相。当前值为0.146°C（2026-05），处于15年范围-0.757°C～0.964°C的中低区间；近12期由-0.014°C升至0.146°C，呈温和上升趋势，正IOD信号初现但强度较弱。</div>
@@ -1200,7 +1200,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div class="ocean-card">
     <div class="ocean-card-title">🔗 多指数耦合分析</div>
     <div class="analysis-text" style="margin-top:0">
-      <strong>ENSO超强(+2.60) + SOI极端负(-22.0) + IOD正阈值连续触及·发展中未确立(+0.41) + PDO负(-1.29)</strong> —— 多重信号叠加意味着什么？
+      <strong>ENSO超强(+2.60) + SOI极端负(-22.0) + IOD正阈值连续触及·发展中未确立(+0.41) + PDO负(-2.03)</strong> —— 多重信号叠加意味着什么？
       <br><br><strong>1. 加速发展机制：</strong>SOI极端负值与Niño 3.4快速上升构成正反馈，Walker环流减弱→东太平洋SST进一步增暖→对流进一步东移→SOI更负。这一正反馈在当前发展速率上已超越2015年同期。
       <br><br><strong>2. PDO的调制作用：</strong>虽然PDO负相位理论上应抑制ENSO振幅，但当前海洋热含量异常高（次表层暖核+8~+9°C），海洋动力学因素压倒了年代际背景的抑制作用。类似情况出现在1997年和2015年。
       <br><br><strong>3. IOD转向信号：</strong>IOD连续3周触及正阈值(+0.41°C，BOM 8/9周)，事件发展中、尚未确立，需连续多周≥+0.4°C方可判定。若正IOD确立，将与厄尔尼诺协同→印度洋东冷西暖→澳大利亚干旱加剧。
