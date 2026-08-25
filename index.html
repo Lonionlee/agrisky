@@ -312,7 +312,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="nav-tab" onclick="switchTab('forecast')">天气展望</div>
     <div class="nav-tab" onclick="switchTab('knowledge')">知识科普</div>
   </div>
-  <div class="navbar-status"><div class="status-dot"></div><span id="nav-date">2026-08-12</span></div>
+  <div class="navbar-status"><div class="status-dot"></div><span id="nav-date">2026-08-25</span></div>
 </div></nav>
 <div class="page-container active"><div id="page-dashboard" class="page-section active">
 
@@ -327,18 +327,18 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         </div>
         <div class="summary-card red clickable" onclick="navigateTo('dashboard','section-riskmatrix')" title="点击查看防汛详情">
           <div class="summary-label">防汛关键期</div>
-          <div class="summary-title">甘河1号洪水</div>
-          <div class="summary-value">371.68<span style="font-size:14px;color:var(--text-muted)">m 超警</span></div>
-          <div class="summary-tag tag-red">🔴 Ⅳ级应急响应</div>
+          <div class="summary-title">台风沙德尔</div>
+          <div class="summary-value">17<span style="font-size:14px;color:var(--text-muted)">级超强台风</span></div>
+          <div class="summary-tag tag-red">🔴 27日夜登陆浙闽</div>
         </div>
         <div class="summary-card red clickable" onclick="navigateTo('weather','section-riskmatrix')" title="点击查看产区风险">
           <div class="summary-label">高风险产区</div>
-          <div class="summary-value" style="margin-bottom:0">8<span style="font-size:14px;color:var(--text-muted);margin-left:4px">个产区</span></div>
+          <div class="summary-value" style="margin-bottom:0">6<span style="font-size:14px;color:var(--text-muted);margin-left:4px">个产区</span></div>
           <div class="summary-tag tag-red" style="margin-top:8px">🔴 高风险</div>
         </div>
         <div class="summary-card orange clickable" onclick="navigateTo('dashboard','section-timeline')" title="点击查看事件时间线">
           <div class="summary-label">本周关键事件</div>
-          <div class="summary-value" style="margin-bottom:0">8<span style="font-size:14px;color:var(--text-muted);margin-left:4px">起</span></div>
+          <div class="summary-value" style="margin-bottom:0">4<span style="font-size:14px;color:var(--text-muted);margin-left:4px">起</span></div>
           <div class="summary-tag tag-orange" style="margin-top:8px">⚠️ 重点关注</div>
         </div>
       </div>
@@ -380,7 +380,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       </div>
     </div>
     <div class="analysis-text" style="margin-top:0">
-      <strong>🔗 综合诊断：</strong><strong>🔗 综合诊断：</strong>当前海洋—大气处于超强El Niño主导：Niño3.4周度SST距平由+2.7°C小幅回落至+2.6°C，属周度波动，仍连续多周≥+2.0°C，处<strong style="color:var(--risk-red)">超强El Niño阈值</strong>；SOI 30日值-22.0与RONI +0.98°C共同印证暖事件海气耦合显著。PDO降至-2.03，较前值-1.71强冷加深，形成年代际对冲，但次表层暖核+8~+9°C使暖信号占优；CPC/IRI展望强/超强El Niño持续至2027年初春概率约<strong style="color:var(--risk-red)">95-97%</strong>。IOD DMI +0.41°C连续触及+0.4正阈值但尚未确立，NAO -0.31中性略偏负，或放大区域环流不确定性。农业端需警惕东南亚干旱及印度季风偏弱风险；中国东北7-10月持续偏湿，渍涝、积温不足和病虫害压力上升；南美大豆区需防范降水异常扰动播种窗口，美国玉米带需关注高温、干旱与降水不均叠加。</div>
+      <strong>🔗 综合诊断：</strong>当前海洋—大气处于超强El Niño主导：Niño3.4周度SST距平由+2.7°C小幅回落至+2.6°C，属周度波动，仍连续多周≥+2.0°C，处<strong style="color:var(--risk-red)">超强El Niño阈值</strong>；SOI 30日值-22.0与RONI +0.98°C共同印证暖事件海气耦合显著。PDO降至-2.03，较前值-1.71强冷加深，形成年代际对冲，但次表层暖核+8~+9°C使暖信号占优；CPC/IRI展望强/超强El Niño持续至2027年初春概率约<strong style="color:var(--risk-red)">95-97%</strong>。IOD DMI +0.41°C连续触及+0.4正阈值但尚未确立，NAO -0.31中性略偏负，或放大区域环流不确定性。农业端需警惕东南亚干旱及印度季风偏弱风险；中国东北7-10月持续偏湿，渍涝、积温不足和病虫害压力上升；南美大豆区需防范降水异常扰动播种窗口，美国玉米带需关注高温、干旱与降水不均叠加。</div>
   </div>
 
   <!-- B. 历史类比分析 -->
@@ -420,13 +420,120 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           <th style="padding:12px 14px;text-align:center;font-weight:600;color:var(--text-secondary);font-size:11px;border-bottom:1px solid var(--border-color);width:80px">风险等级</th>
           <th style="padding:12px 14px;text-align:left;font-weight:600;color:var(--text-secondary);font-size:11px;border-bottom:1px solid var(--border-color);width:160px">关键指标</th>
         </tr></thead>
-                                                                                <tbody><tr><td style="padding:6px 10px;border-bottom:1px solid var(--border-color);">北部平原</td><td style="text-align:center;padding:6px;">🔴偏高</td><td style="text-align:center;padding:6px;">🟡正常</td><td style="padding:6px;">高压脊控制，气温高于常年</td></tr>
-<tr><td style="padding:6px 10px;border-bottom:1px solid var(--border-color);">中部平原</td><td style="text-align:center;padding:6px;">🔴偏高</td><td style="text-align:center;padding:6px;">🟡正常</td><td style="padding:6px;">正高度距平延伸，暖平流主导</td></tr>
-<tr><td style="padding:6px 10px;border-bottom:1px solid var(--border-color);">玉米带上游</td><td style="text-align:center;padding:6px;">🔴偏高</td><td style="text-align:center;padding:6px;">🟡正常</td><td style="padding:6px;">中层高压脊维持，热力累积</td></tr>
-<tr><td style="padding:6px 10px;border-bottom:1px solid var(--border-color);">玉米带下游</td><td style="text-align:center;padding:6px;">🔴偏高</td><td style="text-align:center;padding:6px;">🟡正常</td><td style="padding:6px;">东部弱槽影响有限，整体偏暖</td></tr>
-<tr><td style="padding:6px 10px;border-bottom:1px solid var(--border-color);">德州</td><td style="text-align:center;padding:6px;">🔴显著偏高</td><td style="text-align:center;padding:6px;">🟢偏少</td><td style="padding:6px;">南部平原高温概率超70%</td></tr>
-<tr><td style="padding:6px 10px;border-bottom:1px solid var(--border-color);">东南部</td><td style="text-align:center;padding:6px;">🟡正常偏高</td><td style="text-align:center;padding:6px;">🟡正常</td><td style="padding:6px;">模式分歧大，温度预报不确定</td></tr>
-</tbody>
+                                                                                <tbody>
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge palm">棕榈油</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">东南亚<br><span style="font-size:10px;color:var(--text-muted)">马来/印尼/泰国</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">MPOB7月产量179.3万吨环比增9.4%但同比连降5月;库存262.8万吨累库4月压制短期供应风险;SPPOMA8月上旬产量环比减9.7%;印尼B50配额支撑需求;远期减产预期支撑价格但近端累库缓解紧缺</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">7月产量179.3万吨<br>SPPOMA8上旬-9.7%</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge sugar">白糖</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">印度<br><span style="font-size:10px;color:var(--text-muted)">UP邦蔗区</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">全印季风累计降雨-14%LPA持续恶化;262县中117县降雨不足;Skymet下调终值至85%LPA干旱概率70%;UP邦属西北部-12%区域;甘蔗拔节期缺水威胁单产</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge red"><span class="risk-dot red"></span>高风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">季风-14%LPA<br>117县降雨不足</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge sugar">白糖</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">中国华南<br><span style="font-size:10px;color:var(--text-muted)">南宁/广州/昆明</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">台风沙德尔27-28日登陆浙闽但外围影响粤桂;27-30日桂南有暴雨大暴雨;当前蔗区未受直接风雨灾害;前期水热匹配良好利于茎秆伸长;需防范局地渍涝</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">沙德尔27日登陆<br>桂南暴雨预警</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge sugar">白糖</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">巴西<br><span style="font-size:10px;color:var(--text-muted)">SP州</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">2026/27榨季预估7190万袋创纪录同比+14%;当前非甘蔗关键生长期;米纳斯吉拉斯周降雨仅0.6mm为均值11%;ICE库存227992袋处2.75年低位;新季丰产预期对冲低库存</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">预估7190万袋+14%<br>ICE库存2.75年低</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge corn">玉米</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">中国东北<br><span style="font-size:10px;color:var(--text-muted)">黑/吉/辽/蒙</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">黑龙江乌苏里江超警洪水黄色预警;吉林通化白山强降雨50-170mm;低洼地块渍涝但整体水热匹配好;一二类苗为主灌浆顺利;28日起再迎强降雨需防涝</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">乌苏里江超警<br>吉林局地170mm+</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge corn">玉米</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">华北/新疆<br><span style="font-size:10px;color:var(--text-muted)">冀/鲁/豫/新</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">华北黄淮近期降水改善土壤墒情;新疆滴灌棉区高温38-45℃但棉花吐絮快2.7pp整体可控;玉米处于灌浆后期光温适宜;无重大气象灾害报告;长势总体正常</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">墒情改善<br>无重大灾害</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge corn">玉米</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">美国中西部<br><span style="font-size:10px;color:var(--text-muted)">IA/IL/IN/OH/MN/NE</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">USDA8/24优良率57%三连降同比-14pp;86%糊熟期快于均值;28%面积受旱较前周改善但旱情实质存在;爱荷华伊利诺伊等核心带降雨缓解有限;单产潜力受前期干旱严重压制产量风险显著</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge red"><span class="risk-dot red"></span>高风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">优良率57%↓3pp<br>28%面积受旱</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge soy">大豆</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">中国东北<br><span style="font-size:10px;color:var(--text-muted)">黑/吉/辽</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">松辽流域洪水持续但主产区未大面积受灾;结荚鼓粒期水热条件较好;一类苗占比高;黑龙江东部低洼渍涝局部影响;28日后强降雨或加重排涝压力</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">一类苗为主<br>东部低洼渍涝</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge soy">大豆</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">美国中西部<br><span style="font-size:10px;color:var(--text-muted)">IA/IL/IN/OH/MN/NE</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">USDA8/24优良率60%周降1pp同比-9pp;结荚率91%进度正常;26%面积受旱低于玉米;核心带降雨改善利于鼓粒;单产预期稳定但优良率下滑需关注</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">优良率60%↓1pp<br>结荚率91%</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge soy">大豆</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">南美<br><span style="font-size:10px;color:var(--text-muted)">巴西/阿根廷</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">巴西2026/27年度播种尚未开始;当前为二茬玉米收获尾声;阿根廷大豆已收完;两国均处干季无在田大豆气候风险;关注9-10月播种期降水展望</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">播种未启动<br>无在田作物</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge wheat">小麦</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">华北(已收获)<br><span style="font-size:10px;color:var(--text-muted)">豫/鲁/冀/皖</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">2026年夏粮已收获完毕;当前为玉米大豆生长期无在田小麦;秋播备耕阶段墒情尚可;无即时气候风险;关注秋季底墒对下季播种影响</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">夏粮已收<br>无在田小麦</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge wheat">小麦</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">加/俄/乌/澳<br><span style="font-size:10px;color:var(--text-muted)">灌浆-收获期</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">澳洲GIWA下调西澳小麦至903万吨较去年-32%;维州南澳长势强劲全澳预估3000万吨;法国谷物减产严重但非本区;俄乌加灌浆期天气中性;澳西旱情拖累总产</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">西澳903万吨-32%<br>全澳预估3000万吨</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge cotton">棉花</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">新疆<br><span style="font-size:10px;color:var(--text-muted)">花铃-吐絮期</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">吐絮率11.0%同比快2.7pp;南疆38-45℃致中上部棉铃脱落但滴灌缓解热害;结铃7.6个同比少0.2个;郑棉周涨1.82%;高温影响因灌溉调低整体可控</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">吐絮率11.0%↑2.7pp<br>高温38-45℃</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge cotton">棉花</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">印度/美国/巴西<br><span style="font-size:10px;color:var(--text-muted)">花铃期</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">美棉得州优良率仅19%弃耕率预估23.4%;全美棉花37%三连降;印度季风-14%LPA旱区扩至117县;巴西棉收获收尾;美印双重减产推升全球供应风险</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge red"><span class="risk-dot red"></span>高风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">得州优良率19%<br>印度季风-14%LPA</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge coffee">咖啡</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">巴西<br><span style="font-size:10px;color:var(--text-muted)">收获期</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">Safras截至8/19收获94%略慢于去年99%;阿拉比卡收获91%;米纳斯吉拉斯周降雨0.6mm仅为均值11%;ICE库存227992袋2.75年新低;新季丰产预期缓解供应紧张</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">收获进度94%<br>ICE库存2.75年低</td>
+          </tr>
+          <tr>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge coffee">咖啡</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">哥伦比亚/云南/东非<br><span style="font-size:10px;color:var(--text-muted)">花果期</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">哥伦比亚雨季正常花期发育良好;云南普洱保山降水充沛无旱涝;东非肯尼亚埃塞俄比亚短雨季将至;全球次要产区当前无极端天气;花果期管理窗口充足</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">降水正常<br>无极端天气</td>
+          </tr>
+          </tbody>
       </table>
     </div>
   </div>
@@ -567,118 +674,103 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           <div class="risk-group-title">
             <span class="risk-dot red"></span> 高风险 (6)
           </div>
-          <div class="risk-item">
-            <div class="risk-item-region">印度全境</div>
-            <div class="risk-item-crop">白糖/棉花</div>
-            <div class="risk-item-threat">季风累计偏少12%（截至8/12，IMD），东部/东北偏少26.3%，南部偏少18.6%，中部仅偏少0.6%；45%县区降雨不足；Kharif播种达常年87.7%，IMD预测8-9月后半季低于正常</div>
+        <div class="risk-item">
+            <div class="risk-item-region">中国浙闽沿海</div>
+            <div class="risk-item-crop">水稻/经济作物</div>
+            <div class="risk-item-threat">超强台风沙德尔预计8月27日夜至28日登陆浙南闽北，25日已入48小时警戒线。27-30日浙闽台粤桂等地有暴雨到大暴雨，东海阵风13-14级，正值晚稻孕穗关键期，强风暴雨或致大面积倒伏与农田渍涝。</div>
           </div>
-          <div class="risk-item">
-            <div class="risk-item-region">新疆</div>
+        <div class="risk-item">
+            <div class="risk-item-region">美国玉米带</div>
+            <div class="risk-item-crop">玉米</div>
+            <div class="risk-item-threat">USDA8/24报告显示玉米优良率降至57%，同比降14pp且三连降；USDM8/18数据显示28%玉米面积受旱。尽管爱荷华等州降雨有所改善，但前期干旱已对单产潜力造成实质性损害，产量风险显著，供应端趋紧态势加剧。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">印度全国</div>
+            <div class="risk-item-crop">白糖/棉花/大豆</div>
+            <div class="risk-item-threat">截至8/22全印季风降雨较LPA偏少14%，262个重点县中117个降雨不足。Skymet8/18将终值预测下调至85%LPA，干旱概率升至70%。IMD预测至9/2全国降雨持续偏少，甘蔗拔节、棉花花铃及大豆结荚等关键生长期严重受损，多品种减产风险共振。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">法国</div>
+            <div class="risk-item-crop">玉米</div>
+            <div class="risk-item-threat">法国农业部预估2026年籽粒玉米产量仅900万吨，同比骤降35%创1980年来最低，单产减19%至7.03吨/公顷。机构警告最终产量或不足700万吨，6月热浪叠加持续干旱致欧盟谷物减产千万吨级，供给缺口扩大。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">美国得克萨斯州</div>
             <div class="risk-item-crop">棉花</div>
-            <div class="risk-item-threat">8月高温再起≥40°C持续至8/12，吐鲁番最高50°C；棉花已进入吐絮期，部分棉田开始吐絮，落花落铃风险增加；滴灌条件较好缓解影响，但市场担忧减产约5%</div>
+            <div class="risk-item-threat">USDA8/24显示得州棉花优良率仅19%，差至极差占比44%，情形类似2022年弃耕年。Pro Farmer模型预测弃耕率达23.4%（232万英亩），USDA8月WASDE已下调美棉产量至1361万包，全球棉市供应担忧升温。</div>
           </div>
-          <div class="risk-item">
-            <div class="risk-item-region">印度古吉拉特/马邦</div>
-            <div class="risk-item-crop">棉花</div>
-            <div class="risk-item-threat">Valsad 7/23单日1064mm（印度历史第3高），棉田渍涝严重；8月古吉拉特勉强恢复至接近均值水平，但全国季风仍偏少12%，45%县区降雨不足</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">巴西</div>
-            <div class="risk-item-crop">咖啡</div>
-            <div class="risk-item-threat">收获进度64%落后去年77%，8月收获期降雨损害豆品质；厄尔尼诺或影响明年花芽分化；8/6起巴西对美咖啡出口遭50%关税，叠加供给担忧</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">法国/匈牙利</div>
-            <div class="risk-item-crop">玉米/甜菜</div>
-            <div class="risk-item-threat">法国农业部8/7官方确认：2026年玉米产量暴跌35%至900万吨，1980年来最低；种植面积-21%，单产-19%至70.3q/ha，2003年来最大降幅；Argus预估更低至690万吨</div>
-          </div>
-          <div class="risk-item">
+        <div class="risk-item">
             <div class="risk-item-region">中国东北</div>
             <div class="risk-item-crop">玉米/大豆</div>
-            <div class="risk-item-threat">嫩江流域渍涝持续，浑河/牡丹江仍超警，9条河流超警4条超保；朝阳/凌源等地玉米大面积倒伏泡水，土壤饱和排水困难，农技部门指导抢排改种短季作物</div>
+            <div class="risk-item-threat">松辽委8/24会商示警黑龙江乌苏里江维持超警，海青段发洪水黄色预警。8/28起东北再迎强降雨，鸭绿江图们江明显涨水。吉林通化白山局地降雨超170mm，低洼地块渍涝风险高企，威胁灌浆期作物安全成熟。</div>
           </div>
         </div>
         <div class="risk-group">
           <div class="risk-group-title">
-            <span class="risk-dot orange"></span> 中高风险 (5)
+            <span class="risk-dot orange"></span> 中高风险 (3)
           </div>
-          <div class="risk-item">
-            <div class="risk-item-region">马来半岛/印尼</div>
+        <div class="risk-item">
+            <div class="risk-item-region">美国大平原</div>
+            <div class="risk-item-crop">棉花/高粱</div>
+            <div class="risk-item-threat">USDM8/18数据显示全美异常干旱面积达76.2%，棉花产区干旱比例升至44%。俄克拉荷马棉花优良率仅5%，高粱优良率27%处于历史低位。虽部分核心区降雨改善，但西部旱情顽固，新作产量恢复空间受限。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">欧盟多国</div>
+            <div class="risk-item-crop">软小麦/大麦</div>
+            <div class="risk-item-threat">ECIU评估6月热浪削减欧盟及英国谷物900-1000万吨，软小麦减280万吨、大麦减120万吨。西班牙卡斯蒂利亚莱昂减产35%、马德里减49%，意大利60%农地受旱损失超30亿欧元，区域粮食安全压力显著上升。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">澳大利亚西澳州</div>
+            <div class="risk-item-crop">小麦/大麦</div>
+            <div class="risk-item-threat">GIWA8月下调西澳小麦产量预估50万吨至903万吨，较2025年1330万吨大幅缩减。尽管维州南澳长势强劲，但西澳作为核心出口产区减产将削弱澳洲整体出口潜力，全球小麦贸易流向或面临重构压力。</div>
+          </div>
+        </div>
+        <div class="risk-group">
+          <div class="risk-group-title">
+            <span class="risk-dot yellow"></span> 中风险 (5)
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">巴西米纳斯吉拉斯</div>
+            <div class="risk-item-crop">阿拉比卡咖啡</div>
+            <div class="risk-item-threat">Safras8/19数据显示收获进度94%略慢于去年同期99%，米纳斯吉拉斯8/16当周降雨仅0.6mm为均值11%。ICE库存降至2.75年新低，虽USDA预测26/27年度创纪录增产，但短期现货紧缺与干燥天气仍扰动盘面情绪。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">新疆南疆</div>
+            <div class="risk-item-crop">棉花</div>
+            <div class="risk-item-threat">截至8/17吐絮率11%同比快2.7pp，但巴州吐鲁番等地38-45℃高温致中上部棉铃脱落。当前郑棉周涨1.82%反映市场对高温减产担忧，不过全区滴灌设施覆盖率高有效缓解旱情，实际产量损失或低于气象模型预期。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">德国</div>
+            <div class="risk-item-crop">谷物玉米</div>
+            <div class="risk-item-threat">DRV预计2026年德国谷物玉米产量424万吨同比减14%，受夏季高温干旱影响单产下滑。虽降幅低于法国，但作为欧盟重要饲料粮产区，减产将加剧区域饲料原料紧张，需关注后续进口替代需求对全球谷物流向的影响。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">马来西亚</div>
             <div class="risk-item-crop">棕榈油</div>
-            <div class="risk-item-threat">浅层地下水32.7百分位+超强ENSO升级；马棕7月累库至263万吨创5月来新高(MPOB 8/10)；印尼B50支撑但远期减产预期加剧</div>
+            <div class="risk-item-threat">SPPOMA数据显示8月上半月马棕产量环比减3.38%，ITS显示8/1-20出口环比降13.2%。MPOB7月库存累至262.83万吨连续4月累库压制短期供应风险，但8月产出疲软叠加印尼B50政策预期支撑远期价格，供需博弈下风险等级维持中等。</div>
           </div>
-          <div class="risk-item">
-            <div class="risk-item-region">美国棉花带</div>
-            <div class="risk-item-crop">棉花</div>
-            <div class="risk-item-threat">干旱41%(USDM截至8/4)；优良率42%（↓4pp，2024Q4以来最低），差苗率20%；得州30%评级极差至差；预计弃收16.7万英亩；得州西部持续100°F+，关键窗口期降水成核心变量</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">澳大利亚</div>
-            <div class="risk-item-crop">小麦</div>
-            <div class="risk-item-threat">NSW/Qld/Vic迎来及时降雨改善产量预期（Rabobank上调至3000万吨）；但西澳仍严重干旱，化肥成本因中东冲突飙升影响种植决策</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">华北/黄淮</div>
-            <div class="risk-item-crop">玉米/棉花</div>
-            <div class="risk-item-threat">台风残余+强对流叠加，河南/安徽/江苏短时强降水50-80mm+雷暴大风10-11级，棉花/玉米/水稻承压</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">中国广西/广东</div>
-            <div class="risk-item-crop">白糖</div>
-            <div class="risk-item-threat">8月台风高发期，蔗区需防范大风倒伏及渍涝，当前广西蔗区墒情正常，未有重大灾害报告</div>
-          </div>
-        </div>
-        <div class="risk-group">
-          <div class="risk-group-title">
-            <span class="risk-dot yellow"></span> 中风险 (4)
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">美国中西部</div>
-            <div class="risk-item-crop">大豆/玉米</div>
-            <div class="risk-item-threat">大豆优良率62%(↓1pp)但26%面积受旱；玉米优良率61%(持平)同比-12pp（USDA 8/17报告）；西部大平原持续高温36-40°C，结荚/吐丝期热胁迫</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">华东/江南</div>
-            <div class="risk-item-crop">早稻/晚稻</div>
-            <div class="risk-item-threat">8月上旬高温缓解，但晚稻移栽窗口期需关注后续高温反弹风险</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">欧盟</div>
-            <div class="risk-item-crop">玉米</div>
-            <div class="risk-item-threat">法国确认玉米暴跌35%至900万吨（8/7官方数据），EU玉米产量或降至2007年来最低；Euronext 11月玉米期货超€250/吨</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">巴基斯坦信德</div>
-            <div class="risk-item-crop">棉花</div>
-            <div class="risk-item-threat">持续高温42-43°C，印度河水量受上游调控影响，灌溉压力加大</div>
-          </div>
-        </div>
-        <div class="risk-group">
-          <div class="risk-group-title">
-            <span class="risk-dot green"></span> 低风险区域
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">巴西大豆产区</div>
+        <div class="risk-item">
+            <div class="risk-item-region">美国中西部核心区</div>
             <div class="risk-item-crop">大豆</div>
-            <div class="risk-item-threat">越冬期正常，不影响下季播种</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">中国冬小麦产区</div>
-            <div class="risk-item-crop">小麦</div>
-            <div class="risk-item-threat">已全部收获(7/6确认)，仅跟踪收购价格</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">哥伦比亚/埃塞俄比亚</div>
-            <div class="risk-item-crop">咖啡</div>
-            <div class="risk-item-threat">降水正常，果实成熟/开花期推进良好</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">美国玉米核心带</div>
-            <div class="risk-item-crop">玉米</div>
-            <div class="risk-item-threat">IA/IL/IN墒情充足，Hybrid-Maize预测接近常年产量；需关注7月末-8月初高温风险</div>
+            <div class="risk-item-threat">USDA8/24大豆优良率60%虽同比降9pp，但结荚率达91%进入鼓粒关键期。爱荷华伊利诺伊等主产州近期降雨改善缓解旱情，USDM显示核心区干旱等级回落。只要8月底至9月初无极端早霜，单产修复弹性仍存，风险暂维持中等水平。</div>
           </div>
         </div>
-      </div>
+        <div class="risk-group">
+          <div class="risk-group-title">
+            <span class="risk-dot green"></span> 低风险 (2)
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">中国华北黄淮</div>
+            <div class="risk-item-crop">冬小麦</div>
+            <div class="risk-item-threat">2026年冬小麦已于6月全面收获归仓，当前为新季玉米大豆生长期。前期麦收期间天气配合良好，无大规模烂场雨灾害，新麦质量与产量双稳。当前产区土壤墒情适宜，秋粮基础扎实，口粮安全底座稳固无忧。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">中国东北大部</div>
+            <div class="risk-item-crop">粳稻/玉米</div>
+            <div class="risk-item-threat">农业气象周报8/16-22显示东北水热匹配较好，一、二类苗占主导利于灌浆结实。除东部低洼渍涝外，广袤平原区光温条件优越，作物发育进程正常。8/28后降雨虽增汛情风险，但对多数岗平地作物而言属有效补水。</div>
+          </div>
+        </div>
+        </div>
     </div>
 
     <!-- Row 6: Events Timeline -->
@@ -688,86 +780,86 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div class="timeline">
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
+              <span class="timeline-date">2026-08-25</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
-            <div class="timeline-title">嫩江支流甘河2026年第1号洪水 水利部启动Ⅳ级应急响应<span class="timeline-type">洪水</span></div>
-            <div class="timeline-summary">8月2日09时，嫩江支流甘河加格达奇水文站水位突破371.68米警戒值，形成2026年第1号洪水。水利部立即启动Ⅳ级应急响应，派出3支工作组赶赴现场指导防汛。嫩江流域是东北玉米、大豆主产区之一，当前正值作物生长关键期，持续洪水将加剧低洼农田渍涝灾害，已超警河流叠加新洪水风险，东北产区防汛形势严峻。</div>
-            <div class="timeline-crops"><span class="timeline-crop-tag">玉米</span><span class="timeline-crop-tag">大豆</span></div>
+            <div class="timeline-title">四台风共存沙德尔逼近浙闽沿海<span class="timeline-type">台风</span></div>
+            <div class="timeline-summary">西北太平洋罕见四台风共存，超强台风“沙德尔”25日进入48小时警戒线，预计27日夜至28日上午登陆浙南到福建沿海。东海海域风力9-12级、阵风13-14级，27-30日浙闽台粤桂湘赣黔滇将有暴雨到大暴雨，严重威胁晚稻及经济林果生产安全。</div>
+            <div class="timeline-crops"><span class="timeline-crop-tag">水稻</span><span class="timeline-crop-tag">茶叶</span><span class="timeline-crop-tag">柑橘</span></div>
           </div>
-          
-
-          
-
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
+              <span class="timeline-date">2026-08-24</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
-            <div class="timeline-title">印度古吉拉特邦极端暴雨1064mm 历史第三高单日降雨<span class="timeline-type">暴雨</span></div>
-            <div class="timeline-summary">IMD官方数据：瓦尔萨德(Valsad)地区7/17-23七站累积降雨853-1495mm。<strong style="color:var(--risk-red)">Umergam 7/23单日1064mm(印度历史第3高)，Kaprada 7/22单日794mm</strong>；全周Dharampur 988mm/Pardi 1141mm/Valsad 907mm/Vapi 981mm，7/23为峰值日。IMD预报7/23-24古吉拉特仍有极强降雨，25日减弱为大雨，26-29日降至轻中度。古吉拉特邦为印度核心棉花产区，极端暴雨致棉田渍涝风险极高。</div>
-            <div class="timeline-crops"><span class="timeline-crop-tag">棉花</span><span class="timeline-crop-tag">白糖</span></div>
+            <div class="timeline-title">松辽委会商东北汛情乌苏里江超警<span class="timeline-type">洪水</span></div>
+            <div class="timeline-summary">松辽委8月24日会商显示黑龙江、乌苏里江维持超警水位，海青段发布洪水黄色预警，需防范黑龙江2026年第2号洪水。吉林22-25日强降雨致通化白山部分降雨超170mm，低洼农田渍涝风险加剧；28日起东北再迎强降雨，鸭绿江图们江或明显涨水。</div>
+            <div class="timeline-crops"><span class="timeline-crop-tag">玉米</span><span class="timeline-crop-tag">大豆</span><span class="timeline-crop-tag">水稻</span></div>
           </div>
-
-          
-
-          
-          <div class="timeline-item severity-red">
+          <div class="timeline-item severity-orange">
+            <div class="timeline-header">
+              <span class="timeline-date">2026-08-24</span>
+              <span class="timeline-severity severity-orange-tag">ORANGE</span>
+            </div>
+            <div class="timeline-title">USDA作物优良率三连降玉米跌至57%<span class="timeline-type">报告</span></div>
+            <div class="timeline-summary">USDA 8月24日报告显示美玉米优良率降至57%（环比-3pp，同比-14pp），大豆60%（-1pp），棉花37%（-1pp）。玉米86%进入面团期、45%凹面期，发育快于均值但干旱胁迫持续；得州棉花优良率仅19%，弃耕风险逼近2022年水平，供应端趋紧预期增强。</div>
+            <div class="timeline-crops"><span class="timeline-crop-tag">玉米</span><span class="timeline-crop-tag">大豆</span><span class="timeline-crop-tag">棉花</span></div>
+          </div>
+          <div class="timeline-item severity-orange">
             <div class="timeline-header">
               <span class="timeline-date">2026-08-19</span>
-              <span class="timeline-severity severity-red-tag">RED</span>
+              <span class="timeline-severity severity-orange-tag">ORANGE</span>
             </div>
-            <div class="timeline-title">巴西咖啡收获期降雨阻碍进度<span class="timeline-type">降雨</span></div>
-            <div class="timeline-summary">收割完成64%落后去年同期77%，Somar预报圣保罗/米纳斯吉拉斯日降雨5-15mm（7月常态仅20mm），降雨损害豆品质并拖延进度；厄尔尼诺或影响明年开花期</div>
+            <div class="timeline-title">巴西咖啡收获九成进度略逊于往年<span class="timeline-type">丰收</span></div>
+            <div class="timeline-summary">Safras截至8月19日数据显示巴西咖啡收获进度达94%（去年99%，五年均96%），阿拉比卡收获91%。米纳斯吉拉斯当周降雨仅0.6mm为均值11%，干燥天气利于收尾但单产承压。ICE阿拉比卡库存降至2.75年新低，USDA预测26/27年度产量7190万袋创纪录。</div>
             <div class="timeline-crops"><span class="timeline-crop-tag">咖啡</span></div>
           </div>
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
+              <span class="timeline-date">2026-08-18</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
-            <div class="timeline-title">东北农田渍涝持续<span class="timeline-type">渍涝</span></div>
-            <div class="timeline-summary">浑河/牡丹江仍超警，9条河流超警4条超保；朝阳/凌源等地玉米大面积倒伏泡水，土壤饱和排水困难，农技部门指导抢排改种短季作物</div>
+            <div class="timeline-title">印度季风缺口扩大Skymet下调终值预测<span class="timeline-type">干旱</span></div>
+            <div class="timeline-summary">Skymet 8月18日将印度季风终值预测从94%大幅下调至85% LPA，干旱概率升至70%。截至19日全印累计降雨偏少13%，262个重点县中117个降雨不足，西北部-12%、半岛-21%、东北部-27%。IMD预测至9月2日全国降雨持续偏少，危及秋播作物备耕。</div>
+            <div class="timeline-crops"><span class="timeline-crop-tag">水稻</span><span class="timeline-crop-tag">棉花</span><span class="timeline-crop-tag">甘蔗</span></div>
+          </div>
+          <div class="timeline-item severity-yellow">
+            <div class="timeline-header">
+              <span class="timeline-date">2026-08-17</span>
+              <span class="timeline-severity severity-yellow-tag">YELLOW</span>
+            </div>
+            <div class="timeline-title">新疆棉花吐絮率11%南疆高温致落铃<span class="timeline-type">高温</span></div>
+            <div class="timeline-summary">截至8月17日新疆棉花进入裂铃吐絮期，吐絮率11.0%（同比快2.7pp），结铃7.6个（同比少0.2个）。南疆巴州、吐鲁番及北疆沿天山一带出现38-45℃极端高温，导致中上部棉铃脱落增加。郑棉周涨1.82%至17035元/吨，市场关注单产受损程度。</div>
+            <div class="timeline-crops"><span class="timeline-crop-tag">棉花</span></div>
+          </div>
+          <div class="timeline-item severity-yellow">
+            <div class="timeline-header">
+              <span class="timeline-date">2026-08-10</span>
+              <span class="timeline-severity severity-yellow-tag">YELLOW</span>
+            </div>
+            <div class="timeline-title">MPOB马棕7月产量增9%库存四连升<span class="timeline-type">报告</span></div>
+            <div class="timeline-summary">MPOB 8月10日发布7月数据：马棕产量179.3万吨（环比+9.41%）但连续5个月同比下滑；出口139.2万吨（+14.5%）；库存262.83万吨（+3.31%）实现四连累库。SPPOMA高频数据显示8月上旬产量环比减9.73%，MPOC预计9月CPO维持RM4600以上高位运行。</div>
+            <div class="timeline-crops"><span class="timeline-crop-tag">棕榈油</span></div>
+          </div>
+          <div class="timeline-item severity-red">
+            <div class="timeline-header">
+              <span class="timeline-date">2026-08-07</span>
+              <span class="timeline-severity severity-red-tag">RED</span>
+            </div>
+            <div class="timeline-title">法国玉米预估900万吨创1980年来最低<span class="timeline-type">干旱</span></div>
+            <div class="timeline-summary">法国农业部8月7日确认2026年籽粒玉米产量仅900万吨（同比-35%），单产降至70.3q/ha（-19%），创1980年以来最低。6月热浪致EU+UK谷物减产900-1000万吨，法国总理宣布€1.45亿紧急援助；机构警告最终产量或不足700万吨，欧盟玉米或首破5000万吨关口。</div>
+            <div class="timeline-crops"><span class="timeline-crop-tag">玉米</span><span class="timeline-crop-tag">小麦</span><span class="timeline-crop-tag">大麦</span></div>
+          </div>
+          <div class="timeline-item severity-orange">
+            <div class="timeline-header">
+              <span class="timeline-date">2026-08-02</span>
+              <span class="timeline-severity severity-orange-tag">ORANGE</span>
+            </div>
+            <div class="timeline-title">甘河1号洪水过境东北农田渍涝加重<span class="timeline-type">洪水</span></div>
+            <div class="timeline-summary">8月2日甘河发生2026年第1号洪水，叠加前期强降雨致黑龙江东部、吉林北部低洼地块渍涝持续。农业气象周报显示东北大部水热匹配较好、一二类苗为主，但局部积水影响根系呼吸与灌浆进程，需警惕后续台风外围云系带来的叠加降水风险。</div>
             <div class="timeline-crops"><span class="timeline-crop-tag">玉米</span><span class="timeline-crop-tag">大豆</span></div>
           </div>
-          <div class="timeline-item severity-red">
-            <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
-              <span class="timeline-severity severity-red-tag">RED</span>
-            </div>
-            <div class="timeline-title">白海豚三预警齐发：台风蓝+暴雨橙+强对流蓝<span class="timeline-type">预警</span></div>
-            <div class="timeline-summary">8/10热带风暴"白海豚"(27.8°N,119.1°E)9级23m/s已登陆减弱中。台风蓝色预警+暴雨橙色预警+强对流蓝色预警齐发，浙皖局地特大暴雨250-320mm，苏皖豫玉米、水稻受淹风险高</div>
-            <div class="timeline-crops"><span class="timeline-crop-tag">玉米</span><span class="timeline-crop-tag">小麦</span><span class="timeline-crop-tag">棉花</span></div>
           </div>
-          <div class="timeline-item severity-red">
-            <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
-              <span class="timeline-severity severity-red-tag">RED</span>
-            </div>
-            <div class="timeline-title">国家防总维持防汛应急响应 嫩江浑河牡丹江超警<span class="timeline-type">防汛</span></div>
-            <div class="timeline-summary">8月防汛关键期持续，国家防总维持辽宁/吉林三级应急响应，黑龙江/山东四级响应。嫩江流域渍涝持续，浑河/牡丹江仍超警，9条河流超警4条超保；朝阳/凌源等地玉米大面积倒伏泡水。白海豚登陆叠加，浙皖暴雨250-320mm，苏皖豫受淹风险高</div>
-            <div class="timeline-crops"><span class="timeline-crop-tag">棕榈油</span><span class="timeline-crop-tag">白糖</span><span class="timeline-crop-tag">棉花</span></div>
-          </div>
-          <div class="timeline-item severity-red">
-            <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
-              <span class="timeline-severity severity-red-tag">RED</span>
-            </div>
-            <div class="timeline-title">松辽流域渍涝持续 9条河流超警4条超保<span class="timeline-type">洪水</span></div>
-            <div class="timeline-summary">8/10嫩江流域渍涝持续，浑河/牡丹江仍超警，9条河流超警4条超保。朝阳/凌源等地玉米大面积倒伏泡水，土壤饱和排水困难。水利部维持调度水库拦蓄，农技部门指导抢排改种短季作物</div>
-            <div class="timeline-crops"><span class="timeline-crop-tag">白糖</span></div>
-          </div>
-          
-          <div class="timeline-item severity-red">
-            <div class="timeline-header">
-              <span class="timeline-date">2026-08-01~08/12</span>
-              <span class="timeline-severity severity-red-tag">RED</span>
-            </div>
-            <div class="timeline-title">新疆8月高温再起 ≥40°C持续至8/12<span class="timeline-type">极端高温</span></div>
-            <div class="timeline-summary">吐鲁番最高50°C，多地持续≥40°C至8/12。棉花已进入吐絮期，部分棉田开始吐絮，落花落铃风险增加；滴灌条件较好缓解影响，但市场担忧减产约5%</div>
-            <div class="timeline-crops"><span class="timeline-crop-tag">棉花</span><span class="timeline-crop-tag">玉米</span><span class="timeline-crop-tag">小麦</span></div>
-          </div>
-        </div>
       </div>
     </div> <!-- close events-section -->
     </div> <!-- close 强对流天气预警 section -->

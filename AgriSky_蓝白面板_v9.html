@@ -312,7 +312,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="nav-tab" onclick="switchTab('forecast')">天气展望</div>
     <div class="nav-tab" onclick="switchTab('knowledge')">知识科普</div>
   </div>
-  <div class="navbar-status"><div class="status-dot"></div><span id="nav-date">2026-08-12</span></div>
+  <div class="navbar-status"><div class="status-dot"></div><span id="nav-date">2026-08-25</span></div>
 </div></nav>
 <div class="page-container active"><div id="page-dashboard" class="page-section active">
 
@@ -327,18 +327,18 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         </div>
         <div class="summary-card red clickable" onclick="navigateTo('dashboard','section-riskmatrix')" title="点击查看防汛详情">
           <div class="summary-label">防汛关键期</div>
-          <div class="summary-title">甘河1号洪水</div>
-          <div class="summary-value">371.68<span style="font-size:14px;color:var(--text-muted)">m 超警</span></div>
-          <div class="summary-tag tag-red">🔴 Ⅳ级应急响应</div>
+          <div class="summary-title">台风沙德尔</div>
+          <div class="summary-value">17<span style="font-size:14px;color:var(--text-muted)">级超强台风</span></div>
+          <div class="summary-tag tag-red">🔴 27日夜登陆浙闽</div>
         </div>
         <div class="summary-card red clickable" onclick="navigateTo('weather','section-riskmatrix')" title="点击查看产区风险">
           <div class="summary-label">高风险产区</div>
-          <div class="summary-value" style="margin-bottom:0">8<span style="font-size:14px;color:var(--text-muted);margin-left:4px">个产区</span></div>
+          <div class="summary-value" style="margin-bottom:0">6<span style="font-size:14px;color:var(--text-muted);margin-left:4px">个产区</span></div>
           <div class="summary-tag tag-red" style="margin-top:8px">🔴 高风险</div>
         </div>
         <div class="summary-card orange clickable" onclick="navigateTo('dashboard','section-timeline')" title="点击查看事件时间线">
           <div class="summary-label">本周关键事件</div>
-          <div class="summary-value" style="margin-bottom:0">8<span style="font-size:14px;color:var(--text-muted);margin-left:4px">起</span></div>
+          <div class="summary-value" style="margin-bottom:0">4<span style="font-size:14px;color:var(--text-muted);margin-left:4px">起</span></div>
           <div class="summary-tag tag-orange" style="margin-top:8px">⚠️ 重点关注</div>
         </div>
       </div>
@@ -347,7 +347,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 
   <div class="section" style="margin-bottom:24px">
     <div class="section-title" style="font-size:18px;margin-bottom:6px">综合气候判断与预测</div>
-    <div style="font-size:13px;color:var(--text-muted);margin-bottom:20px;padding-left:13px">海洋-大气-农业耦合系统综合分析 · 基于2026年08月24日最新观测数据（CPC周度12AUG2026 · NCEI PDO 2026-07 · BOM SOI 8/8）（CPC周度截至12AUG2026 · BOM截至2026-08-16 · USDA 8/17报告）</div>
+    <div style="font-size:13px;color:var(--text-muted);margin-bottom:20px;padding-left:13px">海洋-大气-农业耦合系统综合分析 · 基于2026年08月25日最新观测数据（CPC周度19AUG2026 · NCEI PDO 2026-07 · NAO 2026-07 · BOM IOD截至BOM周度09AUG）</div>
   </div>
 
   <!-- A. 当前海洋-大气状态诊断 -->
@@ -358,29 +358,29 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div style="font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Niño 3.4 (周度SST)</div>
         <div style="font-family:'JetBrains Mono';font-size:32px;font-weight:700;color:var(--risk-red);line-height:1.1">+2.60<span style="font-size:14px;color:var(--text-muted)">°C</span></div>
         <div style="margin-top:8px;display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:12px;font-weight:600;background:rgba(239,68,68,0.1);color:var(--risk-red)">超强厄尔尼诺</div>
-        <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">El Niño continues and will strengthen through the end of the year, with a 97% chance it will persist through early sprin</div>
+        <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">Niño3.4周度距平由2.7℃回落至2.6℃，仍处超强厄尔尼诺且大概率持续至2027年初春；东南亚偏干、南美偏湿及中国雨带异常风险上升，需加强作物水分管理。</div>
       </div>
       <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:20px;border-top:3px solid var(--accent-blue);transition:all 0.2s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.06)'" onmouseout="this.style.boxShadow='none'">
         <div style="font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">PDO</div>
-        <div style="font-family:'JetBrains Mono';font-size:32px;font-weight:700;color:var(--accent-blue);line-height:1.1">-1.29</div>
+        <div style="font-family:'JetBrains Mono';font-size:32px;font-weight:700;color:var(--accent-blue);line-height:1.1">-2.03</div>
         <div style="margin-top:8px;display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:12px;font-weight:600;background:rgba(37,99,235,0.08);color:var(--accent-blue)">强冷相位</div>
-        <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">PDO冷位相（北太平洋马蹄形SST冷距平格局）→副高偏弱偏北，理论上削弱ENSO-季风遥相关强度（r从-0.63降至-0.24），但次表层暖核+8~+9°C压倒年代际抑制</div>
+        <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">2026年7月PDO降至-2.03，较前值-1.71强冷加深，呈年代际冷相位：副高偏弱偏北、北太平洋马蹄形冷距平，并可部分对冲ENSO振幅，农业上利于抑制极端暖热，但需防范雨热错配。</div>
       </div>
       <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:20px;border-top:3px solid #94a3b8;transition:all 0.2s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.06)'" onmouseout="this.style.boxShadow='none'">
         <div style="font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">NAO</div>
         <div style="font-family:'JetBrains Mono';font-size:32px;font-weight:700;color:#64748b;line-height:1.1">-0.31</div>
         <div style="margin-top:8px;display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:12px;font-weight:600;background:rgba(100,116,139,0.08);color:#64748b">接近中性</div>
-        <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">冰岛低压-亚速尔高压气压梯度接近零（夏季NAO影响有限，信号主要在冬季12-3月）。CGT遥相关可影响东亚但当前信号弱</div>
+        <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">2026年7月NAO为-0.31，较前值0.1转为中性略偏负；NAO主要影响冬季，夏季信号偏弱，对东亚环流及农业天气直接驱动有限，生产上暂无明显指示，建议关注局地水热与病虫害风险。</div>
       </div>
       <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:20px;border-top:3px solid var(--risk-orange);transition:all 0.2s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.06)'" onmouseout="this.style.boxShadow='none'">
         <div style="font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">IOD DMI</div>
         <div style="font-family:'JetBrains Mono';font-size:32px;font-weight:700;color:var(--risk-orange);line-height:1.1">+0.41°C</div>
         <div style="margin-top:8px;display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:4px;font-size:12px;font-weight:600;background:rgba(249,115,22,0.1);color:var(--risk-orange)">正阈值连续触及·发展中未确立</div>
-        <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">DMI（印度洋偶极模态指数=西印度洋SST距平-东印度洋SST距平）连续3周触及+0.4°C正阈值（BOM，截至8/9周）。正阈值连续触及·发展中未确立判定标准：DMI连续多周≥+0.4°C，当前事件发展中、尚未确立，BOM模式暗示南半球冬季可能发展并持续至春季</div>
+        <div style="margin-top:10px;font-size:11px;color:var(--text-muted);line-height:1.6;border-top:1px solid var(--border-color);padding-top:10px">截至8月9日当周，IOD DMI升至+0.41°C，连续三周触及+0.4正阈值但尚未确立；若正IOD发展，澳大利亚小麦带偏干、东南亚干旱风险上升，印度季风降水分布趋于不均。</div>
       </div>
     </div>
     <div class="analysis-text" style="margin-top:0">
-      <strong>🔗 综合诊断：</strong>当前处于超强厄尔尼诺（周度Niño 3.4 +2.7°C，CPC 12AUG2026周），CPC诊断确认持续增强。NOAA NMME集合预判10-12月出现<strong style="color:var(--risk-red)">强/超强厄尔尼诺概率95-97%</strong>（7月预测），97%概率持续至2027年初春，将列入1950年以来最强之列。次表层暖化加剧（下沉开尔文波加深东太平洋温跃层），海气耦合正反馈加速，SOI 30日值-22.0（BOM）处极端负值，印证海气耦合强化。PDO强冷相位（-1.29，ERSSTv6 2026年7月月均）形成年代际对冲，但次表层暖核+8~+9°C压倒年代际抑制。IOD正阈值连续触及·发展中未确立（DMI +0.41°C，BOM周度截至2026-08-09）。NAO接近中性（-0.31，2026年7月，夏季信号弱）。</div>
+      <strong>🔗 综合诊断：</strong>当前海洋—大气处于超强El Niño主导：Niño3.4周度SST距平由+2.7°C小幅回落至+2.6°C，属周度波动，仍连续多周≥+2.0°C，处<strong style="color:var(--risk-red)">超强El Niño阈值</strong>；SOI 30日值-22.0与RONI +0.98°C共同印证暖事件海气耦合显著。PDO降至-2.03，较前值-1.71强冷加深，形成年代际对冲，但次表层暖核+8~+9°C使暖信号占优；CPC/IRI展望强/超强El Niño持续至2027年初春概率约<strong style="color:var(--risk-red)">95-97%</strong>。IOD DMI +0.41°C连续触及+0.4正阈值但尚未确立，NAO -0.31中性略偏负，或放大区域环流不确定性。农业端需警惕东南亚干旱及印度季风偏弱风险；中国东北7-10月持续偏湿，渍涝、积温不足和病虫害压力上升；南美大豆区需防范降水异常扰动播种窗口，美国玉米带需关注高温、干旱与降水不均叠加。</div>
   </div>
 
   <!-- B. 历史类比分析 -->
@@ -400,7 +400,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div style="background:var(--bg-card);border:1px solid var(--border-color);border-left:3px solid var(--risk-red);border-radius:10px;padding:18px;transition:all 0.2s" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.06)'" onmouseout="this.style.boxShadow='none'">
         <div style="font-family:'JetBrains Mono';font-size:13px;font-weight:700;color:var(--risk-red);margin-bottom:8px">2025-2026（当前）</div>
         <div style="font-size:12px;font-weight:600;color:var(--text-primary);margin-bottom:8px">超强El Niño + PDO强冷 + 正阈值连续触及·发展中未确立</div>
-        <div style="font-size:11px;color:var(--text-muted);line-height:1.7">• Niño 3.4 +2.60°C（BOM周度），预测峰值+3.5°C<br>• PDO=-1.29，海洋热含量异常高<br>• <strong style="color:var(--risk-red)">次表层暖核+8~+9°C远超1994/2004</strong><br>• IOD=+0.41°C正阈值连续触及·发展中未确立（尚未确立）<br>• 海洋动力学压倒年代际抑制→超强概率81%</div>
+        <div style="font-size:11px;color:var(--text-muted);line-height:1.7">• Niño 3.4 +2.60°C（CPC 19AUG2026），预测峰值+3.5°C<br>• PDO=-2.03，海洋热含量异常高<br>• <strong style="color:var(--risk-red)">次表层暖核+8~+9°C远超1994/2004</strong><br>• IOD=+0.41°C正阈值连续触及·发展中未确立（尚未确立）<br>• 海洋动力学压倒年代际抑制→超强概率81%</div>
       </div>
     </div>
     <div class="analysis-text" style="margin-top:0">
@@ -424,116 +424,116 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           <tr>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge palm">棕榈油</span></td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">东南亚<br><span style="font-size:10px;color:var(--text-muted)">马来/印尼/泰国</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">14天均高32.0°C；14天均低23.5°C；土壤湿度0.322（较8月均值-21%）</td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">最高温32.0°C<br>土壤0.322</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">MPOB7月产量179.3万吨环比增9.4%但同比连降5月;库存262.8万吨累库4月压制短期供应风险;SPPOMA8月上旬产量环比减9.7%;印尼B50配额支撑需求;远期减产预期支撑价格但近端累库缓解紧缺</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">7月产量179.3万吨<br>SPPOMA8上旬-9.7%</td>
           </tr>
-          <tr style="background:var(--bg-section)">
+          <tr>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge sugar">白糖</span></td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">印度<br><span style="font-size:10px;color:var(--text-muted)">UP邦蔗区</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">白糖印度产区已收获完毕，产量待评估。</td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">最高温31.4°C<br>土壤0.389</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">全印季风累计降雨-14%LPA持续恶化;262县中117县降雨不足;Skymet下调终值至85%LPA干旱概率70%;UP邦属西北部-12%区域;甘蔗拔节期缺水威胁单产</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge red"><span class="risk-dot red"></span>高风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">季风-14%LPA<br>117县降雨不足</td>
           </tr>
           <tr>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge sugar">白糖</span></td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">中国华南<br><span style="font-size:10px;color:var(--text-muted)">南宁/广州/昆明</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">全生育期积温732°C·d（需求5000，完成15%）；14天均高34.1°C；14天均低15.5°C；近30天降水偏多16%；土壤湿度0.386（较8月均值-4%）；<strong style="color:#a16207">需持续关注</strong></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">积温732/5000(15%)<br>最高温34.1°C<br>土壤0.386<br>降水+16%</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">台风沙德尔27-28日登陆浙闽但外围影响粤桂;27-30日桂南有暴雨大暴雨;当前蔗区未受直接风雨灾害;前期水热匹配良好利于茎秆伸长;需防范局地渍涝</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">沙德尔27日登陆<br>桂南暴雨预警</td>
           </tr>
-          <tr style="background:var(--bg-section)">
+          <tr>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge sugar">白糖</span></td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">巴西<br><span style="font-size:10px;color:var(--text-muted)">SP州</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">白糖巴西产区已收获完毕，产量待评估。</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">2026/27榨季预估7190万袋创纪录同比+14%;当前非甘蔗关键生长期;米纳斯吉拉斯周降雨仅0.6mm为均值11%;ICE库存227992袋处2.75年低位;新季丰产预期对冲低库存</td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">最高温30.9°C<br>土壤0.376</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">预估7190万袋+14%<br>ICE库存2.75年低</td>
           </tr>
           <tr>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge corn">玉米</span></td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">中国东北<br><span style="font-size:10px;color:var(--text-muted)">黑/吉/辽/蒙</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">全生育期积温1161°C·d（需求2700，完成43%）；14天均高30.7°C；14天均低18.0°C；近30天降水偏多41%；土壤湿度0.250（较8月均值-20%）；<strong style="color:#a16207">需持续关注</strong></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">黑龙江乌苏里江超警洪水黄色预警;吉林通化白山强降雨50-170mm;低洼地块渍涝但整体水热匹配好;一二类苗为主灌浆顺利;28日起再迎强降雨需防涝</td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">积温1161/2700(43%)<br>最高温30.7°C<br>土壤0.250<br>降水+41%</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">乌苏里江超警<br>吉林局地170mm+</td>
           </tr>
-          <tr style="background:var(--bg-section)">
+          <tr>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge corn">玉米</span></td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">华北/新疆<br><span style="font-size:10px;color:var(--text-muted)">冀/鲁/豫/新</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">全生育期积温1246°C·d（需求2580，完成48%）；14天均高35.4°C；14天均低22.3°C；近30天降水偏少16%；土壤湿度0.203（较8月均值-25%）；<strong style="color:var(--risk-orange)">需关注田间管理</strong></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge orange"><span class="risk-dot orange"></span>中高风险</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">积温1246/2580(48%)<br>最高温35.4°C<br>土壤0.203<br>降水-16%</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">华北黄淮近期降水改善土壤墒情;新疆滴灌棉区高温38-45℃但棉花吐絮快2.7pp整体可控;玉米处于灌浆后期光温适宜;无重大气象灾害报告;长势总体正常</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">墒情改善<br>无重大灾害</td>
           </tr>
           <tr>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge corn">玉米</span></td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">美国中西部<br><span style="font-size:10px;color:var(--text-muted)">IA/IL/IN/OH/MN/NE</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">全生育期积温1177°C·d（需求2650，完成44%）；14天均高32.7°C；14天均低15.5°C；近30天降水偏少81%；土壤湿度0.313（较8月均值+18%）；<strong style="color:var(--risk-red)">产量风险较高</strong></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">USDA8/24优良率57%三连降同比-14pp;86%糊熟期快于均值;28%面积受旱较前周改善但旱情实质存在;爱荷华伊利诺伊等核心带降雨缓解有限;单产潜力受前期干旱严重压制产量风险显著</td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge red"><span class="risk-dot red"></span>高风险</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">积温1177/2650(44%)<br>最高温32.7°C<br>土壤0.313<br>降水-81%</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">优良率57%↓3pp<br>28%面积受旱</td>
           </tr>
-          <tr style="background:var(--bg-section)">
+          <tr>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge soy">大豆</span></td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">中国东北<br><span style="font-size:10px;color:var(--text-muted)">黑/吉/辽</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">全生育期积温1123°C·d（需求2400，完成47%）；14天均高30.7°C；14天均低20.0°C；近30天降水偏多56%；土壤湿度0.270（较8月均值-21%）；<strong style="color:var(--risk-orange)">需关注田间管理</strong></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge orange"><span class="risk-dot orange"></span>中高风险</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">积温1123/2400(47%)<br>最高温30.7°C<br>土壤0.270<br>降水+56%</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">松辽流域洪水持续但主产区未大面积受灾;结荚鼓粒期水热条件较好;一类苗占比高;黑龙江东部低洼渍涝局部影响;28日后强降雨或加重排涝压力</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">一类苗为主<br>东部低洼渍涝</td>
           </tr>
           <tr>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge soy">大豆</span></td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">美国中西部<br><span style="font-size:10px;color:var(--text-muted)">IA/IL/IN/OH/MN/NE</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">全生育期积温1079°C·d（需求2400，完成45%）；14天均高32.7°C；14天均低15.5°C；近30天降水偏少75%；土壤湿度0.313（较8月均值+18%）；<strong style="color:var(--risk-red)">产量风险较高</strong></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge red"><span class="risk-dot red"></span>高风险</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">积温1079/2400(45%)<br>最高温32.7°C<br>土壤0.313<br>降水-75%</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">USDA8/24优良率60%周降1pp同比-9pp;结荚率91%进度正常;26%面积受旱低于玉米;核心带降雨改善利于鼓粒;单产预期稳定但优良率下滑需关注</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">优良率60%↓1pp<br>结荚率91%</td>
           </tr>
-          <tr style="background:var(--bg-section)">
+          <tr>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge soy">大豆</span></td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">南美<br><span style="font-size:10px;color:var(--text-muted)">巴西/阿根廷</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">大豆南美产区已收获完毕，产量待评估。</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">巴西2026/27年度播种尚未开始;当前为二茬玉米收获尾声;阿根廷大豆已收完;两国均处干季无在田大豆气候风险;关注9-10月播种期降水展望</td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">最高温30.2°C<br>土壤0.390</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">播种未启动<br>无在田作物</td>
           </tr>
           <tr>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge wheat">小麦</span></td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">华北(已收获)<br><span style="font-size:10px;color:var(--text-muted)">豫/鲁/冀/皖</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">小麦华北(已收获)产区已收获完毕，产量待评估。</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">2026年夏粮已收获完毕;当前为玉米大豆生长期无在田小麦;秋播备耕阶段墒情尚可;无即时气候风险;关注秋季底墒对下季播种影响</td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">最高温31.1°C<br>土壤0.205</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">夏粮已收<br>无在田小麦</td>
           </tr>
-          <tr style="background:var(--bg-section)">
+          <tr>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge wheat">小麦</span></td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">加/俄/乌/澳<br><span style="font-size:10px;color:var(--text-muted)">灌浆-收获期</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">全生育期积温1347°C·d（需求1600，完成84%）；14天均高32.5°C；14天均低7.9°C；近30天降水偏少81%；土壤湿度0.295（较8月均值+0%）；<strong style="color:var(--risk-red)">产量风险较高</strong></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge red"><span class="risk-dot red"></span>高风险</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">积温1347/1600(84%)<br>最高温32.5°C<br>土壤0.295<br>降水-81%</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">澳洲GIWA下调西澳小麦至903万吨较去年-32%;维州南澳长势强劲全澳预估3000万吨;法国谷物减产严重但非本区;俄乌加灌浆期天气中性;澳西旱情拖累总产</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">西澳903万吨-32%<br>全澳预估3000万吨</td>
           </tr>
           <tr>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge cotton">棉花</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">新疆<br><span style="font-size:10px;color:var(--text-muted)">花铃期</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">全生育期积温999°C·d（需求3900，完成26%）；14天均高35.4°C；14天均低22.3°C；近30天降水偏多13%；土壤湿度0.202（较8月均值-13%）；<strong style="color:var(--risk-orange)">需关注田间管理</strong></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge orange"><span class="risk-dot orange"></span>中高风险</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">积温999/3900(26%)<br>最高温35.4°C<br>土壤0.202<br>降水+13%</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">新疆<br><span style="font-size:10px;color:var(--text-muted)">花铃-吐絮期</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">吐絮率11.0%同比快2.7pp;南疆38-45℃致中上部棉铃脱落但滴灌缓解热害;结铃7.6个同比少0.2个;郑棉周涨1.82%;高温影响因灌溉调低整体可控</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">吐絮率11.0%↑2.7pp<br>高温38-45℃</td>
           </tr>
-          <tr style="background:var(--bg-section)">
+          <tr>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge cotton">棉花</span></td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">印度/美国/巴西<br><span style="font-size:10px;color:var(--text-muted)">花铃期</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">全生育期积温1267°C·d（需求3233，完成39%）；14天均高36.3°C；14天均低23.9°C；近30天降水偏少62%；土壤湿度0.287（较8月均值-5%）；<strong style="color:var(--risk-red)">产量风险较高</strong></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">美棉得州优良率仅19%弃耕率预估23.4%;全美棉花37%三连降;印度季风-14%LPA旱区扩至117县;巴西棉收获收尾;美印双重减产推升全球供应风险</td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge red"><span class="risk-dot red"></span>高风险</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">积温1267/3233(39%)<br>最高温36.3°C<br>土壤0.287<br>降水-62%</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">得州优良率19%<br>印度季风-14%LPA</td>
           </tr>
           <tr>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge coffee">咖啡</span></td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">巴西<br><span style="font-size:10px;color:var(--text-muted)">收获期</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">14天均高29.0°C；14天均低17.9°C；土壤湿度0.203（较8月均值+19%）</td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">最高温29.0°C<br>土壤0.203</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">Safras截至8/19收获94%略慢于去年99%;阿拉比卡收获91%;米纳斯吉拉斯周降雨0.6mm仅为均值11%;ICE库存227992袋2.75年新低;新季丰产预期缓解供应紧张</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge yellow"><span class="risk-dot yellow"></span>中风险</span></td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">收获进度94%<br>ICE库存2.75年低</td>
           </tr>
-          <tr style="background:var(--bg-section)">
+          <tr>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light)"><span class="crop-badge coffee">咖啡</span></td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px">哥伦比亚/云南/东非<br><span style="font-size:10px;color:var(--text-muted)">花果期</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">14天均高28.2°C；14天均低10.4°C；土壤湿度0.384（较8月均值-12%）</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:12px;color:var(--text-secondary)">哥伦比亚雨季正常花期发育良好;云南普洱保山降水充沛无旱涝;东非肯尼亚埃塞俄比亚短雨季将至;全球次要产区当前无极端天气;花果期管理窗口充足</td>
             <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);text-align:center"><span class="risk-badge green"><span class="risk-dot green"></span>低风险</span></td>
-            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">最高温28.2°C<br>土壤0.384</td>
+            <td style="padding:10px 14px;border-bottom:1px solid var(--border-light);font-size:11px;font-family:'JetBrains Mono';color:var(--text-muted)">降水正常<br>无极端天气</td>
           </tr>
-        </tbody>
+          </tbody>
       </table>
     </div>
   </div>
@@ -546,11 +546,11 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:14px">🌊 海洋指数趋势预判</div>
         <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 12px;background:rgba(239,68,68,0.04);border-radius:6px;margin-bottom:8px;border-left:3px solid var(--risk-red)">
           <span style="font-weight:600;font-size:12px;min-width:100px">ENSO (Niño 3.4)</span>
-          <span style="font-size:12px;color:var(--text-secondary)">已达+2.7°C超强水平(CPC周度12AUG2026)。IRI 7月预测峰值+3.1°C(10-12月)，或为有史以来最强。NOAA：97%概率持续至2027年春，CPC 10-12月81%概率超强。ECMWF C3S预测12月异常+3.5°C</span>
+          <span style="font-size:12px;color:var(--text-secondary)">已达+2.6°C超强水平(CPC周度19AUG2026)。IRI 7月预测峰值+3.1°C(10-12月)，或为有史以来最强。NOAA：97%概率持续至2027年春，CPC 10-12月81%概率超强。ECMWF C3S预测12月异常+3.5°C</span>
         </div>
         <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 12px;background:rgba(37,99,235,0.04);border-radius:6px;margin-bottom:8px;border-left:3px solid var(--accent-blue)">
           <span style="font-weight:600;font-size:12px;min-width:100px">PDO</span>
-          <span style="font-size:12px;color:var(--text-secondary)">冷位相持续（-1.29，ERSSTv6 2026年7月月均），年代际背景不变</span>
+          <span style="font-size:12px;color:var(--text-secondary)">冷位相持续加深（-2.03，ERSSTv6 2026年7月月均），年代际背景不变</span>
         </div>
         <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 12px;background:rgba(100,116,139,0.04);border-radius:6px;margin-bottom:8px;border-left:3px solid #94a3b8">
           <span style="font-weight:600;font-size:12px;min-width:100px">NAO</span>
@@ -624,7 +624,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           </div>
         </div>
         <div class="typhoon-path">
-          <div class="typhoon-path-title">📍 台风动态（中央气象台 8月24日）</div>
+          <div class="typhoon-path-title">📍 台风动态（中央气象台 8月25日）</div>
           <strong>🟡 18号台风"沙德尔"(SAUDEL)</strong>：已正式生成，8级热带风暴，位置12.5°N/150.8°E，向偏北移动增强中<br>
           <strong>🔵 南海北部LPA</strong>：中等概率发展，或受藤原效应在华南沿海打转<br>
           <strong>🟣 92W远海/飓风Lala</strong>：92W可能发展为20号台风；Lala或跨日界线变21号台风<br>
@@ -648,7 +648,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div style="display:grid;grid-template-columns:1fr;gap:8px;margin-bottom:14px">
           <div class="info-box" style="border-left:3px solid var(--risk-orange);padding:8px 12px">
             <p style="font-size:11px;color:var(--text-primary);line-height:1.6">
-              <strong style="color:var(--risk-orange)">短时强降水预报：中央气象台8月24日发布强对流天气预警，黄淮至长江中下游一带仍有短时强降水，局地雨强较大；华南部分地区强对流天气活跃，需防范雷暴大风等灾害性天气。</strong></p>
+              <strong style="color:var(--risk-orange)">短时强降水预报：中央气象台8月25日发布强对流天气预警，黄淮至长江中下游一带仍有短时强降水，局地雨强较大；华南部分地区强对流天气活跃，需防范雷暴大风等灾害性天气。</strong></p>
           </div>
           <div class="info-box" style="border-left:3px solid var(--risk-orange);padding:8px 12px">
             <p style="font-size:11px;color:var(--text-primary);line-height:1.6">
@@ -656,10 +656,10 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           </div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px">
-          <img src="http://image.nmc.cn/product/2026/08/23/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260823220000000_base64_1.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/13 02时-20时" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/08/23/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260823220000000_base64_2.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/13 02时-20时" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/08/23/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260823220000000_base64_3.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/13 02时-20时" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/08/23/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260823220000000_base64_4.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/13 02时-20时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/08/24/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260824220000000_base64_1.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/13 02时-20时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/08/24/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260824220000000_base64_2.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/13 02时-20时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/08/24/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260824220000000_base64_3.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/13 02时-20时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/08/24/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20260824220000000_base64_4.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/13 02时-20时" onerror="this.style.display='none'" />
         </div>
         <div style="font-size:9px;color:var(--text-muted);text-align:right">来源：中央气象台 www.nmc.cn</div>
       </div>
@@ -674,118 +674,103 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           <div class="risk-group-title">
             <span class="risk-dot red"></span> 高风险 (6)
           </div>
-          <div class="risk-item">
-            <div class="risk-item-region">印度全境</div>
-            <div class="risk-item-crop">白糖/棉花</div>
-            <div class="risk-item-threat">季风累计偏少12%（截至8/12，IMD），东部/东北偏少26.3%，南部偏少18.6%，中部仅偏少0.6%；45%县区降雨不足；Kharif播种达常年87.7%，IMD预测8-9月后半季低于正常</div>
+        <div class="risk-item">
+            <div class="risk-item-region">中国浙闽沿海</div>
+            <div class="risk-item-crop">水稻/经济作物</div>
+            <div class="risk-item-threat">超强台风沙德尔预计8月27日夜至28日登陆浙南闽北，25日已入48小时警戒线。27-30日浙闽台粤桂等地有暴雨到大暴雨，东海阵风13-14级，正值晚稻孕穗关键期，强风暴雨或致大面积倒伏与农田渍涝。</div>
           </div>
-          <div class="risk-item">
-            <div class="risk-item-region">新疆</div>
+        <div class="risk-item">
+            <div class="risk-item-region">美国玉米带</div>
+            <div class="risk-item-crop">玉米</div>
+            <div class="risk-item-threat">USDA8/24报告显示玉米优良率降至57%，同比降14pp且三连降；USDM8/18数据显示28%玉米面积受旱。尽管爱荷华等州降雨有所改善，但前期干旱已对单产潜力造成实质性损害，产量风险显著，供应端趋紧态势加剧。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">印度全国</div>
+            <div class="risk-item-crop">白糖/棉花/大豆</div>
+            <div class="risk-item-threat">截至8/22全印季风降雨较LPA偏少14%，262个重点县中117个降雨不足。Skymet8/18将终值预测下调至85%LPA，干旱概率升至70%。IMD预测至9/2全国降雨持续偏少，甘蔗拔节、棉花花铃及大豆结荚等关键生长期严重受损，多品种减产风险共振。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">法国</div>
+            <div class="risk-item-crop">玉米</div>
+            <div class="risk-item-threat">法国农业部预估2026年籽粒玉米产量仅900万吨，同比骤降35%创1980年来最低，单产减19%至7.03吨/公顷。机构警告最终产量或不足700万吨，6月热浪叠加持续干旱致欧盟谷物减产千万吨级，供给缺口扩大。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">美国得克萨斯州</div>
             <div class="risk-item-crop">棉花</div>
-            <div class="risk-item-threat">8月高温再起≥40°C持续至8/12，吐鲁番最高50°C；棉花已进入吐絮期，部分棉田开始吐絮，落花落铃风险增加；滴灌条件较好缓解影响，但市场担忧减产约5%</div>
+            <div class="risk-item-threat">USDA8/24显示得州棉花优良率仅19%，差至极差占比44%，情形类似2022年弃耕年。Pro Farmer模型预测弃耕率达23.4%（232万英亩），USDA8月WASDE已下调美棉产量至1361万包，全球棉市供应担忧升温。</div>
           </div>
-          <div class="risk-item">
-            <div class="risk-item-region">印度古吉拉特/马邦</div>
-            <div class="risk-item-crop">棉花</div>
-            <div class="risk-item-threat">Valsad 7/23单日1064mm（印度历史第3高），棉田渍涝严重；8月古吉拉特勉强恢复至接近均值水平，但全国季风仍偏少12%，45%县区降雨不足</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">巴西</div>
-            <div class="risk-item-crop">咖啡</div>
-            <div class="risk-item-threat">收获进度64%落后去年77%，8月收获期降雨损害豆品质；厄尔尼诺或影响明年花芽分化；8/6起巴西对美咖啡出口遭50%关税，叠加供给担忧</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">法国/匈牙利</div>
-            <div class="risk-item-crop">玉米/甜菜</div>
-            <div class="risk-item-threat">法国农业部8/7官方确认：2026年玉米产量暴跌35%至900万吨，1980年来最低；种植面积-21%，单产-19%至70.3q/ha，2003年来最大降幅；Argus预估更低至690万吨</div>
-          </div>
-          <div class="risk-item">
+        <div class="risk-item">
             <div class="risk-item-region">中国东北</div>
             <div class="risk-item-crop">玉米/大豆</div>
-            <div class="risk-item-threat">嫩江流域渍涝持续，浑河/牡丹江仍超警，9条河流超警4条超保；朝阳/凌源等地玉米大面积倒伏泡水，土壤饱和排水困难，农技部门指导抢排改种短季作物</div>
+            <div class="risk-item-threat">松辽委8/24会商示警黑龙江乌苏里江维持超警，海青段发洪水黄色预警。8/28起东北再迎强降雨，鸭绿江图们江明显涨水。吉林通化白山局地降雨超170mm，低洼地块渍涝风险高企，威胁灌浆期作物安全成熟。</div>
           </div>
         </div>
         <div class="risk-group">
           <div class="risk-group-title">
-            <span class="risk-dot orange"></span> 中高风险 (5)
+            <span class="risk-dot orange"></span> 中高风险 (3)
           </div>
-          <div class="risk-item">
-            <div class="risk-item-region">马来半岛/印尼</div>
+        <div class="risk-item">
+            <div class="risk-item-region">美国大平原</div>
+            <div class="risk-item-crop">棉花/高粱</div>
+            <div class="risk-item-threat">USDM8/18数据显示全美异常干旱面积达76.2%，棉花产区干旱比例升至44%。俄克拉荷马棉花优良率仅5%，高粱优良率27%处于历史低位。虽部分核心区降雨改善，但西部旱情顽固，新作产量恢复空间受限。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">欧盟多国</div>
+            <div class="risk-item-crop">软小麦/大麦</div>
+            <div class="risk-item-threat">ECIU评估6月热浪削减欧盟及英国谷物900-1000万吨，软小麦减280万吨、大麦减120万吨。西班牙卡斯蒂利亚莱昂减产35%、马德里减49%，意大利60%农地受旱损失超30亿欧元，区域粮食安全压力显著上升。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">澳大利亚西澳州</div>
+            <div class="risk-item-crop">小麦/大麦</div>
+            <div class="risk-item-threat">GIWA8月下调西澳小麦产量预估50万吨至903万吨，较2025年1330万吨大幅缩减。尽管维州南澳长势强劲，但西澳作为核心出口产区减产将削弱澳洲整体出口潜力，全球小麦贸易流向或面临重构压力。</div>
+          </div>
+        </div>
+        <div class="risk-group">
+          <div class="risk-group-title">
+            <span class="risk-dot yellow"></span> 中风险 (5)
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">巴西米纳斯吉拉斯</div>
+            <div class="risk-item-crop">阿拉比卡咖啡</div>
+            <div class="risk-item-threat">Safras8/19数据显示收获进度94%略慢于去年同期99%，米纳斯吉拉斯8/16当周降雨仅0.6mm为均值11%。ICE库存降至2.75年新低，虽USDA预测26/27年度创纪录增产，但短期现货紧缺与干燥天气仍扰动盘面情绪。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">新疆南疆</div>
+            <div class="risk-item-crop">棉花</div>
+            <div class="risk-item-threat">截至8/17吐絮率11%同比快2.7pp，但巴州吐鲁番等地38-45℃高温致中上部棉铃脱落。当前郑棉周涨1.82%反映市场对高温减产担忧，不过全区滴灌设施覆盖率高有效缓解旱情，实际产量损失或低于气象模型预期。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">德国</div>
+            <div class="risk-item-crop">谷物玉米</div>
+            <div class="risk-item-threat">DRV预计2026年德国谷物玉米产量424万吨同比减14%，受夏季高温干旱影响单产下滑。虽降幅低于法国，但作为欧盟重要饲料粮产区，减产将加剧区域饲料原料紧张，需关注后续进口替代需求对全球谷物流向的影响。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">马来西亚</div>
             <div class="risk-item-crop">棕榈油</div>
-            <div class="risk-item-threat">浅层地下水32.7百分位+超强ENSO升级；马棕7月累库至263万吨创5月来新高(MPOB 8/10)；印尼B50支撑但远期减产预期加剧</div>
+            <div class="risk-item-threat">SPPOMA数据显示8月上半月马棕产量环比减3.38%，ITS显示8/1-20出口环比降13.2%。MPOB7月库存累至262.83万吨连续4月累库压制短期供应风险，但8月产出疲软叠加印尼B50政策预期支撑远期价格，供需博弈下风险等级维持中等。</div>
           </div>
-          <div class="risk-item">
-            <div class="risk-item-region">美国棉花带</div>
-            <div class="risk-item-crop">棉花</div>
-            <div class="risk-item-threat">干旱41%(USDM截至8/4)；优良率42%（↓4pp，2024Q4以来最低），差苗率20%；得州30%评级极差至差；预计弃收16.7万英亩；得州西部持续100°F+，关键窗口期降水成核心变量</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">澳大利亚</div>
-            <div class="risk-item-crop">小麦</div>
-            <div class="risk-item-threat">NSW/Qld/Vic迎来及时降雨改善产量预期（Rabobank上调至3000万吨）；但西澳仍严重干旱，化肥成本因中东冲突飙升影响种植决策</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">华北/黄淮</div>
-            <div class="risk-item-crop">玉米/棉花</div>
-            <div class="risk-item-threat">台风残余+强对流叠加，河南/安徽/江苏短时强降水50-80mm+雷暴大风10-11级，棉花/玉米/水稻承压</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">中国广西/广东</div>
-            <div class="risk-item-crop">白糖</div>
-            <div class="risk-item-threat">8月台风高发期，蔗区需防范大风倒伏及渍涝，当前广西蔗区墒情正常，未有重大灾害报告</div>
-          </div>
-        </div>
-        <div class="risk-group">
-          <div class="risk-group-title">
-            <span class="risk-dot yellow"></span> 中风险 (4)
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">美国中西部</div>
-            <div class="risk-item-crop">大豆/玉米</div>
-            <div class="risk-item-threat">大豆优良率62%(↓1pp)但26%面积受旱；玉米优良率61%(持平)同比-12pp（USDA 8/17报告）；西部大平原持续高温36-40°C，结荚/吐丝期热胁迫</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">华东/江南</div>
-            <div class="risk-item-crop">早稻/晚稻</div>
-            <div class="risk-item-threat">8月上旬高温缓解，但晚稻移栽窗口期需关注后续高温反弹风险</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">欧盟</div>
-            <div class="risk-item-crop">玉米</div>
-            <div class="risk-item-threat">法国确认玉米暴跌35%至900万吨（8/7官方数据），EU玉米产量或降至2007年来最低；Euronext 11月玉米期货超€250/吨</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">巴基斯坦信德</div>
-            <div class="risk-item-crop">棉花</div>
-            <div class="risk-item-threat">持续高温42-43°C，印度河水量受上游调控影响，灌溉压力加大</div>
-          </div>
-        </div>
-        <div class="risk-group">
-          <div class="risk-group-title">
-            <span class="risk-dot green"></span> 低风险区域
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">巴西大豆产区</div>
+        <div class="risk-item">
+            <div class="risk-item-region">美国中西部核心区</div>
             <div class="risk-item-crop">大豆</div>
-            <div class="risk-item-threat">越冬期正常，不影响下季播种</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">中国冬小麦产区</div>
-            <div class="risk-item-crop">小麦</div>
-            <div class="risk-item-threat">已全部收获(7/6确认)，仅跟踪收购价格</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">哥伦比亚/埃塞俄比亚</div>
-            <div class="risk-item-crop">咖啡</div>
-            <div class="risk-item-threat">降水正常，果实成熟/开花期推进良好</div>
-          </div>
-          <div class="risk-item">
-            <div class="risk-item-region">美国玉米核心带</div>
-            <div class="risk-item-crop">玉米</div>
-            <div class="risk-item-threat">IA/IL/IN墒情充足，Hybrid-Maize预测接近常年产量；需关注7月末-8月初高温风险</div>
+            <div class="risk-item-threat">USDA8/24大豆优良率60%虽同比降9pp，但结荚率达91%进入鼓粒关键期。爱荷华伊利诺伊等主产州近期降雨改善缓解旱情，USDM显示核心区干旱等级回落。只要8月底至9月初无极端早霜，单产修复弹性仍存，风险暂维持中等水平。</div>
           </div>
         </div>
-      </div>
+        <div class="risk-group">
+          <div class="risk-group-title">
+            <span class="risk-dot green"></span> 低风险 (2)
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">中国华北黄淮</div>
+            <div class="risk-item-crop">冬小麦</div>
+            <div class="risk-item-threat">2026年冬小麦已于6月全面收获归仓，当前为新季玉米大豆生长期。前期麦收期间天气配合良好，无大规模烂场雨灾害，新麦质量与产量双稳。当前产区土壤墒情适宜，秋粮基础扎实，口粮安全底座稳固无忧。</div>
+          </div>
+        <div class="risk-item">
+            <div class="risk-item-region">中国东北大部</div>
+            <div class="risk-item-crop">粳稻/玉米</div>
+            <div class="risk-item-threat">农业气象周报8/16-22显示东北水热匹配较好，一、二类苗占主导利于灌浆结实。除东部低洼渍涝外，广袤平原区光温条件优越，作物发育进程正常。8/28后降雨虽增汛情风险，但对多数岗平地作物而言属有效补水。</div>
+          </div>
+        </div>
+        </div>
     </div>
 
     <!-- Row 6: Events Timeline -->
@@ -795,86 +780,86 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div class="timeline">
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
+              <span class="timeline-date">2026-08-25</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
-            <div class="timeline-title">嫩江支流甘河2026年第1号洪水 水利部启动Ⅳ级应急响应<span class="timeline-type">洪水</span></div>
-            <div class="timeline-summary">8月2日09时，嫩江支流甘河加格达奇水文站水位突破371.68米警戒值，形成2026年第1号洪水。水利部立即启动Ⅳ级应急响应，派出3支工作组赶赴现场指导防汛。嫩江流域是东北玉米、大豆主产区之一，当前正值作物生长关键期，持续洪水将加剧低洼农田渍涝灾害，已超警河流叠加新洪水风险，东北产区防汛形势严峻。</div>
-            <div class="timeline-crops"><span class="timeline-crop-tag">玉米</span><span class="timeline-crop-tag">大豆</span></div>
+            <div class="timeline-title">四台风共存沙德尔逼近浙闽沿海<span class="timeline-type">台风</span></div>
+            <div class="timeline-summary">西北太平洋罕见四台风共存，超强台风“沙德尔”25日进入48小时警戒线，预计27日夜至28日上午登陆浙南到福建沿海。东海海域风力9-12级、阵风13-14级，27-30日浙闽台粤桂湘赣黔滇将有暴雨到大暴雨，严重威胁晚稻及经济林果生产安全。</div>
+            <div class="timeline-crops"><span class="timeline-crop-tag">水稻</span><span class="timeline-crop-tag">茶叶</span><span class="timeline-crop-tag">柑橘</span></div>
           </div>
-          
-
-          
-
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
+              <span class="timeline-date">2026-08-24</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
-            <div class="timeline-title">印度古吉拉特邦极端暴雨1064mm 历史第三高单日降雨<span class="timeline-type">暴雨</span></div>
-            <div class="timeline-summary">IMD官方数据：瓦尔萨德(Valsad)地区7/17-23七站累积降雨853-1495mm。<strong style="color:var(--risk-red)">Umergam 7/23单日1064mm(印度历史第3高)，Kaprada 7/22单日794mm</strong>；全周Dharampur 988mm/Pardi 1141mm/Valsad 907mm/Vapi 981mm，7/23为峰值日。IMD预报7/23-24古吉拉特仍有极强降雨，25日减弱为大雨，26-29日降至轻中度。古吉拉特邦为印度核心棉花产区，极端暴雨致棉田渍涝风险极高。</div>
-            <div class="timeline-crops"><span class="timeline-crop-tag">棉花</span><span class="timeline-crop-tag">白糖</span></div>
+            <div class="timeline-title">松辽委会商东北汛情乌苏里江超警<span class="timeline-type">洪水</span></div>
+            <div class="timeline-summary">松辽委8月24日会商显示黑龙江、乌苏里江维持超警水位，海青段发布洪水黄色预警，需防范黑龙江2026年第2号洪水。吉林22-25日强降雨致通化白山部分降雨超170mm，低洼农田渍涝风险加剧；28日起东北再迎强降雨，鸭绿江图们江或明显涨水。</div>
+            <div class="timeline-crops"><span class="timeline-crop-tag">玉米</span><span class="timeline-crop-tag">大豆</span><span class="timeline-crop-tag">水稻</span></div>
           </div>
-
-          
-
-          
-          <div class="timeline-item severity-red">
+          <div class="timeline-item severity-orange">
+            <div class="timeline-header">
+              <span class="timeline-date">2026-08-24</span>
+              <span class="timeline-severity severity-orange-tag">ORANGE</span>
+            </div>
+            <div class="timeline-title">USDA作物优良率三连降玉米跌至57%<span class="timeline-type">报告</span></div>
+            <div class="timeline-summary">USDA 8月24日报告显示美玉米优良率降至57%（环比-3pp，同比-14pp），大豆60%（-1pp），棉花37%（-1pp）。玉米86%进入面团期、45%凹面期，发育快于均值但干旱胁迫持续；得州棉花优良率仅19%，弃耕风险逼近2022年水平，供应端趋紧预期增强。</div>
+            <div class="timeline-crops"><span class="timeline-crop-tag">玉米</span><span class="timeline-crop-tag">大豆</span><span class="timeline-crop-tag">棉花</span></div>
+          </div>
+          <div class="timeline-item severity-orange">
             <div class="timeline-header">
               <span class="timeline-date">2026-08-19</span>
-              <span class="timeline-severity severity-red-tag">RED</span>
+              <span class="timeline-severity severity-orange-tag">ORANGE</span>
             </div>
-            <div class="timeline-title">巴西咖啡收获期降雨阻碍进度<span class="timeline-type">降雨</span></div>
-            <div class="timeline-summary">收割完成64%落后去年同期77%，Somar预报圣保罗/米纳斯吉拉斯日降雨5-15mm（7月常态仅20mm），降雨损害豆品质并拖延进度；厄尔尼诺或影响明年开花期</div>
+            <div class="timeline-title">巴西咖啡收获九成进度略逊于往年<span class="timeline-type">丰收</span></div>
+            <div class="timeline-summary">Safras截至8月19日数据显示巴西咖啡收获进度达94%（去年99%，五年均96%），阿拉比卡收获91%。米纳斯吉拉斯当周降雨仅0.6mm为均值11%，干燥天气利于收尾但单产承压。ICE阿拉比卡库存降至2.75年新低，USDA预测26/27年度产量7190万袋创纪录。</div>
             <div class="timeline-crops"><span class="timeline-crop-tag">咖啡</span></div>
           </div>
           <div class="timeline-item severity-red">
             <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
+              <span class="timeline-date">2026-08-18</span>
               <span class="timeline-severity severity-red-tag">RED</span>
             </div>
-            <div class="timeline-title">东北农田渍涝持续<span class="timeline-type">渍涝</span></div>
-            <div class="timeline-summary">浑河/牡丹江仍超警，9条河流超警4条超保；朝阳/凌源等地玉米大面积倒伏泡水，土壤饱和排水困难，农技部门指导抢排改种短季作物</div>
+            <div class="timeline-title">印度季风缺口扩大Skymet下调终值预测<span class="timeline-type">干旱</span></div>
+            <div class="timeline-summary">Skymet 8月18日将印度季风终值预测从94%大幅下调至85% LPA，干旱概率升至70%。截至19日全印累计降雨偏少13%，262个重点县中117个降雨不足，西北部-12%、半岛-21%、东北部-27%。IMD预测至9月2日全国降雨持续偏少，危及秋播作物备耕。</div>
+            <div class="timeline-crops"><span class="timeline-crop-tag">水稻</span><span class="timeline-crop-tag">棉花</span><span class="timeline-crop-tag">甘蔗</span></div>
+          </div>
+          <div class="timeline-item severity-yellow">
+            <div class="timeline-header">
+              <span class="timeline-date">2026-08-17</span>
+              <span class="timeline-severity severity-yellow-tag">YELLOW</span>
+            </div>
+            <div class="timeline-title">新疆棉花吐絮率11%南疆高温致落铃<span class="timeline-type">高温</span></div>
+            <div class="timeline-summary">截至8月17日新疆棉花进入裂铃吐絮期，吐絮率11.0%（同比快2.7pp），结铃7.6个（同比少0.2个）。南疆巴州、吐鲁番及北疆沿天山一带出现38-45℃极端高温，导致中上部棉铃脱落增加。郑棉周涨1.82%至17035元/吨，市场关注单产受损程度。</div>
+            <div class="timeline-crops"><span class="timeline-crop-tag">棉花</span></div>
+          </div>
+          <div class="timeline-item severity-yellow">
+            <div class="timeline-header">
+              <span class="timeline-date">2026-08-10</span>
+              <span class="timeline-severity severity-yellow-tag">YELLOW</span>
+            </div>
+            <div class="timeline-title">MPOB马棕7月产量增9%库存四连升<span class="timeline-type">报告</span></div>
+            <div class="timeline-summary">MPOB 8月10日发布7月数据：马棕产量179.3万吨（环比+9.41%）但连续5个月同比下滑；出口139.2万吨（+14.5%）；库存262.83万吨（+3.31%）实现四连累库。SPPOMA高频数据显示8月上旬产量环比减9.73%，MPOC预计9月CPO维持RM4600以上高位运行。</div>
+            <div class="timeline-crops"><span class="timeline-crop-tag">棕榈油</span></div>
+          </div>
+          <div class="timeline-item severity-red">
+            <div class="timeline-header">
+              <span class="timeline-date">2026-08-07</span>
+              <span class="timeline-severity severity-red-tag">RED</span>
+            </div>
+            <div class="timeline-title">法国玉米预估900万吨创1980年来最低<span class="timeline-type">干旱</span></div>
+            <div class="timeline-summary">法国农业部8月7日确认2026年籽粒玉米产量仅900万吨（同比-35%），单产降至70.3q/ha（-19%），创1980年以来最低。6月热浪致EU+UK谷物减产900-1000万吨，法国总理宣布€1.45亿紧急援助；机构警告最终产量或不足700万吨，欧盟玉米或首破5000万吨关口。</div>
+            <div class="timeline-crops"><span class="timeline-crop-tag">玉米</span><span class="timeline-crop-tag">小麦</span><span class="timeline-crop-tag">大麦</span></div>
+          </div>
+          <div class="timeline-item severity-orange">
+            <div class="timeline-header">
+              <span class="timeline-date">2026-08-02</span>
+              <span class="timeline-severity severity-orange-tag">ORANGE</span>
+            </div>
+            <div class="timeline-title">甘河1号洪水过境东北农田渍涝加重<span class="timeline-type">洪水</span></div>
+            <div class="timeline-summary">8月2日甘河发生2026年第1号洪水，叠加前期强降雨致黑龙江东部、吉林北部低洼地块渍涝持续。农业气象周报显示东北大部水热匹配较好、一二类苗为主，但局部积水影响根系呼吸与灌浆进程，需警惕后续台风外围云系带来的叠加降水风险。</div>
             <div class="timeline-crops"><span class="timeline-crop-tag">玉米</span><span class="timeline-crop-tag">大豆</span></div>
           </div>
-          <div class="timeline-item severity-red">
-            <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
-              <span class="timeline-severity severity-red-tag">RED</span>
-            </div>
-            <div class="timeline-title">白海豚三预警齐发：台风蓝+暴雨橙+强对流蓝<span class="timeline-type">预警</span></div>
-            <div class="timeline-summary">8/10热带风暴"白海豚"(27.8°N,119.1°E)9级23m/s已登陆减弱中。台风蓝色预警+暴雨橙色预警+强对流蓝色预警齐发，浙皖局地特大暴雨250-320mm，苏皖豫玉米、水稻受淹风险高</div>
-            <div class="timeline-crops"><span class="timeline-crop-tag">玉米</span><span class="timeline-crop-tag">小麦</span><span class="timeline-crop-tag">棉花</span></div>
           </div>
-          <div class="timeline-item severity-red">
-            <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
-              <span class="timeline-severity severity-red-tag">RED</span>
-            </div>
-            <div class="timeline-title">国家防总维持防汛应急响应 嫩江浑河牡丹江超警<span class="timeline-type">防汛</span></div>
-            <div class="timeline-summary">8月防汛关键期持续，国家防总维持辽宁/吉林三级应急响应，黑龙江/山东四级响应。嫩江流域渍涝持续，浑河/牡丹江仍超警，9条河流超警4条超保；朝阳/凌源等地玉米大面积倒伏泡水。白海豚登陆叠加，浙皖暴雨250-320mm，苏皖豫受淹风险高</div>
-            <div class="timeline-crops"><span class="timeline-crop-tag">棕榈油</span><span class="timeline-crop-tag">白糖</span><span class="timeline-crop-tag">棉花</span></div>
-          </div>
-          <div class="timeline-item severity-red">
-            <div class="timeline-header">
-              <span class="timeline-date">2026-08-19</span>
-              <span class="timeline-severity severity-red-tag">RED</span>
-            </div>
-            <div class="timeline-title">松辽流域渍涝持续 9条河流超警4条超保<span class="timeline-type">洪水</span></div>
-            <div class="timeline-summary">8/10嫩江流域渍涝持续，浑河/牡丹江仍超警，9条河流超警4条超保。朝阳/凌源等地玉米大面积倒伏泡水，土壤饱和排水困难。水利部维持调度水库拦蓄，农技部门指导抢排改种短季作物</div>
-            <div class="timeline-crops"><span class="timeline-crop-tag">白糖</span></div>
-          </div>
-          
-          <div class="timeline-item severity-red">
-            <div class="timeline-header">
-              <span class="timeline-date">2026-08-01~08/12</span>
-              <span class="timeline-severity severity-red-tag">RED</span>
-            </div>
-            <div class="timeline-title">新疆8月高温再起 ≥40°C持续至8/12<span class="timeline-type">极端高温</span></div>
-            <div class="timeline-summary">吐鲁番最高50°C，多地持续≥40°C至8/12。棉花已进入吐絮期，部分棉田开始吐絮，落花落铃风险增加；滴灌条件较好缓解影响，但市场担忧减产约5%</div>
-            <div class="timeline-crops"><span class="timeline-crop-tag">棉花</span><span class="timeline-crop-tag">玉米</span><span class="timeline-crop-tag">小麦</span></div>
-          </div>
-        </div>
       </div>
     </div> <!-- close events-section -->
     </div> <!-- close 强对流天气预警 section -->
@@ -923,7 +908,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="sst-item"><div class="sst-name">印度洋整体</div><div class="sst-value warm">+0.4°C</div><div class="sst-desc">正IOD发展中·DMI+0.41</div></div>
       <div class="sst-item"><div class="sst-name">西太平洋暖池</div><div class="sst-value warm">-0.3°C</div><div class="sst-desc">暖池略偏冷(JMA)</div></div>
       <div class="sst-item"><div class="sst-name">北大西洋</div><div class="sst-value cool">+0.1°C</div><div class="sst-desc">AMV接近中性略偏暖(ERSST)</div></div>
-      <div class="sst-item"><div class="sst-name">南太平洋</div><div class="sst-value cool">-0.6°C</div><div class="sst-desc">PDO=-1.29冷位相冷舌(ERSST)</div></div>
+      <div class="sst-item"><div class="sst-name">南太平洋</div><div class="sst-value cool">-0.6°C</div><div class="sst-desc">PDO=-2.03冷位相冷舌(ERSST)</div></div>
     </div>
   </div>
 </div>
@@ -944,8 +929,8 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     </div>
     <div class="summary-card" style="text-align:center;padding:16px;border-radius:10px;background:rgba(37,99,235,0.05)">
       <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">PDO</div>
-      <div style="font-family:'JetBrains Mono';font-size:22px;font-weight:700;color:var(--accent-blue)">-1.29</div>
-      <div style="font-size:11px;color:var(--accent-blue);margin-top:4px">强冷相位</div>
+      <div style="font-family:'JetBrains Mono';font-size:22px;font-weight:700;color:var(--accent-blue)">-2.03</div>
+      <div style="font-size:11px;color:var(--accent-blue);margin-top:4px">强冷相位加深</div>
     </div>
     <div class="summary-card" style="text-align:center;padding:16px;border-radius:10px;background:rgba(148,163,184,0.08)">
       <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">NAO</div>
@@ -968,15 +953,15 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div class="ocean-section">
   <div class="section-title" id="section-enso">ENSO 深度分析</div>
   <div class="stat-row">
-    <div class="stat-box"><div class="stat-box-value red">+2.7°C</div><div class="stat-box-label">当前 Niño 3.4 周度SST距平（12AUG2026·CPC）</div></div>
+    <div class="stat-box"><div class="stat-box-value red">+2.6°C</div><div class="stat-box-label">当前 Niño 3.4 周度SST距平（19AUG2026·CPC）</div></div>
     <div class="stat-box"><div class="stat-box-value red">超强厄尔尼诺</div><div class="stat-box-label">持续增强 · 次表层暖核+8~+9°C</div></div>
     <div class="stat-box"><div class="stat-box-value red">95-97%</div><div class="stat-box-label">Q4强/超强事件概率 (CPC 7月更新)</div></div>
   </div>
   <div class="ocean-card">
-    <div class="ocean-card-title">📈 Niño 3.4 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--risk-red);margin-left:auto">当前: +2.7°C</span>（2011-2026）</div>
+    <div class="ocean-card-title">📈 Niño 3.4 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--risk-red);margin-left:auto">当前: +2.6°C</span>（2011-2026）</div>
     <div class="ocean-card-subtitle">NOAA CPC ERSSTv5 · 周度Niño 3.4距平 · 2011-01至今 · ±0.5°C阈值</div>
     <div class="chart-container tall"><canvas id="ensoHistoryChart"></canvas></div>
-    <div class="analysis-text"><strong>结论：</strong>12AUG2026 Niño3.4距平+2.7°C（SST29.6°C），超+0.5°C阈值，达强厄尔尼诺，高于2015年+2.2和1997年+1.8。近12周由1.0升至2.7，持续增强；预计10-12月达峰并持续至2027年初春。需关注全球气温与降水格局影响。</div>
+    <div class="analysis-text"><strong>结论</strong>：截至2026年8月19日，Niño 3.4 SST距平为2.6°C，显著高于±0.5°C阈值，处于强厄尔尼诺状态。<br><strong>区间</strong>：当前值接近15年上限3.0°C，15年范围为-1.7°C至3.0°C。<br><strong>趋势</strong>：近12期由1.3°C升至2.6°C，暖异常持续增强。</div>
   </div>
   <div class="ocean-card">
     <div class="ocean-card-title">🔮 ENSO 预测与多模型对比</div>
@@ -1011,7 +996,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📉 SOI 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--risk-red);margin-left:auto">当前: -0.0</span>（2011-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--risk-red);margin-left:auto">当前: -22.0</span></div>
     <div class="ocean-card-subtitle">BOM · 30日SOI (基于Tahiti-Darwin标准化气压差) · 2011-01至今</div>
     <div class="chart-container"><canvas id="soiChart"></canvas></div>
-    <div class="analysis-text"><strong>结论</strong>SOI持续为负，确认El Niño状态，但当前强度较弱。<strong>当前值</strong>2025年12月为-0.0，处于15年范围-3.6至4.5的中性附近。<strong>趋势</strong>近12期由0.2降至-0.0，呈下降趋势，需关注后续是否进一步转负。</div>
+    <div class="analysis-text"><strong>综合判断</strong>SOI维持近零偏负，El Niño状态存在但强度较弱。当前值为-0.0（2025-12），处于15年范围-3.6至4.5的中间偏低位；近12期由0.2降至-0.0，趋势下降，显示南方涛动向负位相小幅回落，对厄尔尼诺有弱支持。</div>
   </div>
 </div>
 
@@ -1046,10 +1031,10 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div class="ocean-section">
   <div class="section-title" id="section-pdo">PDO 太平洋年代际振荡</div>
   <div class="ocean-card">
-    <div class="ocean-card-title">📊 PDO 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -2.03</span>（2011-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -1.29</span></div>
+    <div class="ocean-card-title">📊 PDO 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -2.03</span>（2011-2026）</div>
     <div class="ocean-card-subtitle">NOAA ERSSTv5 · 月均PDO指数（EOF1分析）· 2011-01至今</div>
     <div class="chart-container"><canvas id="pdoChart"></canvas></div>
-    <div class="analysis-text"><strong>结论：</strong>PDO仍处冷相位，但冷态正在减弱。<strong>当前值：</strong>-2.03（2026-07），低于0，属冷相位。<strong>15年范围：</strong>-4.21～1.86，当前处于偏冷区间，较极端低值明显回升。<strong>近期趋势：</strong>近12期由-3.23升至-2.03，指数上升，显示冷相位趋缓。</div>
+    <div class="analysis-text"><p><strong>结论</strong>：PDO最新值为-2.03（2026-07），处于冷相位，冷态较前期减弱。</p><p><strong>区间</strong>：15年范围为-4.21～1.86，当前位于负值区间，未达极端低位。</p><p><strong>趋势</strong>：近12期由-3.23升至-2.03，呈上升趋势，冷相位强度有所缓和。</p></div>
   </div>
 </div>
 
@@ -1059,14 +1044,14 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📊 NAO 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -0.31</span>（2011-2026）<span style="font-family:'JetBrains Mono';font-size:14px;color:var(--accent-blue);margin-left:auto">当前: -0.31</span></div>
     <div class="ocean-card-subtitle">NOAA CPC/AOML数据 · 2011-01至今 · 月均NAO指数</div>
     <div class="chart-container"><canvas id="naoChart"></canvas></div>
-    <div class="analysis-text"><strong>结论</strong>：NAO月度指数已转为弱负相位。<strong>现状</strong>：2026-07最新值为-0.31，位于近15年-3.18至2.69区间，接近中性略偏负。<strong>趋势</strong>：近12期由0.26降至-0.31，呈下降趋势，正相位减弱并转向负相位。</div>
+    <div class="analysis-text"><p><strong>结论：</strong>NAO已转为弱负相位。</p><p><strong>当前值：</strong>-0.31（2026-07），处于15年范围-3.18~2.69的中性偏弱区间。</p><p><strong>趋势：</strong>近12期由0.26降至-0.31，呈下降趋势，正相位减弱并转入负值区。</p></div>
   </div>
 </div>
 
 <div class="ocean-section">
   <div class="section-title" id="section-iod">IOD 印度洋偶极子</div>
   <div class="ocean-card">
-    <div class="ocean-card-title">📊 IOD DMI 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:#a16207;margin-left:auto">当前: 0.146°C</span>（2011-2026）</div>
+    <div class="ocean-card-title">📊 IOD DMI 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:#a16207;margin-left:auto">当前: +0.41°C</span>（周度·2011-2026）</div>
     <div class="ocean-card-subtitle">周度DMI · BOM数据 · 2011-2026 · DMI = TIO(10°S-10°N,50°-70°E) - TIO(10°S-0°,90°-110°E)</div>
     <div class="chart-container"><canvas id="iodChart"></canvas></div>
     <div class="analysis-text"><strong>结论：</strong>IOD DMI转为弱正位相。当前值为0.146°C（2026-05），处于15年范围-0.757°C～0.964°C的中低区间；近12期由-0.014°C升至0.146°C，呈温和上升趋势，正IOD信号初现但强度较弱。</div>
@@ -1079,7 +1064,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div class="ocean-card-title">📈 RONI 时间序列<span style="font-family:JetBrains Mono;font-size:14px;color:var(--risk-red);margin-left:auto">当前: +0.98°C</span>（2011-2026）</div>
     <div class="ocean-card-subtitle">NOAA CPC · 去趋势Niño3.4三月滑动平均 · 2011-02至2026-05 · ±0.5°C阈值</div>
     <div class="chart-container"><canvas id="roniChart"></canvas></div>
-    <div class="analysis-text"><p><strong>结论：</strong>RONI为0.98°C，已超过+0.5°C阈值，海洋处于偏暖状态，呈现厄尔尼诺倾向。</p><p><strong>当前值：</strong>2026年5月为0.98°C。</p><p><strong>15年范围：</strong>-1.2°C至2.75°C，当前处于偏暖区间。</p><p><strong>近期趋势：</strong>近12期由-0.04°C升至0.98°C，升温趋势明显。</p></div>
+    <div class="analysis-text"><strong>结论：</strong>RONI升至0.98°C，已越过+0.5°C阈值，海洋呈偏暖/厄尔尼诺倾向。<strong>范围：</strong>当前值位于近15年-1.2°C至2.75°C区间中高位，距历史峰值仍有距离。<strong>趋势：</strong>近12期由-0.04°C持续上升至0.98°C，显示由中性附近快速转暖，需关注ENSO位相转换及后续增强风险。</div>
   </div>
 </div>
 
@@ -1307,12 +1292,12 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div class="ocean-card">
     <div class="ocean-card-title">🔗 多指数耦合分析</div>
     <div class="analysis-text" style="margin-top:0">
-      <strong>ENSO超强(+2.60) + SOI极端负(-22.0) + IOD正阈值连续触及·发展中未确立(+0.41) + PDO负(-1.29)</strong> —— 多重信号叠加意味着什么？
+      <strong>ENSO超强(+2.60) + SOI极端负(-22.0) + IOD正阈值连续触及·发展中未确立(+0.41) + PDO负(-2.03)</strong> —— 多重信号叠加意味着什么？
       <br><br><strong>1. 加速发展机制：</strong>SOI极端负值与Niño 3.4快速上升构成正反馈，Walker环流减弱→东太平洋SST进一步增暖→对流进一步东移→SOI更负。这一正反馈在当前发展速率上已超越2015年同期。
       <br><br><strong>2. PDO的调制作用：</strong>虽然PDO负相位理论上应抑制ENSO振幅，但当前海洋热含量异常高（次表层暖核+8~+9°C），海洋动力学因素压倒了年代际背景的抑制作用。类似情况出现在1997年和2015年。
       <br><br><strong>3. IOD转向信号：</strong>IOD连续3周触及正阈值(+0.41°C，BOM 8/9周)，事件发展中、尚未确立，需连续多周≥+0.4°C方可判定。若正IOD确立，将与厄尔尼诺协同→印度洋东冷西暖→澳大利亚干旱加剧。
       <br><br><strong>4. 对7大作物的影响链：</strong><br>🌽 玉米：甘河1号洪水+吉辽东部渍涝+七下八上防汛关键期+华北强对流<br>🫘 大豆：甘河1号洪水+吉辽东部过湿+美国正常+巴西南部偏冷<br>🌾 小麦：华北已收获+澳洲旱播ENSO偏干<br>🌴 棕榈油：ENSO干旱升级+IOD正阈值连续触及·发展中未确立（若确立加剧印尼干旱）<br>🍬 白糖：广西灾害+印度季风偏慢<br>🧶 棉花：印度干旱80%+新疆高温+美国零降水<br>☕ 咖啡：巴西历史级干旱+阿拉比卡减产10.5%
-      <br><br><strong>5. 未来3个月关键转折点：</strong><br>• 7-8月：Niño 3.4已达+2.7°C超强水平(12AUG2026周)(8/9周)，关注是否继续走强<br>• 8-9月：IOD能否确立正事件——若确立将加剧东南亚/澳洲干旱<br>• 9-10月：ENSO峰值窗口，决定后续农作物产量影响程度
+      <br><br><strong>5. 未来3个月关键转折点：</strong><br>• 7-8月：Niño 3.4已达+2.6°C超强水平(19AUG2026周)(8/9周)，关注是否继续走强<br>• 8-9月：IOD能否确立正事件——若确立将加剧东南亚/澳洲干旱<br>• 9-10月：ENSO峰值窗口，决定后续农作物产量影响程度
     </div>
   </div>
 </div>
@@ -2013,11 +1998,11 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
         <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:14px;">
           <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px;">10cm 土壤相对湿度</div>
-          <img src="https://image.nmc.cn/product/2026/08/23/AMSM/medium/SEVP_NMC_AMSM_CAGMSS_ESRH_ACHN_L10CM_PS_20260823000000000.jpg" style="width:100%;border-radius:8px;" alt="10cm土壤相对湿度" />
+          <img src="https://image.nmc.cn/product/2026/08/24/AMSM/medium/SEVP_NMC_AMSM_CAGMSS_ESRH_ACHN_L10CM_PS_20260824000000000.jpg" style="width:100%;border-radius:8px;" alt="10cm土壤相对湿度" />
         </div>
         <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:14px;">
           <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px;">20cm 土壤相对湿度</div>
-          <img src="https://image.nmc.cn/product/2026/08/23/AMSM/medium/SEVP_NMC_AMSM_CAGMSS_ESRH_ACHN_L20CM_PS_20260823000000000.jpg" style="width:100%;border-radius:8px;" alt="20cm土壤相对湿度" />
+          <img src="https://image.nmc.cn/product/2026/08/24/AMSM/medium/SEVP_NMC_AMSM_CAGMSS_ESRH_ACHN_L20CM_PS_20260824000000000.jpg" style="width:100%;border-radius:8px;" alt="20cm土壤相对湿度" />
         </div>
       </div>
     </div>
@@ -2059,7 +2044,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div id="fc-global" style="margin-bottom:28px;">
 <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
   <span style="font-size:16px;font-weight:600;color:var(--accent-blue);">🌍 全球其他产区天气展望</span>
-  <span style="font-size:11px;color:var(--text-muted);">（ECMWF IFS 8月预报 · 2026年08月18日更新 · 除中美巴阿）</span>
+  <span style="font-size:11px;color:var(--text-muted);">（ECMWF IFS 8月预报 · 2026年08月25日更新 · 除中美巴阿）</span>
 </div>
 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
 
@@ -2070,9 +2055,9 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <span style="font-size:11px;padding:3px 8px;background:#fff1f0;color:#cf1322;border-radius:4px;font-weight:600;">🟡关注🟥高风险</span>
   </div>
   <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-    <div style="margin-bottom:6px;"><strong>欧洲高温与降水分化</strong>：</div>
-<div>西班牙、葡萄牙、意大利多地最高气温超过40℃；东欧降水偏强，法国锋面南移，地中海区周三再迎高温。</div>
-<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">注意高温防暑，关注降水和强对流天气。</div>
+    <div style="margin-bottom:6px;"><strong>马德里持续高温少雨</strong>：</div>
+<div>未来7日最高温达34℃，累计降水仅0.2mm，地中海沿岸持续干热，需警惕作物热害与土壤失墒风险。</div>
+<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">加强灌溉防暑，覆盖保墒</div>
   </div>
 </div>
 
@@ -2080,12 +2065,12 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
     <span style="font-size:14px;font-weight:600;">东南亚</span>
-    <span style="font-size:11px;padding:3px 8px;background:#fff7e6;color:#d48806;border-radius:4px;font-weight:600;">🟡关注</span>
+    <span style="font-size:11px;padding:3px 8px;background:#fff1f0;color:#cf1322;border-radius:4px;font-weight:600;">🟡关注🟥高风险</span>
   </div>
   <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-    <div style="margin-bottom:6px;"><strong>东南亚强对流与高温并存</strong>：</div>
-<div>菲律宾、印尼及中南半岛大雨暴雨，伴雷暴、大风和局地冰雹；PAGASA监测到两个低压区；越南、印度东南及巴基斯坦高温。</div>
-<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">防范暴雨、雷暴、大风及高温天气。</div>
+    <div style="margin-bottom:6px;"><strong>马尼拉季风暴雨预警</strong>：</div>
+<div>最高温30°C，7日累计降水132.6mm，28至29日单日超37mm，需防涝。</div>
+<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">疏通沟渠防渍涝，暂停施肥</div>
   </div>
 </div>
 
@@ -2093,10 +2078,10 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
     <span style="font-size:14px;font-weight:600;">印度</span>
-    <span style="font-size:11px;padding:3px 8px;background:#fff7e6;color:#d48806;border-radius:4px;font-weight:600;">🟡关注</span>
+    <span style="font-size:11px;padding:3px 8px;background:#f6ffed;color:#389e0d;border-radius:4px;font-weight:600;">🟢正常</span>
   </div>
   <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-    <div style="margin-bottom:6px;"><strong>印度季风偏弱，北部暴雨南部偏干</strong>：</div>
+    <div style="margin-bottom:6px;"><strong>西南季风活跃降水充沛</strong>：</div>
 <div>西南季风整体偏弱；印度北部、尼泊尔及孟加拉出现大雨暴雨，南部和东部降水偏少。</div>
 <div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">关注强降水与季风降水变化。</div>
   </div>
@@ -2109,9 +2094,9 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <span style="font-size:11px;padding:3px 8px;background:#fff1f0;color:#cf1322;border-radius:4px;font-weight:600;">🟡关注🟥高风险</span>
   </div>
   <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-    <div style="margin-bottom:6px;"><strong>西非暴雨持续，东非干旱</strong>：</div>
-<div>几内亚、塞拉利昂、尼日利亚南部暴雨持续，洪水风险高；苏丹、埃塞俄比亚严重干旱。</div>
-<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">警惕持续强降雨引发洪涝和干旱发展。</div>
+    <div style="margin-bottom:6px;"><strong>拉各斯七日强降水需防涝</strong>：</div>
+<div>最高温28°C，七日累计降水57.0mm，29日达13.9mm峰值，持续强降雨致农田渍涝风险高。</div>
+<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">疏通沟渠防涝，抢排积水保苗</div>
   </div>
 </div>
 
@@ -2122,7 +2107,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <span style="font-size:11px;padding:3px 8px;background:#fff7e6;color:#d48806;border-radius:4px;font-weight:600;">🟡关注</span>
   </div>
   <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-    <div style="margin-bottom:6px;"><strong>澳洲东岸降雨，南部东部降水偏低</strong>：</div>
+    <div style="margin-bottom:6px;"><strong>冬末降水偏少需关注</strong>：</div>
 <div>东部沿海有中到大雨；南部东部降水整体偏低，昆士兰干旱持续。</div>
 <div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">关注东部沿海降雨和内陆干旱发展。</div>
   </div>
@@ -2132,12 +2117,12 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
     <span style="font-size:14px;font-weight:600;">黑海</span>
-    <span style="font-size:11px;padding:3px 8px;background:#f6ffed;color:#389e0d;border-radius:4px;font-weight:600;">🟡关注🟢正常</span>
+    <span style="font-size:11px;padding:3px 8px;background:#fff7e6;color:#d48806;border-radius:4px;font-weight:600;">🟡关注</span>
   </div>
   <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-    <div style="margin-bottom:6px;"><strong>黑海大部晴好，高加索零星小雨</strong>：</div>
-<div>乌克兰和俄罗斯大部以晴好天气为主，大高加索地区有零星小雨。</div>
-<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">关注晴好天气及高加索零星降水。</div>
+    <div style="margin-bottom:6px;"><strong>前期晴好周末强降雨</strong>：</div>
+<div>最高温20°C，7日累计降水12.0mm，25日后转晴干燥，冬季蓄水不足风险上升。</div>
+<div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--border-color);color:#d48806;font-weight:500;">抢晴收晒，周末排涝</div>
   </div>
 </div>
 
@@ -2148,12 +2133,12 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div id="fc-us" style="margin-bottom:28px;">
 <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
   <span style="font-size:16px;font-weight:600;color:var(--accent-blue);">🇺🇸 美国产区天气展望</span>
-  <span style="font-size:11px;color:var(--text-muted);">（CPC 6-14天展望 · 6-10天：8月29日-9月2日 / 8-14天：待发布）</span>
+  <span style="font-size:11px;color:var(--text-muted);">（CPC 6-14天展望 · 6-10天：8月30日-9月3日 / 8-14天：9月1日-9月7日）</span>
 </div>
 
 <!-- CPC 6-10天展望图 -->
 <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;margin-bottom:14px;">
-  <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px;">🗺️ CPC 6-10天气温与降水概率展望（8月25日-29日）</div>
+  <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px;">🗺️ CPC 6-10天气温与降水概率展望（8月25日-9月3日）</div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--risk-red);margin-bottom:6px;">🌡️ 温度概率</div>
@@ -2164,7 +2149,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <img src="https://www.cpc.ncep.noaa.gov/products/predictions/610day/610prcp.new.gif" style="width:100%;border-radius:8px;border:1px solid var(--border-color);" alt="CPC 6-10天降水概率展望" />
     </div>
   </div>
-  <div style="font-size:10px;color:var(--text-muted);margin-top:8px;">来源：<a href="https://www.cpc.ncep.noaa.gov/products/predictions/610day/index.php" target="_blank" style="color:var(--accent-blue);">NOAA CPC 6-10 Day Outlooks</a>（2026-08-24更新）</div>
+  <div style="font-size:10px;color:var(--text-muted);margin-top:8px;">来源：<a href="https://www.cpc.ncep.noaa.gov/products/predictions/610day/index.php" target="_blank" style="color:var(--accent-blue);">NOAA CPC 6-10 Day Outlooks</a>（2026-08-25更新）</div>
 </div>
 
 <!-- CPC分区概率表 -->
@@ -2188,7 +2173,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <tr><td style="padding:6px 10px;">东南部</td><td style="text-align:center;padding:6px;">🔴 偏高</td><td style="text-align:center;padding:6px;">🟡 正常偏低</td><td style="padding:6px;">副高西伸边缘，干旱发展</td></tr>
     </tbody>
   </table>
-  <div style="font-size:11px;color:var(--text-muted);margin-top:8px;">来源：<a href="https://www.cpc.ncep.noaa.gov/products/predictions/610day/fxus06.html" target="_blank" style="color:var(--accent-blue);">NOAA CPC Prognostic Discussion</a>（2026年8月17日发布）</div>
+  <div style="font-size:11px;color:var(--text-muted);margin-top:8px;">来源：<a href="https://www.cpc.ncep.noaa.gov/products/predictions/610day/fxus06.html" target="_blank" style="color:var(--accent-blue);">NOAA CPC Prognostic Discussion</a>（2026年8月25日发布）</div>
 </div>
 
 <!-- 美国三作物卡片 -->
@@ -2198,11 +2183,11 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
       <span style="font-size:14px;font-weight:600;">美国中西部天气</span>
-      <span style="font-size:11px;padding:3px 8px;background:#fff7e6;color:#d48806;border-radius:4px;font-weight:600;">🟡 强降水与高温并存</span>
+      <span style="font-size:11px;padding:3px 8px;background:#fff7e6;color:#d48806;border-radius:4px;font-weight:600;">高温胁迫风险</span>
     </div>
     <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-      <div><strong>CPC 8/18</strong></div>
-<div style="margin-top:6px;">CPC 8/20展望：印第安纳8/11以来累计降水超过280mm，并伴有强对流大风；北部平原高温持续。未来6-10天美国中西部降水与高温形势暂缓，但南部平原干热加剧。</div>
+      <div><strong>CPC 8/25</strong></div>
+<div style="margin-top:6px;">6-14天玉米带持续受+30m以上正高度距平控制，气温偏高概率大；虽无极端干旱信号，但灌浆期高温或加速成熟、降低粒重。</div>
     </div>
   </div>
 
@@ -2210,11 +2195,11 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
       <span style="font-size:14px;font-weight:600;">美国南部平原天气</span>
-      <span style="font-size:11px;padding:3px 8px;background:#fff1f0;color:#cf1322;border-radius:4px;font-weight:600;">🔴 高温少雨加剧</span>
+      <span style="font-size:11px;padding:3px 8px;background:#fff1f0;color:#cf1322;border-radius:4px;font-weight:600;">热害加剧风险</span>
     </div>
     <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-      <div><strong>CPC 8/18</strong></div>
-<div style="margin-top:6px;">CPC 8/20展望：德州及南部平原受高压脊中心控制，高温显著，降水偏少；俄克拉何马周边高温少雨形势持续。</div>
+      <div><strong>CPC 8/25</strong></div>
+<div style="margin-top:6px;">南部平原8-14天高温概率超70%，德州等地持续偏热偏干；棉花花铃期遇热胁迫风险高，需关注灌溉保障与蕾铃脱落情况。</div>
     </div>
   </div>
 
@@ -2223,20 +2208,11 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <!-- 关键监测变量 -->
 <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;margin-bottom:14px;">
   <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px;">📡 关键监测变量</div>
-  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;">
-    <div style="padding:10px;background:var(--bg-white,#fff);border-radius:8px;border:1px solid var(--border-color);">
-      <div style="font-size:11px;font-weight:600;color:#cf1322;">① 干热</div><div style="font-size:11px;color:var(--text-muted);">南部平原5天均温超正常10°F+，降水<0.25英寸，大豆/高粱/棉花受威胁</div>
-    </div>
-    <div style="padding:10px;background:var(--bg-white,#fff);border-radius:8px;border:1px solid var(--border-color);">
-      <div style="font-size:11px;font-weight:600;color:#d48806;">南部平原与下密西西比谷地降水亏缺</div><div style="font-size:11px;color:var(--text-muted);">高压脊抑制对流发展，俄克拉荷马、德州、阿肯色及路易斯安那多地在6-10天期间累计降水不足0.25英寸，8-14天仍偏干。</div>
-    </div>
-    <div style="padding:10px;background:var(--bg-white,#fff);border-radius:8px;border:1px solid var(--border-color);">
-      <div style="font-size:11px;font-weight:600;color:#389e0d;">中西部玉米带温度与降水边际变化</div><div style="font-size:11px;color:var(--text-muted);">玉米带温度总体偏暖但概率弱于大平原；威斯康星、密歇根在8-14天降水偏少，需关注灌浆期水分压力是否扩大。</div>
-    </div>
-    <div style="padding:10px;background:var(--bg-white,#fff);border-radius:8px;border:1px solid var(--border-color);">
-      <div style="font-size:11px;font-weight:600;color:#d48806;">④ 干旱</div><div style="font-size:11px;color:var(--text-muted);">Oklahoma 30天降水<正常25%，33%大豆差/极差，牧草44%差/极差</div>
-    </div>
-  </div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;"><div style="padding:10px;background:var(--bg-white,#fff);border-radius:8px;border:1px solid var(--border-color);"><div style="font-size:11px;font-weight:600;color:#cf1322;">南部平原极端高温</div><div style="font-size:11px;color:var(--text-muted);">德州及周边8-14天高温概率超70%，棉花与晚播作物面临严重热胁迫风险。</div></div>
+<div style="padding:10px;background:var(--bg-white,#fff);border-radius:8px;border:1px solid var(--border-color);"><div style="font-size:11px;font-weight:600;color:#d48806;">玉米带持续偏暖</div><div style="font-size:11px;color:var(--text-muted);">中东部CONUS正高度距平维持，灌浆期高温或缩短生育进程，影响单产潜力。</div></div>
+<div style="padding:10px;background:var(--bg-white,#fff);border-radius:8px;border:1px solid var(--border-color);"><div style="font-size:11px;font-weight:600;color:#389e0d;">降水总体正常</div><div style="font-size:11px;color:var(--text-muted);">主产区6-14天无显著干湿异常信号，土壤墒情暂稳，缓解部分高温负面影响。</div></div>
+<div style="padding:10px;background:var(--bg-white,#fff);border-radius:8px;border:1px solid var(--border-color);"><div style="font-size:11px;font-weight:600;color:#d48806;">东北部预报不确定性</div><div style="font-size:11px;color:var(--text-muted);">GEFS与ECMWF对美东温度分歧大，近正常预报置信度低，需跟踪模式调整。</div></div>
+</div>
 </div>
 </div>
 
@@ -2244,36 +2220,36 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div id="fc-sa" style="margin-bottom:28px;">
 <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
   <span style="font-size:16px;font-weight:600;color:var(--accent-blue);">🌎 南美产区 · 大豆15天天气展望</span>
-  <span style="font-size:11px;color:var(--text-muted);">（WorldAgWeather · 源图最后更新 8/17 · 南半球冬季暂停更新 · 巴西二茬玉米收获关键期进行中）</span>
+  <span style="font-size:11px;color:var(--text-muted);">（WorldAgWeather · 8/25更新 · 南半球冬季休耕 · 巴西二茬玉米收获期）</span>
 </div>
-<div style="background:#fffbe6;border:1px solid #ffe58f;border-radius:8px;padding:8px 14px;margin-bottom:14px;font-size:12px;color:#8c6d1f;">⏸️ WAW源图自8/12起更新（南半球冬季大豆休耕期，GFS15天预报与NOAA同步）。超强厄尔尼诺、正IOD、冷PDO与MJO相位6叠加，9月底南美春播水热波动需持续跟踪。<strong>🌽 巴西二茬玉米（safrinha）正处于关键收获期：</strong>全国收获进度69.1%（CONAB截至7/31），上周58.3%；马托格罗索99.1%接近完成（Imea 8/7），产量预估5730万吨；南马托格罗索仅37.3%明显滞后；二茬玉米产量预估1.105亿吨（AgRural 8/3），巴西玉米总产2025/26达1.428亿吨创纪录。</div>
+<div style="background:#fffbe6;border:1px solid #ffe58f;border-radius:8px;padding:8px 14px;margin-bottom:14px;font-size:12px;color:#8c6d1f;">⏸️ WAW源图自8/12起更新（南半球冬季大豆休耕期，GFS15天预报与NOAA同步）。超强厄尔尼诺、正IOD、冷PDO与MJO相位6叠加，9月底南美春播水热波动需持续跟踪。<strong>🌽 巴西二茬玉米（safrinha）正处于关键收获期：</strong>超强厄尔尼诺叠加冷PDO，MJO6相位抑制南美对流。8月休耕期偏干利于二茬玉米收割，但9月春播或面临高温少雨风险，需警惕播种窗口推迟及早期墒情不足。</div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
 
   <!-- 巴西大豆降水 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇧🇷 巴西大豆产区 · 15天降水预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_brazil_5141.png" style="width:100%;border-radius:8px;" alt="巴西大豆15天降水预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_brazil_5142.png" style="width:100%;border-radius:8px;" alt="巴西大豆15天降水预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">巴西南部处冬季旱季，降水仍偏少，土壤墒情恢复有限；厄尔尼诺背景下，9月春播期雨水有望逐步增加。</div>
   </div>
 
   <!-- 巴西大豆温度 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇧🇷 巴西大豆产区 · 15天温度预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_brazil_5141.png" style="width:100%;border-radius:8px;" alt="巴西大豆15天温度预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_brazil_5142.png" style="width:100%;border-radius:8px;" alt="巴西大豆15天温度预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">巴西大部气温总体偏高，南部休耕期霜冻风险较低；PDO冷相位或带来阶段性降温，需关注播种窗口。</div>
   </div>
 
   <!-- 阿根廷大豆降水 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇦🇷 阿根廷大豆产区 · 15天降水预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_argentina_5141.png" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天降水预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_argentina_5142.png" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天降水预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">阿根廷冬季休耕降水偏少，田间偏干；厄尔尼诺与MJO相位6叠加，春播前后降雨概率趋于回升。</div>
   </div>
 
   <!-- 阿根廷大豆温度 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇦🇷 阿根廷大豆产区 · 15天温度预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_argentina_5141.png" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天温度预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_argentina_5142.png" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天温度预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">阿根廷气温整体偏暖，利于休耕后整地；但冷PDO可能引发短促降温，春播初期需防温度波动。</div>
   </div>
 
@@ -2285,30 +2261,25 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div id="fc-cn" style="margin-bottom:28px;">
 <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
   <span style="font-size:16px;font-weight:600;color:var(--accent-blue);">🇨🇳 中国产区天气展望</span>
-  <span style="font-size:11px;color:var(--text-muted);">（中央气象台+和风天气 · 2026年8月24日更新 · 黄淮至长江中下游强降水持续，华南局地强对流活跃）</span>
+  <span style="font-size:11px;color:var(--text-muted);">（中央气象台+和风天气 · 2026年8月25日更新 · 华南西南强降水，华北长江高温）</span>
 </div>
 
 <!-- 本周天气特点 -->
 <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;margin-bottom:14px;">
-  <div style="font-size:13px;font-weight:600;margin-bottom:10px;">📊 8/12最新天气形势</div>
+  <div style="font-size:13px;font-weight:600;margin-bottom:10px;">📊 8/25最新天气形势</div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:12px;color:var(--text-secondary);line-height:1.7;">
     <div>
       <div style="font-weight:600;margin-bottom:4px;">🌡️ 气温</div>
-<div>华北黄淮7天最高36°C（石家庄36°C），降水10~22mm，以多云为主。济南/郑州需关注33-34°C高温对夏玉米灌浆的热胁迫。</div>
-<div>东北7天最高33°C（沈阳33°C最高），降水15~23mm，多地阵雨/中雨。春玉米灌浆期和大豆结荚期水热条件尚可，但需防范局地强降水渍涝。</div>
-<div>长江中下游7天最高35°C（武汉35°C），南京降水36mm偏多。高温仍存，需关注水稻灌浆期热害。</div>
+<div>华北18-34℃、东北15-29℃气温偏高；长江中下游25-37℃持续高温；华南25-33℃闷热；西南22-38℃局地酷热；西北14-34℃昼夜温差大。整体呈南涝北热格局，需防范高温热害与湿热叠加对作物生长的不利影响。</div>
 🌧️ 降水</div>
-<div>🌀 8/17更新（和风天气）：华南强降水突出（广州58mm+、南宁37mm），西南成都59mm中雨持续。东北多阵雨（沈阳中雨21mm），华北以多云为主。</div>
-<div>华南7天最高35°C，广州降水58mm（中雨），南宁37mm。需防局地强降水引发的山洪和农区渍涝。</div>
-<div>西南降水突出：成都7天累计59mm（中雨），昆明24mm伴雷阵雨。重庆/成都需防范持续降水引发的地质灾害</div>
-<div>西北乌鲁木齐7天最高36°C，降水仅1.0mm，持续干燥。西安21mm小雨。</div>
+<div>华南南宁157.2mm、广州98.2mm为强降水中心；西南成都82.3mm、石家庄80.1mm雨势显著；哈尔滨30.9mm需防渍涝；其余地区降水较弱，济南仅4.3mm，注意抗旱保墒。</div>
 </div>
     </div>
     <div>
 
       <div style="padding:10px;background:#f0f5ff;border-radius:8px;border-left:3px solid var(--accent-blue);">
         <div style="font-weight:600;color:var(--accent-blue);">🔵 农田排涝降渍与病虫害防治</div>
-        <div>东北地区要及时疏通沟渠，低洼农田注意排湿降渍，增加土壤透气性。<strong style="color:var(--risk-red)">东北产区渍涝风险延续，8/9-14日将迎新一轮大到暴雨，需持续排涝降渍</strong>。</div>
+<div>华南西南及时排涝防渍，华北长江加强灌溉防暑，东北清沟理墒，西北覆膜保墒，各地做好病虫害监测防控。</div></div>
         <div>江南华南抓住降雨间隙抢收已成熟早稻，做好烘干存储防止发芽霉变。</div>
         <div>西北加强玉米棉花田间管理，科学灌溉，防范高温危害。</div>
 </div>
@@ -2323,30 +2294,30 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:10px;">
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--risk-red);margin-bottom:6px;">🌡️ 最高气温 24小时</div>
-      <img src="https://image.nmc.cn/product/2026/08/24/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260824080002412.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/08/25/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260825080002412.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--risk-red);margin-bottom:6px;">🌡️ 最高气温 48小时</div>
-      <img src="https://image.nmc.cn/product/2026/08/24/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260824080004812.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/08/25/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260825080004812.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--risk-red);margin-bottom:6px;">🌡️ 最高气温 72小时</div>
-      <img src="https://image.nmc.cn/product/2026/08/24/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260824080007212.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/08/25/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20260825080007212.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
   </div>
   <!-- Row 2: 降水量预报 -->
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--accent-blue);margin-bottom:6px;">🌧️ 降水量 24小时</div>
-      <img src="https://image.nmc.cn/product/2026/08/23/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260824000002400.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/08/25/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260825000002400.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--accent-blue);margin-bottom:6px;">🌧️ 降水量 48小时</div>
-      <img src="https://image.nmc.cn/product/2026/08/24/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260824000004800.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/08/25/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260825000004800.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--accent-blue);margin-bottom:6px;">🌧️ 降水量 72小时</div>
-      <img src="https://image.nmc.cn/product/2026/08/24/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260824000007200.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/08/25/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20260825000007200.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
   </div>
   <div style="font-size:10px;color:var(--text-muted);margin-top:8px;">来源：<a href="http://www.nmc.cn/publish/precipitation/1-day.html" target="_blank" style="color:var(--accent-blue);">中央气象台降水量预报</a> · <a href="https://m.nmc.cn/publish/temperature/hight/24hour.html" target="_blank" style="color:var(--accent-blue);">气温预报</a></div>
@@ -2354,24 +2325,16 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <!-- 农业影响 -->
 <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;margin-bottom:14px;">
   <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🌾 未来十天农业气象关注重点</div>
-  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px;font-size:12px;color:var(--text-secondary);line-height:1.7;">
-    <div>
-      <div style="padding:10px;background:#fff1f0;border-radius:8px;border-left:3px solid var(--risk-red);margin-bottom:8px;">
-        <div style="font-weight:600;color:var(--risk-red);">🔴 华南强降水风险</div><div>广州7天累计降水58mm（中雨），南宁37mm（阵雨），昆明24mm雷阵雨。需防山洪地质灾害，农区抢排积水。</div><div style="margin-top:6px">华南需加强排涝降渍，防范山洪和地质灾害。</div>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px;font-size:12px;color:var(--text-secondary);line-height:1.7;"><div>
+<div style="padding:10px;background:#fff1f0;border-radius:8px;border-left:3px solid var(--risk-red);margin-bottom:8px;"><div style="font-weight:600;color:var(--risk-red);">华南强降水</div><div>南宁累计降水达157.2mm，广州98.2mm，短时强降雨易致农田内涝、作物倒伏及根系缺氧。</div><div style="margin-top:6px">抢排积水，加固棚架</div></div>
+<div style="padding:10px;background:#fff1f0;border-radius:8px;border-left:3px solid var(--risk-red);margin-bottom:8px;"><div style="font-weight:600;color:var(--risk-red);">西南持续降水</div><div>成都降水82.3mm，重庆32.0mm，阴雨寡照抑制光合作用，加重稻瘟病、纹枯病发生风险。</div><div style="margin-top:6px">防病控湿，补施叶肥</div></div>
+<div style="padding:10px;background:#fff7e6;border-radius:8px;border-left:3px solid #d48806;margin-bottom:8px;"><div style="font-weight:600;color:#d48806;">华北高温热害</div><div>石家庄最高34℃、济南34℃，配合石家庄80.1mm降水形成湿热胁迫，影响玉米授粉灌浆。</div><div style="margin-top:6px">灌水降温，喷施调节剂</div></div>
 </div>
-      <div style="padding:10px;background:#fff1f0;border-radius:8px;border-left:3px solid var(--risk-red);margin-bottom:8px;">
-        <div style="font-weight:600;color:var(--risk-red);">🔴 西南持续降水</div><div>成都7天累计降水59mm（中雨），为各区之最。需防范持续降水引发的农田渍涝和地质灾害。</div><div style="margin-top:6px">成都59mm中雨，昆明雷阵雨，需防范农田渍涝和地质灾害。</div>
-      </div>
-      <div style="padding:10px;background:#fff7e6;border-radius:8px;border-left:3px solid #d48806;">
-        <div style="font-weight:600;color:#d48806;">⚠️ 华北高温热害</div><div>石家庄最高36°C，济南34°C，郑州33°C。高温对夏玉米灌浆期构成热胁迫，需科学灌溉降温。</div><div style="margin-top:6px">西北干燥：乌鲁木齐仅1mm降水，棉花需滴灌补水。</div>
+<div>
+<div style="padding:10px;background:#fff7e6;border-radius:8px;border-left:3px solid #d48806;margin-bottom:8px;"><div style="font-weight:600;color:#d48806;">东北排涝降渍</div><div>哈尔滨降水30.9mm，土壤过湿阻碍大豆鼓粒与玉米成熟，低洼地块渍涝风险升高。</div><div style="margin-top:6px">疏通沟渠，促根壮秆</div></div>
+<div style="padding:10px;background:#fff7e6;border-radius:8px;border-left:3px solid #d48806;margin-bottom:8px;"><div style="font-weight:600;color:#d48806;">长江中下游高温</div><div>武汉最高37℃、南京33℃，持续高温加速水稻蒸腾，导致花粉败育和结实率下降。</div><div style="margin-top:6px">深水调温，避午间施肥</div></div>
 </div>
-    </div>
-    <div>
-      <div style="padding:10px;background:#fff1f0;border-radius:8px;border-left:3px solid var(--risk-red);margin-bottom:8px;">
-        <div style="font-weight:600;color:var(--risk-red);">🟡 东北排涝降渍</div><div>东北7天降水15~23mm，沈阳中雨21mm、哈尔滨阵雨24mm。渍涝风险中等，春玉米灌浆期需持续排涝降渍，增加土壤透气性。</div><div style="margin-top:6px">东北春玉米灌浆期/大豆结荚期遇持续降水，根系缺氧+积温不足风险需持续跟踪。</div>
-      </div>
-      <div style="padding:10px;background:#fff7e6;border-radius:8px;border-left:3px solid #d48806;">
-        <div style="font-weight:600;color:#d48806;">⚠️ 长江中下游高温仍存</div><div>武汉最高35°C，高温仍存。南京降水36mm偏多但间歇性高温需关注水稻灌浆期管理。</div><div style="margin-top:6px">降雨间歇需抢收成熟早稻，做好烘干防霉</div>
+</div>
       </div>
     </div>
   </div>
@@ -2577,7 +2540,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 
 </div> <!-- close page-container -->
 
-<script>var D={"enso_labels":["05JAN2011","12JAN2011","19JAN2011","26JAN2011","02FEB2011","09FEB2011","16FEB2011","23FEB2011","02MAR2011","09MAR2011","16MAR2011","23MAR2011","30MAR2011","06APR2011","13APR2011","20APR2011","27APR2011","04MAY2011","11MAY2011","18MAY2011","25MAY2011","01JUN2011","08JUN2011","15JUN2011","22JUN2011","29JUN2011","06JUL2011","13JUL2011","20JUL2011","27JUL2011","03AUG2011","10AUG2011","17AUG2011","24AUG2011","31AUG2011","07SEP2011","14SEP2011","21SEP2011","28SEP2011","05OCT2011","12OCT2011","19OCT2011","26OCT2011","02NOV2011","09NOV2011","16NOV2011","23NOV2011","30NOV2011","07DEC2011","14DEC2011","21DEC2011","28DEC2011","04JAN2012","11JAN2012","18JAN2012","25JAN2012","01FEB2012","08FEB2012","15FEB2012","22FEB2012","29FEB2012","07MAR2012","14MAR2012","21MAR2012","28MAR2012","04APR2012","11APR2012","18APR2012","25APR2012","02MAY2012","09MAY2012","16MAY2012","23MAY2012","30MAY2012","06JUN2012","13JUN2012","20JUN2012","27JUN2012","04JUL2012","11JUL2012","18JUL2012","25JUL2012","01AUG2012","08AUG2012","15AUG2012","22AUG2012","29AUG2012","05SEP2012","12SEP2012","19SEP2012","26SEP2012","03OCT2012","10OCT2012","17OCT2012","24OCT2012","31OCT2012","07NOV2012","14NOV2012","21NOV2012","28NOV2012","05DEC2012","12DEC2012","19DEC2012","26DEC2012","02JAN2013","09JAN2013","16JAN2013","23JAN2013","30JAN2013","06FEB2013","13FEB2013","20FEB2013","27FEB2013","06MAR2013","13MAR2013","20MAR2013","27MAR2013","03APR2013","10APR2013","17APR2013","24APR2013","01MAY2013","08MAY2013","15MAY2013","22MAY2013","29MAY2013","05JUN2013","12JUN2013","19JUN2013","26JUN2013","03JUL2013","10JUL2013","17JUL2013","24JUL2013","31JUL2013","07AUG2013","14AUG2013","21AUG2013","28AUG2013","04SEP2013","11SEP2013","18SEP2013","25SEP2013","02OCT2013","09OCT2013","16OCT2013","23OCT2013","30OCT2013","06NOV2013","13NOV2013","20NOV2013","27NOV2013","04DEC2013","11DEC2013","18DEC2013","25DEC2013","01JAN2014","08JAN2014","15JAN2014","22JAN2014","29JAN2014","05FEB2014","12FEB2014","19FEB2014","26FEB2014","05MAR2014","12MAR2014","19MAR2014","26MAR2014","02APR2014","09APR2014","16APR2014","23APR2014","30APR2014","07MAY2014","14MAY2014","21MAY2014","28MAY2014","04JUN2014","11JUN2014","18JUN2014","25JUN2014","02JUL2014","09JUL2014","16JUL2014","23JUL2014","30JUL2014","06AUG2014","13AUG2014","20AUG2014","27AUG2014","03SEP2014","10SEP2014","17SEP2014","24SEP2014","01OCT2014","08OCT2014","15OCT2014","22OCT2014","29OCT2014","05NOV2014","12NOV2014","19NOV2014","26NOV2014","03DEC2014","10DEC2014","17DEC2014","24DEC2014","31DEC2014","07JAN2015","14JAN2015","21JAN2015","28JAN2015","04FEB2015","11FEB2015","18FEB2015","25FEB2015","04MAR2015","11MAR2015","18MAR2015","25MAR2015","01APR2015","08APR2015","15APR2015","22APR2015","29APR2015","06MAY2015","13MAY2015","20MAY2015","27MAY2015","03JUN2015","10JUN2015","17JUN2015","24JUN2015","01JUL2015","08JUL2015","15JUL2015","22JUL2015","29JUL2015","05AUG2015","12AUG2015","19AUG2015","26AUG2015","02SEP2015","09SEP2015","16SEP2015","23SEP2015","30SEP2015","07OCT2015","14OCT2015","21OCT2015","28OCT2015","04NOV2015","11NOV2015","18NOV2015","25NOV2015","02DEC2015","09DEC2015","16DEC2015","23DEC2015","30DEC2015","06JAN2016","13JAN2016","20JAN2016","27JAN2016","03FEB2016","10FEB2016","17FEB2016","24FEB2016","02MAR2016","09MAR2016","16MAR2016","23MAR2016","30MAR2016","06APR2016","13APR2016","20APR2016","27APR2016","04MAY2016","11MAY2016","18MAY2016","25MAY2016","01JUN2016","08JUN2016","15JUN2016","22JUN2016","29JUN2016","06JUL2016","13JUL2016","20JUL2016","27JUL2016","03AUG2016","10AUG2016","17AUG2016","24AUG2016","31AUG2016","07SEP2016","14SEP2016","21SEP2016","28SEP2016","05OCT2016","12OCT2016","19OCT2016","26OCT2016","02NOV2016","09NOV2016","16NOV2016","23NOV2016","30NOV2016","07DEC2016","14DEC2016","21DEC2016","28DEC2016","04JAN2017","11JAN2017","18JAN2017","25JAN2017","01FEB2017","08FEB2017","15FEB2017","22FEB2017","01MAR2017","08MAR2017","15MAR2017","22MAR2017","29MAR2017","05APR2017","12APR2017","19APR2017","26APR2017","03MAY2017","10MAY2017","17MAY2017","24MAY2017","31MAY2017","07JUN2017","14JUN2017","21JUN2017","28JUN2017","05JUL2017","12JUL2017","19JUL2017","26JUL2017","02AUG2017","09AUG2017","16AUG2017","23AUG2017","30AUG2017","06SEP2017","13SEP2017","20SEP2017","27SEP2017","04OCT2017","11OCT2017","18OCT2017","25OCT2017","01NOV2017","08NOV2017","15NOV2017","22NOV2017","29NOV2017","06DEC2017","13DEC2017","20DEC2017","27DEC2017","03JAN2018","10JAN2018","17JAN2018","24JAN2018","31JAN2018","07FEB2018","14FEB2018","21FEB2018","28FEB2018","07MAR2018","14MAR2018","21MAR2018","28MAR2018","04APR2018","11APR2018","18APR2018","25APR2018","02MAY2018","09MAY2018","16MAY2018","23MAY2018","30MAY2018","06JUN2018","13JUN2018","20JUN2018","27JUN2018","04JUL2018","11JUL2018","18JUL2018","25JUL2018","01AUG2018","08AUG2018","15AUG2018","22AUG2018","29AUG2018","05SEP2018","12SEP2018","19SEP2018","26SEP2018","03OCT2018","10OCT2018","17OCT2018","24OCT2018","31OCT2018","07NOV2018","14NOV2018","21NOV2018","28NOV2018","05DEC2018","12DEC2018","19DEC2018","26DEC2018","02JAN2019","09JAN2019","16JAN2019","23JAN2019","30JAN2019","06FEB2019","13FEB2019","20FEB2019","27FEB2019","06MAR2019","13MAR2019","20MAR2019","27MAR2019","03APR2019","10APR2019","17APR2019","24APR2019","01MAY2019","08MAY2019","15MAY2019","22MAY2019","29MAY2019","05JUN2019","12JUN2019","19JUN2019","26JUN2019","03JUL2019","10JUL2019","17JUL2019","24JUL2019","31JUL2019","07AUG2019","14AUG2019","21AUG2019","28AUG2019","04SEP2019","11SEP2019","18SEP2019","25SEP2019","02OCT2019","09OCT2019","16OCT2019","23OCT2019","30OCT2019","06NOV2019","13NOV2019","20NOV2019","27NOV2019","04DEC2019","11DEC2019","18DEC2019","25DEC2019","01JAN2020","08JAN2020","15JAN2020","22JAN2020","29JAN2020","05FEB2020","12FEB2020","19FEB2020","26FEB2020","04MAR2020","11MAR2020","18MAR2020","25MAR2020","01APR2020","08APR2020","15APR2020","22APR2020","29APR2020","06MAY2020","13MAY2020","20MAY2020","27MAY2020","03JUN2020","10JUN2020","17JUN2020","24JUN2020","01JUL2020","08JUL2020","15JUL2020","22JUL2020","29JUL2020","05AUG2020","12AUG2020","19AUG2020","26AUG2020","02SEP2020","09SEP2020","16SEP2020","23SEP2020","30SEP2020","07OCT2020","14OCT2020","21OCT2020","28OCT2020","04NOV2020","11NOV2020","18NOV2020","25NOV2020","02DEC2020","09DEC2020","16DEC2020","23DEC2020","30DEC2020","06JAN2021","13JAN2021","20JAN2021","27JAN2021","03FEB2021","10FEB2021","17FEB2021","24FEB2021","03MAR2021","10MAR2021","17MAR2021","24MAR2021","31MAR2021","07APR2021","14APR2021","21APR2021","28APR2021","05MAY2021","12MAY2021","19MAY2021","26MAY2021","02JUN2021","09JUN2021","16JUN2021","23JUN2021","30JUN2021","07JUL2021","14JUL2021","21JUL2021","28JUL2021","04AUG2021","11AUG2021","18AUG2021","25AUG2021","01SEP2021","08SEP2021","15SEP2021","22SEP2021","29SEP2021","06OCT2021","13OCT2021","20OCT2021","27OCT2021","03NOV2021","10NOV2021","17NOV2021","24NOV2021","01DEC2021","08DEC2021","15DEC2021","22DEC2021","29DEC2021","05JAN2022","12JAN2022","19JAN2022","26JAN2022","02FEB2022","09FEB2022","16FEB2022","23FEB2022","02MAR2022","09MAR2022","16MAR2022","23MAR2022","30MAR2022","06APR2022","13APR2022","20APR2022","27APR2022","04MAY2022","11MAY2022","18MAY2022","25MAY2022","01JUN2022","08JUN2022","15JUN2022","22JUN2022","29JUN2022","06JUL2022","13JUL2022","20JUL2022","27JUL2022","03AUG2022","10AUG2022","17AUG2022","24AUG2022","31AUG2022","07SEP2022","14SEP2022","21SEP2022","28SEP2022","05OCT2022","12OCT2022","19OCT2022","26OCT2022","02NOV2022","09NOV2022","16NOV2022","23NOV2022","30NOV2022","07DEC2022","14DEC2022","21DEC2022","28DEC2022","04JAN2023","11JAN2023","18JAN2023","25JAN2023","01FEB2023","08FEB2023","15FEB2023","22FEB2023","01MAR2023","08MAR2023","15MAR2023","22MAR2023","29MAR2023","05APR2023","12APR2023","19APR2023","26APR2023","03MAY2023","10MAY2023","17MAY2023","24MAY2023","31MAY2023","07JUN2023","14JUN2023","21JUN2023","28JUN2023","05JUL2023","12JUL2023","19JUL2023","26JUL2023","02AUG2023","09AUG2023","16AUG2023","23AUG2023","30AUG2023","06SEP2023","13SEP2023","20SEP2023","27SEP2023","04OCT2023","11OCT2023","18OCT2023","25OCT2023","01NOV2023","08NOV2023","15NOV2023","22NOV2023","29NOV2023","06DEC2023","13DEC2023","20DEC2023","27DEC2023","03JAN2024","10JAN2024","17JAN2024","24JAN2024","31JAN2024","07FEB2024","14FEB2024","21FEB2024","28FEB2024","06MAR2024","13MAR2024","20MAR2024","27MAR2024","03APR2024","10APR2024","17APR2024","24APR2024","01MAY2024","08MAY2024","15MAY2024","22MAY2024","29MAY2024","05JUN2024","12JUN2024","19JUN2024","26JUN2024","03JUL2024","10JUL2024","17JUL2024","24JUL2024","31JUL2024","07AUG2024","14AUG2024","21AUG2024","28AUG2024","04SEP2024","11SEP2024","18SEP2024","25SEP2024","02OCT2024","09OCT2024","16OCT2024","23OCT2024","30OCT2024","06NOV2024","13NOV2024","20NOV2024","27NOV2024","04DEC2024","11DEC2024","18DEC2024","25DEC2024","01JAN2025","08JAN2025","15JAN2025","22JAN2025","29JAN2025","05FEB2025","12FEB2025","19FEB2025","26FEB2025","05MAR2025","12MAR2025","19MAR2025","26MAR2025","02APR2025","09APR2025","16APR2025","23APR2025","30APR2025","07MAY2025","14MAY2025","21MAY2025","28MAY2025","04JUN2025","11JUN2025","18JUN2025","25JUN2025","02JUL2025","09JUL2025","16JUL2025","23JUL2025","30JUL2025","06AUG2025","13AUG2025","20AUG2025","27AUG2025","03SEP2025","10SEP2025","17SEP2025","24SEP2025","01OCT2025","08OCT2025","15OCT2025","22OCT2025","29OCT2025","05NOV2025","12NOV2025","19NOV2025","26NOV2025","03DEC2025","10DEC2025","17DEC2025","24DEC2025","31DEC2025","07JAN2026","14JAN2026","21JAN2026","28JAN2026","04FEB2026","11FEB2026","18FEB2026","25FEB2026","04MAR2026","11MAR2026","18MAR2026","25MAR2026","01APR2026","08APR2026","15APR2026","22APR2026","29APR2026","06MAY2026","13MAY2026","20MAY2026","27MAY2026","03JUN2026","10JUN2026","17JUN2026","24JUN2026","01JUL2026","08JUL2026","15JUL2026","22JUL2026","29JUL2026","05AUG2026","12AUG2026"],"enso_values":[-1.3,-1.7,-1.5,-1.4,-1.2,-1.0,-1.2,-1.4,-1.3,-0.8,-0.7,-0.9,-0.7,-0.5,-0.7,-0.8,-0.9,-0.8,-0.4,-0.1,-0.3,-0.3,-0.3,-0.5,-0.2,0.1,-0.1,-0.1,-0.3,-0.3,-0.3,-0.4,-0.4,-0.5,-0.6,-0.6,-0.8,-0.7,-0.6,-0.9,-0.6,-0.5,-1.0,-1.0,-0.9,-0.9,-1.0,-1.0,-1.0,-1.0,-1.0,-1.1,-0.8,-0.4,-0.5,-0.7,-0.9,-0.9,-0.5,-0.3,-0.2,-0.5,-0.6,-0.6,-0.3,-0.4,-0.6,-0.6,-0.4,-0.3,-0.2,-0.4,-0.2,-0.1,-0.1,0.3,0.6,0.5,0.3,-0.1,0.2,0.5,0.6,0.7,0.5,0.5,1.3,1.1,0.3,0.1,0.3,0.3,0.3,0.3,0.4,0.4,0.8,1.0,0.5,-0.3,-0.6,-0.4,-0.6,-0.4,-0.5,-0.8,-0.4,-0.4,-0.4,-0.5,-0.5,-0.7,-0.4,-0.1,-0.5,-0.4,0.0,0.7,0.4,-0.1,-0.2,-0.1,-0.1,-0.5,-0.6,-0.3,-0.5,-0.4,-0.4,-0.1,-0.3,-0.4,-0.3,-0.2,-0.3,-0.4,-0.7,-0.7,-0.2,0.1,0.2,0.1,-0.1,-0.1,-0.1,-0.2,-0.3,-0.1,-0.0,-0.1,0.0,-0.2,-0.1,-0.1,-0.1,-0.4,-0.6,-0.8,-0.7,-0.1,-0.4,-1.3,-1.0,-0.4,-0.9,-1.2,-0.5,-0.2,0.2,0.3,0.3,0.3,0.2,0.2,0.4,0.3,0.6,0.6,0.5,0.6,0.6,0.4,0.0,0.1,-0.1,-0.3,-0.1,-0.1,-0.3,-0.0,0.2,0.2,0.4,0.5,0.3,0.3,0.4,0.5,0.4,0.5,0.7,0.8,0.9,0.8,0.7,0.7,0.7,0.5,0.3,0.2,0.4,0.8,0.8,0.9,0.7,0.6,0.8,0.5,0.2,0.4,0.5,0.6,0.7,1.0,1.0,1.0,0.8,0.8,0.7,1.0,1.0,0.9,1.1,1.3,1.2,1.3,1.4,1.2,1.3,1.5,1.7,1.8,1.9,1.7,1.7,2.0,2.0,2.0,2.1,2.2,2.3,2.5,2.6,2.8,3.0,2.9,2.6,2.4,2.5,2.5,2.3,2.3,2.7,2.7,2.7,2.6,2.5,2.2,2.0,2.0,1.8,1.6,1.4,1.3,1.1,1.1,1.0,0.7,0.6,0.4,0.0,-0.2,-0.2,0.1,0.4,-0.3,-0.2,-0.4,-0.6,-0.6,-0.5,-0.5,-0.6,-0.5,-0.6,-0.4,-0.4,-0.5,-0.3,-0.5,-0.8,-0.6,-0.8,-0.7,-0.8,-0.7,-0.6,-0.6,-0.5,-0.4,-0.5,-0.4,-0.2,-0.4,-0.3,-0.1,-0.3,-0.4,-0.2,0.4,0.2,0.1,0.1,0.2,0.2,0.2,0.2,0.3,0.5,0.4,0.3,0.4,0.3,0.5,0.4,0.3,0.4,0.5,0.4,0.5,0.3,0.2,0.1,0.1,-0.1,-0.1,-0.1,-0.2,-0.4,-0.3,-0.4,-0.1,0.0,-0.4,-0.7,-0.5,-0.6,-1.0,-0.9,-1.0,-1.1,-1.0,-1.0,-1.0,-0.8,-1.0,-0.9,-0.6,-0.5,-0.6,-0.6,-0.8,-0.7,-0.7,-0.8,-0.8,-0.9,-0.7,-0.6,-0.5,-0.5,-0.4,-0.4,-0.3,-0.0,-0.0,-0.1,-0.0,0.1,0.3,0.4,0.2,0.3,0.2,0.2,0.2,0.2,0.4,0.4,0.3,0.4,0.3,0.2,0.5,0.8,0.9,0.7,0.9,1.0,0.9,0.9,0.9,0.9,1.0,0.8,0.9,0.9,0.8,0.8,0.7,0.6,0.7,0.6,0.6,0.8,1.0,1.0,1.0,1.1,0.8,0.8,0.7,0.8,0.8,0.8,0.8,0.6,0.7,0.9,0.8,0.7,0.6,0.4,0.5,0.4,0.4,0.4,0.4,0.2,0.2,0.1,-0.0,-0.1,-0.3,0.1,0.3,0.5,0.4,0.5,0.6,0.6,0.4,0.5,0.6,0.4,0.4,0.4,0.4,0.4,0.6,0.6,0.5,0.5,0.5,0.3,0.3,0.4,0.3,0.4,0.4,0.6,0.4,0.4,0.5,0.6,0.5,0.2,-0.0,-0.3,-0.4,-0.4,-0.3,-0.4,-0.4,-0.2,-0.1,0.1,-0.2,-0.2,-0.4,-0.6,-0.6,-0.5,-0.5,-0.6,-0.6,-0.6,-0.7,-0.7,-0.9,-1.1,-1.3,-1.7,-1.5,-1.0,-1.1,-1.3,-1.3,-1.1,-0.9,-0.9,-1.0,-1.0,-1.0,-0.8,-0.7,-0.8,-0.9,-0.7,-1.1,-0.8,-0.4,-0.5,-0.6,-0.6,-0.6,-0.5,-0.6,-0.5,-0.5,-0.4,-0.2,-0.3,-0.2,0.0,-0.0,0.0,0.1,-0.1,-0.1,-0.3,-0.4,-0.4,-0.2,-0.2,-0.3,-0.3,-0.1,-0.3,-0.2,-0.4,-0.6,-0.8,-0.9,-1.1,-1.0,-0.9,-0.9,-0.7,-0.9,-1.1,-1.1,-1.0,-1.1,-1.0,-0.8,-0.8,-0.7,-0.6,-0.6,-0.7,-0.8,-1.0,-0.9,-1.0,-0.9,-0.8,-0.9,-0.9,-1.0,-1.1,-1.2,-1.1,-1.1,-1.0,-0.9,-0.7,-0.6,-0.6,-0.6,-0.5,-0.6,-0.7,-0.7,-1.0,-1.1,-1.2,-0.9,-0.8,-1.0,-0.9,-0.9,-0.8,-0.8,-0.8,-0.8,-1.0,-1.1,-1.0,-0.8,-0.8,-1.0,-1.0,-0.9,-0.8,-0.7,-0.8,-0.7,-0.6,-0.6,-0.5,-0.5,-0.5,-0.3,-0.2,-0.1,0.1,-0.0,-0.0,0.0,0.1,0.3,0.4,0.4,0.5,0.5,0.4,0.8,0.9,0.9,1.0,0.9,1.0,1.1,1.1,1.2,1.1,1.2,1.3,1.5,1.6,1.6,1.6,1.7,1.5,1.5,1.5,1.6,1.6,1.8,1.8,1.9,2.1,2.0,1.9,2.0,2.0,2.0,1.9,1.9,1.7,1.7,1.8,1.7,1.5,1.5,1.3,1.4,1.1,1.3,1.0,1.2,0.9,0.7,0.8,0.5,0.3,0.2,0.2,0.1,0.1,0.0,0.3,0.4,0.3,0.3,0.2,0.1,-0.2,0.0,-0.1,-0.0,-0.2,-0.1,-0.2,-0.5,-0.2,-0.3,-0.5,-0.3,-0.5,-0.2,-0.3,0.0,-0.1,-0.3,-0.3,-0.6,-0.8,-1.1,-0.7,-0.7,-0.6,-0.9,-0.8,-0.6,-0.3,-0.3,-0.2,0.0,0.3,-0.1,0.2,-0.1,-0.1,-0.2,-0.0,-0.1,0.1,-0.1,-0.2,-0.1,-0.0,-0.0,0.2,0.1,0.0,0.1,-0.2,-0.2,-0.3,-0.3,-0.3,-0.4,-0.4,-0.3,-0.5,-0.4,-0.5,-0.5,-0.3,-0.6,-0.6,-0.6,-0.7,-0.8,-0.8,-0.6,-0.5,-0.7,-0.7,-0.7,-0.6,-0.7,-0.6,-0.4,-0.5,-0.4,-0.2,-0.1,-0.1,-0.1,-0.1,0.0,0.1,0.1,0.2,0.5,0.8,0.9,0.8,0.9,0.9,1.0,1.3,1.5,1.7,1.8,1.7,2.0,2.1,2.2,2.3,2.6,2.7],"enso_w_labels":["20MAY2026","27MAY2026","03JUN2026","10JUN2026","17JUN2026","24JUN2026","01JUL2026","08JUL2026","15JUL2026","22JUL2026","29JUL2026","05AUG2026","12AUG2026"],"enso_w_34":[0.9,1.0,1.3,1.5,1.7,1.8,1.7,2.0,2.1,2.2,2.3,2.6,2.7],"enso_w_3":[2.6,2.8,2.5,2.4,2.3,2.0,1.8,1.8,1.8,1.7,1.6,1.3,1.3,1.2,0.2,0.1,0.0,0.2,0.7,0.6,0.6,0.5,0.2,0.4,0.4,0.1,0.1,0.1,0.3,0.2,0.5,0.7,0.9,0.7,0.7,0.9,1.0,1.0,0.9,1.0,1.0,0.9,1.0,1.0,0.8,0.9,0.8,0.7,0.6,0.6,0.7,0.8,1.1,0.9,0.7,0.9,0.6,0.5,0.6,0.8,0.7,0.8,0.6,0.5,0.6,0.5,0.4,0.4,0.3,0.3,0.2,0.2,0.5,0.1,0.0,0.1,0.1,0.1,0.2,0.3,0.2,0.2,0.4,0.3,0.1,0.2,0.4,0.6,0.7,0.8,0.9,0.9,0.8,1.1,1.2,1.2,1.4,1.4,1.5,1.6,1.7,1.7,1.8,1.8,2.0,2.2,2.3,2.2,2.2,2.1,2.0,1.9,2.1,2.1,2.0,2.1,2.0,2.1,2.3,2.0,2.0,2.1,2.1,2.1,2.0,2.0,1.9,1.8,1.9,1.6,1.5,1.4,1.3,1.0,0.9,0.6,0.3,0.0,0.1,0.0,0.1,0.2,0.3,0.1,0.1,0.3,0.6,0.9,1.0,1.0,1.1,1.2,1.3,1.5,1.6,1.9,2.1,2.0,2.3,2.5,2.8,3.1,3.2],"enso_w_4":[1.3,1.3,1.3,1.4,1.5,1.5,1.4,1.3,1.3,1.4,1.2,1.2,1.0,0.8,0.8,0.6,0.5,0.6,0.0,0.1,0.2,0.2,0.2,0.2,0.1,0.5,0.5,0.4,0.5,0.4,0.6,0.9,1.0,0.8,0.9,0.9,0.8,0.8,0.8,0.8,1.0,1.0,1.0,1.0,0.9,0.8,0.9,0.9,0.9,0.8,0.8,0.9,0.9,0.9,0.9,0.9,0.8,0.7,0.7,0.6,0.6,0.6,0.6,0.6,0.6,0.8,0.9,0.7,0.8,0.8,0.9,0.9,1.0,1.1,1.0,0.8,0.9,0.8,0.8,0.9,0.6,0.6,0.7,0.1,0.0,0.3,0.2,0.3,0.4,0.3,0.2,0.3,0.4,0.6,0.7,0.6,0.7,0.6,0.7,0.7,0.8,0.8,0.8,0.9,0.9,1.1,1.1,1.1,1.1,1.2,1.1,1.2,1.3,1.3,1.3,1.4,1.3,1.5,1.5,1.7,1.4,1.4,1.4,1.4,1.4,1.5,1.4,1.6,1.5,1.3,1.1,1.2,1.1,1.1,0.8,0.9,0.8,0.2,0.3,0.3,0.1,0.2,0.3,0.6,0.6,0.7,0.9,1.0,0.9,0.9,1.0,1.0,1.1,1.2,1.3,1.3,1.2,1.1,1.0,1.0,1.1,1.0],"soi_labels":["2011-01","2011-02","2011-03","2011-04","2011-05","2011-06","2011-07","2011-08","2011-09","2011-10","2011-11","2011-12","2012-01","2012-02","2012-03","2012-04","2012-05","2012-06","2012-07","2012-08","2012-09","2012-10","2012-11","2012-12","2013-01","2013-02","2013-03","2013-04","2013-05","2013-06","2013-07","2013-08","2013-09","2013-10","2013-11","2013-12","2014-01","2014-02","2014-03","2014-04","2014-05","2014-06","2014-07","2014-08","2014-09","2014-10","2014-11","2014-12","2015-01","2015-02","2015-03","2015-04","2015-05","2015-06","2015-07","2015-08","2015-09","2015-10","2015-11","2015-12","2016-01","2016-02","2016-03","2016-04","2016-05","2016-06","2016-07","2016-08","2016-09","2016-10","2016-11","2016-12","2017-01","2017-02","2017-03","2017-04","2017-05","2017-06","2017-07","2017-08","2017-09","2017-10","2017-11","2017-12","2018-01","2018-02","2018-03","2018-04","2018-05","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2011-01","2011-02","2011-03","2011-04","2011-05","2011-06","2011-07","2011-08","2011-09","2011-10","2011-11","2011-12","2012-01","2012-02","2012-03","2012-04","2012-05","2012-06","2012-07","2012-08","2012-09","2012-10","2012-11","2012-12","2013-01","2013-02","2013-03","2013-04","2013-05","2013-06","2013-07","2013-08","2013-09","2013-10","2013-11","2013-12","2014-01","2014-02","2014-03","2014-04","2014-05","2014-06","2014-07","2014-08","2014-09","2014-10","2014-11","2014-12","2015-01","2015-02","2015-03","2015-04","2015-05","2015-06","2015-07","2015-08","2015-09","2015-10","2015-11","2015-12","2016-01","2016-02","2016-03","2016-04","2016-05","2016-06","2016-07","2016-08","2016-09","2016-10","2016-11","2016-12","2017-01","2017-02","2017-03","2017-04","2017-05","2017-06","2017-07","2017-08","2017-09","2017-10","2017-11","2017-12","2018-01","2018-02","2018-03","2018-04","2018-05","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12"],"soi_values":[3.8,4.5,4.2,3.1,0.6,0.4,1.6,0.7,1.7,1.2,1.8,4.1,1.8,0.8,1.2,-0.4,0.1,-0.7,-0.1,-0.3,0.4,0.5,0.4,-1.0,-0.1,-0.4,2.5,0.4,1.3,2.0,1.3,0.3,0.5,-0.1,1.2,0.1,2.4,0.1,-1.5,1.3,0.9,0.3,-0.3,-1.2,-1.2,-1.0,-1.5,-0.9,-1.4,0.4,-1.2,-0.1,-1.2,-0.9,-1.9,-2.4,-2.7,-2.8,-0.8,-0.9,-3.6,-3.2,-0.1,-2.0,0.7,1.1,0.7,1.2,2.0,-0.4,-0.2,0.5,0.3,-0.1,1.5,-0.3,0.4,-0.7,1.3,0.9,1.0,1.5,1.5,-0.2,1.8,-0.8,2.4,0.8,0.6,-0.2,0.4,-0.5,-1.5,0.6,-0.1,1.7,-0.1,-2.3,-0.5,0.2,-0.7,-0.7,-0.6,-0.2,-1.9,-0.6,-1.4,-0.9,0.3,-0.1,-0.2,0.3,0.7,-0.6,0.7,1.8,1.5,0.8,1.1,3.0,3.2,2.5,0.6,0.6,0.8,0.7,2.3,1.0,1.3,1.2,1.6,2.5,0.8,1.8,2.9,2.8,2.4,2.8,1.3,1.7,2.7,2.8,0.5,3.5,2.3,2.3,0.3,0.4,-1.7,0.4,-0.4,-1.4,-2.1,-0.8,-1.3,-0.4,0.8,-2.3,0.6,-0.3,0.8,0.1,-1.2,1.5,-0.2,0.8,0.8,1.9,0.3,0.9,2.8,0.9,0.7,0.5,1.0,0.7,0.1,1.9,1.8,-0.0,2.3,2.7,2.5,1.9,0.4,0.2,1.0,0.4,1.0,0.8,1.1,2.5,1.1,0.5,0.7,-0.3,0.0,-0.4,-0.0,-0.2,0.2,0.3,0.3,-0.6,-0.1,-0.2,1.5,0.2,0.8,1.2,0.8,0.2,0.3,-0.1,0.7,0.1,1.4,0.1,-0.9,0.8,0.5,0.2,-0.2,-0.7,-0.7,-0.6,-0.9,-0.6,-0.8,0.2,-0.7,-0.0,-0.7,-0.6,-1.1,-1.4,-1.6,-1.7,-0.5,-0.6,-2.2,-2.0,-0.1,-1.2,0.4,0.6,0.4,0.7,1.2,-0.3,-0.1,0.3,0.2,-0.1,0.9,-0.2,0.3,-0.4,0.8,0.5,0.6,0.9,0.9,-0.1,1.1,-0.5,1.5,0.5,0.4,-0.1,0.2,-0.3,-0.9,0.4,-0.1,1.0,-0.0,-1.4,-0.3,0.1,-0.4,-0.5,-0.4,-0.1,-1.2,-0.4,-0.8,-0.6,0.2,-0.1,-0.1,0.2,0.4,-0.4,0.4,1.1,0.9,0.5,0.7,1.8,1.9,1.5,0.4,0.3,0.5,0.4,1.4,0.6,0.8,0.7,1.0,1.5,0.5,1.1,1.8,1.7,1.4,1.7,0.8,1.0,1.6,1.7,0.3,2.1,1.4,1.4,0.2,0.2,-1.0,0.3,-0.3,-0.8,-1.3,-0.5,-0.8,-0.2,0.5,-1.4,0.4,-0.2,0.5,0.0,-0.7,0.9,-0.1,0.5,0.5,1.2,0.2,0.5,1.7,0.5,0.4,0.3,0.6,0.4,0.0,1.1,1.1,-0.0],"pdo_labels":["2011-01","2011-02","2011-03","2011-04","2011-05","2011-06","2011-07","2011-08","2011-09","2011-10","2011-11","2011-12","2012-01","2012-02","2012-03","2012-04","2012-05","2012-06","2012-07","2012-08","2012-09","2012-10","2012-11","2012-12","2013-01","2013-02","2013-03","2013-04","2013-05","2013-06","2013-07","2013-08","2013-09","2013-10","2013-11","2013-12","2014-01","2014-02","2014-03","2014-04","2014-05","2014-06","2014-07","2014-08","2014-09","2014-10","2014-11","2014-12","2015-01","2015-02","2015-03","2015-04","2015-05","2015-06","2015-07","2015-08","2015-09","2015-10","2015-11","2015-12","2016-01","2016-02","2016-03","2016-04","2016-05","2016-06","2016-07","2016-08","2016-09","2016-10","2016-11","2016-12","2017-01","2017-02","2017-03","2017-04","2017-05","2017-06","2017-07","2017-08","2017-09","2017-10","2017-11","2017-12","2018-01","2018-02","2018-03","2018-04","2018-05","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07"],"pdo_values":[-1.8,-1.46,-1.28,-1.02,-0.66,-1.08,-2.3,-2.37,-2.5,-1.92,-2.95,-2.4,-1.85,-1.35,-1.66,-1.01,-2.12,-1.63,-2.4,-2.6,-2.99,-1.22,-0.66,-1.31,-1.1,-1.42,-1.48,-0.72,-0.4,-1.19,-1.34,-1.56,-1.0,-1.65,-1.09,-1.04,-0.57,-0.42,0.3,0.36,1.27,-0.28,0.25,0.34,0.76,1.43,1.35,1.86,1.51,1.52,1.33,0.9,0.32,0.82,1.41,0.98,0.97,0.84,0.17,0.29,0.75,1.29,1.56,1.74,1.6,0.87,0.57,-0.63,-0.8,-0.43,0.96,0.61,-0.06,-0.02,0.1,0.56,0.45,0.33,-0.45,-0.63,-0.2,-0.68,-0.6,-0.03,0.38,-0.09,-0.72,-0.82,-0.47,-0.66,-0.03,-0.24,-0.35,-0.57,-0.7,-0.21,-0.34,-0.72,-0.4,0.09,0.26,-0.06,0.52,-0.0,0.13,-0.9,-0.51,-0.0,-1.41,-1.48,-1.75,-1.32,-0.52,-0.75,-0.92,-1.33,-1.04,-0.62,-1.58,-0.98,-0.61,-1.09,-1.67,-1.84,-2.04,-1.82,-2.0,-0.95,-1.96,-3.14,-2.75,-2.71,-2.4,-1.91,-1.67,-2.09,-2.23,-1.31,-2.63,-2.38,-2.28,-1.81,-2.4,-2.21,-1.24,-1.65,-2.45,-3.08,-2.41,-2.55,-2.54,-2.48,-2.99,-2.23,-1.79,-1.66,-1.57,-1.34,-1.54,-2.11,-2.98,-3.15,-3.01,-2.91,-3.56,-3.8,-3.13,-2.03,-1.29,-1.4,-1.12,-1.15,-1.66,-2.64,-4.21,-3.23,-2.31,-2.37,-1.51,-0.96,-1.24,-1.0,-1.42,-1.62,-1.67,-1.71,-2.03],"nao_labels":["2011-01","2011-02","2011-03","2011-04","2011-05","2011-06","2011-07","2011-08","2011-09","2011-10","2011-11","2011-12","2012-01","2012-02","2012-03","2012-04","2012-05","2012-06","2012-07","2012-08","2012-09","2012-10","2012-11","2012-12","2013-01","2013-02","2013-03","2013-04","2013-05","2013-06","2013-07","2013-08","2013-09","2013-10","2013-11","2013-12","2014-01","2014-02","2014-03","2014-04","2014-05","2014-06","2014-07","2014-08","2014-09","2014-10","2014-11","2014-12","2015-01","2015-02","2015-03","2015-04","2015-05","2015-06","2015-07","2015-08","2015-09","2015-10","2015-11","2015-12","2016-01","2016-02","2016-03","2016-04","2016-05","2016-06","2016-07","2016-08","2016-09","2016-10","2016-11","2016-12","2017-01","2017-02","2017-03","2017-04","2017-05","2017-06","2017-07","2017-08","2017-09","2017-10","2017-11","2017-12","2018-01","2018-02","2018-03","2018-04","2018-05","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07"],"nao_values":[-0.88,0.7,0.61,2.48,-0.06,-1.28,-1.51,-1.35,0.54,0.39,1.36,2.52,1.17,0.42,1.27,0.47,-0.91,-2.53,-1.32,-0.98,-0.59,-2.06,-0.58,0.17,0.35,-0.45,-1.61,0.69,0.57,0.52,0.67,0.97,0.24,-1.28,0.9,0.95,0.29,1.34,0.8,0.31,-0.92,-0.97,0.18,-1.68,1.62,-1.27,0.68,1.86,1.79,1.32,1.45,0.73,0.15,-0.07,-3.18,-0.76,-0.65,0.44,1.74,2.24,0.12,1.58,0.73,0.38,-0.77,-0.43,-1.76,-1.65,0.61,0.41,-0.16,0.48,0.48,1.0,0.74,1.73,-1.91,0.05,1.26,-1.1,-0.61,0.19,-0.0,0.88,1.44,1.58,-0.93,1.24,2.12,1.09,1.39,1.97,1.67,0.93,-0.11,0.61,0.59,0.29,1.23,0.47,-2.62,-1.09,-1.43,-1.17,-0.16,-1.41,0.28,1.2,1.34,1.26,1.01,-1.02,-0.41,-0.15,-1.23,0.12,0.98,-0.65,2.54,-0.3,-1.11,0.14,0.73,-1.43,-1.24,0.77,0.03,-0.28,-0.21,-2.29,-0.18,0.29,1.08,1.68,0.77,-0.36,0.71,-0.12,-0.09,1.47,-1.61,-0.72,0.69,-0.15,1.25,0.92,-1.11,-0.63,0.39,-0.58,-2.17,-1.16,-0.44,-2.03,-0.32,1.94,0.21,1.09,-0.21,-0.78,-0.44,-0.09,1.46,0.63,-1.43,-0.38,-0.23,1.21,-0.52,1.6,0.3,0.18,0.49,0.7,0.48,0.26,-0.8,-0.96,-0.78,-0.65,-0.36,0.68,2.69,1.39,-0.74,0.1,-0.31],"iod_w_labels":["2011-01","2011-02","2011-03","2011-04","2011-05","2011-06","2011-07","2011-08","2011-09","2011-10","2011-11","2011-12","2012-01","2012-02","2012-03","2012-04","2012-05","2012-06","2012-07","2012-08","2012-09","2012-10","2012-11","2012-12","2013-01","2013-02","2013-03","2013-04","2013-05","2013-06","2013-07","2013-08","2013-09","2013-10","2013-11","2013-12","2014-01","2014-02","2014-03","2014-04","2014-05","2014-06","2014-07","2014-08","2014-09","2014-10","2014-11","2014-12","2015-01","2015-02","2015-03","2015-04","2015-05","2015-06","2015-07","2015-08","2015-09","2015-10","2015-11","2015-12","2016-01","2016-02","2016-03","2016-04","2016-05","2016-06","2016-07","2016-08","2016-09","2016-10","2016-11","2016-12","2017-01","2017-02","2017-03","2017-04","2017-05","2017-06","2017-07","2017-08","2017-09","2017-10","2017-11","2017-12","2018-01","2018-02","2018-03","2018-04","2018-05","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05"],"iod_w_values":[0.191,0.241,0.367,0.154,-0.089,0.055,0.223,0.344,0.202,0.356,0.336,-0.128,0.046,-0.078,0.026,-0.271,-0.37,0.0,0.546,0.652,0.453,0.11,-0.099,0.267,-0.065,0.189,0.083,-0.297,-0.506,-0.497,-0.181,-0.194,-0.31,-0.168,0.199,0.141,-0.101,-0.089,-0.151,-0.058,-0.092,-0.028,-0.363,-0.372,-0.145,0.141,0.009,0.046,-0.1,-0.345,-0.241,-0.008,0.24,0.296,0.225,0.568,0.294,0.482,0.347,0.272,0.265,-0.11,-0.008,0.146,-0.113,-0.443,-0.757,-0.443,-0.437,-0.371,-0.382,-0.31,-0.086,0.101,0.357,0.498,0.536,0.424,0.52,0.349,0.035,0.015,0.289,0.11,-0.2,0.216,-0.12,-0.083,0.122,0.155,0.053,0.121,0.604,0.684,0.5,0.309,0.387,0.416,0.225,0.258,0.54,0.605,0.597,0.436,0.892,0.964,0.835,0.243,0.173,0.054,0.019,-0.011,0.298,0.455,0.319,-0.183,-0.189,0.074,0.02,0.031,0.051,0.243,0.267,0.25,0.009,-0.002,-0.229,-0.099,-0.058,-0.091,0.069,-0.12,-0.056,-0.082,-0.093,-0.068,-0.122,-0.335,-0.195,-0.246,-0.322,-0.691,-0.269,-0.091,0.11,0.157,0.414,0.56,0.443,0.665,0.498,0.826,0.946,0.804,0.92,0.852,0.765,0.327,0.421,0.44,0.298,0.197,0.033,0.267,0.115,-0.196,-0.382,-0.331,-0.196,0.017,0.058,0.149,0.107,-0.014,-0.072,-0.42,-0.467,-0.448,-0.256,-0.017,0.123,0.529,0.285,0.279,0.146],"all_fc_labels":["2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07","2026-08","2026-09","2026-10","2026-11","2026-12","2027-01","2027-02","2027-03"],"obs_full":[-0.3,-0.2,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,1.2,1.4,1.5,1.6,1.7,1.8,2.3,null,null,null,null,null,null,null,null,null,null],"fc_full":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,2.0,2.3,2.6,3.0,3.1,3.0,2.6,2.2,1.8],"upper_full":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,2.3,2.6,3.0,3.5,3.8,3.5,3.0,2.5,2.0],"lower_full":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.7,1.9,2.1,2.4,2.5,2.4,2.0,1.6,1.2],"model_data":{"ECMWF":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,2.0,2.5,3.0,3.5,3.8,4.0,4.2,3.5,2.5],"CFS":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,2.1,2.4,2.8,3.2,3.5,3.6,3.4,2.8,2.0],"CanSIPS":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.9,2.2,2.5,2.8,3.0,3.1,2.8,2.2,1.5],"GFDL":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.8,2.0,2.3,2.6,2.8,2.9,2.6,2.0,1.3],"NASA":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,2.2,2.5,2.9,3.2,3.5,3.6,3.3,2.6,1.8]},"crop_chart_data":{"玉米":{"acc_season_yoy":[1248.4,1210.7,1158.2,1261.0,1250.1,1472.8,1320.9,1340.8,1253.0,1279.0,1344.4,1346.2,1410.7,1361.8,1321.9,1481.0,1807.5,1363.1,1469.1,1402.5,1340.1,1154.7,1414.8,1480.9,1219.3,null,null,null],"precip_30_14":[302.4,72.8,208.5,146.2,77.4,201.6,143.9,101.2,103.7,211.0,117.1,188.2,260.5,342.6,255.8,18.0,32.8,221.6,118.1,80.9,309.8,46.8,199.4,330.1,59.9,85.8,162.7,126.0],"acc_season_req":[2700,2700,2700,2700,2700,2700,2700,2700,2700,2500,2500,2500,2500,2500,2500,2700,2700,2650,2650,2650,2650,2650,2650,2650,2650,2500,2500,2500],"max_temps":[24.6,26.6,22.5,25.6,25.6,27.2,26.8,26.5,25.6,30.6,32.2,30.2,30.5,31.3,31.1,31.2,32.5,28.2,26.8,25.5,25.6,28.0,27.9,30.4,30.1,29.1,26.3,14.7],"harvest_status":["","","","","","","","","","","","","","","","","","","","","","","","","","已收获","已收获","已收获"],"normals_high":[28,28,29,28,29,33,33,33,34,33,33],"precip_season_yoy":[334.4,206.2,230.8,383.5,175.8,317.1,367.2,275.1,365.4,362.0,300.6,229.2,335.7,264.9,292.5,41.6,31.8,495.0,449.1,417.8,576.5,609.2,454.1,475.2,438.3,null,null,null],"gdd_14d":[151.6,163.5,129.1,164.8,156.7,184.8,173.3,172.4,157.0,227.6,253.2,233.0,237.3,247.8,246.1,211.5,226.0,165.3,159.9,155.8,155.8,170.5,173.2,194.3,174.6,194.1,151.9,29.4],"names":["黑龙江·哈尔滨","黑龙江·齐齐哈尔","黑龙江·佳木斯","吉林·长春","吉林·白城","辽宁·沈阳","辽宁·铁岭","内蒙古·通辽","内蒙古·赤峰","河北·石家庄","山东·济南","山东·菏泽","河南·郑州","河南·周口","河南·驻马店","新疆·乌鲁木齐","新疆·阿克苏","艾奥瓦","伊利诺伊","印第安纳","俄亥俄","明尼苏达","内布拉斯加","密苏里","南达科他","南马托格罗索","巴拉那","布宜诺斯艾利斯"],"acc_phase":[491.6,466.0,444.0,524.1,482.4,583.9,545.1,548.1,518.6,210.8,225.0,202.5,198.4,211.5,203.5,542.2,617.8,662.2,633.2,626.9,615.5,638.9,677.2,701.5,616.8,null,null,null],"soils_avg":[0.261,0.136,0.275,0.185,0.213,0.21,0.203,0.177,0.189,0.248,0.179,0.359,0.321,0.338,0.359,0.139,0.257,0.374,0.242,0.292,0.336,0.275,0.16,0.215,0.193,0.331,0.411,0.335],"acc_season_avg":[1127.3,1142.7,1033.2,1179.1,1249.3,1402.5,1346.7,1357.8,1291.4,1211.1,1215.6,1243.5,1259.7,1239.1,1213.8,1306.0,1561.3,1323.9,1396.3,1326.3,1272.6,1115.1,1368.6,1499.6,1164.0,null,null,null],"precip_14":[29.5,42.2,17.2,37.2,13.0,58.0,53.6,20.1,50.8,49.1,19.2,40.8,20.7,19.1,41.4,0.0,19.0,7.0,13.8,19.7,14.3,15.2,50.2,4.6,9.1,27.6,14.1,4.0],"min_temps":[17.1,16.8,15.9,17.9,16.8,19.2,18.0,18.1,16.8,21.9,24.0,23.1,23.4,24.1,24.1,19.0,19.8,15.4,16.1,16.8,16.6,16.4,16.9,17.3,14.8,18.7,15.4,8.4],"soils_avg_14d":[0.288,0.135,0.31,0.225,0.206,0.272,0.232,0.172,0.179,0.239,0.192,0.351,0.31,0.288,0.319,0.137,0.257,0.374,0.242,0.292,0.336,0.275,0.16,0.215,0.193,0.332,0.361,0.332],"normals_low":[20,20,21,21,22,25,25,25,26,25,26],"precip_season":[461.2,235.3,424.6,445.5,223.8,644.8,616.7,266.5,279.7,228.9,239.3,293.4,366.7,413.7,310.0,56.9,44.8,214.6,104.3,61.2,295.5,31.6,149.2,325.5,50.8,58.2,148.6,122.0],"acc_season":[1252.2,1192.6,1119.2,1295.9,1249.7,1480.9,1378.6,1396.4,1275.4,1269.7,1251.4,1228.8,1251.0,1294.6,1215.6,1515.0,1809.5,1384.6,1348.3,1301.6,1283.3,1210.1,1414.5,1475.9,1202.4,null,null,null],"normals_precip":[150,140,120,160,170,150,180,160,150,150,160],"cal_offset":[0.07,-1.04,0.64,0.3,0.2,1.09,1.05,-1.39,-3.57,1.28,-0.16,0.14,0.3,0.19,-0.61,-1.14,-2.25,null,null,null,null,null,null,null,null,null,null,null],"precip_avg_14d":[93.1,29.0,69.6,39.2,27.4,58.9,34.5,21.0,20.6,51.0,28.5,46.8,72.2,97.5,69.2,5.6,8.4,58.6,29.3,24.5,73.9,9.9,61.8,122.5,20.9,25.4,63.2,50.4],"soils":[0.261,0.136,0.275,0.185,0.213,0.21,0.203,0.177,0.189,0.248,0.179,0.359,0.321,0.338,0.359,0.139,0.257,0.374,0.242,0.292,0.336,0.275,0.16,0.215,0.193,0.327,0.388,0.336],"precip_season_avg":[337.6,276.4,306.3,395.5,277.2,383.2,415.5,259.6,217.1,287.1,327.9,357.2,287.8,384.3,383.6,73.7,30.2,417.1,425.0,435.4,450.0,429.2,415.6,481.8,350.6,null,null,null]},"大豆":{"acc_season_yoy":[1185.0,976.1,1219.0,1226.0,1401.1,1209.0,1308.1,1251.9,1199.0,1020.7,1249.4,1318.4,1060.2,null,null,null,null],"precip_30_14":[72.8,176.4,302.4,146.2,201.6,221.6,118.1,80.9,309.8,46.8,199.4,330.1,59.9,85.8,162.7,386.5,126.0],"acc_season_req":[2400,2400,2400,2400,2400,2400,2400,2400,2400,2400,2400,2400,2400,2400,2400,2400,2400],"max_temps":[26.6,21.8,24.6,25.6,27.2,28.2,26.8,25.5,25.6,28.0,27.9,30.4,30.1,29.1,26.3,20.1,14.7],"harvest_status":["","","","","","","","","","","","","","已收获","已收获","已收获","已收获"],"normals_high":[28,26,30,31,30,30,29,31,30,29,25,24,18,14],"precip_season_yoy":[206.2,295.5,334.4,383.5,317.1,458.8,382.5,346.3,404.0,542.8,431.0,434.0,394.4,null,null,null,null],"gdd_14d":[163.5,104.4,151.6,164.8,184.8,165.3,159.9,155.8,155.8,170.5,173.2,194.3,174.6,194.1,151.9,84.5,29.4],"names":["黑龙江·齐齐哈尔","黑龙江·黑河","黑龙江·哈尔滨","吉林·长春","辽宁·沈阳","艾奥瓦","伊利诺伊","印第安纳","俄亥俄","明尼苏达","内布拉斯加","密苏里","南达科他","南马托格罗索","巴拉那","南里奥格兰德","布宜诺斯艾利斯"],"acc_phase":[428.8,361.3,451.6,483.6,536.5,384.9,371.1,351.8,347.8,362.7,393.0,424.2,344.9,null,null,null,null],"soils_avg":[0.136,0.339,0.261,0.185,0.21,0.374,0.242,0.292,0.336,0.275,0.16,0.215,0.193,0.331,0.411,0.483,0.335],"acc_season_avg":[1096.1,918.3,1077.6,1118.8,1310.9,1214.3,1262.1,1207.6,1162.6,1051.0,1250.5,1344.5,1087.5,null,null,null,null],"precip_14":[42.2,50.8,29.5,37.2,58.0,7.0,13.8,19.7,14.3,15.2,50.2,4.6,9.1,27.6,14.1,44.1,4.0],"min_temps":[16.8,13.1,17.1,17.9,19.2,15.4,16.1,16.8,16.6,16.4,16.9,17.3,14.8,18.7,15.4,10.7,8.4],"soils_avg_14d":[0.135,0.304,0.288,0.225,0.272,0.374,0.242,0.292,0.336,0.275,0.16,0.215,0.193,0.332,0.361,0.463,0.332],"normals_low":[20,18,19,20,19,20,18,19,20,17,15,13,9,6],"precip_season":[235.3,358.8,461.2,445.5,644.8,214.6,104.3,61.2,295.5,31.6,149.2,325.5,50.8,58.2,148.6,342.4,122.0],"acc_season":[1125.4,918.7,1182.7,1224.7,1388.8,1272.2,1238.8,1221.9,1196.6,1146.8,1284.1,1349.3,1131.0,null,null,null,null],"normals_precip":[150,130,100,110,110,100,100,90,110,80,20,40,50,60],"cal_offset":[-1.04,0.19,0.07,0.3,1.09,null,null,null,null,null,null,null,null,null,null,null,null],"precip_avg_14d":[29.0,66.9,93.1,39.2,58.9,58.6,29.3,24.5,73.9,9.9,61.8,122.5,20.9,25.4,63.2,128.6,50.4],"soils":[0.136,0.339,0.261,0.185,0.21,0.374,0.242,0.292,0.336,0.275,0.16,0.215,0.193,0.327,0.388,0.478,0.336],"precip_season_avg":[276.4,274.4,337.6,395.5,383.2,325.1,312.8,341.6,365.9,366.2,314.9,371.2,273.2,null,null,null,null]},"小麦":{"acc_season_yoy":[null,null,null,null,null,1587.2,1562.4,null,1464.6,1201.2,1339.1],"precip_30_14":[260.5,117.1,211.0,310.2,32.9,13.6,143.4,43.3,57.2,89.2,138.8],"acc_season_req":[0,0,0,0,1900,1400,1400,2000,1500,1500,1500],"max_temps":[30.5,32.2,30.6,32.2,32.8,26.9,22.2,26.3,18.4,15.0,15.3],"harvest_status":["已收获","已收获","已收获","已收获","已收获","","","已收获","","",""],"normals_high":[33,33,33,34,33,33,33,34,29,25,23,24,17,14,16],"precip_season_yoy":[null,null,null,null,null,252.0,251.2,null,442.1,175.0,319.6],"gdd_14d":[377.3,393.2,367.6,404.0,377.8,286.6,247.5,306.2,209.2,165.8,182.3],"names":["河南·郑州","山东·济南","河北·石家庄","安徽·合肥","克拉斯诺达尔边疆区","萨斯喀彻温","艾伯塔","基辅州","新南威尔士","维多利亚","南澳大利亚"],"acc_phase":[null,null,null,null,null,873.8,798.5,null,6605.6,5491.0,5963.1],"soils_avg":[0.321,0.179,0.248,0.369,0.304,0.22,0.356,0.314,0.211,0.416,0.258],"acc_season_avg":[null,null,null,null,null,1666.3,1553.9,null,1471.5,1169.0,1325.3],"precip_14":[20.7,19.2,49.1,45.6,0.6,7.3,31.9,18.6,31.8,23.5,54.2],"min_temps":[23.4,24.0,21.9,25.5,21.2,14.0,13.2,17.5,11.5,8.7,10.7],"soils_avg_14d":[0.31,0.192,0.239,0.336,0.307,0.22,0.338,0.316,0.196,0.395,0.254],"normals_low":[25,25,25,26,25,26,26,27,19,13,12,15,8,7,8],"precip_season":[28.8,26.4,60.8,49.6,32.3,6.3,111.5,24.7,25.4,65.7,84.6],"acc_season":[null,null,null,null,null,1635.9,1502.0,null,1575.9,1317.3,1402.1],"normals_precip":[150,180,160,150,150,160,160,200,50,70,90,80,60,50,50],"cal_offset":[0.3,-0.16,1.28,-0.61,null,null,null,null,null,null,null],"precip_avg_14d":[72.2,28.5,51.0,86.3,14.4,1.6,44.4,8.9,7.1,20.7,25.4],"soils":[0.321,0.179,0.248,0.369,0.317,0.22,0.342,0.322,0.201,0.413,0.253],"precip_season_avg":[null,null,null,null,null,184.1,294.7,null,225.6,208.9,298.1]},"棕榈油":{"acc_season_yoy":[347.4,313.9,337.0],"precip_30_14":[221.5,291.5,325.8],"acc_season_req":[null,null,null],"max_temps":[32.7,31.5,30.2],"harvest_status":["","",""],"normals_high":[32,32,33],"precip_season_yoy":[87.0,247.0,137.7],"gdd_14d":[145.4,132.3,139.2],"names":["雪兰莪","北苏门答腊","曼谷"],"acc_phase":[null,null,null],"soils_avg":[0.358,0.329,0.305],"acc_season_avg":[289.7,272.9,325.4],"precip_14":[54.0,118.0,84.1],"min_temps":[24.0,23.4,25.7],"soils_avg_14d":[0.331,0.328,0.356],"normals_low":[24,24,26],"precip_season":[167.5,173.5,241.7],"acc_season":[329.4,294.5,346.0],"normals_precip":[150,160,150],"cal_offset":[null,null,null],"precip_avg_14d":[64.6,66.1,95.3],"soils":[0.298,0.276,0.335],"precip_season_avg":[207.5,291.5,187.7]},"白糖":{"acc_season_yoy":[1046.3,63.8,1052.7,null,null,null],"precip_30_14":[359.7,313.1,413.2,27.1,454.0,321.4],"acc_season_req":[5000,5000,5000,4500,4500,4500],"max_temps":[32.0,24.2,32.2,28.6,30.7,30.2],"harvest_status":["","","","已收获","已收获","已收获"],"normals_high":[33,25,26,33,33],"precip_season_yoy":[842.0,858.3,1151.1,null,null,null],"gdd_14d":[120.6,5.5,130.5,46.8,113.2,105.9],"names":["广西·南宁","云南·昆明","广东·广州","圣保罗","北方邦","孔敬"],"acc_phase":[null,null,null,null,null,null],"soils_avg":[0.409,0.258,0.235,0.378,0.347,0.449],"acc_season_avg":[1017.5,86.1,1077.0,null,null,null],"precip_14":[84.1,63.1,91.8,7.2,200.5,129.0],"min_temps":[25.3,16.2,26.4,17.1,25.5,24.9],"soils_avg_14d":[0.47,0.32,0.304,0.34,0.393,0.444],"normals_low":[26,17,14,27,25],"precip_season":[903.9,701.1,1096.0,19.9,253.5,192.4],"acc_season":[1147.7,85.5,1172.2,null,null,null],"normals_precip":[200,180,20,250,150],"cal_offset":[-0.22,0.86,-1.15,null,null,null],"precip_avg_14d":[86.6,84.3,121.2,9.1,94.1,83.3],"soils":[0.409,0.258,0.235,0.358,0.339,0.396],"precip_season_avg":[791.5,729.6,994.2,null,null,null]},"棉花":{"acc_season_yoy":[929.9,null,1253.5,1526.8,null,1234.1],"precip_30_14":[18.0,117.1,32.8,504.4,1.3,85.3],"acc_season_req":[3900,null,3900,3500,3200,3000],"max_temps":[31.2,32.2,32.5,32.2,35.5,36.4],"harvest_status":["","","","","已收获",""],"normals_high":[32,33,33,29,33],"precip_season_yoy":[41.6,null,31.8,443.2,null,426.2],"gdd_14d":[141.5,183.2,156.0,193.3,204.9,208.6],"names":["新疆·乌鲁木齐","山东·济南","新疆·阿克苏","古吉拉特","马托格罗索","田纳西"],"acc_phase":[683.6,null,782.0,221.6,null,508.1],"soils_avg":[0.139,0.179,0.257,0.29,0.333,0.352],"acc_season_avg":[773.6,null,1013.0,1545.0,null,1167.5],"precip_14":[0.0,19.2,19.0,88.3,0.0,4.2],"min_temps":[19.0,24.0,19.8,25.4,23.8,23.4],"soils_avg_14d":[0.137,0.192,0.257,0.256,0.301,0.352],"normals_low":[22,25,27,18,23],"precip_season":[56.9,26.4,44.8,416.1,1.3,81.1],"acc_season":[985.8,482.8,1264.2,1610.6,null,1208.5],"normals_precip":[25,180,250,15,110],"cal_offset":[-1.14,-0.16,-2.25,null,null,null],"precip_avg_14d":[5.6,28.5,8.4,178.3,0.6,37.8],"soils":[0.139,0.179,0.257,0.283,0.307,0.352],"precip_season_avg":[73.7,null,30.2,667.8,null,385.4]},"咖啡":{"acc_season_yoy":[158.2,129.8,39.0,0.0,39.9,75.7,0.0],"precip_30_14":[528.7,341.3,33.2,636.7,471.9,211.4,387.3],"acc_season_req":[null,null,null,null,null,null,null],"max_temps":[26.3,25.6,25.3,19.8,23.3,25.0,19.7],"harvest_status":["","","","","","",""],"normals_high":[27,26,25,21,25,27,22],"precip_season_yoy":[1197.5,787.9,3.2,382.3,568.3,221.1,320.5],"gdd_14d":[65.2,49.9,38.9,0.0,30.2,40.4,0.0],"names":["云南·普洱","云南·保山","米纳斯吉拉斯","卡尔达斯","金迪奥","里萨拉尔达","亚的斯亚贝巴"],"acc_phase":[701.8,361.7,1199.4,5.2,389.8,517.0,23.8],"soils_avg":[0.455,0.37,0.205,0.388,0.371,0.182,0.469],"acc_season_avg":[144.7,102.3,38.2,0.1,29.2,44.1,0.0],"precip_14":[96.5,96.8,25.8,344.2,187.9,101.3,99.3],"min_temps":[19.0,17.5,15.2,12.8,17.0,16.8,10.2],"soils_avg_14d":[0.495,0.44,0.203,0.412,0.415,0.261,0.475],"normals_low":[20,19,14,13,17,17,11],"precip_season":[873.3,606.7,7.4,292.5,284.0,110.1,288.0],"acc_season":[143.0,95.8,97.2,1.9,102.6,140.5,0.0],"normals_precip":[250,200,15,130,130,130,120],"cal_offset":[0.28,0.83,null,null,null,null,null],"precip_avg_14d":[150.6,77.5,2.5,115.2,100.9,37.0,96.8],"soils":[0.455,0.37,0.202,0.417,0.43,0.153,0.479],"precip_season_avg":[844.7,617.5,6.0,945.4,598.1,476.0,330.4]}},"drought":{"cotton":{"currentD1Plus":42,"yearAgoD1Plus":3,"peakDrought":98,"d1":24,"d2":25,"d3":6,"d4":3},"soybean":{"currentD1Plus":26,"yearAgoD1Plus":8,"d1":12,"d2":5,"d3":2,"d4":0,"coreStatus":"基本无旱，降水125-300%正常值","riskNote":"IL表层土壤过剩39%，局部渍涝+根腐病风险"}},"roni_labels":["2011-02","2011-03","2011-04","2011-05","2011-06","2011-07","2011-08","2011-09","2011-10","2011-11","2011-12","2012-01","2012-02","2012-03","2012-04","2012-05","2012-06","2012-07","2012-08","2012-09","2012-10","2012-11","2012-12","2013-01","2013-02","2013-03","2013-04","2013-05","2013-06","2013-07","2013-08","2013-09","2013-10","2013-11","2013-12","2014-01","2014-02","2014-03","2014-04","2014-05","2014-06","2014-07","2014-08","2014-09","2014-10","2014-11","2014-12","2015-01","2015-02","2015-03","2015-04","2015-05","2015-06","2015-07","2015-08","2015-09","2015-10","2015-11","2015-12","2016-01","2016-02","2016-03","2016-04","2016-05","2016-06","2016-07","2016-08","2016-09","2016-10","2016-11","2016-12","2017-01","2017-02","2017-03","2017-04","2017-05","2017-06","2017-07","2017-08","2017-09","2017-10","2017-11","2017-12","2018-01","2018-02","2018-03","2018-04","2018-05","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05"],"roni_values":[-1.04,-0.8,-0.62,-0.46,-0.37,-0.43,-0.58,-0.79,-0.96,-1.02,-0.92,-0.72,-0.57,-0.46,-0.36,-0.17,0.06,0.3,0.41,0.41,0.31,0.12,-0.1,-0.29,-0.29,-0.21,-0.19,-0.26,-0.33,-0.35,-0.28,-0.21,-0.13,-0.1,-0.16,-0.28,-0.32,-0.14,0.16,0.31,0.24,0.1,0.11,0.28,0.54,0.71,0.77,0.69,0.61,0.65,0.81,1.03,1.25,1.57,1.9,2.21,2.47,2.65,2.75,2.63,2.28,1.71,1.05,0.49,0.0,-0.31,-0.5,-0.58,-0.64,-0.6,-0.45,-0.2,-0.02,0.18,0.31,0.4,0.38,0.19,-0.07,-0.34,-0.6,-0.76,-0.86,-0.77,-0.71,-0.57,-0.39,-0.13,0.06,0.14,0.27,0.53,0.81,0.97,0.92,0.89,0.86,0.84,0.77,0.64,0.52,0.33,0.19,0.23,0.39,0.58,0.66,0.64,0.63,0.53,0.3,0.01,-0.23,-0.36,-0.53,-0.84,-1.12,-1.2,-1.08,-0.91,-0.79,-0.71,-0.55,-0.39,-0.3,-0.35,-0.45,-0.63,-0.77,-0.91,-0.87,-0.82,-0.79,-0.87,-0.95,-0.89,-0.78,-0.76,-0.87,-0.97,-0.94,-0.85,-0.72,-0.54,-0.29,-0.02,0.27,0.57,0.84,1.12,1.37,1.6,1.83,1.99,2.06,1.93,1.62,1.26,0.82,0.49,0.22,0.08,-0.07,-0.17,-0.21,-0.3,-0.41,-0.44,-0.24,-0.06,0.02,-0.02,-0.04,-0.14,-0.28,-0.4,-0.51,-0.55,-0.54,-0.37,-0.15,0.13,0.51,0.98],"crop_risk_thresholds":{"玉米":{"soil_severe_dry":0.15,"soil_moderate_dry":0.25,"soil_saturation":0.38,"acc_min":300,"acc_max":550},"大豆":{"soil_severe_dry":0.15,"soil_moderate_dry":0.22,"soil_saturation":0.4,"acc_min":200,"acc_max":500},"小麦":{"soil_severe_dry":0.15,"soil_moderate_dry":0.25,"soil_saturation":0.4,"acc_min":100,"acc_max":600},"棕榈油":{"soil_severe_dry":0.2,"soil_moderate_dry":0.28,"soil_saturation":0.42,"acc_min":400,"acc_max":700},"白糖":{"soil_severe_dry":0.2,"soil_moderate_dry":0.3,"soil_saturation":0.45,"acc_min":500,"acc_max":800},"棉花":{"soil_severe_dry":0.1,"soil_moderate_dry":0.2,"soil_saturation":0.38,"acc_min":400,"acc_max":900},"咖啡":{"soil_severe_dry":0.2,"soil_moderate_dry":0.28,"soil_saturation":0.5,"acc_min":150,"acc_max":400}}};
+<script>var D={"enso_labels":["05JAN2011","12JAN2011","19JAN2011","26JAN2011","02FEB2011","09FEB2011","16FEB2011","23FEB2011","02MAR2011","09MAR2011","16MAR2011","23MAR2011","30MAR2011","06APR2011","13APR2011","20APR2011","27APR2011","04MAY2011","11MAY2011","18MAY2011","25MAY2011","01JUN2011","08JUN2011","15JUN2011","22JUN2011","29JUN2011","06JUL2011","13JUL2011","20JUL2011","27JUL2011","03AUG2011","10AUG2011","17AUG2011","24AUG2011","31AUG2011","07SEP2011","14SEP2011","21SEP2011","28SEP2011","05OCT2011","12OCT2011","19OCT2011","26OCT2011","02NOV2011","09NOV2011","16NOV2011","23NOV2011","30NOV2011","07DEC2011","14DEC2011","21DEC2011","28DEC2011","04JAN2012","11JAN2012","18JAN2012","25JAN2012","01FEB2012","08FEB2012","15FEB2012","22FEB2012","29FEB2012","07MAR2012","14MAR2012","21MAR2012","28MAR2012","04APR2012","11APR2012","18APR2012","25APR2012","02MAY2012","09MAY2012","16MAY2012","23MAY2012","30MAY2012","06JUN2012","13JUN2012","20JUN2012","27JUN2012","04JUL2012","11JUL2012","18JUL2012","25JUL2012","01AUG2012","08AUG2012","15AUG2012","22AUG2012","29AUG2012","05SEP2012","12SEP2012","19SEP2012","26SEP2012","03OCT2012","10OCT2012","17OCT2012","24OCT2012","31OCT2012","07NOV2012","14NOV2012","21NOV2012","28NOV2012","05DEC2012","12DEC2012","19DEC2012","26DEC2012","02JAN2013","09JAN2013","16JAN2013","23JAN2013","30JAN2013","06FEB2013","13FEB2013","20FEB2013","27FEB2013","06MAR2013","13MAR2013","20MAR2013","27MAR2013","03APR2013","10APR2013","17APR2013","24APR2013","01MAY2013","08MAY2013","15MAY2013","22MAY2013","29MAY2013","05JUN2013","12JUN2013","19JUN2013","26JUN2013","03JUL2013","10JUL2013","17JUL2013","24JUL2013","31JUL2013","07AUG2013","14AUG2013","21AUG2013","28AUG2013","04SEP2013","11SEP2013","18SEP2013","25SEP2013","02OCT2013","09OCT2013","16OCT2013","23OCT2013","30OCT2013","06NOV2013","13NOV2013","20NOV2013","27NOV2013","04DEC2013","11DEC2013","18DEC2013","25DEC2013","01JAN2014","08JAN2014","15JAN2014","22JAN2014","29JAN2014","05FEB2014","12FEB2014","19FEB2014","26FEB2014","05MAR2014","12MAR2014","19MAR2014","26MAR2014","02APR2014","09APR2014","16APR2014","23APR2014","30APR2014","07MAY2014","14MAY2014","21MAY2014","28MAY2014","04JUN2014","11JUN2014","18JUN2014","25JUN2014","02JUL2014","09JUL2014","16JUL2014","23JUL2014","30JUL2014","06AUG2014","13AUG2014","20AUG2014","27AUG2014","03SEP2014","10SEP2014","17SEP2014","24SEP2014","01OCT2014","08OCT2014","15OCT2014","22OCT2014","29OCT2014","05NOV2014","12NOV2014","19NOV2014","26NOV2014","03DEC2014","10DEC2014","17DEC2014","24DEC2014","31DEC2014","07JAN2015","14JAN2015","21JAN2015","28JAN2015","04FEB2015","11FEB2015","18FEB2015","25FEB2015","04MAR2015","11MAR2015","18MAR2015","25MAR2015","01APR2015","08APR2015","15APR2015","22APR2015","29APR2015","06MAY2015","13MAY2015","20MAY2015","27MAY2015","03JUN2015","10JUN2015","17JUN2015","24JUN2015","01JUL2015","08JUL2015","15JUL2015","22JUL2015","29JUL2015","05AUG2015","12AUG2015","19AUG2015","26AUG2015","02SEP2015","09SEP2015","16SEP2015","23SEP2015","30SEP2015","07OCT2015","14OCT2015","21OCT2015","28OCT2015","04NOV2015","11NOV2015","18NOV2015","25NOV2015","02DEC2015","09DEC2015","16DEC2015","23DEC2015","30DEC2015","06JAN2016","13JAN2016","20JAN2016","27JAN2016","03FEB2016","10FEB2016","17FEB2016","24FEB2016","02MAR2016","09MAR2016","16MAR2016","23MAR2016","30MAR2016","06APR2016","13APR2016","20APR2016","27APR2016","04MAY2016","11MAY2016","18MAY2016","25MAY2016","01JUN2016","08JUN2016","15JUN2016","22JUN2016","29JUN2016","06JUL2016","13JUL2016","20JUL2016","27JUL2016","03AUG2016","10AUG2016","17AUG2016","24AUG2016","31AUG2016","07SEP2016","14SEP2016","21SEP2016","28SEP2016","05OCT2016","12OCT2016","19OCT2016","26OCT2016","02NOV2016","09NOV2016","16NOV2016","23NOV2016","30NOV2016","07DEC2016","14DEC2016","21DEC2016","28DEC2016","04JAN2017","11JAN2017","18JAN2017","25JAN2017","01FEB2017","08FEB2017","15FEB2017","22FEB2017","01MAR2017","08MAR2017","15MAR2017","22MAR2017","29MAR2017","05APR2017","12APR2017","19APR2017","26APR2017","03MAY2017","10MAY2017","17MAY2017","24MAY2017","31MAY2017","07JUN2017","14JUN2017","21JUN2017","28JUN2017","05JUL2017","12JUL2017","19JUL2017","26JUL2017","02AUG2017","09AUG2017","16AUG2017","23AUG2017","30AUG2017","06SEP2017","13SEP2017","20SEP2017","27SEP2017","04OCT2017","11OCT2017","18OCT2017","25OCT2017","01NOV2017","08NOV2017","15NOV2017","22NOV2017","29NOV2017","06DEC2017","13DEC2017","20DEC2017","27DEC2017","03JAN2018","10JAN2018","17JAN2018","24JAN2018","31JAN2018","07FEB2018","14FEB2018","21FEB2018","28FEB2018","07MAR2018","14MAR2018","21MAR2018","28MAR2018","04APR2018","11APR2018","18APR2018","25APR2018","02MAY2018","09MAY2018","16MAY2018","23MAY2018","30MAY2018","06JUN2018","13JUN2018","20JUN2018","27JUN2018","04JUL2018","11JUL2018","18JUL2018","25JUL2018","01AUG2018","08AUG2018","15AUG2018","22AUG2018","29AUG2018","05SEP2018","12SEP2018","19SEP2018","26SEP2018","03OCT2018","10OCT2018","17OCT2018","24OCT2018","31OCT2018","07NOV2018","14NOV2018","21NOV2018","28NOV2018","05DEC2018","12DEC2018","19DEC2018","26DEC2018","02JAN2019","09JAN2019","16JAN2019","23JAN2019","30JAN2019","06FEB2019","13FEB2019","20FEB2019","27FEB2019","06MAR2019","13MAR2019","20MAR2019","27MAR2019","03APR2019","10APR2019","17APR2019","24APR2019","01MAY2019","08MAY2019","15MAY2019","22MAY2019","29MAY2019","05JUN2019","12JUN2019","19JUN2019","26JUN2019","03JUL2019","10JUL2019","17JUL2019","24JUL2019","31JUL2019","07AUG2019","14AUG2019","21AUG2019","28AUG2019","04SEP2019","11SEP2019","18SEP2019","25SEP2019","02OCT2019","09OCT2019","16OCT2019","23OCT2019","30OCT2019","06NOV2019","13NOV2019","20NOV2019","27NOV2019","04DEC2019","11DEC2019","18DEC2019","25DEC2019","01JAN2020","08JAN2020","15JAN2020","22JAN2020","29JAN2020","05FEB2020","12FEB2020","19FEB2020","26FEB2020","04MAR2020","11MAR2020","18MAR2020","25MAR2020","01APR2020","08APR2020","15APR2020","22APR2020","29APR2020","06MAY2020","13MAY2020","20MAY2020","27MAY2020","03JUN2020","10JUN2020","17JUN2020","24JUN2020","01JUL2020","08JUL2020","15JUL2020","22JUL2020","29JUL2020","05AUG2020","12AUG2020","19AUG2020","26AUG2020","02SEP2020","09SEP2020","16SEP2020","23SEP2020","30SEP2020","07OCT2020","14OCT2020","21OCT2020","28OCT2020","04NOV2020","11NOV2020","18NOV2020","25NOV2020","02DEC2020","09DEC2020","16DEC2020","23DEC2020","30DEC2020","06JAN2021","13JAN2021","20JAN2021","27JAN2021","03FEB2021","10FEB2021","17FEB2021","24FEB2021","03MAR2021","10MAR2021","17MAR2021","24MAR2021","31MAR2021","07APR2021","14APR2021","21APR2021","28APR2021","05MAY2021","12MAY2021","19MAY2021","26MAY2021","02JUN2021","09JUN2021","16JUN2021","23JUN2021","30JUN2021","07JUL2021","14JUL2021","21JUL2021","28JUL2021","04AUG2021","11AUG2021","18AUG2021","25AUG2021","01SEP2021","08SEP2021","15SEP2021","22SEP2021","29SEP2021","06OCT2021","13OCT2021","20OCT2021","27OCT2021","03NOV2021","10NOV2021","17NOV2021","24NOV2021","01DEC2021","08DEC2021","15DEC2021","22DEC2021","29DEC2021","05JAN2022","12JAN2022","19JAN2022","26JAN2022","02FEB2022","09FEB2022","16FEB2022","23FEB2022","02MAR2022","09MAR2022","16MAR2022","23MAR2022","30MAR2022","06APR2022","13APR2022","20APR2022","27APR2022","04MAY2022","11MAY2022","18MAY2022","25MAY2022","01JUN2022","08JUN2022","15JUN2022","22JUN2022","29JUN2022","06JUL2022","13JUL2022","20JUL2022","27JUL2022","03AUG2022","10AUG2022","17AUG2022","24AUG2022","31AUG2022","07SEP2022","14SEP2022","21SEP2022","28SEP2022","05OCT2022","12OCT2022","19OCT2022","26OCT2022","02NOV2022","09NOV2022","16NOV2022","23NOV2022","30NOV2022","07DEC2022","14DEC2022","21DEC2022","28DEC2022","04JAN2023","11JAN2023","18JAN2023","25JAN2023","01FEB2023","08FEB2023","15FEB2023","22FEB2023","01MAR2023","08MAR2023","15MAR2023","22MAR2023","29MAR2023","05APR2023","12APR2023","19APR2023","26APR2023","03MAY2023","10MAY2023","17MAY2023","24MAY2023","31MAY2023","07JUN2023","14JUN2023","21JUN2023","28JUN2023","05JUL2023","12JUL2023","19JUL2023","26JUL2023","02AUG2023","09AUG2023","16AUG2023","23AUG2023","30AUG2023","06SEP2023","13SEP2023","20SEP2023","27SEP2023","04OCT2023","11OCT2023","18OCT2023","25OCT2023","01NOV2023","08NOV2023","15NOV2023","22NOV2023","29NOV2023","06DEC2023","13DEC2023","20DEC2023","27DEC2023","03JAN2024","10JAN2024","17JAN2024","24JAN2024","31JAN2024","07FEB2024","14FEB2024","21FEB2024","28FEB2024","06MAR2024","13MAR2024","20MAR2024","27MAR2024","03APR2024","10APR2024","17APR2024","24APR2024","01MAY2024","08MAY2024","15MAY2024","22MAY2024","29MAY2024","05JUN2024","12JUN2024","19JUN2024","26JUN2024","03JUL2024","10JUL2024","17JUL2024","24JUL2024","31JUL2024","07AUG2024","14AUG2024","21AUG2024","28AUG2024","04SEP2024","11SEP2024","18SEP2024","25SEP2024","02OCT2024","09OCT2024","16OCT2024","23OCT2024","30OCT2024","06NOV2024","13NOV2024","20NOV2024","27NOV2024","04DEC2024","11DEC2024","18DEC2024","25DEC2024","01JAN2025","08JAN2025","15JAN2025","22JAN2025","29JAN2025","05FEB2025","12FEB2025","19FEB2025","26FEB2025","05MAR2025","12MAR2025","19MAR2025","26MAR2025","02APR2025","09APR2025","16APR2025","23APR2025","30APR2025","07MAY2025","14MAY2025","21MAY2025","28MAY2025","04JUN2025","11JUN2025","18JUN2025","25JUN2025","02JUL2025","09JUL2025","16JUL2025","23JUL2025","30JUL2025","06AUG2025","13AUG2025","20AUG2025","27AUG2025","03SEP2025","10SEP2025","17SEP2025","24SEP2025","01OCT2025","08OCT2025","15OCT2025","22OCT2025","29OCT2025","05NOV2025","12NOV2025","19NOV2025","26NOV2025","03DEC2025","10DEC2025","17DEC2025","24DEC2025","31DEC2025","07JAN2026","14JAN2026","21JAN2026","28JAN2026","04FEB2026","11FEB2026","18FEB2026","25FEB2026","04MAR2026","11MAR2026","18MAR2026","25MAR2026","01APR2026","08APR2026","15APR2026","22APR2026","29APR2026","06MAY2026","13MAY2026","20MAY2026","27MAY2026","03JUN2026","10JUN2026","17JUN2026","24JUN2026","01JUL2026","08JUL2026","15JUL2026","22JUL2026","29JUL2026","05AUG2026","12AUG2026","19AUG2026"],"enso_values":[-1.3,-1.7,-1.5,-1.4,-1.2,-1.0,-1.2,-1.4,-1.3,-0.8,-0.7,-0.9,-0.7,-0.5,-0.7,-0.8,-0.9,-0.8,-0.4,-0.1,-0.3,-0.3,-0.3,-0.5,-0.2,0.1,-0.1,-0.1,-0.3,-0.3,-0.3,-0.4,-0.4,-0.5,-0.6,-0.6,-0.8,-0.7,-0.6,-0.9,-0.6,-0.5,-1.0,-1.0,-0.9,-0.9,-1.0,-1.0,-1.0,-1.0,-1.0,-1.1,-0.8,-0.4,-0.5,-0.7,-0.9,-0.9,-0.5,-0.3,-0.2,-0.5,-0.6,-0.6,-0.3,-0.4,-0.6,-0.6,-0.4,-0.3,-0.2,-0.4,-0.2,-0.1,-0.1,0.3,0.6,0.5,0.3,-0.1,0.2,0.5,0.6,0.7,0.5,0.5,1.3,1.1,0.3,0.1,0.3,0.3,0.3,0.3,0.4,0.4,0.8,1.0,0.5,-0.3,-0.6,-0.4,-0.6,-0.4,-0.5,-0.8,-0.4,-0.4,-0.4,-0.5,-0.5,-0.7,-0.4,-0.1,-0.5,-0.4,0.0,0.7,0.4,-0.1,-0.2,-0.1,-0.1,-0.5,-0.6,-0.3,-0.5,-0.4,-0.4,-0.1,-0.3,-0.4,-0.3,-0.2,-0.3,-0.4,-0.7,-0.7,-0.2,0.1,0.2,0.1,-0.1,-0.1,-0.1,-0.2,-0.3,-0.1,-0.0,-0.1,0.0,-0.2,-0.1,-0.1,-0.1,-0.4,-0.6,-0.8,-0.7,-0.1,-0.4,-1.3,-1.0,-0.4,-0.9,-1.2,-0.5,-0.2,0.2,0.3,0.3,0.3,0.2,0.2,0.4,0.3,0.6,0.6,0.5,0.6,0.6,0.4,0.0,0.1,-0.1,-0.3,-0.1,-0.1,-0.3,-0.0,0.2,0.2,0.4,0.5,0.3,0.3,0.4,0.5,0.4,0.5,0.7,0.8,0.9,0.8,0.7,0.7,0.7,0.5,0.3,0.2,0.4,0.8,0.8,0.9,0.7,0.6,0.8,0.5,0.2,0.4,0.5,0.6,0.7,1.0,1.0,1.0,0.8,0.8,0.7,1.0,1.0,0.9,1.1,1.3,1.2,1.3,1.4,1.2,1.3,1.5,1.7,1.8,1.9,1.7,1.7,2.0,2.0,2.0,2.1,2.2,2.3,2.5,2.6,2.8,3.0,2.9,2.6,2.4,2.5,2.5,2.3,2.3,2.7,2.7,2.7,2.6,2.5,2.2,2.0,2.0,1.8,1.6,1.4,1.3,1.1,1.1,1.0,0.7,0.6,0.4,0.0,-0.2,-0.2,0.1,0.4,-0.3,-0.2,-0.4,-0.6,-0.6,-0.5,-0.5,-0.6,-0.5,-0.6,-0.4,-0.4,-0.5,-0.3,-0.5,-0.8,-0.6,-0.8,-0.7,-0.8,-0.7,-0.6,-0.6,-0.5,-0.4,-0.5,-0.4,-0.2,-0.4,-0.3,-0.1,-0.3,-0.4,-0.2,0.4,0.2,0.1,0.1,0.2,0.2,0.2,0.2,0.3,0.5,0.4,0.3,0.4,0.3,0.5,0.4,0.3,0.4,0.5,0.4,0.5,0.3,0.2,0.1,0.1,-0.1,-0.1,-0.1,-0.2,-0.4,-0.3,-0.4,-0.1,0.0,-0.4,-0.7,-0.5,-0.6,-1.0,-0.9,-1.0,-1.1,-1.0,-1.0,-1.0,-0.8,-1.0,-0.9,-0.6,-0.5,-0.6,-0.6,-0.8,-0.7,-0.7,-0.8,-0.8,-0.9,-0.7,-0.6,-0.5,-0.5,-0.4,-0.4,-0.3,-0.0,-0.0,-0.1,-0.0,0.1,0.3,0.4,0.2,0.3,0.2,0.2,0.2,0.2,0.4,0.4,0.3,0.4,0.3,0.2,0.5,0.8,0.9,0.7,0.9,1.0,0.9,0.9,0.9,0.9,1.0,0.8,0.9,0.9,0.8,0.8,0.7,0.6,0.7,0.6,0.6,0.8,1.0,1.0,1.0,1.1,0.8,0.8,0.7,0.8,0.8,0.8,0.8,0.6,0.7,0.9,0.8,0.7,0.6,0.4,0.5,0.4,0.4,0.4,0.4,0.2,0.2,0.1,-0.0,-0.1,-0.3,0.1,0.3,0.5,0.4,0.5,0.6,0.6,0.4,0.5,0.6,0.4,0.4,0.4,0.4,0.4,0.6,0.6,0.5,0.5,0.5,0.3,0.3,0.4,0.3,0.4,0.4,0.6,0.4,0.4,0.5,0.6,0.5,0.2,-0.0,-0.3,-0.4,-0.4,-0.3,-0.4,-0.4,-0.2,-0.1,0.1,-0.2,-0.2,-0.4,-0.6,-0.6,-0.5,-0.5,-0.6,-0.6,-0.6,-0.7,-0.7,-0.9,-1.1,-1.3,-1.7,-1.5,-1.0,-1.1,-1.3,-1.3,-1.1,-0.9,-0.9,-1.0,-1.0,-1.0,-0.8,-0.7,-0.8,-0.9,-0.7,-1.1,-0.8,-0.4,-0.5,-0.6,-0.6,-0.6,-0.5,-0.6,-0.5,-0.5,-0.4,-0.2,-0.3,-0.2,0.0,-0.0,0.0,0.1,-0.1,-0.1,-0.3,-0.4,-0.4,-0.2,-0.2,-0.3,-0.3,-0.1,-0.3,-0.2,-0.4,-0.6,-0.8,-0.9,-1.1,-1.0,-0.9,-0.9,-0.7,-0.9,-1.1,-1.1,-1.0,-1.1,-1.0,-0.8,-0.8,-0.7,-0.6,-0.6,-0.7,-0.8,-1.0,-0.9,-1.0,-0.9,-0.8,-0.9,-0.9,-1.0,-1.1,-1.2,-1.1,-1.1,-1.0,-0.9,-0.7,-0.6,-0.6,-0.6,-0.5,-0.6,-0.7,-0.7,-1.0,-1.1,-1.2,-0.9,-0.8,-1.0,-0.9,-0.9,-0.8,-0.8,-0.8,-0.8,-1.0,-1.1,-1.0,-0.8,-0.8,-1.0,-1.0,-0.9,-0.8,-0.7,-0.8,-0.7,-0.6,-0.6,-0.5,-0.5,-0.5,-0.3,-0.2,-0.1,0.1,-0.0,-0.0,0.0,0.1,0.3,0.4,0.4,0.5,0.5,0.4,0.8,0.9,0.9,1.0,0.9,1.0,1.1,1.1,1.2,1.1,1.2,1.3,1.5,1.6,1.6,1.6,1.7,1.5,1.5,1.5,1.6,1.6,1.8,1.8,1.9,2.1,2.0,1.9,2.0,2.0,2.0,1.9,1.9,1.7,1.7,1.8,1.7,1.5,1.5,1.3,1.4,1.1,1.3,1.0,1.2,0.9,0.7,0.8,0.5,0.3,0.2,0.2,0.1,0.1,0.0,0.3,0.4,0.3,0.3,0.2,0.1,-0.2,0.0,-0.1,-0.0,-0.2,-0.1,-0.2,-0.5,-0.2,-0.3,-0.5,-0.3,-0.5,-0.2,-0.3,0.0,-0.1,-0.3,-0.3,-0.6,-0.8,-1.1,-0.7,-0.7,-0.6,-0.9,-0.8,-0.6,-0.3,-0.3,-0.2,0.0,0.3,-0.1,0.2,-0.1,-0.1,-0.2,-0.0,-0.1,0.1,-0.1,-0.2,-0.1,-0.0,-0.0,0.2,0.1,0.0,0.1,-0.2,-0.2,-0.3,-0.3,-0.3,-0.4,-0.4,-0.3,-0.5,-0.4,-0.5,-0.5,-0.3,-0.6,-0.6,-0.6,-0.7,-0.8,-0.8,-0.6,-0.5,-0.7,-0.7,-0.7,-0.6,-0.7,-0.6,-0.4,-0.5,-0.4,-0.2,-0.1,-0.1,-0.1,-0.1,0.0,0.1,0.1,0.2,0.5,0.8,0.9,0.8,0.9,0.9,1.0,1.3,1.5,1.7,1.8,1.7,2.0,2.1,2.2,2.4,2.6,2.7,2.6],"enso_w_labels":["20MAY2026","27MAY2026","03JUN2026","10JUN2026","17JUN2026","24JUN2026","01JUL2026","08JUL2026","15JUL2026","22JUL2026","29JUL2026","05AUG2026","12AUG2026","19AUG2026"],"enso_w_34":[0.9,1.0,1.3,1.5,1.7,1.8,1.7,2.0,2.1,2.2,2.3,2.6,2.7,2.6],"enso_w_3":[2.6,2.8,2.5,2.4,2.3,2.0,1.8,1.8,1.8,1.7,1.6,1.3,1.3,1.2,0.2,0.1,0.0,0.2,0.7,0.6,0.6,0.5,0.2,0.4,0.4,0.1,0.1,0.1,0.3,0.2,0.5,0.7,0.9,0.7,0.7,0.9,1.0,1.0,0.9,1.0,1.0,0.9,1.0,1.0,0.8,0.9,0.8,0.7,0.6,0.6,0.7,0.8,1.1,0.9,0.7,0.9,0.6,0.5,0.6,0.8,0.7,0.8,0.6,0.5,0.6,0.5,0.4,0.4,0.3,0.3,0.2,0.2,0.5,0.1,0.0,0.1,0.1,0.1,0.2,0.3,0.2,0.2,0.4,0.3,0.1,0.2,0.4,0.6,0.7,0.8,0.9,0.9,0.8,1.1,1.2,1.2,1.4,1.4,1.5,1.6,1.7,1.7,1.8,1.8,2.0,2.2,2.3,2.2,2.2,2.1,2.0,1.9,2.1,2.1,2.0,2.1,2.0,2.1,2.3,2.0,2.0,2.1,2.1,2.1,2.0,2.0,1.9,1.8,1.9,1.6,1.5,1.4,1.3,1.0,0.9,0.6,0.3,0.0,0.1,0.0,0.1,0.2,0.3,0.1,0.1,0.3,0.6,0.9,1.0,1.0,1.1,1.2,1.3,1.5,1.6,1.9,2.1,2.0,2.3,2.5,2.8,3.1,3.2],"enso_w_4":[1.3,1.3,1.3,1.4,1.5,1.5,1.4,1.3,1.3,1.4,1.2,1.2,1.0,0.8,0.8,0.6,0.5,0.6,0.0,0.1,0.2,0.2,0.2,0.2,0.1,0.5,0.5,0.4,0.5,0.4,0.6,0.9,1.0,0.8,0.9,0.9,0.8,0.8,0.8,0.8,1.0,1.0,1.0,1.0,0.9,0.8,0.9,0.9,0.9,0.8,0.8,0.9,0.9,0.9,0.9,0.9,0.8,0.7,0.7,0.6,0.6,0.6,0.6,0.6,0.6,0.8,0.9,0.7,0.8,0.8,0.9,0.9,1.0,1.1,1.0,0.8,0.9,0.8,0.8,0.9,0.6,0.6,0.7,0.1,0.0,0.3,0.2,0.3,0.4,0.3,0.2,0.3,0.4,0.6,0.7,0.6,0.7,0.6,0.7,0.7,0.8,0.8,0.8,0.9,0.9,1.1,1.1,1.1,1.1,1.2,1.1,1.2,1.3,1.3,1.3,1.4,1.3,1.5,1.5,1.7,1.4,1.4,1.4,1.4,1.4,1.5,1.4,1.6,1.5,1.3,1.1,1.2,1.1,1.1,0.8,0.9,0.8,0.2,0.3,0.3,0.1,0.2,0.3,0.6,0.6,0.7,0.9,1.0,0.9,0.9,1.0,1.0,1.1,1.2,1.3,1.3,1.2,1.1,1.0,1.0,1.1,1.0],"soi_labels":["2011-01","2011-02","2011-03","2011-04","2011-05","2011-06","2011-07","2011-08","2011-09","2011-10","2011-11","2011-12","2012-01","2012-02","2012-03","2012-04","2012-05","2012-06","2012-07","2012-08","2012-09","2012-10","2012-11","2012-12","2013-01","2013-02","2013-03","2013-04","2013-05","2013-06","2013-07","2013-08","2013-09","2013-10","2013-11","2013-12","2014-01","2014-02","2014-03","2014-04","2014-05","2014-06","2014-07","2014-08","2014-09","2014-10","2014-11","2014-12","2015-01","2015-02","2015-03","2015-04","2015-05","2015-06","2015-07","2015-08","2015-09","2015-10","2015-11","2015-12","2016-01","2016-02","2016-03","2016-04","2016-05","2016-06","2016-07","2016-08","2016-09","2016-10","2016-11","2016-12","2017-01","2017-02","2017-03","2017-04","2017-05","2017-06","2017-07","2017-08","2017-09","2017-10","2017-11","2017-12","2018-01","2018-02","2018-03","2018-04","2018-05","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2011-01","2011-02","2011-03","2011-04","2011-05","2011-06","2011-07","2011-08","2011-09","2011-10","2011-11","2011-12","2012-01","2012-02","2012-03","2012-04","2012-05","2012-06","2012-07","2012-08","2012-09","2012-10","2012-11","2012-12","2013-01","2013-02","2013-03","2013-04","2013-05","2013-06","2013-07","2013-08","2013-09","2013-10","2013-11","2013-12","2014-01","2014-02","2014-03","2014-04","2014-05","2014-06","2014-07","2014-08","2014-09","2014-10","2014-11","2014-12","2015-01","2015-02","2015-03","2015-04","2015-05","2015-06","2015-07","2015-08","2015-09","2015-10","2015-11","2015-12","2016-01","2016-02","2016-03","2016-04","2016-05","2016-06","2016-07","2016-08","2016-09","2016-10","2016-11","2016-12","2017-01","2017-02","2017-03","2017-04","2017-05","2017-06","2017-07","2017-08","2017-09","2017-10","2017-11","2017-12","2018-01","2018-02","2018-03","2018-04","2018-05","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12"],"soi_values":[3.8,4.5,4.2,3.1,0.6,0.4,1.6,0.7,1.7,1.2,1.8,4.1,1.8,0.8,1.2,-0.4,0.1,-0.7,-0.1,-0.3,0.4,0.5,0.4,-1.0,-0.1,-0.4,2.5,0.4,1.3,2.0,1.3,0.3,0.5,-0.1,1.2,0.1,2.4,0.1,-1.5,1.3,0.9,0.3,-0.3,-1.2,-1.2,-1.0,-1.5,-0.9,-1.4,0.4,-1.2,-0.1,-1.2,-0.9,-1.9,-2.4,-2.7,-2.8,-0.8,-0.9,-3.6,-3.2,-0.1,-2.0,0.7,1.1,0.7,1.2,2.0,-0.4,-0.2,0.5,0.3,-0.1,1.5,-0.3,0.4,-0.7,1.3,0.9,1.0,1.5,1.5,-0.2,1.8,-0.8,2.4,0.8,0.6,-0.2,0.4,-0.5,-1.5,0.6,-0.1,1.7,-0.1,-2.3,-0.5,0.2,-0.7,-0.7,-0.6,-0.2,-1.9,-0.6,-1.4,-0.9,0.3,-0.1,-0.2,0.3,0.7,-0.6,0.7,1.8,1.5,0.8,1.1,3.0,3.2,2.5,0.6,0.6,0.8,0.7,2.3,1.0,1.3,1.2,1.6,2.5,0.8,1.8,2.9,2.8,2.4,2.8,1.3,1.7,2.7,2.8,0.5,3.5,2.3,2.3,0.3,0.4,-1.7,0.4,-0.4,-1.4,-2.1,-0.8,-1.3,-0.4,0.8,-2.3,0.6,-0.3,0.8,0.1,-1.2,1.5,-0.2,0.8,0.8,1.9,0.3,0.9,2.8,0.9,0.7,0.5,1.0,0.7,0.1,1.9,1.8,-0.0,2.3,2.7,2.5,1.9,0.4,0.2,1.0,0.4,1.0,0.8,1.1,2.5,1.1,0.5,0.7,-0.3,0.0,-0.4,-0.0,-0.2,0.2,0.3,0.3,-0.6,-0.1,-0.2,1.5,0.2,0.8,1.2,0.8,0.2,0.3,-0.1,0.7,0.1,1.4,0.1,-0.9,0.8,0.5,0.2,-0.2,-0.7,-0.7,-0.6,-0.9,-0.6,-0.8,0.2,-0.7,-0.0,-0.7,-0.6,-1.1,-1.4,-1.6,-1.7,-0.5,-0.6,-2.2,-2.0,-0.1,-1.2,0.4,0.6,0.4,0.7,1.2,-0.3,-0.1,0.3,0.2,-0.1,0.9,-0.2,0.3,-0.4,0.8,0.5,0.6,0.9,0.9,-0.1,1.1,-0.5,1.5,0.5,0.4,-0.1,0.2,-0.3,-0.9,0.4,-0.1,1.0,-0.0,-1.4,-0.3,0.1,-0.4,-0.5,-0.4,-0.1,-1.2,-0.4,-0.8,-0.6,0.2,-0.1,-0.1,0.2,0.4,-0.4,0.4,1.1,0.9,0.5,0.7,1.8,1.9,1.5,0.4,0.3,0.5,0.4,1.4,0.6,0.8,0.7,1.0,1.5,0.5,1.1,1.8,1.7,1.4,1.7,0.8,1.0,1.6,1.7,0.3,2.1,1.4,1.4,0.2,0.2,-1.0,0.3,-0.3,-0.8,-1.3,-0.5,-0.8,-0.2,0.5,-1.4,0.4,-0.2,0.5,0.0,-0.7,0.9,-0.1,0.5,0.5,1.2,0.2,0.5,1.7,0.5,0.4,0.3,0.6,0.4,0.0,1.1,1.1,-0.0],"pdo_labels":["2011-01","2011-02","2011-03","2011-04","2011-05","2011-06","2011-07","2011-08","2011-09","2011-10","2011-11","2011-12","2012-01","2012-02","2012-03","2012-04","2012-05","2012-06","2012-07","2012-08","2012-09","2012-10","2012-11","2012-12","2013-01","2013-02","2013-03","2013-04","2013-05","2013-06","2013-07","2013-08","2013-09","2013-10","2013-11","2013-12","2014-01","2014-02","2014-03","2014-04","2014-05","2014-06","2014-07","2014-08","2014-09","2014-10","2014-11","2014-12","2015-01","2015-02","2015-03","2015-04","2015-05","2015-06","2015-07","2015-08","2015-09","2015-10","2015-11","2015-12","2016-01","2016-02","2016-03","2016-04","2016-05","2016-06","2016-07","2016-08","2016-09","2016-10","2016-11","2016-12","2017-01","2017-02","2017-03","2017-04","2017-05","2017-06","2017-07","2017-08","2017-09","2017-10","2017-11","2017-12","2018-01","2018-02","2018-03","2018-04","2018-05","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07"],"pdo_values":[-1.8,-1.46,-1.28,-1.02,-0.66,-1.08,-2.3,-2.37,-2.5,-1.92,-2.95,-2.4,-1.85,-1.35,-1.66,-1.01,-2.12,-1.63,-2.4,-2.6,-2.99,-1.22,-0.66,-1.31,-1.1,-1.42,-1.48,-0.72,-0.4,-1.19,-1.34,-1.56,-1.0,-1.65,-1.09,-1.04,-0.57,-0.42,0.3,0.36,1.27,-0.28,0.25,0.34,0.76,1.43,1.35,1.86,1.51,1.52,1.33,0.9,0.32,0.82,1.41,0.98,0.97,0.84,0.17,0.29,0.75,1.29,1.56,1.74,1.6,0.87,0.57,-0.63,-0.8,-0.43,0.96,0.61,-0.06,-0.02,0.1,0.56,0.45,0.33,-0.45,-0.63,-0.2,-0.68,-0.6,-0.03,0.38,-0.09,-0.72,-0.82,-0.47,-0.66,-0.03,-0.24,-0.35,-0.57,-0.7,-0.21,-0.34,-0.72,-0.4,0.09,0.26,-0.06,0.52,-0.0,0.13,-0.9,-0.51,-0.0,-1.41,-1.48,-1.75,-1.32,-0.52,-0.75,-0.92,-1.33,-1.04,-0.62,-1.58,-0.98,-0.61,-1.09,-1.67,-1.84,-2.04,-1.82,-2.0,-0.95,-1.96,-3.14,-2.75,-2.71,-2.4,-1.91,-1.67,-2.09,-2.23,-1.31,-2.63,-2.38,-2.28,-1.81,-2.4,-2.21,-1.24,-1.65,-2.45,-3.08,-2.41,-2.55,-2.54,-2.48,-2.99,-2.23,-1.79,-1.66,-1.57,-1.34,-1.54,-2.11,-2.98,-3.15,-3.01,-2.91,-3.56,-3.8,-3.13,-2.03,-1.29,-1.4,-1.12,-1.15,-1.66,-2.64,-4.21,-3.23,-2.31,-2.37,-1.51,-0.96,-1.24,-1.0,-1.42,-1.62,-1.67,-1.71,-2.03],"nao_labels":["2011-01","2011-02","2011-03","2011-04","2011-05","2011-06","2011-07","2011-08","2011-09","2011-10","2011-11","2011-12","2012-01","2012-02","2012-03","2012-04","2012-05","2012-06","2012-07","2012-08","2012-09","2012-10","2012-11","2012-12","2013-01","2013-02","2013-03","2013-04","2013-05","2013-06","2013-07","2013-08","2013-09","2013-10","2013-11","2013-12","2014-01","2014-02","2014-03","2014-04","2014-05","2014-06","2014-07","2014-08","2014-09","2014-10","2014-11","2014-12","2015-01","2015-02","2015-03","2015-04","2015-05","2015-06","2015-07","2015-08","2015-09","2015-10","2015-11","2015-12","2016-01","2016-02","2016-03","2016-04","2016-05","2016-06","2016-07","2016-08","2016-09","2016-10","2016-11","2016-12","2017-01","2017-02","2017-03","2017-04","2017-05","2017-06","2017-07","2017-08","2017-09","2017-10","2017-11","2017-12","2018-01","2018-02","2018-03","2018-04","2018-05","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07"],"nao_values":[-0.88,0.7,0.61,2.48,-0.06,-1.28,-1.51,-1.35,0.54,0.39,1.36,2.52,1.17,0.42,1.27,0.47,-0.91,-2.53,-1.32,-0.98,-0.59,-2.06,-0.58,0.17,0.35,-0.45,-1.61,0.69,0.57,0.52,0.67,0.97,0.24,-1.28,0.9,0.95,0.29,1.34,0.8,0.31,-0.92,-0.97,0.18,-1.68,1.62,-1.27,0.68,1.86,1.79,1.32,1.45,0.73,0.15,-0.07,-3.18,-0.76,-0.65,0.44,1.74,2.24,0.12,1.58,0.73,0.38,-0.77,-0.43,-1.76,-1.65,0.61,0.41,-0.16,0.48,0.48,1.0,0.74,1.73,-1.91,0.05,1.26,-1.1,-0.61,0.19,-0.0,0.88,1.44,1.58,-0.93,1.24,2.12,1.09,1.39,1.97,1.67,0.93,-0.11,0.61,0.59,0.29,1.23,0.47,-2.62,-1.09,-1.43,-1.17,-0.16,-1.41,0.28,1.2,1.34,1.26,1.01,-1.02,-0.41,-0.15,-1.23,0.12,0.98,-0.65,2.54,-0.3,-1.11,0.14,0.73,-1.43,-1.24,0.77,0.03,-0.28,-0.21,-2.29,-0.18,0.29,1.08,1.68,0.77,-0.36,0.71,-0.12,-0.09,1.47,-1.61,-0.72,0.69,-0.15,1.25,0.92,-1.11,-0.63,0.39,-0.58,-2.17,-1.16,-0.44,-2.03,-0.32,1.94,0.21,1.09,-0.21,-0.78,-0.44,-0.09,1.46,0.63,-1.43,-0.38,-0.23,1.21,-0.52,1.6,0.3,0.18,0.49,0.7,0.48,0.26,-0.8,-0.96,-0.78,-0.65,-0.36,0.68,2.69,1.39,-0.74,0.1,-0.31],"iod_w_labels":["2011-01","2011-02","2011-03","2011-04","2011-05","2011-06","2011-07","2011-08","2011-09","2011-10","2011-11","2011-12","2012-01","2012-02","2012-03","2012-04","2012-05","2012-06","2012-07","2012-08","2012-09","2012-10","2012-11","2012-12","2013-01","2013-02","2013-03","2013-04","2013-05","2013-06","2013-07","2013-08","2013-09","2013-10","2013-11","2013-12","2014-01","2014-02","2014-03","2014-04","2014-05","2014-06","2014-07","2014-08","2014-09","2014-10","2014-11","2014-12","2015-01","2015-02","2015-03","2015-04","2015-05","2015-06","2015-07","2015-08","2015-09","2015-10","2015-11","2015-12","2016-01","2016-02","2016-03","2016-04","2016-05","2016-06","2016-07","2016-08","2016-09","2016-10","2016-11","2016-12","2017-01","2017-02","2017-03","2017-04","2017-05","2017-06","2017-07","2017-08","2017-09","2017-10","2017-11","2017-12","2018-01","2018-02","2018-03","2018-04","2018-05","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05"],"iod_w_values":[0.191,0.241,0.367,0.154,-0.089,0.055,0.223,0.344,0.202,0.356,0.336,-0.128,0.046,-0.078,0.026,-0.271,-0.37,0.0,0.546,0.652,0.453,0.11,-0.099,0.267,-0.065,0.189,0.083,-0.297,-0.506,-0.497,-0.181,-0.194,-0.31,-0.168,0.199,0.141,-0.101,-0.089,-0.151,-0.058,-0.092,-0.028,-0.363,-0.372,-0.145,0.141,0.009,0.046,-0.1,-0.345,-0.241,-0.008,0.24,0.296,0.225,0.568,0.294,0.482,0.347,0.272,0.265,-0.11,-0.008,0.146,-0.113,-0.443,-0.757,-0.443,-0.437,-0.371,-0.382,-0.31,-0.086,0.101,0.357,0.498,0.536,0.424,0.52,0.349,0.035,0.015,0.289,0.11,-0.2,0.216,-0.12,-0.083,0.122,0.155,0.053,0.121,0.604,0.684,0.5,0.309,0.387,0.416,0.225,0.258,0.54,0.605,0.597,0.436,0.892,0.964,0.835,0.243,0.173,0.054,0.019,-0.011,0.298,0.455,0.319,-0.183,-0.189,0.074,0.02,0.031,0.051,0.243,0.267,0.25,0.009,-0.002,-0.229,-0.099,-0.058,-0.091,0.069,-0.12,-0.056,-0.082,-0.093,-0.068,-0.122,-0.335,-0.195,-0.246,-0.322,-0.691,-0.269,-0.091,0.11,0.157,0.414,0.56,0.443,0.665,0.498,0.826,0.946,0.804,0.92,0.852,0.765,0.327,0.421,0.44,0.298,0.197,0.033,0.267,0.115,-0.196,-0.382,-0.331,-0.196,0.017,0.058,0.149,0.107,-0.014,-0.072,-0.42,-0.467,-0.448,-0.256,-0.017,0.123,0.529,0.285,0.279,0.146],"all_fc_labels":["2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07","2026-08","2026-09","2026-10","2026-11","2026-12","2027-01","2027-02","2027-03"],"obs_full":[-0.3,-0.2,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,1.2,1.4,1.5,1.6,1.7,1.8,2.3,null,null,null,null,null,null,null,null,null,null],"fc_full":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,2.0,2.3,2.6,3.0,3.1,3.0,2.6,2.2,1.8],"upper_full":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,2.3,2.6,3.0,3.5,3.8,3.5,3.0,2.5,2.0],"lower_full":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.7,1.9,2.1,2.4,2.5,2.4,2.0,1.6,1.2],"model_data":{"ECMWF":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,2.0,2.5,3.0,3.5,3.8,4.0,4.2,3.5,2.5],"CFS":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,2.1,2.4,2.8,3.2,3.5,3.6,3.4,2.8,2.0],"CanSIPS":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.9,2.2,2.5,2.8,3.0,3.1,2.8,2.2,1.5],"GFDL":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.8,2.0,2.3,2.6,2.8,2.9,2.6,2.0,1.3],"NASA":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,2.2,2.5,2.9,3.2,3.5,3.6,3.3,2.6,1.8]},"crop_chart_data":{"玉米":{"acc_season_yoy":[1248.4,1210.7,1158.2,1261.0,1250.1,1472.8,1320.9,1340.8,1253.0,1279.0,1344.4,1346.2,1410.7,1361.8,1321.9,1481.0,1807.5,1363.1,1469.1,1402.5,1340.1,1154.7,1414.8,1480.9,1219.3,null,null,null],"precip_30_14":[302.4,72.8,208.5,146.2,77.4,201.6,143.9,101.2,103.7,211.0,117.1,188.2,260.5,342.6,255.8,18.0,32.8,221.6,118.1,80.9,309.8,46.8,199.4,330.1,59.9,85.8,162.7,126.0],"acc_season_req":[2700,2700,2700,2700,2700,2700,2700,2700,2700,2500,2500,2500,2500,2500,2500,2700,2700,2650,2650,2650,2650,2650,2650,2650,2650,2500,2500,2500],"max_temps":[24.6,26.6,22.5,25.6,25.6,27.2,26.8,26.5,25.6,30.6,32.2,30.2,30.5,31.3,31.1,31.2,32.5,28.2,26.8,25.5,25.6,28.0,27.9,30.4,30.1,29.1,26.3,14.7],"harvest_status":["","","","","","","","","","","","","","","","","","","","","","","","","","已收获","已收获","已收获"],"normals_high":[28,28,29,28,29,33,33,33,34,33,33],"precip_season_yoy":[334.4,206.2,230.8,383.5,175.8,317.1,367.2,275.1,365.4,362.0,300.6,229.2,335.7,264.9,292.5,41.6,31.8,495.0,449.1,417.8,576.5,609.2,454.1,475.2,438.3,null,null,null],"gdd_14d":[151.6,163.5,129.1,164.8,156.7,184.8,173.3,172.4,157.0,227.6,253.2,233.0,237.3,247.8,246.1,211.5,226.0,165.3,159.9,155.8,155.8,170.5,173.2,194.3,174.6,194.1,151.9,29.4],"names":["黑龙江·哈尔滨","黑龙江·齐齐哈尔","黑龙江·佳木斯","吉林·长春","吉林·白城","辽宁·沈阳","辽宁·铁岭","内蒙古·通辽","内蒙古·赤峰","河北·石家庄","山东·济南","山东·菏泽","河南·郑州","河南·周口","河南·驻马店","新疆·乌鲁木齐","新疆·阿克苏","艾奥瓦","伊利诺伊","印第安纳","俄亥俄","明尼苏达","内布拉斯加","密苏里","南达科他","南马托格罗索","巴拉那","布宜诺斯艾利斯"],"acc_phase":[491.6,466.0,444.0,524.1,482.4,583.9,545.1,548.1,518.6,210.8,225.0,202.5,198.4,211.5,203.5,542.2,617.8,662.2,633.2,626.9,615.5,638.9,677.2,701.5,616.8,null,null,null],"soils_avg":[0.261,0.136,0.275,0.185,0.213,0.21,0.203,0.177,0.189,0.248,0.179,0.359,0.321,0.338,0.359,0.139,0.257,0.374,0.242,0.292,0.336,0.275,0.16,0.215,0.193,0.331,0.411,0.335],"acc_season_avg":[1127.3,1142.7,1033.2,1179.1,1249.3,1402.5,1346.7,1357.8,1291.4,1211.1,1215.6,1243.5,1259.7,1239.1,1213.8,1306.0,1561.3,1323.9,1396.3,1326.3,1272.6,1115.1,1368.6,1499.6,1164.0,null,null,null],"precip_14":[29.5,42.2,17.2,37.2,13.0,58.0,53.6,20.1,50.8,49.1,19.2,40.8,20.7,19.1,41.4,0.0,19.0,7.0,13.8,19.7,14.3,15.2,50.2,4.6,9.1,27.6,14.1,4.0],"min_temps":[17.1,16.8,15.9,17.9,16.8,19.2,18.0,18.1,16.8,21.9,24.0,23.1,23.4,24.1,24.1,19.0,19.8,15.4,16.1,16.8,16.6,16.4,16.9,17.3,14.8,18.7,15.4,8.4],"soils_avg_14d":[0.288,0.135,0.31,0.225,0.206,0.272,0.232,0.172,0.179,0.239,0.192,0.351,0.31,0.288,0.319,0.137,0.257,0.374,0.242,0.292,0.336,0.275,0.16,0.215,0.193,0.332,0.361,0.332],"normals_low":[20,20,21,21,22,25,25,25,26,25,26],"precip_season":[461.2,235.3,424.6,445.5,223.8,644.8,616.7,266.5,279.7,228.9,239.3,293.4,366.7,413.7,310.0,56.9,44.8,214.6,104.3,61.2,295.5,31.6,149.2,325.5,50.8,58.2,148.6,122.0],"acc_season":[1252.2,1192.6,1119.2,1295.9,1249.7,1480.9,1378.6,1396.4,1275.4,1269.7,1251.4,1228.8,1251.0,1294.6,1215.6,1515.0,1809.5,1384.6,1348.3,1301.6,1283.3,1210.1,1414.5,1475.9,1202.4,null,null,null],"normals_precip":[150,140,120,160,170,150,180,160,150,150,160],"cal_offset":[0.07,-1.04,0.64,0.3,0.2,1.09,1.05,-1.39,-3.57,1.28,-0.16,0.14,0.3,0.19,-0.61,-1.14,-2.25,null,null,null,null,null,null,null,null,null,null,null],"precip_avg_14d":[93.1,29.0,69.6,39.2,27.4,58.9,34.5,21.0,20.6,51.0,28.5,46.8,72.2,97.5,69.2,5.6,8.4,58.6,29.3,24.5,73.9,9.9,61.8,122.5,20.9,25.4,63.2,50.4],"soils":[0.261,0.136,0.275,0.185,0.213,0.21,0.203,0.177,0.189,0.248,0.179,0.359,0.321,0.338,0.359,0.139,0.257,0.374,0.242,0.292,0.336,0.275,0.16,0.215,0.193,0.327,0.388,0.336],"precip_season_avg":[337.6,276.4,306.3,395.5,277.2,383.2,415.5,259.6,217.1,287.1,327.9,357.2,287.8,384.3,383.6,73.7,30.2,417.1,425.0,435.4,450.0,429.2,415.6,481.8,350.6,null,null,null]},"大豆":{"acc_season_yoy":[1185.0,976.1,1219.0,1226.0,1401.1,1209.0,1308.1,1251.9,1199.0,1020.7,1249.4,1318.4,1060.2,null,null,null,null],"precip_30_14":[72.8,176.4,302.4,146.2,201.6,221.6,118.1,80.9,309.8,46.8,199.4,330.1,59.9,85.8,162.7,386.5,126.0],"acc_season_req":[2400,2400,2400,2400,2400,2400,2400,2400,2400,2400,2400,2400,2400,2400,2400,2400,2400],"max_temps":[26.6,21.8,24.6,25.6,27.2,28.2,26.8,25.5,25.6,28.0,27.9,30.4,30.1,29.1,26.3,20.1,14.7],"harvest_status":["","","","","","","","","","","","","","已收获","已收获","已收获","已收获"],"normals_high":[28,26,30,31,30,30,29,31,30,29,25,24,18,14],"precip_season_yoy":[206.2,295.5,334.4,383.5,317.1,458.8,382.5,346.3,404.0,542.8,431.0,434.0,394.4,null,null,null,null],"gdd_14d":[163.5,104.4,151.6,164.8,184.8,165.3,159.9,155.8,155.8,170.5,173.2,194.3,174.6,194.1,151.9,84.5,29.4],"names":["黑龙江·齐齐哈尔","黑龙江·黑河","黑龙江·哈尔滨","吉林·长春","辽宁·沈阳","艾奥瓦","伊利诺伊","印第安纳","俄亥俄","明尼苏达","内布拉斯加","密苏里","南达科他","南马托格罗索","巴拉那","南里奥格兰德","布宜诺斯艾利斯"],"acc_phase":[428.8,361.3,451.6,483.6,536.5,384.9,371.1,351.8,347.8,362.7,393.0,424.2,344.9,null,null,null,null],"soils_avg":[0.136,0.339,0.261,0.185,0.21,0.374,0.242,0.292,0.336,0.275,0.16,0.215,0.193,0.331,0.411,0.483,0.335],"acc_season_avg":[1096.1,918.3,1077.6,1118.8,1310.9,1214.3,1262.1,1207.6,1162.6,1051.0,1250.5,1344.5,1087.5,null,null,null,null],"precip_14":[42.2,50.8,29.5,37.2,58.0,7.0,13.8,19.7,14.3,15.2,50.2,4.6,9.1,27.6,14.1,44.1,4.0],"min_temps":[16.8,13.1,17.1,17.9,19.2,15.4,16.1,16.8,16.6,16.4,16.9,17.3,14.8,18.7,15.4,10.7,8.4],"soils_avg_14d":[0.135,0.304,0.288,0.225,0.272,0.374,0.242,0.292,0.336,0.275,0.16,0.215,0.193,0.332,0.361,0.463,0.332],"normals_low":[20,18,19,20,19,20,18,19,20,17,15,13,9,6],"precip_season":[235.3,358.8,461.2,445.5,644.8,214.6,104.3,61.2,295.5,31.6,149.2,325.5,50.8,58.2,148.6,342.4,122.0],"acc_season":[1125.4,918.7,1182.7,1224.7,1388.8,1272.2,1238.8,1221.9,1196.6,1146.8,1284.1,1349.3,1131.0,null,null,null,null],"normals_precip":[150,130,100,110,110,100,100,90,110,80,20,40,50,60],"cal_offset":[-1.04,0.19,0.07,0.3,1.09,null,null,null,null,null,null,null,null,null,null,null,null],"precip_avg_14d":[29.0,66.9,93.1,39.2,58.9,58.6,29.3,24.5,73.9,9.9,61.8,122.5,20.9,25.4,63.2,128.6,50.4],"soils":[0.136,0.339,0.261,0.185,0.21,0.374,0.242,0.292,0.336,0.275,0.16,0.215,0.193,0.327,0.388,0.478,0.336],"precip_season_avg":[276.4,274.4,337.6,395.5,383.2,325.1,312.8,341.6,365.9,366.2,314.9,371.2,273.2,null,null,null,null]},"小麦":{"acc_season_yoy":[null,null,null,null,null,1587.2,1562.4,null,1464.6,1201.2,1339.1],"precip_30_14":[260.5,117.1,211.0,310.2,32.9,13.6,143.4,43.3,57.2,89.2,138.8],"acc_season_req":[0,0,0,0,1900,1400,1400,2000,1500,1500,1500],"max_temps":[30.5,32.2,30.6,32.2,32.8,26.9,22.2,26.3,18.4,15.0,15.3],"harvest_status":["已收获","已收获","已收获","已收获","已收获","","","已收获","","",""],"normals_high":[33,33,33,34,33,33,33,34,29,25,23,24,17,14,16],"precip_season_yoy":[null,null,null,null,null,252.0,251.2,null,442.1,175.0,319.6],"gdd_14d":[377.3,393.2,367.6,404.0,377.8,286.6,247.5,306.2,209.2,165.8,182.3],"names":["河南·郑州","山东·济南","河北·石家庄","安徽·合肥","克拉斯诺达尔边疆区","萨斯喀彻温","艾伯塔","基辅州","新南威尔士","维多利亚","南澳大利亚"],"acc_phase":[null,null,null,null,null,873.8,798.5,null,6605.6,5491.0,5963.1],"soils_avg":[0.321,0.179,0.248,0.369,0.304,0.22,0.356,0.314,0.211,0.416,0.258],"acc_season_avg":[null,null,null,null,null,1666.3,1553.9,null,1471.5,1169.0,1325.3],"precip_14":[20.7,19.2,49.1,45.6,0.6,7.3,31.9,18.6,31.8,23.5,54.2],"min_temps":[23.4,24.0,21.9,25.5,21.2,14.0,13.2,17.5,11.5,8.7,10.7],"soils_avg_14d":[0.31,0.192,0.239,0.336,0.307,0.22,0.338,0.316,0.196,0.395,0.254],"normals_low":[25,25,25,26,25,26,26,27,19,13,12,15,8,7,8],"precip_season":[28.8,26.4,60.8,49.6,32.3,6.3,111.5,24.7,25.4,65.7,84.6],"acc_season":[null,null,null,null,null,1635.9,1502.0,null,1575.9,1317.3,1402.1],"normals_precip":[150,180,160,150,150,160,160,200,50,70,90,80,60,50,50],"cal_offset":[0.3,-0.16,1.28,-0.61,null,null,null,null,null,null,null],"precip_avg_14d":[72.2,28.5,51.0,86.3,14.4,1.6,44.4,8.9,7.1,20.7,25.4],"soils":[0.321,0.179,0.248,0.369,0.317,0.22,0.342,0.322,0.201,0.413,0.253],"precip_season_avg":[null,null,null,null,null,184.1,294.7,null,225.6,208.9,298.1]},"棕榈油":{"acc_season_yoy":[347.4,313.9,337.0],"precip_30_14":[221.5,291.5,325.8],"acc_season_req":[null,null,null],"max_temps":[32.7,31.5,30.2],"harvest_status":["","",""],"normals_high":[32,32,33],"precip_season_yoy":[87.0,247.0,137.7],"gdd_14d":[145.4,132.3,139.2],"names":["雪兰莪","北苏门答腊","曼谷"],"acc_phase":[null,null,null],"soils_avg":[0.358,0.329,0.305],"acc_season_avg":[289.7,272.9,325.4],"precip_14":[54.0,118.0,84.1],"min_temps":[24.0,23.4,25.7],"soils_avg_14d":[0.331,0.328,0.356],"normals_low":[24,24,26],"precip_season":[167.5,173.5,241.7],"acc_season":[329.4,294.5,346.0],"normals_precip":[150,160,150],"cal_offset":[null,null,null],"precip_avg_14d":[64.6,66.1,95.3],"soils":[0.298,0.276,0.335],"precip_season_avg":[207.5,291.5,187.7]},"白糖":{"acc_season_yoy":[1046.3,63.8,1052.7,null,null,null],"precip_30_14":[359.7,313.1,413.2,27.1,454.0,321.4],"acc_season_req":[5000,5000,5000,4500,4500,4500],"max_temps":[32.0,24.2,32.2,28.6,30.7,30.2],"harvest_status":["","","","已收获","已收获","已收获"],"normals_high":[33,25,26,33,33],"precip_season_yoy":[842.0,858.3,1151.1,null,null,null],"gdd_14d":[120.6,5.5,130.5,46.8,113.2,105.9],"names":["广西·南宁","云南·昆明","广东·广州","圣保罗","北方邦","孔敬"],"acc_phase":[null,null,null,null,null,null],"soils_avg":[0.409,0.258,0.235,0.378,0.347,0.449],"acc_season_avg":[1017.5,86.1,1077.0,null,null,null],"precip_14":[84.1,63.1,91.8,7.2,200.5,129.0],"min_temps":[25.3,16.2,26.4,17.1,25.5,24.9],"soils_avg_14d":[0.47,0.32,0.304,0.34,0.393,0.444],"normals_low":[26,17,14,27,25],"precip_season":[903.9,701.1,1096.0,19.9,253.5,192.4],"acc_season":[1147.7,85.5,1172.2,null,null,null],"normals_precip":[200,180,20,250,150],"cal_offset":[-0.22,0.86,-1.15,null,null,null],"precip_avg_14d":[86.6,84.3,121.2,9.1,94.1,83.3],"soils":[0.409,0.258,0.235,0.358,0.339,0.396],"precip_season_avg":[791.5,729.6,994.2,null,null,null]},"棉花":{"acc_season_yoy":[929.9,null,1253.5,1526.8,null,1234.1],"precip_30_14":[18.0,117.1,32.8,504.4,1.3,85.3],"acc_season_req":[3900,null,3900,3500,3200,3000],"max_temps":[31.2,32.2,32.5,32.2,35.5,36.4],"harvest_status":["","","","","已收获",""],"normals_high":[32,33,33,29,33],"precip_season_yoy":[41.6,null,31.8,443.2,null,426.2],"gdd_14d":[141.5,183.2,156.0,193.3,204.9,208.6],"names":["新疆·乌鲁木齐","山东·济南","新疆·阿克苏","古吉拉特","马托格罗索","田纳西"],"acc_phase":[683.6,null,782.0,221.6,null,508.1],"soils_avg":[0.139,0.179,0.257,0.29,0.333,0.352],"acc_season_avg":[773.6,null,1013.0,1545.0,null,1167.5],"precip_14":[0.0,19.2,19.0,88.3,0.0,4.2],"min_temps":[19.0,24.0,19.8,25.4,23.8,23.4],"soils_avg_14d":[0.137,0.192,0.257,0.256,0.301,0.352],"normals_low":[22,25,27,18,23],"precip_season":[56.9,26.4,44.8,416.1,1.3,81.1],"acc_season":[985.8,482.8,1264.2,1610.6,null,1208.5],"normals_precip":[25,180,250,15,110],"cal_offset":[-1.14,-0.16,-2.25,null,null,null],"precip_avg_14d":[5.6,28.5,8.4,178.3,0.6,37.8],"soils":[0.139,0.179,0.257,0.283,0.307,0.352],"precip_season_avg":[73.7,null,30.2,667.8,null,385.4]},"咖啡":{"acc_season_yoy":[158.2,129.8,39.0,0.0,39.9,75.7,0.0],"precip_30_14":[528.7,341.3,33.2,636.7,471.9,211.4,387.3],"acc_season_req":[null,null,null,null,null,null,null],"max_temps":[26.3,25.6,25.3,19.8,23.3,25.0,19.7],"harvest_status":["","","","","","",""],"normals_high":[27,26,25,21,25,27,22],"precip_season_yoy":[1197.5,787.9,3.2,382.3,568.3,221.1,320.5],"gdd_14d":[65.2,49.9,38.9,0.0,30.2,40.4,0.0],"names":["云南·普洱","云南·保山","米纳斯吉拉斯","卡尔达斯","金迪奥","里萨拉尔达","亚的斯亚贝巴"],"acc_phase":[701.8,361.7,1199.4,5.2,389.8,517.0,23.8],"soils_avg":[0.455,0.37,0.205,0.388,0.371,0.182,0.469],"acc_season_avg":[144.7,102.3,38.2,0.1,29.2,44.1,0.0],"precip_14":[96.5,96.8,25.8,344.2,187.9,101.3,99.3],"min_temps":[19.0,17.5,15.2,12.8,17.0,16.8,10.2],"soils_avg_14d":[0.495,0.44,0.203,0.412,0.415,0.261,0.475],"normals_low":[20,19,14,13,17,17,11],"precip_season":[873.3,606.7,7.4,292.5,284.0,110.1,288.0],"acc_season":[143.0,95.8,97.2,1.9,102.6,140.5,0.0],"normals_precip":[250,200,15,130,130,130,120],"cal_offset":[0.28,0.83,null,null,null,null,null],"precip_avg_14d":[150.6,77.5,2.5,115.2,100.9,37.0,96.8],"soils":[0.455,0.37,0.202,0.417,0.43,0.153,0.479],"precip_season_avg":[844.7,617.5,6.0,945.4,598.1,476.0,330.4]}},"drought":{"cotton":{"currentD1Plus":42,"yearAgoD1Plus":3,"peakDrought":98,"d1":24,"d2":25,"d3":6,"d4":3},"soybean":{"currentD1Plus":26,"yearAgoD1Plus":8,"d1":12,"d2":5,"d3":2,"d4":0,"coreStatus":"基本无旱，降水125-300%正常值","riskNote":"IL表层土壤过剩39%，局部渍涝+根腐病风险"}},"roni_labels":["2011-02","2011-03","2011-04","2011-05","2011-06","2011-07","2011-08","2011-09","2011-10","2011-11","2011-12","2012-01","2012-02","2012-03","2012-04","2012-05","2012-06","2012-07","2012-08","2012-09","2012-10","2012-11","2012-12","2013-01","2013-02","2013-03","2013-04","2013-05","2013-06","2013-07","2013-08","2013-09","2013-10","2013-11","2013-12","2014-01","2014-02","2014-03","2014-04","2014-05","2014-06","2014-07","2014-08","2014-09","2014-10","2014-11","2014-12","2015-01","2015-02","2015-03","2015-04","2015-05","2015-06","2015-07","2015-08","2015-09","2015-10","2015-11","2015-12","2016-01","2016-02","2016-03","2016-04","2016-05","2016-06","2016-07","2016-08","2016-09","2016-10","2016-11","2016-12","2017-01","2017-02","2017-03","2017-04","2017-05","2017-06","2017-07","2017-08","2017-09","2017-10","2017-11","2017-12","2018-01","2018-02","2018-03","2018-04","2018-05","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05"],"roni_values":[-1.04,-0.8,-0.62,-0.46,-0.37,-0.43,-0.58,-0.79,-0.96,-1.02,-0.92,-0.72,-0.57,-0.46,-0.36,-0.17,0.06,0.3,0.41,0.41,0.31,0.12,-0.1,-0.29,-0.29,-0.21,-0.19,-0.26,-0.33,-0.35,-0.28,-0.21,-0.13,-0.1,-0.16,-0.28,-0.32,-0.14,0.16,0.31,0.24,0.1,0.11,0.28,0.54,0.71,0.77,0.69,0.61,0.65,0.81,1.03,1.25,1.57,1.9,2.21,2.47,2.65,2.75,2.63,2.28,1.71,1.05,0.49,0.0,-0.31,-0.5,-0.58,-0.64,-0.6,-0.45,-0.2,-0.02,0.18,0.31,0.4,0.38,0.19,-0.07,-0.34,-0.6,-0.76,-0.86,-0.77,-0.71,-0.57,-0.39,-0.13,0.06,0.14,0.27,0.53,0.81,0.97,0.92,0.89,0.86,0.84,0.77,0.64,0.52,0.33,0.19,0.23,0.39,0.58,0.66,0.64,0.63,0.53,0.3,0.01,-0.23,-0.36,-0.53,-0.84,-1.12,-1.2,-1.08,-0.91,-0.79,-0.71,-0.55,-0.39,-0.3,-0.35,-0.45,-0.63,-0.77,-0.91,-0.87,-0.82,-0.79,-0.87,-0.95,-0.89,-0.78,-0.76,-0.87,-0.97,-0.94,-0.85,-0.72,-0.54,-0.29,-0.02,0.27,0.57,0.84,1.12,1.37,1.6,1.83,1.99,2.06,1.93,1.62,1.26,0.82,0.49,0.22,0.08,-0.07,-0.17,-0.21,-0.3,-0.41,-0.44,-0.24,-0.06,0.02,-0.02,-0.04,-0.14,-0.28,-0.4,-0.51,-0.55,-0.54,-0.37,-0.15,0.13,0.51,0.98],"crop_risk_thresholds":{"玉米":{"soil_severe_dry":0.15,"soil_moderate_dry":0.25,"soil_saturation":0.38,"acc_min":300,"acc_max":550},"大豆":{"soil_severe_dry":0.15,"soil_moderate_dry":0.22,"soil_saturation":0.4,"acc_min":200,"acc_max":500},"小麦":{"soil_severe_dry":0.15,"soil_moderate_dry":0.25,"soil_saturation":0.4,"acc_min":100,"acc_max":600},"棕榈油":{"soil_severe_dry":0.2,"soil_moderate_dry":0.28,"soil_saturation":0.42,"acc_min":400,"acc_max":700},"白糖":{"soil_severe_dry":0.2,"soil_moderate_dry":0.3,"soil_saturation":0.45,"acc_min":500,"acc_max":800},"棉花":{"soil_severe_dry":0.1,"soil_moderate_dry":0.2,"soil_saturation":0.38,"acc_min":400,"acc_max":900},"咖啡":{"soil_severe_dry":0.2,"soil_moderate_dry":0.28,"soil_saturation":0.5,"acc_min":150,"acc_max":400}}};
 function switchTab(t){document.querySelectorAll('.page-section').forEach(function(p){p.classList.remove('active')});document.querySelectorAll('.page-container').forEach(function(p){p.classList.remove('active')});document.querySelectorAll('.nav-tab').forEach(function(t){t.classList.remove('active')});var page=document.getElementById('page-'+t);page.classList.add('active');if(page.parentElement){page.parentElement.classList.add('active')};var tabs=document.querySelectorAll('.nav-tab');var m={dashboard:0,ocean:1,weather:2,forecast:3,knowledge:4};tabs[m[t]].classList.add('active');if(t==='ocean'&&!window.oI){initOcean();window.oI=true;}if(t==='weather'&&!window.wI){initWeather();window.wI=true;}}
 
 function navigateTo(tabName, sectionId) {
