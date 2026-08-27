@@ -565,7 +565,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:14px">🌾 农业关注重点</div>
         <div style="font-size:12px;color:var(--text-secondary);line-height:2">
           <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-red)">🔴 东南亚棕榈油：</span>ENSO+正IOD发展趋势双重驱动干旱加深，<strong>7-12月印尼/马来/菲律宾降水持续偏少</strong>(-0.4~-2mm/d)，8-10月最关键</div>
-          <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-yellow)">🟡 广西/广东甘蔗（白糖）：</span>当前蔗区墒情正常，生长恢复良好；8月台风高发期需持续关注</div>
+          <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-red)">🔴 广西/广东甘蔗（白糖）：</span>郁江2026年第2号洪水过境广西核心蔗区，南宁站洪峰预计8/27约75.5米（超警2.5米），崇左“中国糖都”龙州蔗田积水超一米、甘蔗受灾；8/29-31“沙德尔”西移广西再迎较强降雨，渍涝与倒伏风险持续，广东同步防范外围风雨</div>
           <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-orange)"> 印度季风（白糖/棉花）：</span>季风累计偏少12%（截至8/12，IMD），45%县区降雨不足，水库蓄水升至53%；IMD预测8-9月后半季<94%均值</div>
           <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-orange)">🟠 巴西冬季降水：</span>El Niño→中南部偏多→甘蔗收割/咖啡采收受阻</div>
           <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-red)">🔴 中国东北玉米/大豆：</span>8/2甘河1号洪水(加格达奇站371.68m超警)+嫩江流域防汛升级，水利部Ⅳ级应急响应；东北玉米大豆主产区渍涝风险严峻</div>
@@ -778,6 +778,15 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="section-title" id="section-timeline">重大事件时间线</div>
       <div class="events-card">
         <div class="timeline">
+          <div class="timeline-item severity-red">
+            <div class="timeline-header">
+              <span class="timeline-date">2026-08-27</span>
+              <span class="timeline-severity severity-red-tag">RED</span>
+            </div>
+            <div class="timeline-title">郁江2号洪水过境广西糖都蔗区封航<span class="timeline-type">洪水</span></div>
+            <div class="timeline-summary">台风“紫檀”强降雨叠加上游来水，郁江8月24日发生2026年第2号洪水；8月26日20时广西11条河流17站超警0.07-7.85米，左江崇左站洪峰超警7.67米为1955年以来实测最大。南宁站洪峰预计8月27日出现、约75.5米（超警2.5米、流量约10900m³/s），郁江南宁段全线封航，“中国糖都”崇左龙州蔗田积水超一米、甘蔗受灾抢收。8月29-31日受“沙德尔”西移影响，广西自东向西再迎较强降雨，蔗区渍涝风险持续。</div>
+            <div class="timeline-crops"><span class="timeline-crop-tag">甘蔗</span><span class="timeline-crop-tag">白糖</span><span class="timeline-crop-tag">水稻</span></div>
+          </div>
           <div class="timeline-item severity-red">
             <div class="timeline-header">
               <span class="timeline-date">2026-08-25</span>
@@ -1310,7 +1319,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div class="crop-overview-card" onclick="document.getElementById('crop-大豆').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🫘</div><div class="crop-name">大豆</div><div class="crop-risk" style="background:rgba(249,115,22,0.08);color:var(--risk-orange)">中高风险</div><div class="crop-regions">14个产区</div><div class="crop-summary">东北持续强降雨使大豆产区渍涝风险上升，田间过湿不利植株生长。</div></div>
 <div class="crop-overview-card" onclick="document.getElementById('crop-小麦').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🌾</div><div class="crop-name">小麦</div><div class="crop-risk" style="background:rgba(34,197,94,0.08);color:#16a34a">低风险</div><div class="crop-regions">15个产区</div><div class="crop-summary">国内主产区无显著灾害信号，华北西北墒情适宜；关注印度季风偏弱对后续播种影响。</div></div>
 <div class="crop-overview-card" onclick="document.getElementById('crop-棕榈油').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🌴</div><div class="crop-name">棕榈油</div><div class="crop-risk" style="background:rgba(234,179,8,0.08);color:#a16207">中风险</div><div class="crop-regions">3个产区</div><div class="crop-summary">东南亚产区缺乏明确灾害数据；南海及菲律宾以东扰动活跃，关注外围降雨增强风险。</div></div>
-<div class="crop-overview-card" onclick="document.getElementById('crop-白糖').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🍬</div><div class="crop-name">白糖</div><div class="crop-risk" style="background:rgba(249,115,22,0.08);color:var(--risk-orange)">中高风险</div><div class="crop-regions">5个产区</div><div class="crop-summary">广东、广西中雨暴雨频繁，台风胚胎活跃，甘蔗低洼田块渍涝和倒伏风险上升。</div></div>
+<div class="crop-overview-card" onclick="document.getElementById('crop-白糖').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🍬</div><div class="crop-name">白糖</div><div class="crop-risk" style="background:rgba(239,68,68,0.08);color:var(--risk-red)">高风险</div><div class="crop-regions">5个产区</div><div class="crop-summary">郁江2号洪水过境广西核心蔗区，崇左蔗田积水受淹、南宁段封航，洪峰叠加29-31日新一轮降雨，甘蔗渍涝倒伏风险高。</div></div>
 <div class="crop-overview-card" onclick="document.getElementById('crop-棉花').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">🧶</div><div class="crop-name">棉花</div><div class="crop-risk" style="background:rgba(249,115,22,0.08);color:var(--risk-orange)">中高风险</div><div class="crop-regions">5个产区</div><div class="crop-summary">新疆高温持续，棉花花铃期易受热害，不利蕾铃发育与吐絮。</div></div>
 <div class="crop-overview-card" onclick="document.getElementById('crop-咖啡').scrollIntoView({behavior:'smooth'})"><div class="crop-icon">☕</div><div class="crop-name">咖啡</div><div class="crop-risk" style="background:rgba(234,179,8,0.08);color:#a16207">中风险</div><div class="crop-regions">7个产区</div><div class="crop-summary">西南多雨，云南咖啡产区降雨偏多，需防暴雨落果、病害及田间作业受阻。</div></div></div></div>
 <!-- NMC 中国农业气象周报 (2026-08-05写入) -->
@@ -1427,7 +1436,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div class="crop-chart-card"><div class="chart-title">土壤湿度</div><div class="chart-container short"><canvas id="soil-白糖"></canvas></div></div>
     </div>
     <div class="analysis-text">
-      🟡主产区整体墒情下滑，粤滇局地中度干旱风险升高。广州0.24（-7%）偏干、昆明0.26（-6%）偏干，均处中度干旱边缘，近期降水偏少24%-25%，不利甘蔗茎秆伸长与糖分积累；南宁0.41（-6%）正常，但墒情持续下降需警惕旱情发展。圣保罗0.36正常、北方邦0.34正常、孔敬0.40正常，三地均已收获，后期天气影响有限。未来若粤滇无有效降水补充，干旱或加剧，建议及时灌溉保墒；广西需关注降水趋势，防范由湿转旱对榨季产量的潜在影响。
+      🔴广西郁江2026年第2号洪水过境核心蔗区：台风“紫檀”强降雨叠加上游来水，8/24郁江发生年内第2号洪水，南宁站洪峰预计8/27出现、约75.5米（超警2.5米），左江崇左站洪峰超警7.67米为1955年以来实测最大；“中国糖都”崇左（蔗糖产量占广西1/3、全国1/5）龙州县蔗田积水超一米、甘蔗受灾抢收，郁江南宁段全线封航，珠江防总维持洪水防御Ⅲ级响应。8/29-31受“沙德尔”西移影响广西自东向西再迎较强降雨，低洼蔗田渍涝风险持续，需跟踪渍害程度与新榨季产量预期。<br><br>🟡主产区整体墒情下滑，粤滇局地中度干旱风险升高。广州0.24（-7%）偏干、昆明0.26（-6%）偏干，均处中度干旱边缘，近期降水偏少24%-25%，不利甘蔗茎秆伸长与糖分积累；南宁0.41（-6%）正常，但墒情持续下降需警惕旱情发展。圣保罗0.36正常、北方邦0.34正常、孔敬0.40正常，三地均已收获，后期天气影响有限。未来若粤滇无有效降水补充，干旱或加剧，建议及时灌溉保墒；广西转入洪涝渍害防控阶段，需跟踪洪峰过境后蔗田退水与渍害发展；粤滇仍需防范由湿转旱。
     </div>
   </div>
 <div class="crop-section" id="crop-棉花">
