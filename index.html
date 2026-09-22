@@ -325,11 +325,11 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           <div class="summary-value">+2.60<span style="font-size:14px;color:var(--text-muted)">°C</span></div>
           <div class="summary-tag tag-red">超强厄尔尼诺</div>
         </div>
-        <div class="summary-card green clickable" onclick="navigateTo('dashboard','section-riskmatrix')" title="查看详情">
+        <div class="summary-card orange clickable" onclick="navigateTo('dashboard','section-riskmatrix')" title="查看详情">
           <div class="summary-label">台风追踪</div>
-          <div class="summary-title">当前无活跃台风</div>
-          <div class="summary-value">西北太平洋及南海暂无编号台风活动</div>
-          <div class="summary-tag tag-green">🟢 无台风预警</div>
+          <div class="summary-title">25号杜鹃远离·关注91W</div>
+          <div class="summary-value">对我国近海无影响；91W或发展为26号"舒力基"</div>
+          <div class="summary-tag tag-orange">🟡 关注91W发展</div>
         </div>
         <div class="summary-card red clickable" onclick="navigateTo('weather','section-riskmatrix')" title="点击查看产区风险">
           <div class="summary-label">高风险产区</div>
@@ -561,7 +561,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:14px">🌾 农业关注重点</div>
         <div style="font-size:12px;color:var(--text-secondary);line-height:2">
           <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-red)">🔴 东南亚棕榈油：</span>ENSO+正IOD发展趋势双重驱动干旱加深，<strong>7-12月印尼/马来/菲律宾降水持续偏少</strong>(-0.4~-2mm/d)，8-10月最关键</div>
-          <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-orange)">🟠 广西/广东甘蔗（白糖）：</span>郁江2号洪水与台风沙德尔影响已结束，前期受灾蔗区进入恢复期；当前风险转为9月台风偏多——热带扰动97W未来2-3天或加强为编号台风，中央气象台预计13日前后华南南部有较大风雨，低洼农田渍涝和作物倒伏风险较高，暖湿环境易致病虫害蔓延，茎秆伸长期需提前疏通蔗田沟渠、加固防倒</div>
+          <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-orange)">🟠 广西/广东甘蔗（白糖）：</span>郁江2号洪水与台风沙德尔影响已结束，前期受灾蔗区进入恢复期；25号台风"杜鹃"正远离日本、对我国近海无影响；当前关注热带扰动91W——周四前后或发展为26号台风"舒力基"，路径分歧大、存在西行登陆华南可能，9月28-29日为路径选择关键期；若登陆，蔗区茎秆伸长期风灾倒伏与渍涝风险高，低洼蔗田需提前疏通沟渠、加固防倒</div>
           <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-orange)">🟠 印度季风（白糖/棉花）：</span>季风累计偏少12%（截至8/12，IMD），45%县区降雨不足，水库蓄水升至53%；IMD预测8-9月后半季<94%均值</div>
           <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-orange)">🟠 巴西冬季降水：</span>El Niño→中南部偏多→甘蔗收割/咖啡采收受阻</div>
           <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-red)">🔴 中国东北玉米/大豆：</span>9月7-9日立秋后首场大范围降温，东北多地降4-6℃局地8-10℃伴6-7级阵风，8日哈尔滨19℃/长春20℃/沈阳22℃创下半年新低；降温延缓玉米灌浆速率不利干物质积累，吉林东部山区9-10日晨3-4℃局地轻霜。春玉米大部乳熟、大豆鼓粒-结荚，偏晚地块需促早熟+喷施叶面肥防早霜</div>
@@ -601,37 +601,35 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <!-- Left: 台风追踪 -->
     <div class="typhoon-card" id="typhoon-tracking-card">
       <div class="typhoon-card-header">
-        <h3>当前无活跃台风</h3>
-        <span class="category-badge" style="background:rgba(34,197,94,0.85);color:white">无预警</span>
+        <h3>25号台风"杜鹃"远离日本·关注91W</h3>
+        <span class="category-badge" style="background:rgba(249,115,22,0.85);color:white">关注</span>
       </div>
       <div class="typhoon-card-body">
         <div class="typhoon-stats">
           <div class="typhoon-stat">
-            <div class="typhoon-stat-value" style="color:var(--risk-green);font-size:18px">0个<br>活跃编号台风</div>
-            <div class="typhoon-stat-label">科罗旺7日11时停编·沙德尔3日三登后减弱</div>
+            <div class="typhoon-stat-value" style="color:var(--accent-blue);font-size:18px">25号杜鹃<br>强热带风暴级</div>
+            <div class="typhoon-stat-label">21日影响日本关东后向东北快速远离·23日晨或转温带气旋·对我国近海无影响</div>
           </div>
           <div class="typhoon-stat">
-            <div class="typhoon-stat-value" style="color:var(--risk-orange);font-size:18px">97W<br>热带扰动活跃</div>
-            <div class="typhoon-stat-label">未来2-3天或加强为编号台风·下一命名"杜鹃"</div>
+            <div class="typhoon-stat-value" style="color:var(--risk-orange);font-size:18px">91W<br>热带扰动活跃</div>
+            <div class="typhoon-stat-label">菲律宾东侧至关岛南侧辐合带·周四前后或发展为26号"舒力基"</div>
           </div>
           <div class="typhoon-stat">
-            <div class="typhoon-stat-value" style="color:var(--risk-orange);font-size:18px">2-3个<br>9月台风预估</div>
-            <div class="typhoon-stat-label">多部门会商研判·数量较常年偏多、强度偏强</div>
+            <div class="typhoon-stat-value" style="color:var(--risk-orange);font-size:18px">9/28-29<br>路径选择关键期</div>
+            <div class="typhoon-stat-label">路径分歧大：或北上转向、或西行登陆华南·待定观察</div>
           </div>
         </div>
         <div class="typhoon-path">
           <div class="typhoon-path-title">📍 台风动态（中央气象台 9月22日）</div>
-          <strong>🟢 台风动态</strong>：截至9月8日，西北太平洋及南海海域暂无活跃编号台风，中央气象台未发布台风预警。<br>
-          <strong>🟢 关注提示</strong>：当前无台风影响，请持续关注中央气象台最新预报，防范秋季局地强对流天气对农业生产的不利影响。<br>
-          <strong>🌧 残余环流影响</strong>：科罗旺停编后外围环流叠加冷空气，浙江沿海仍有阵雨、舟山沿海多8级风；未来三天受其水汽输送与西风槽共同影响，日本本州岛有大到暴雨、局地大暴雨或特大暴雨（中央气象台9月8日）<br>
-          <strong>📊 后期展望：</strong>热带扰动97W正在活跃，未来2-3天有可能加强为编号台风（按命名表下一名为"杜鹃"），但路径远未确定、各家模式分歧大（北上或转向日本方向），时效越靠后越易变；未来10天南海及西北太平洋热带系统活动频繁，预计有1-2个热带扰动发展，12-15日南海中北部海域、华南沿海可能出现较大风雨天气（中央气象台、中国天气网9月8日）<br></div>
+          <strong>🌀 台风动态</strong>：今年第25号台风"杜鹃"（强热带风暴级）22日06时位于日本东京东偏北约650公里的西北太平洋洋面（37.4°N、146.7°E），中心附近最大风力10级（25米/秒）、中心气压985百帕；将以每小时50公里左右向东偏北方向快速移动，强度变化不大，预计23日早晨在日本以东远海转为温带气旋，对我国近海无影响（中央气象台9月22日06时台风公报）<br>
+          <strong>🌧 日本影响回顾</strong>："杜鹃"21日强风暴雨袭击日本关东：伊豆大岛24小时降水686.5毫米创9月观测史纪录，已致2人遇难、超160万人收到避难提示，日航/全日空取消航班275架次（JMA、共同社9月22日）<br>
+          <strong>📊 后期展望</strong>：热带扰动91W正在菲律宾东侧至关岛南侧辐合带上活跃，预计周四（9月24-25日）前后发展为热带风暴、将成为今年第26号台风"舒力基"；各家模式路径分歧大，可能北上转向、也可能西行登陆华南，9月28-29日为路径选择关键期，时效较远、待定观察（中国天气网、气象分析师信欣9月22日）<br></div>
         <div class="typhoon-risk">
           🚨 农业影响评估：<br>
-① <strong>华南风雨再起</strong>：13日前后华南南部可能有较大风雨，低洼农田渍涝和作物倒伏风险较高，暖湿环境易致病虫害发生发展<br>
-② <strong>东北冷空气降温</strong>：7-9日降温4-6℃、局地8-10℃伴阵风6-7级，延缓玉米等秋作物灌浆速率、不利干物质积累；吉林东部山区9-10日晨低至3-4℃、局地轻霜<br>
-③ <strong>西南避雨收晒</strong>：7-9日云南、11-13日四川盆地有小到中雨局地大雨，不利已成熟秋收作物收获晾晒，防籽粒发芽霉变<br>
-④ <strong>97W或发展为"杜鹃"</strong>：紧盯12-15日窗口，浙闽赣湘粤桂晚稻、甘蔗、果蔬提前防渍涝倒伏，设施农业加固棚体、低洼田块疏通沟渠<br>
-<span style="font-size:11px;color:var(--text-muted)">数据来源：中央气象台(9月22日)、国家气象中心、中国天气网、JMA</span></div>
+① <strong>本周近海无台风影响</strong>："杜鹃"已远离、我国近海及华南无台风风雨，秋收秋种正常推进，华南宜抓住晴好窗口收晒成熟作物<br>
+② <strong>紧盯91W→"舒力基"</strong>：若9月底西行登陆华南，浙闽赣湘粤桂晚稻、甘蔗、果蔬面临渍涝倒伏风险，设施农业需提前加固棚体、低洼田块疏通沟渠；9月28-29日为路径选择关键期，届时按最新预报调整防台安排<br>
+③ <strong>中秋假期窗口（9月25-27日）</strong>：华南天气开头晴、后头有雨出没，产区宜先收先晒、确保假期前完成成熟作物抢收，雨后及时排水防渍涝<br>
+<span style="font-size:11px;color:var(--text-muted)">数据来源：中央气象台台风公报(9月22日06时)、JMA、中国天气网、共同社</span></div>
       </div>
     </div>
     <!-- Right: 强对流天气预警 -->
