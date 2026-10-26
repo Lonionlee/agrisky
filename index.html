@@ -327,9 +327,9 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         </div>
         <div class="summary-card orange clickable" onclick="navigateTo('dashboard','section-riskmatrix')" title="查看详情">
           <div class="summary-label">台风追踪</div>
-          <div class="summary-title">25号杜鹃远离·关注91W</div>
-          <div class="summary-value">对我国近海无影响；91W或发展为26号"舒力基"</div>
-          <div class="summary-tag tag-orange">🟡 关注91W发展</div>
+          <div class="summary-title">"烟花"31号生成·我国近海无影响</div>
+          <div class="summary-value">"蔷琵"已停编；"烟花"远在关岛塞班以东约1960公里洋面</div>
+          <div class="summary-tag tag-orange">🟡 关注"烟花"路径</div>
         </div>
         <div class="summary-card red clickable" onclick="navigateTo('weather','section-riskmatrix')" title="点击查看产区风险">
           <div class="summary-label">高风险产区</div>
@@ -561,7 +561,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:14px">🌾 农业关注重点</div>
         <div style="font-size:12px;color:var(--text-secondary);line-height:2">
           <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-red)">🔴 东南亚棕榈油：</span>ENSO+正IOD发展趋势双重驱动干旱加深，<strong>7-12月印尼/马来/菲律宾降水持续偏少</strong>(-0.4~-2mm/d)，8-10月最关键</div>
-          <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-orange)">🟠 广西/广东甘蔗（白糖）：</span>郁江2号洪水与台风沙德尔影响已结束，前期受灾蔗区进入恢复期；25号台风"杜鹃"正远离日本、对我国近海无影响；当前关注热带扰动91W——周四前后或发展为26号台风"舒力基"，路径分歧大、存在西行登陆华南可能，9月28-29日为路径选择关键期；若登陆，蔗区茎秆伸长期风灾倒伏与渍涝风险高，低洼蔗田需提前疏通沟渠、加固防倒</div>
+          <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-orange)">🟠 广西/广东甘蔗（白糖）：</span>当前我国近海无台风影响（"蔷琵"已停编、"烟花"远在关岛塞班以东约1960公里洋面），蔗区秋收榨季正常推进；若后续有台风西行登陆华南，茎秆伸长期蔗区需防风灾倒伏与渍涝，低洼蔗田提前疏通沟渠、加固防倒</div>
           <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-orange)">🟠 印度季风（白糖/棉花）：</span>2026季风季已结束：终值759.4mm、87% LPA、偏少12.6%（IMD截至9/30，2015年来最弱）；东/东北部-26%为1901年来最干、南半岛-24%（1901年来第4低）；9月全国均温32.05°C创1901年来同期最高；10月预计<85% LPA且气温偏高，rabi播种墒情承压</div>
           <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-orange)">🟠 巴西冬季降水：</span>El Niño→中南部偏多→甘蔗收割/咖啡采收受阻</div>
           <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-red)">🔴 中国东北玉米/大豆（秋收启动）：</span>10/13黑龙江已收超1.4亿亩（占六成），哈尔滨水稻73%、大豆76%、杂粮97%；北安力争10/15前完成大豆、10/20前水稻、10/30前玉米。春玉米大部成熟、收获全面推进；大豆成熟收获进入尾声。东北深加工全面开秤，购销活跃。初霜冻9月下旬出现（较常年偏晚、影响有限）。</div>
@@ -601,34 +601,33 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <!-- Left: 台风追踪 -->
     <div class="typhoon-card" id="typhoon-tracking-card">
       <div class="typhoon-card-header">
-        <h3>诺洛</h3>
-        <span class="category-badge" style="background:rgba(249,115,22,0.85);color:white"></span>
+        <h3>烟花 IN-FA</h3>
+        <span class="category-badge" style="background:rgba(249,115,22,0.85);color:white">台风级</span>
       </div>
       <div class="typhoon-card-body">
         <div class="typhoon-stats">
           <div class="typhoon-stat">
-            <div class="typhoon-stat-value" style="color:var(--accent-blue);font-size:18px">25号杜鹃<br>强热带风暴级</div>
-            <div class="typhoon-stat-label">21日影响日本关东后向东北快速远离·23日晨或转温带气旋·对我国近海无影响</div>
+            <div class="typhoon-stat-value" style="color:var(--accent-blue);font-size:18px">31号烟花<br>台风级</div>
+            <div class="typhoon-stat-label">26日08时中心气压965hPa·最大风速38米/秒(13级)·强度逐渐增强</div>
           </div>
           <div class="typhoon-stat">
-            <div class="typhoon-stat-value" style="color:var(--risk-orange);font-size:18px">91W<br>热带扰动活跃</div>
-            <div class="typhoon-stat-label">菲律宾东侧至关岛南侧辐合带·周四前后或发展为26号"舒力基"</div>
+            <div class="typhoon-stat-value" style="color:var(--risk-orange);font-size:18px">北纬14.0°<br>东经163.4°</div>
+            <div class="typhoon-stat-label">关岛塞班偏东约1960公里洋面·向西偏北方向缓慢移动</div>
           </div>
           <div class="typhoon-stat">
-            <div class="typhoon-stat-value" style="color:var(--risk-orange);font-size:18px">9/28-29<br>路径选择关键期</div>
-            <div class="typhoon-stat-label">路径分歧大：或北上转向、或西行登陆华南·待定观察</div>
+            <div class="typhoon-stat-value" style="color:var(--risk-orange);font-size:18px">我国近海<br>无影响</div>
+            <div class="typhoon-stat-label">"蔷琵"已停编·"烟花"远离我国海区</div>
           </div>
         </div>
         <div class="typhoon-path">
           <div class="typhoon-path-title">📍 台风动态（中央气象台 10月26日）</div>
-          <strong>🌀 台风动态</strong>：今年第25号台风"杜鹃"（强热带风暴级）22日06时位于日本东京东偏北约650公里的西北太平洋洋面（37.4°N、146.7°E），中心附近最大风力10级（25米/秒）、中心气压985百帕；将以每小时50公里左右向东偏北方向快速移动，强度变化不大，预计23日早晨在日本以东远海转为温带气旋，对我国近海无影响（中央气象台9月22日06时台风公报）<br>
-          <strong>🌧 日本影响回顾</strong>："杜鹃"21日强风暴雨袭击日本关东：伊豆大岛24小时降水686.5毫米创9月观测史纪录，已致2人遇难、超160万人收到避难提示，日航/全日空取消航班275架次（JMA、共同社9月22日）<br>
-          <strong>🌀 台风蔷琵（CHAMPI）</strong>：2630号强台风级（14级，45米/秒），位于北纬22.7度、东经123.8度，预计将以每小时20公里左右的速度向西北方向移动，强度变化不大（中央气象台10月23日）<br></div>
+          <strong>🌀 台风蔷琵（CHAMPI，30号）</strong>：已于25日23时在东海东北部海面变性为温带气旋，中央气象台对其停止编号（中国天气网10月26日）<br>
+          <strong>🌀 台风烟花（IN-FA，31号）</strong>：26日08时中心位于关岛塞班偏东约1960公里的西北太平洋洋面（14.0°N、163.4°E），台风级、最大风力13级（38米/秒）、中心气压965百帕；将以每小时5-10公里左右向西偏北方向缓慢移动，强度逐渐增强，未来对我国海区无影响（中央气象台10月26日06时）<br></div>
         <div class="typhoon-risk">
           🚨 农业影响评估：<br>
-① <strong>本周近海无台风影响</strong>："杜鹃"已远离、我国近海及华南无台风风雨，秋收秋种正常推进，华南宜抓住晴好窗口收晒成熟作物<br>
-② <strong>紧盯91W→"舒力基"</strong>：若9月底西行登陆华南，浙闽赣湘粤桂晚稻、甘蔗、果蔬面临渍涝倒伏风险，设施农业需提前加固棚体、低洼田块疏通沟渠；9月28-29日为路径选择关键期，届时按最新预报调整防台安排<br>
-③ <strong>中秋假期窗口（9月25-27日）</strong>：华南天气开头晴、后头有雨出没，产区宜先收先晒、确保假期前完成成熟作物抢收，雨后及时排水防渍涝<br>
+① <strong>本周我国近海无台风影响</strong>："蔷琵"已停编、"烟花"远在关岛塞班以东约1960公里的洋面，对我国海区无影响，秋收秋种正常推进<br>
+② <strong>关注"烟花"后续路径</strong>："烟花"正缓慢增强并向西偏北移动，若未来深入西北太平洋后仍对我国无影响则维持现状；产区暂无需防台安排，但保持对路径的跟踪<br>
+③ <strong>华南秋收窗口</strong>：本周近海无台风风雨，产区宜抓住当前晴好窗口收晒成熟作物，雨后及时排水防渍涝<br>
 <span style="font-size:11px;color:var(--text-muted)">数据来源：中央气象台台风公报(10月26日08时)、JMA、中国天气网、共同社</span></div>
       </div>
     </div>

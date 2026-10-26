@@ -327,9 +327,9 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         </div>
         <div class="summary-card orange clickable" onclick="navigateTo('dashboard','section-riskmatrix')" title="查看详情">
           <div class="summary-label">台风追踪</div>
-          <div class="summary-title">25号杜鹃远离·关注91W</div>
-          <div class="summary-value">对我国近海无影响；91W或发展为26号"舒力基"</div>
-          <div class="summary-tag tag-orange">🟡 关注91W发展</div>
+          <div class="summary-title">"烟花"31号生成·我国近海无影响</div>
+          <div class="summary-value">"蔷琵"已停编；"烟花"远在关岛塞班以东约1960公里洋面</div>
+          <div class="summary-tag tag-orange">🟡 关注"烟花"路径</div>
         </div>
         <div class="summary-card red clickable" onclick="navigateTo('weather','section-riskmatrix')" title="点击查看产区风险">
           <div class="summary-label">高风险产区</div>
@@ -561,7 +561,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:14px">🌾 农业关注重点</div>
         <div style="font-size:12px;color:var(--text-secondary);line-height:2">
           <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-red)">🔴 东南亚棕榈油：</span>ENSO+正IOD发展趋势双重驱动干旱加深，<strong>7-12月印尼/马来/菲律宾降水持续偏少</strong>(-0.4~-2mm/d)，8-10月最关键</div>
-          <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-orange)">🟠 广西/广东甘蔗（白糖）：</span>郁江2号洪水与台风沙德尔影响已结束，前期受灾蔗区进入恢复期；25号台风"杜鹃"正远离日本、对我国近海无影响；当前关注热带扰动91W——周四前后或发展为26号台风"舒力基"，路径分歧大、存在西行登陆华南可能，9月28-29日为路径选择关键期；若登陆，蔗区茎秆伸长期风灾倒伏与渍涝风险高，低洼蔗田需提前疏通沟渠、加固防倒</div>
+          <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-orange)">🟠 广西/广东甘蔗（白糖）：</span>当前我国近海无台风影响（"蔷琵"已停编、"烟花"远在关岛塞班以东约1960公里洋面），蔗区秋收榨季正常推进；若后续有台风西行登陆华南，茎秆伸长期蔗区需防风灾倒伏与渍涝，低洼蔗田提前疏通沟渠、加固防倒</div>
           <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-orange)">🟠 印度季风（白糖/棉花）：</span>2026季风季已结束：终值759.4mm、87% LPA、偏少12.6%（IMD截至9/30，2015年来最弱）；东/东北部-26%为1901年来最干、南半岛-24%（1901年来第4低）；9月全国均温32.05°C创1901年来同期最高；10月预计<85% LPA且气温偏高，rabi播种墒情承压</div>
           <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-orange)">🟠 巴西冬季降水：</span>El Niño→中南部偏多→甘蔗收割/咖啡采收受阻</div>
           <div style="padding:4px 0;border-bottom:1px solid var(--border-light)"><span style="font-weight:600;color:var(--risk-red)">🔴 中国东北玉米/大豆（秋收启动）：</span>10/13黑龙江已收超1.4亿亩（占六成），哈尔滨水稻73%、大豆76%、杂粮97%；北安力争10/15前完成大豆、10/20前水稻、10/30前玉米。春玉米大部成熟、收获全面推进；大豆成熟收获进入尾声。东北深加工全面开秤，购销活跃。初霜冻9月下旬出现（较常年偏晚、影响有限）。</div>
@@ -601,35 +601,34 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <!-- Left: 台风追踪 -->
     <div class="typhoon-card" id="typhoon-tracking-card">
       <div class="typhoon-card-header">
-        <h3>诺洛</h3>
-        <span class="category-badge" style="background:rgba(249,115,22,0.85);color:white"></span>
+        <h3>烟花 IN-FA</h3>
+        <span class="category-badge" style="background:rgba(249,115,22,0.85);color:white">台风级</span>
       </div>
       <div class="typhoon-card-body">
         <div class="typhoon-stats">
           <div class="typhoon-stat">
-            <div class="typhoon-stat-value" style="color:var(--accent-blue);font-size:18px">25号杜鹃<br>强热带风暴级</div>
-            <div class="typhoon-stat-label">21日影响日本关东后向东北快速远离·23日晨或转温带气旋·对我国近海无影响</div>
+            <div class="typhoon-stat-value" style="color:var(--accent-blue);font-size:18px">31号烟花<br>台风级</div>
+            <div class="typhoon-stat-label">26日08时中心气压965hPa·最大风速38米/秒(13级)·强度逐渐增强</div>
           </div>
           <div class="typhoon-stat">
-            <div class="typhoon-stat-value" style="color:var(--risk-orange);font-size:18px">91W<br>热带扰动活跃</div>
-            <div class="typhoon-stat-label">菲律宾东侧至关岛南侧辐合带·周四前后或发展为26号"舒力基"</div>
+            <div class="typhoon-stat-value" style="color:var(--risk-orange);font-size:18px">北纬14.0°<br>东经163.4°</div>
+            <div class="typhoon-stat-label">关岛塞班偏东约1960公里洋面·向西偏北方向缓慢移动</div>
           </div>
           <div class="typhoon-stat">
-            <div class="typhoon-stat-value" style="color:var(--risk-orange);font-size:18px">9/28-29<br>路径选择关键期</div>
-            <div class="typhoon-stat-label">路径分歧大：或北上转向、或西行登陆华南·待定观察</div>
+            <div class="typhoon-stat-value" style="color:var(--risk-orange);font-size:18px">我国近海<br>无影响</div>
+            <div class="typhoon-stat-label">"蔷琵"已停编·"烟花"远离我国海区</div>
           </div>
         </div>
         <div class="typhoon-path">
-          <div class="typhoon-path-title">📍 台风动态（中央气象台 10月19日）</div>
-          <strong>🌀 台风动态</strong>：今年第25号台风"杜鹃"（强热带风暴级）22日06时位于日本东京东偏北约650公里的西北太平洋洋面（37.4°N、146.7°E），中心附近最大风力10级（25米/秒）、中心气压985百帕；将以每小时50公里左右向东偏北方向快速移动，强度变化不大，预计23日早晨在日本以东远海转为温带气旋，对我国近海无影响（中央气象台9月22日06时台风公报）<br>
-          <strong>🌧 日本影响回顾</strong>："杜鹃"21日强风暴雨袭击日本关东：伊豆大岛24小时降水686.5毫米创9月观测史纪录，已致2人遇难、超160万人收到避难提示，日航/全日空取消航班275架次（JMA、共同社9月22日）<br>
-          <strong>📊 后期展望</strong>：目前西北太平洋及南海无活跃台风编号，后续热带扰动发展情况请持续关注中央气象台最新预报（中央气象台10月19日）<br></div>
+          <div class="typhoon-path-title">📍 台风动态（中央气象台 10月26日）</div>
+          <strong>🌀 台风蔷琵（CHAMPI，30号）</strong>：已于25日23时在东海东北部海面变性为温带气旋，中央气象台对其停止编号（中国天气网10月26日）<br>
+          <strong>🌀 台风烟花（IN-FA，31号）</strong>：26日08时中心位于关岛塞班偏东约1960公里的西北太平洋洋面（14.0°N、163.4°E），台风级、最大风力13级（38米/秒）、中心气压965百帕；将以每小时5-10公里左右向西偏北方向缓慢移动，强度逐渐增强，未来对我国海区无影响（中央气象台10月26日06时）<br></div>
         <div class="typhoon-risk">
           🚨 农业影响评估：<br>
-① <strong>本周近海无台风影响</strong>："杜鹃"已远离、我国近海及华南无台风风雨，秋收秋种正常推进，华南宜抓住晴好窗口收晒成熟作物<br>
-② <strong>紧盯91W→"舒力基"</strong>：若9月底西行登陆华南，浙闽赣湘粤桂晚稻、甘蔗、果蔬面临渍涝倒伏风险，设施农业需提前加固棚体、低洼田块疏通沟渠；9月28-29日为路径选择关键期，届时按最新预报调整防台安排<br>
-③ <strong>中秋假期窗口（9月25-27日）</strong>：华南天气开头晴、后头有雨出没，产区宜先收先晒、确保假期前完成成熟作物抢收，雨后及时排水防渍涝<br>
-<span style="font-size:11px;color:var(--text-muted)">数据来源：中央气象台台风公报(10月19日06时)、JMA、中国天气网、共同社</span></div>
+① <strong>本周我国近海无台风影响</strong>："蔷琵"已停编、"烟花"远在关岛塞班以东约1960公里的洋面，对我国海区无影响，秋收秋种正常推进<br>
+② <strong>关注"烟花"后续路径</strong>："烟花"正缓慢增强并向西偏北移动，若未来深入西北太平洋后仍对我国无影响则维持现状；产区暂无需防台安排，但保持对路径的跟踪<br>
+③ <strong>华南秋收窗口</strong>：本周近海无台风风雨，产区宜抓住当前晴好窗口收晒成熟作物，雨后及时排水防渍涝<br>
+<span style="font-size:11px;color:var(--text-muted)">数据来源：中央气象台台风公报(10月26日08时)、JMA、中国天气网、共同社</span></div>
       </div>
     </div>
     <!-- Right: 强对流天气预警 -->
@@ -650,10 +649,10 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
           </div>
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px">
-          <img src="http://image.nmc.cn/product/2026/10/18/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20261018100000000_base64_1.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/13 02时-20时" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/10/18/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20261018100000000_base64_2.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/13 02时-20时" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/10/18/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20261018100000000_base64_3.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/13 02时-20时" onerror="this.style.display='none'" />
-          <img src="http://image.nmc.cn/product/2026/10/18/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20261018100000000_base64_4.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/13 02时-20时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/10/26/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20261026020000000_base64_1.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/13 02时-20时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/10/26/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20261026020000000_base64_2.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="短时强降水预报 8/13 02时-20时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/10/26/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20261026020000000_base64_3.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/13 02时-20时" onerror="this.style.display='none'" />
+          <img src="http://image.nmc.cn/product/2026/10/26/CSPB/SEVP_NMC_CSPB_SFER_EME_ACHN_LNO_P9_20261026020000000_base64_4.jpg" style="width:100%;border-radius:4px;border:1px solid var(--border-color);" alt="雷暴大风/冰雹预报 8/13 02时-20时" onerror="this.style.display='none'" />
         </div>
         <div style="font-size:9px;color:var(--text-muted);text-align:right">来源：中央气象台 www.nmc.cn</div>
       </div>
@@ -698,7 +697,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
             ③ <strong>关键窗口</strong>：12月-2027年5月旱季为真正考验，若旱季前两湖蓄水不足，限航升级将直接抬升美豆/美玉米出口物流成本，请持续关注ACP官方公告<br>
             <span style="font-size:11px;color:var(--text-muted)">数据来源：ACP官方、新华社、Infobae(9/25) · 更新时间 2026-09-28</span></div>
           <div class="info-box" style="border-left:3px solid var(--text-muted);padding:8px 12px;margin-top:8px">
-            <p style="font-size:11px;color:var(--text-muted);line-height:1.6" id="canal-advisory-line"><strong>ACP最新公告：</strong>A-38-2026 Monthly Canal Operations Summary September 2026；A-37-2026 Long-Term Slot Allocation Program 2027 and Modification to Transit Reservation System tariffs；A-36-2026 Increase in the Number of Neopanamax Booking Slots, Draft Adjustment and Transit Reservation System</p>
+            <p style="font-size:11px;color:var(--text-muted);line-height:1.6" id="canal-advisory-line"><strong>ACP最新公告：</strong>A-39-2026 Modifications to the Transit Reservation (Booking) System；A-38-2026 Monthly Canal Operations Summary September 2026；A-37-2026 Long-Term Slot Allocation Program 2027 and Modification to Transit Reservation System tariffs</p>
           </div>
         </div>
       </div>
@@ -1311,7 +1310,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     </div>
     <div style="background:var(--bg-section);border-radius:8px;padding:12px;border-top:3px solid var(--risk-red)">
       <div style="font-size:12px;font-weight:600;color:var(--risk-red);margin-bottom:6px">未来10天：秋收区大部气温偏高、降水偏少，利于秋收作物成熟收获和晾晒；重庆、贵州北部、湖南北部、湖北西南部部分地区累计雨日5~8天、降水偏多4~8成，低洼农田渍涝风险高。16-18日西北地区东部、华北西部、黄淮等地中到大雨，利于改善土壤墒情和冬小麦播种，但持续阴雨将延缓秋收秋种。江南华南气温显著偏高、降水偏少，寒露风风险低但病虫害及局部秋旱风险增大。
-      <span style="font-size:11px;color:var(--text-muted)">数据来源：中央气象台《全国农业气象周报》(2026年10月19日签发)·秋收秋种气象服务（10月19日）</div>
+      <span style="font-size:11px;color:var(--text-muted)">数据来源：中央气象台《全国农业气象周报》(2026年10月26日签发)·秋收秋种气象服务（10月26日）</div>
   </div>
 </div>
 <div class="crop-section" id="crop-玉米">
@@ -2023,11 +2022,11 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
         <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:14px;">
           <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px;">10cm 土壤相对湿度</div>
-          <img src="https://image.nmc.cn/product/2026/10/18/AMSM/medium/SEVP_NMC_AMSM_CAGMSS_ESRH_ACHN_L10CM_PS_20261018000000000.jpg" style="width:100%;border-radius:8px;" alt="10cm土壤相对湿度" />
+          <img src="https://image.nmc.cn/product/2026/10/25/AMSM/medium/SEVP_NMC_AMSM_CAGMSS_ESRH_ACHN_L10CM_PS_20261025000000000.jpg" style="width:100%;border-radius:8px;" alt="10cm土壤相对湿度" />
         </div>
         <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:14px;">
           <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px;">20cm 土壤相对湿度</div>
-          <img src="https://image.nmc.cn/product/2026/10/18/AMSM/medium/SEVP_NMC_AMSM_CAGMSS_ESRH_ACHN_L20CM_PS_20261018000000000.jpg" style="width:100%;border-radius:8px;" alt="20cm土壤相对湿度" />
+          <img src="https://image.nmc.cn/product/2026/10/25/AMSM/medium/SEVP_NMC_AMSM_CAGMSS_ESRH_ACHN_L20CM_PS_20261025000000000.jpg" style="width:100%;border-radius:8px;" alt="20cm土壤相对湿度" />
         </div>
       </div>
     </div>
@@ -2069,7 +2068,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div id="fc-global" style="margin-bottom:28px;">
 <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
   <span style="font-size:16px;font-weight:600;color:var(--accent-blue);">🌍 全球其他产区天气展望</span>
-  <span style="font-size:11px;color:var(--text-muted);">（ECMWF IFS 8月预报 · 2026年10月19日更新 · 除中美巴阿）</span>
+  <span style="font-size:11px;color:var(--text-muted);">（ECMWF IFS 8月预报 · 2026年10月26日更新 · 除中美巴阿）</span>
 </div>
 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
 
@@ -2171,12 +2170,12 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div id="fc-us" style="margin-bottom:28px;">
 <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
   <span style="font-size:16px;font-weight:600;color:var(--accent-blue);">🇺🇸 美国产区天气展望</span>
-  <span style="font-size:11px;color:var(--text-muted);">（CPC 6-14天展望 · 6-10天：10月24日-10月28日 / 8-14天：10月26日-11月1日）</span>
+  <span style="font-size:11px;color:var(--text-muted);">（CPC 6-14天展望 · 6-10天：10月31日-11月4日</span>
 </div>
 
 <!-- CPC 6-10天展望图 -->
 <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;margin-bottom:14px;">
-  <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px;">🗺️ CPC 6-10天气温与降水概率展望（10月19日-10月28日）</div>
+  <div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:10px;">🗺️ CPC 6-10天气温与降水概率展望（10月26日-11月4日）</div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--risk-red);margin-bottom:6px;">🌡️ 温度概率</div>
@@ -2187,7 +2186,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <img src="https://www.cpc.ncep.noaa.gov/products/predictions/610day/610prcp.new.gif" style="width:100%;border-radius:8px;border:1px solid var(--border-color);" alt="CPC 6-10天降水概率展望" />
     </div>
   </div>
-  <div style="font-size:10px;color:var(--text-muted);margin-top:8px;">来源：<a href="https://www.cpc.ncep.noaa.gov/products/predictions/610day/index.php" target="_blank" style="color:var(--accent-blue);">NOAA CPC 6-10 Day Outlooks</a>（2026-10-19更新）</div>
+  <div style="font-size:10px;color:var(--text-muted);margin-top:8px;">来源：<a href="https://www.cpc.ncep.noaa.gov/products/predictions/610day/index.php" target="_blank" style="color:var(--accent-blue);">NOAA CPC 6-10 Day Outlooks</a>（2026-10-26更新）</div>
 </div>
 
 <!-- CPC分区概率表 -->
@@ -2210,7 +2209,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <tr><td style="padding:6px 10px;border-bottom:1px solid var(--border-color);">东南部</td><td style="text-align:center;padding:6px;">🟠略偏高</td><td style="text-align:center;padding:6px;">🟡正常</td><td style="padding:6px;">高压脊东南缘弱槽影响</td></tr>
 </tbody>
   </table>
-  <div style="font-size:11px;color:var(--text-muted);margin-top:8px;">来源：<a href="https://www.cpc.ncep.noaa.gov/products/predictions/610day/fxus06.html" target="_blank" style="color:var(--accent-blue);">NOAA CPC Prognostic Discussion</a>（2026年10月19日发布）</div>
+  <div style="font-size:11px;color:var(--text-muted);margin-top:8px;">来源：<a href="https://www.cpc.ncep.noaa.gov/products/predictions/610day/fxus06.html" target="_blank" style="color:var(--accent-blue);">NOAA CPC Prognostic Discussion</a>（2026年10月26日发布）</div>
 </div>
 
 <!-- 美国三作物卡片 -->
@@ -2223,7 +2222,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <span style="font-size:11px;padding:3px 8px;background:#fff7e6;color:#d48806;border-radius:4px;font-weight:600;">高温逼熟风险</span>
     </div>
     <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-      <div><strong>CPC 10/19</strong></div>
+      <div><strong>CPC 10/26</strong></div>
 <div style="margin-top:6px;">玉米带6-10天受高压脊控制，气温高于常年80%概率，降水趋平。灌浆后期持续高温或加速成熟但降低粒重，需关注土壤墒情消耗及热胁迫对单产潜在负面影响。</div>
     </div>
   </div>
@@ -2235,7 +2234,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
       <span style="font-size:11px;padding:3px 8px;background:#fff1f0;color:#cf1322;border-radius:4px;font-weight:600;">高温干旱预警</span>
     </div>
     <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-      <div><strong>CPC 10/19</strong></div>
+      <div><strong>CPC 10/26</strong></div>
 <div style="margin-top:6px;">南部平原及德州处于高压脊中心，超80%概率异常高温且降水偏少。棉花结铃吐絮期遇干热天气易致蕾铃脱落与纤维品质下降，灌溉需求激增，旱情发展风险较高。</div>
     </div>
   </div>
@@ -2257,7 +2256,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div id="fc-sa" style="margin-bottom:28px;">
 <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
   <span style="font-size:16px;font-weight:600;color:var(--accent-blue);">🌎 南美产区 · 大豆15天天气展望</span>
-  <span style="font-size:11px;color:var(--text-muted);">（WorldAgWeather · 10/19更新 · 南半球冬季休耕 · 巴西二茬玉米收获期）</span>
+  <span style="font-size:11px;color:var(--text-muted);">（WorldAgWeather · 10/26更新 · 南半球冬季休耕 · 巴西二茬玉米收获期）</span>
 </div>
 <div style="background:#fffbe6;border:1px solid #ffe58f;border-radius:8px;padding:8px 14px;margin-bottom:14px;font-size:12px;color:#8c6d1f;">🌱 巴西大豆播种全面推进：全国7.3%（AgRural截至10/1，去年同期9.0%，本季首次落后）/9.4%（Conab截至10/2，超去年同期8.2%），马州超10%、帕拉纳35%。<strong>当前焦点：</strong>中西部降雨改善墒情但分布不均，帕拉纳因雨过多进度放缓；巴西南部小麦因暴雨冰雹受损（收获36.4%，质量担忧突出）。AgRural 10/6上调新季产量预估至182.7百万吨（Conab 181.6百万吨）。超强厄尔尼诺背景下，10月降水分布仍是播种出苗关键变量。</div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
@@ -2265,28 +2264,28 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <!-- 巴西大豆降水 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇧🇷 巴西大豆产区 · 15天降水预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_brazil_5197.png" style="width:100%;border-radius:8px;" alt="巴西大豆15天降水预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_brazil_5204.png" style="width:100%;border-radius:8px;" alt="巴西大豆15天降水预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">巴西中西部播种窗口开启、初期墒情总体适宜；南部降水频率回升，厄尔尼诺背景下利于墒情恢复但需防短期过湿推迟播种。</div>
   </div>
 
   <!-- 巴西大豆温度 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇧🇷 巴西大豆产区 · 15天温度预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_brazil_5197.png" style="width:100%;border-radius:8px;" alt="巴西大豆15天温度预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_brazil_5204.png" style="width:100%;border-radius:8px;" alt="巴西大豆15天温度预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">巴西大部气温偏高，播种区无霜冻风险；PDO冷相位或带来阶段性降温，关注早播田出苗期温度波动。</div>
   </div>
 
   <!-- 阿根廷大豆降水 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇦🇷 阿根廷大豆产区 · 15天降水预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_argentina_5197.png" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天降水预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcstpcpmap_soybeans_argentina_5204.png" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天降水预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">阿根廷播前田间偏干、墒情恢复有限；厄尔尼诺与MJO相位6叠加，10月播种窗口降雨概率趋于回升，关注透雨后的播种推进。</div>
   </div>
 
   <!-- 阿根廷大豆温度 -->
   <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🇦🇷 阿根廷大豆产区 · 15天温度预报</div>
-    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_argentina_5197.png" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天温度预报" />
+    <img src="http://www.worldagweather.com/crops/fcstwx/fcsttmpmap_soybeans_argentina_5204.png" style="width:100%;border-radius:8px;" alt="阿根廷大豆15天温度预报" />
     <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">阿根廷气温整体偏暖，利于播前整地与备播；冷PDO或引发短促降温，早播田需防温度波动。</div>
   </div>
 
@@ -2298,12 +2297,12 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
 <div id="fc-cn" style="margin-bottom:28px;">
 <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
   <span style="font-size:16px;font-weight:600;color:var(--accent-blue);">🇨🇳 中国产区天气展望</span>
-  <span style="font-size:11px;color:var(--text-muted);">（中央气象台+和风天气 · 2026年10月19日更新 · 华南强降水，华北高温持续）</span>
+  <span style="font-size:11px;color:var(--text-muted);">（中央气象台+和风天气 · 2026年10月26日更新 · 华南强降水，华北高温持续）</span>
 </div>
 
 <!-- 本周天气特点 -->
 <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;margin-bottom:14px;">
-  <div style="font-size:13px;font-weight:600;margin-bottom:10px;">📊 10月19日最新天气形势</div>
+  <div style="font-size:13px;font-weight:600;margin-bottom:10px;">📊 10月26日最新天气形势</div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:12px;color:var(--text-secondary);line-height:1.7;">
     <div>
       <div style="font-weight:600;margin-bottom:4px;">🌡️ 气温</div>
@@ -2314,7 +2313,7 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
     <div>
       <div style="padding:10px;background:#f0f5ff;border-radius:8px;border-left:3px solid var(--accent-blue);font-size:12px;color:var(--text-secondary);line-height:1.7;">
         <div style="font-weight:600;color:var(--accent-blue);">🔵 秋收秋种与防灾重点</div>
-        <div>秋收进度（NMC 9/22）：四川秋粮收获过7成、重庆近7成、湖北近5成、云南青海近3成、内蒙古河南近1成，皖南一季稻开始收获；河北部分秋粮已开始收获、即将大面积收获（邢台南和36万余亩玉米进入收获期）。9月23-25日西北地区东部、西南、江汉、黄淮西南部多降雨，秋收短暂受阻，防范连阴雨与低洼田块渍涝，西南避雨抢收防发芽霉变。辽宁新粮少量上市、黑龙江东部农场开镰，东北深加工开秤收购。<br><span style="font-size:11px;color:var(--text-muted)">数据来源：中央气象台秋收秋种气象服务（10月19日）</span></div>
+        <div>秋收进度（NMC 9/22）：四川秋粮收获过7成、重庆近7成、湖北近5成、云南青海近3成、内蒙古河南近1成，皖南一季稻开始收获；河北部分秋粮已开始收获、即将大面积收获（邢台南和36万余亩玉米进入收获期）。9月23-25日西北地区东部、西南、江汉、黄淮西南部多降雨，秋收短暂受阻，防范连阴雨与低洼田块渍涝，西南避雨抢收防发芽霉变。辽宁新粮少量上市、黑龙江东部农场开镰，东北深加工开秤收购。<br><span style="font-size:11px;color:var(--text-muted)">数据来源：中央气象台秋收秋种气象服务（10月26日）</span></div>
       </div>
     </div>
   </div>
@@ -2325,30 +2324,30 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:10px;">
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--risk-red);margin-bottom:6px;">🌡️ 最高气温 24小时</div>
-      <img src="https://image.nmc.cn/product/2026/10/19/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20261019080002412.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/10/26/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20261026080002412.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--risk-red);margin-bottom:6px;">🌡️ 最高气温 48小时</div>
-      <img src="https://image.nmc.cn/product/2026/10/19/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20261019080004812.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/10/26/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20261026080004812.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--risk-red);margin-bottom:6px;">🌡️ 最高气温 72小时</div>
-      <img src="https://image.nmc.cn/product/2026/10/19/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20261019080007212.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/10/26/RFFC/medium/SEVP_NMC_RFFC_SNWFD_ETM_ACHN_L88_P9_20261026080007212.jpg" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
   </div>
   <!-- Row 2: 降水量预报 -->
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--accent-blue);margin-bottom:6px;">🌧️ 降水量 24小时</div>
-      <img src="https://image.nmc.cn/product/2026/10/19/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20261019010002400.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/10/26/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20261026010002400.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--accent-blue);margin-bottom:6px;">🌧️ 降水量 48小时</div>
-      <img src="https://image.nmc.cn/product/2026/10/19/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20261019010004800.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/10/26/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20261026010004800.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
     <div style="text-align:center;">
       <div style="font-size:11px;font-weight:600;color:var(--accent-blue);margin-bottom:6px;">🌧️ 降水量 72小时</div>
-      <img src="https://image.nmc.cn/product/2026/10/19/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20261019010007200.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
+      <img src="https://image.nmc.cn/product/2026/10/26/STFC/medium/SEVP_NMC_STFC_SFER_ER24_ACHN_L88_P9_20261026010007200.JPG" style="width:100%;border-radius:6px;border:1px solid var(--border-color);" />
     </div>
   </div>
   <div style="font-size:10px;color:var(--text-muted);margin-top:8px;">来源：<a href="http://www.nmc.cn/publish/precipitation/1-day.html" target="_blank" style="color:var(--accent-blue);">中央气象台降水量预报</a> · <a href="https://m.nmc.cn/publish/temperature/hight/24hour.html" target="_blank" style="color:var(--accent-blue);">气温预报</a></div>
@@ -2358,16 +2357,16 @@ body { font-family: 'Noto Sans SC', 'Outfit', sans-serif; background: var(--bg-s
         <div>西北地区东南部、西南、江汉秋收区防范连阴雨，低洼田块疏通沟渠防渍涝。</div>
 </div>
 <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:18px;margin-bottom:14px;">
-  <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🌾 未来十天农业气象关注重点 <span id="agro-weekly-issued" style="font-weight:400;font-size:11px;color:var(--text-secondary);">｜中央气象台·全国农业气象周报·10月19日签发</span></div>
+  <div style="font-size:13px;font-weight:600;margin-bottom:10px;">🌾 未来十天农业气象关注重点 <span id="agro-weekly-issued" style="font-weight:400;font-size:11px;color:var(--text-secondary);">｜中央气象台·全国农业气象周报·10月26日签发</span></div>
   <div style="font-size:12px;color:var(--text-secondary);line-height:1.7;">
-    <img id="agro-weekly-img" src="http://image.nmc.cn/product/2026/10/19/AMDB/SEVP_NMC_AMDB_SFER_EAB_ACHN_L88_P9_20261019000000000_base64_4.jpg" alt="未来十天农业气象关注重点" style="width:100%;max-width:600px;display:block;margin:0 auto 12px;border-radius:8px;border:1px solid var(--border-color);" onerror="this.style.display='none'">
+    <img id="agro-weekly-img" src="http://image.nmc.cn/product/2026/10/26/AMDB/SEVP_NMC_AMDB_SFER_EAB_ACHN_L88_P9_20261026000000000_base64_4.jpg" alt="未来十天农业气象关注重点" style="width:100%;max-width:600px;display:block;margin:0 auto 12px;border-radius:8px;border:1px solid var(--border-color);" onerror="this.style.display='none'">
     <div id="agro-weekly-text">
-    <div style="margin-bottom:4px">• 华北、黄淮逐渐进入冬小麦适温播种区间，大部多晴少雨，利于整地备播和冬小麦播种出苗</div>
-    <div style="margin-bottom:4px">• 冷空气活动频繁，主要影响时段为19-21日和24-26日，北方大部地区平均气温较常年同期偏低1～2℃，多大风和雨雪天气，累计降水量有10～30毫米，其中新疆北部、内蒙古东北部、黑龙江北部有雨</div>
-    <div style="margin-bottom:4px">• 南方大部气温较常年偏高，江淮、江汉、江南大部、华南东部、西南地区东部和南部等地累计降水量有30～70毫米，上述大部降水量较常年偏多1~2倍，利于农田蓄水、油菜播栽，对水稻成熟收晒有一定影响</div>
-    <div style="margin-bottom:4px">• 各地抓住晴好天气及时收获成熟作物，并做好通风晾晒和储存，确保颗粒归仓</div>
+    <div style="margin-bottom:4px">• 北方大部时段以晴为主，利于作物收获晾晒、整地备播、冬小麦播种出苗和幼苗生长</div>
+    <div style="margin-bottom:4px">• 影响我国的冷空气活动比较频繁，北方大部气温较常年同期偏低，其中26-27日新疆东部、西北地区东部、华北、黄淮西部、东北地区东部等地部分地区有小到中雨或雨夹雪，局地有中到大雪，不利秋收扫尾、秋</div>
+    <div style="margin-bottom:4px">• 四川盆地东部、黄淮南部和江淮等地降水量有10～30毫米，部分地区40～60毫米，秋收秋种将短暂受阻，但利于农田蓄水储水，为油菜播栽提供较好水分条件</div>
+    <div style="margin-bottom:4px">• 各地要抓住晴好天气及时收晒成熟作物，并做好通风晾晒和储存，防止发芽霉变，确保颗粒归仓</div>
     </div>
-    <div id="agro-weekly-updated" style="margin-top:8px;font-size:11px;color:var(--text-secondary);">图文已更新：10月19日 09:34 · 依据10月19日签发周报</div>
+    <div id="agro-weekly-updated" style="margin-top:8px;font-size:11px;color:var(--text-secondary);">图文已更新：10月26日 09:34 · 依据10月26日签发周报</div>
   </div>
 </div>
 </div>
